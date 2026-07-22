@@ -1,4 +1,4 @@
-package com.arwc3.backend.security;
+package com.arwc3.security;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;

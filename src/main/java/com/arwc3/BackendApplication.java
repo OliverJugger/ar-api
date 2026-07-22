@@ -1,4 +1,4 @@
-package com.arwc3.backend;
+package com.arwc3;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

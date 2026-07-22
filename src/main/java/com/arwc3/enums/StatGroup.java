@@ -1,4 +1,4 @@
-package com.arwc3.backend.statistics;
+package com.arwc3.enums;
 
 /** Identifie à quel graphique du tableau de bord (stat1..stat4) appartient une entrée. */
 public enum StatGroup {

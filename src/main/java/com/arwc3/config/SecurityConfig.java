@@ -1,7 +1,7 @@
-package com.arwc3.backend.config;
+package com.arwc3.config;
 
-import com.arwc3.backend.security.Base64PasswordEncoder;
-import com.arwc3.backend.security.JsonAuthenticationEntryPoint;
+import com.arwc3.security.Base64PasswordEncoder;
+import com.arwc3.security.JsonAuthenticationEntryPoint;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -30,8 +30,9 @@ public class SecurityConfig {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(PUBLIC_DOC_PATHS).permitAll()
-                        .anyRequest().authenticated())
-                .httpBasic((HttpBasicConfigurer<HttpSecurity> basic) -> basic.authenticationEntryPoint(entryPoint))
+                        // .anyRequest().authenticated()
+                        .anyRequest().permitAll())
+                // .httpBasic((HttpBasicConfigurer<HttpSecurity> basic) -> basic.authenticationEntryPoint(entryPoint))
                 .exceptionHandling(handling -> handling.authenticationEntryPoint(entryPoint));
 
         return http.build();

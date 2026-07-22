@@ -1,6 +1,6 @@
-package com.arwc3.backend.security;
+package com.arwc3.security;
 
-import com.arwc3.backend.generated.model.ErrorResponse;
+import com.arwc3.generated.model.ErrorResponseDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -30,7 +30,7 @@ public class JsonAuthenticationEntryPoint implements AuthenticationEntryPoint {
         response.setContentType(MediaType.APPLICATION_JSON_VALUE);
         response.setHeader("WWW-Authenticate", "Basic realm=\"ar-wc3\"");
 
-        ErrorResponse body = new ErrorResponse();
+        ErrorResponseDTO body = new ErrorResponseDTO();
         body.setMessage("Identifiants invalides");
         objectMapper.writeValue(response.getWriter(), body);
     }

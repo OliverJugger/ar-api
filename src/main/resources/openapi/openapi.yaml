@@ -17,6 +17,8 @@ tags:
     description: Authentification
   - name: statistics
     description: Statistiques du tableau de bord
+  - name: dossier-sinistre
+    description : Gestion des dossiers sinistre
 
 paths:
   /login:
@@ -41,6 +43,38 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
+
+  /prestations-prevoyance/dossier-sinistre:
+    get:
+      tags: [dossier-sinistre]
+      summary: Liste paginée des dossiers sinistre
+      operationId: getDossiersSinistre
+      security:
+        - basicAuth: []
+      parameters:
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 0
+            default: 0
+          description: Numéro de la page (commence à 0)
+        - name: size
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            default: 20
+          description: Nombre d'éléments par page
+      responses:
+        '200':
+          description: Page de dossiers sinistre
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PageDossierSinistre'
 
   /statistics:
     get:
@@ -73,6 +107,23 @@ components:
         envoyé sur chaque requête.
 
   schemas:
+    PaginatedResponse:
+      type: object
+      required :
+        - page
+        - pageSize
+        - count
+        - totalCount
+      properties:
+        page:
+          type: number
+        pageSize:
+          type: number
+        count:
+          type: number
+        totalCount:
+          type: number
+
     LoginResponse:
       type: object
       required:
@@ -101,6 +152,15 @@ components:
           type: string
           example: OM
 
+    PageDossierSinistre:
+      allOf:
+        - $ref: '#/components/schemas/PaginatedResponse'
+        - type: object
+        - properties:
+            data:
+              type: array
+              items:
+                $ref: '#/components/schemas/DossierSinistre'
     ChartDatum:
       type: object
       description: Un point de données pour un graphique de type "pie"
@@ -140,6 +200,72 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/ChartDatum'
+
+    DossierSinistre:
+      type: object
+      description: Représente un dossier sinistre (table ARTHUS.DOSSIER_SINISTRE)
+      required:
+        - idDossier
+      properties:
+        idDossier:
+          type: string
+          maxLength: 9
+          description: Identifiant unique du dossier (clé primaire)
+          example: '123456789'
+        refExt:
+          type: string
+          maxLength: 30
+          nullable: true
+          default: 'N'
+          description: Référence externe
+        numIndiv:
+          type: integer
+          format: int64
+          nullable: true
+          description: Numéro d'individu associé
+        anterieur:
+          type: string
+          maxLength: 1
+          nullable: true
+          description: Indicateur antérieur (O/N)
+          example: 'N'
+        debut:
+          type: string
+          format: date-time
+          nullable: true
+          description: Date de début du dossier
+        numUtil:
+          type: integer
+          nullable: true
+          description: Numéro de l'utilisateur
+        fin:
+          type: string
+          format: date-time
+          nullable: true
+          description: Date de fin du dossier
+        cloture:
+          type: string
+          format: date-time
+          nullable: true
+          description: Date de clôture du dossier
+        createur:
+          type: integer
+          nullable: true
+          description: Identifiant du créateur
+        creation:
+          type: string
+          format: date-time
+          nullable: true
+          description: Date de création de l'enregistrement
+        modificateur:
+          type: integer
+          nullable: true
+          description: Identifiant du dernier modificateur
+        modification:
+          type: string
+          format: date-time
+          nullable: true
+          description: Date de dernière modification
 
     ErrorResponse:
       type: object
