@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: ar-wc3-backend
+
+  datasource:
+    url: ${ORACLE_URL:jdbc:oracle:thin:@localhost:1521/FREEPDB1}
+    username: ${ORACLE_USERNAME:ar_wc3}
+    password: ${ORACLE_PASSWORD:changeit}
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+    # Nécessaire pour que data.sql s'exécute après la création du schéma par Hibernate.
+    defer-datasource-initialization: true
+
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com.arwc3.backend: DEBUG
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

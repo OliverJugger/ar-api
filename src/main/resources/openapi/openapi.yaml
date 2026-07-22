@@ -1,0 +1,151 @@
+openapi: 3.0.3
+info:
+  title: AR-WC3 API
+  description: >
+    Contrat OpenAPI de l'application AR-WC3. Ce contrat est la source de
+    vérité pour le client HTTP généré côté Angular (voir `ng-openapi-gen.json`)
+    ainsi que pour le serveur mocké Mockoon (voir `mockoon/environment.json`).
+  version: 1.0.0
+servers:
+  - url: http://localhost:3001
+    description: Serveur mocké (Mockoon)
+  - url: http://localhost:8080
+    description: Backend Spring Boot (implémentation réelle)
+
+tags:
+  - name: auth
+    description: Authentification
+  - name: statistics
+    description: Statistiques du tableau de bord
+
+paths:
+  /login:
+    post:
+      tags: [auth]
+      summary: >
+        Authentifie un utilisateur via HTTP Basic Auth (en-tête
+        `Authorization: Basic base64(username:password)`) et retourne son profil
+      operationId: login
+      security:
+        - basicAuth: []
+      responses:
+        '200':
+          description: Authentification réussie
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LoginResponse'
+        '401':
+          description: Identifiants invalides
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /statistics:
+    get:
+      tags: [statistics]
+      summary: Récupère les statistiques utilisées par les 4 graphiques du tableau de bord
+      operationId: getStatistics
+      security:
+        - basicAuth: []
+      responses:
+        '200':
+          description: Statistiques du tableau de bord
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StatisticsResponse'
+        '401':
+          description: Identifiants invalides
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: >
+        HTTP Basic Auth : en-tête `Authorization: Basic base64(username:password)`
+        envoyé sur chaque requête.
+
+  schemas:
+    LoginResponse:
+      type: object
+      required:
+        - success
+        - user
+      properties:
+        success:
+          type: boolean
+          example: true
+        user:
+          $ref: '#/components/schemas/CurrentUser'
+
+    CurrentUser:
+      type: object
+      required:
+        - username
+        - displayName
+      properties:
+        username:
+          type: string
+          example: olivier.mignot83
+        displayName:
+          type: string
+          example: Olivier Mignot
+        avatarInitials:
+          type: string
+          example: OM
+
+    ChartDatum:
+      type: object
+      description: Un point de données pour un graphique de type "pie"
+      required:
+        - name
+        - value
+      properties:
+        name:
+          type: string
+          example: Catégorie A
+        value:
+          type: number
+          format: double
+          example: 42
+
+    StatisticsResponse:
+      type: object
+      required:
+        - stat1
+        - stat2
+        - stat3
+        - stat4
+      properties:
+        stat1:
+          type: array
+          items:
+            $ref: '#/components/schemas/ChartDatum'
+        stat2:
+          type: array
+          items:
+            $ref: '#/components/schemas/ChartDatum'
+        stat3:
+          type: array
+          items:
+            $ref: '#/components/schemas/ChartDatum'
+        stat4:
+          type: array
+          items:
+            $ref: '#/components/schemas/ChartDatum'
+
+    ErrorResponse:
+      type: object
+      required:
+        - message
+      properties:
+        message:
+          type: string
+          example: Identifiants invalides
