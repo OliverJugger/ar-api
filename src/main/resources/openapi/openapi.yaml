@@ -44,11 +44,11 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
 
-  /prestations-prevoyance/dossier-sinistre:
-    get:
+  /prestations-prevoyance/dossier-sinistre/recherche:
+    post:
       tags: [dossier-sinistre]
-      summary: Liste paginée des dossiers sinistre
-      operationId: getDossiersSinistre
+      summary: Recherche paginée des dossiers sinistre
+      operationId: rechercherDossiersSinistre
       security:
         - basicAuth: []
       parameters:
@@ -68,6 +68,12 @@ paths:
             minimum: 1
             default: 20
           description: Nombre d'éléments par page
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DossierSinistreCriteria'
       responses:
         '200':
           description: Page de dossiers sinistre
@@ -116,13 +122,49 @@ components:
         - totalCount
       properties:
         page:
-          type: number
+          type: integer
+          format: int32
         pageSize:
-          type: number
+          type: integer
+          format: int32
         count:
-          type: number
+          type: integer
+          format: int32
         totalCount:
-          type: number
+          type: integer
+          format: int64 
+
+    DossierSinistreCriteria:
+      type: object
+      properties:
+        anterieur:
+          type: boolean
+          description: Filtre sur le caractère antérieur du dossier
+        finNull:
+          type: boolean
+          description: Filtre sur de période de fin absente (= dossier actif)
+        prenomIndividuContains:
+          type: string
+          description: Recherche partielle (contains) sur le prénom de l'individu
+        nomIndividuContains:
+          type: string
+          description: Recherche partielle (contains) sur le nom de l'individu
+        debutFrom:
+          type: string
+          format: date
+          description: Borne inférieure de la période de début
+        debutTo:
+          type: string
+          format: date
+          description: Borne supérieure de la période de début
+        finFrom:
+          type: string
+          format: date
+          description: Borne inférieure de la période de fin
+        finTo:
+          type: string
+          format: date
+          description: Borne supérieure de la période de fin
 
     LoginResponse:
       type: object
@@ -161,6 +203,7 @@ components:
               type: array
               items:
                 $ref: '#/components/schemas/DossierSinistre'
+
     ChartDatum:
       type: object
       description: Un point de données pour un graphique de type "pie"
@@ -218,11 +261,8 @@ components:
           nullable: true
           default: 'N'
           description: Référence externe
-        numIndiv:
-          type: integer
-          format: int64
-          nullable: true
-          description: Numéro d'individu associé
+        individu:
+          $ref: '#/components/schemas/Individu'
         anterieur:
           type: string
           maxLength: 1
@@ -266,6 +306,164 @@ components:
           format: date-time
           nullable: true
           description: Date de dernière modification
+
+    Individu:
+      type: object
+      description: Représente un individu (table ARTHUS.INDIVIDU)
+      required:
+        - numindiv
+      properties:
+        numindiv:
+          type: integer
+          format: int64
+          description: Identifiant unique de l'individu
+        type:
+          type: integer
+          format: int32
+        nom:
+          type: string
+          maxLength: 30
+        qualite:
+          type: integer
+          format: int32
+        prenom:
+          type: string
+          maxLength: 30
+        datnais:
+          type: string
+          format: date
+        refcie:
+          type: string
+          maxLength: 30
+        codcourrier1:
+          type: integer
+          format: int32
+        codcourrier2:
+          type: integer
+          format: int32
+        codtitre:
+          type: integer
+          format: int32
+        sexe:
+          type: integer
+          format: int32
+        potentiel:
+          type: integer
+          format: int32
+        nomjf:
+          type: string
+          maxLength: 30
+        creation:
+          type: string
+          format: date
+        maj:
+          type: string
+          format: date
+        numutil:
+          type: integer
+          format: int32
+        numassu:
+          type: integer
+          format: int64
+        typassu:
+          type: integer
+          format: int32
+        typadr:
+          type: integer
+          format: int32
+        regime:
+          type: string
+          maxLength: 2
+        orgbase:
+          type: integer
+          format: int32
+        matorg:
+          type: string
+          maxLength: 20
+        cless:
+          type: integer
+          format: int32
+        rang:
+          type: integer
+          format: int32
+        natur:
+          type: string
+          maxLength: 2
+        caisse:
+          type: string
+          maxLength: 3
+        tel:
+          type: string
+          maxLength: 45
+        fax:
+          type: string
+          maxLength: 15
+        adr1:
+          type: string
+          maxLength: 30
+        adr2:
+          type: string
+          maxLength: 30
+        codpos:
+          type: string
+          maxLength: 5
+        ville:
+          type: string
+          maxLength: 30
+        codpays:
+          type: integer
+          format: int32
+        guichetorg:
+          type: string
+          maxLength: 3
+        cle:
+          type: string
+          maxLength: 1
+        guichetpmt:
+          type: string
+          maxLength: 5
+        email:
+          type: string
+          maxLength: 45
+        datnaisRegime:
+          type: string
+          maxLength: 6
+        modificateur:
+          type: integer
+          format: int32
+        deces:
+          type: string
+          format: date
+        nInsee:
+          type: string
+          maxLength: 20
+        regime2:
+          type: string
+          maxLength: 2
+        caisse2:
+          type: string
+          maxLength: 3
+        guichetorg2:
+          type: string
+          maxLength: 3
+        matorg2:
+          type: string
+          maxLength: 20
+        cless2:
+          type: integer
+          format: int32
+        lieunais:
+          type: string
+          maxLength: 30
+        codpaysnais:
+          type: integer
+          format: int32
+        coddepnais:
+          type: string
+          maxLength: 2
+        codcomnais:
+          type: string
+          maxLength: 5
 
     ErrorResponse:
       type: object

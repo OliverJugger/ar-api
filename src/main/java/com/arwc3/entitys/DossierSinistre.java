@@ -23,8 +23,9 @@ public class DossierSinistre {
     @Column(name = "REF_EXT", length = 30)
     private String refExt;
 
-    @Column(name = "NUMINDIV")
-    private Long numIndiv;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "NUMINDIV", referencedColumnName = "NUMINDIV")
+    private Individu individu;
 
     @Column(name = "ANTERIEUR", length = 1)
     private String anterieur;

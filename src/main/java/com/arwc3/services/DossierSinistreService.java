@@ -1,28 +1,39 @@
 package com.arwc3.services;
 
-import java.math.BigDecimal;
 import java.util.List;
 import com.arwc3.repositories.DossierSinistreRepository;
+import com.arwc3.repositories.specification.DossierSinistreSpecification;
+import com.arwc3.repositories.specification.criteria.DossierSinistreSearchCriteria;
+import com.arwc3.repositories.specification.rules.dossier_sinistre.DossierSinistreRule;
 import com.arwc3.generated.model.PageDossierSinistreDTO;
 import com.arwc3.generated.model.DossierSinistreDTO;
 import com.arwc3.mappers.DossierSinistreMapper;
 import com.arwc3.entitys.DossierSinistre;
+
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Sort;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
 public class DossierSinistreService {
 
+    private final List<DossierSinistreRule> dossierSinistreRules;
     private final DossierSinistreRepository dossierSinistreRepository;
     private final DossierSinistreMapper dossierSinistreMapper;
 
-    public PageDossierSinistreDTO getDossiersSinistre(Integer page, Integer size) {
-        List<DossierSinistre> dossierSinistres = dossierSinistreRepository.findAllByNumIndiv(94147L);
-        BigDecimal count = new BigDecimal(100);
-        BigDecimal totalCount = new BigDecimal(100);
-        List<DossierSinistreDTO> dossierSinistreDTOs = dossierSinistreMapper.toDossierSinistreDTO(dossierSinistres);
-        PageDossierSinistreDTO pageDossierSinistre = new PageDossierSinistreDTO(new BigDecimal(0), new BigDecimal(20), count, totalCount);
+    @Transactional(readOnly = true)
+    public PageDossierSinistreDTO getDossiersSinistre(Integer page, Integer size, DossierSinistreSearchCriteria searchCriteria) {
+        Page<DossierSinistre> dossierSinistres = dossierSinistreRepository.findAll(
+                new DossierSinistreSpecification(searchCriteria, dossierSinistreRules),
+                        PageRequest.of(page, size, Sort.by("debut").descending()));
+
+        List<DossierSinistreDTO> dossierSinistreDTOs = dossierSinistreMapper.toDossierSinistreDTO(dossierSinistres.getContent());
+        PageDossierSinistreDTO pageDossierSinistre = new PageDossierSinistreDTO(dossierSinistres.getNumber(), dossierSinistres.getSize(), dossierSinistres.getNumberOfElements(), dossierSinistres.getTotalElements());
         pageDossierSinistre.data(dossierSinistreDTOs);
         return pageDossierSinistre;
     }

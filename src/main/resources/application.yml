@@ -18,12 +18,17 @@ spring:
       ddl-auto: validate
     open-in-view: false
 
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
 server:
   port: 8080
 
 logging:
   level:
-    com.arwc3.backend: DEBUG
+    com.arwc3: DEBUG
 
 springdoc:
   swagger-ui:
