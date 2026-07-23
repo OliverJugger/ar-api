@@ -1,4 +1,4 @@
-package com.arwc3.security;
+package com.arwc3.config;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;

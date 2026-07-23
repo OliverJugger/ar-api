@@ -1,4 +1,4 @@
-package com.arwc3.security;
+package com.arwc3.config;
 
 import com.arwc3.generated.model.ErrorResponseDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;

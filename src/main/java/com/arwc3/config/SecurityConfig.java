@@ -1,7 +1,7 @@
 package com.arwc3.config;
 
-import com.arwc3.security.Base64PasswordEncoder;
-import com.arwc3.security.JsonAuthenticationEntryPoint;
+import com.arwc3.config.Base64PasswordEncoder;
+import com.arwc3.config.JsonAuthenticationEntryPoint;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
