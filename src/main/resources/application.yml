@@ -1,3 +1,7 @@
+oracle:
+  jdbc:
+    url-prefix:
+      jdbc:oracle:thin:@
 spring:
   application:
     name: ar-wc3-backend

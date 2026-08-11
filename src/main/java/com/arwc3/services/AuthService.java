@@ -32,6 +32,7 @@ public class AuthService {
         // response.setSuccess(true);
         // response.setUser(userMapper.toCurrentUser(appUser));
         // return response;
+        
         boolean test1 = this.authenticate("arthus", "iFUo9z6MpKRt7YCk_4No");
         System.out.println(test1);
         boolean test2 = this.authenticate("REC_ADM", "Arthus!12345678");
@@ -45,10 +46,10 @@ public class AuthService {
             + oracleJdbcProperties.getPort() + "/"
             + oracleJdbcProperties.getBase();
 
+        System.out.println(url);
         try (Connection conn = DriverManager.getConnection(url, username, password)) {
             return true;
         } catch(SQLException e) {
-            e.printStackTrace();
             return false;
             // if(e.getErrorCode() == 1017) {
             //     return false;
