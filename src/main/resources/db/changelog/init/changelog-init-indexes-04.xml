@@ -1,0 +1,2226 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="OMIGNOT" id="1786361410784-1">
+        <createIndex indexName="AFFEC_DCPT" tableName="AFFEC_DCPT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-2">
+        <createIndex indexName="PK_ARTHUS_CACHE" tableName="ARTHUS_CACHE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-3">
+        <createIndex indexName="PK_COMPTE_TIERS" tableName="COMPTE_TIERS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-4">
+        <createIndex indexName="PK_PRET" tableName="PRET" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-5">
+        <createIndex indexName="PK_PRODUIT" tableName="PRODUIT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-6">
+        <createIndex indexName="PK_SINISTRE" tableName="SINISTRE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-7">
+        <createIndex indexName="PK_HISTO_CONTRAT" tableName="HISTO_CONTRAT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-8">
+        <createIndex indexName="PK_NOEMIE" tableName="NOEMIE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-9">
+        <createIndex indexName="PK_RIB" tableName="RIB" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-10">
+        <createIndex indexName="PK_PIECES" tableName="PIECES" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-11">
+        <createIndex indexName="AFFIL_PORTE_QTTC_PK" tableName="AFFIL_PORTE_QTTC" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-12">
+        <createIndex indexName="ASSU_PRESTIJ_PK" tableName="ASSU_PRESTIJ" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-13">
+        <createIndex indexName="DECLA_PRESTIJ_PK" tableName="DECLA_PRESTIJ" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-14">
+        <createIndex indexName="ENVOI_MAIL_PK" tableName="ENVOI_MAIL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-15">
+        <createIndex indexName="FK1_ADHE_COLL_GAR" tableName="ADHE_COLL_GAR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-16">
+        <createIndex indexName="FK1_ADHE_PRET" tableName="ADHE_PRET"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-17">
+        <createIndex indexName="FK1_ADRESSE" tableName="PERS_ADRESSE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-18">
+        <createIndex indexName="FK1_ANNUL_CPTCLI" tableName="ANNUL_CPTCLI"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-19">
+        <createIndex indexName="FK1_BENEFICIAIRE" tableName="BENEFICIAIRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-20">
+        <createIndex indexName="FK1_BENE_GAR" tableName="BENE_GAR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-21">
+        <createIndex indexName="FK1_CNTRT_TRAIT" tableName="CNTRT_TRAIT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-22">
+        <createIndex indexName="FK1_COMPENSATION" tableName="COMPENSATION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-23">
+        <createIndex indexName="FK1_COMPTE" tableName="COMPTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-24">
+        <createIndex indexName="FK1_COMPTE_TIERS" tableName="COMPTE_TIERS"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-25">
+        <createIndex indexName="FK1_CONTRAT_REF" tableName="CONTRAT_REF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-26">
+        <createIndex indexName="FK1_DEDU_ANNUL" tableName="DEDU_ANNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-27">
+        <createIndex indexName="FK1_DEMANDE_TP" tableName="DEMANDE_TP"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-28">
+        <createIndex indexName="FK1_DETAIL_ANNUL" tableName="DETAIL_ANNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-29">
+        <createIndex indexName="FK1_DOSSIER_PREV" tableName="DOSSIER_SINISTRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-30">
+        <createIndex indexName="FK1_EMPRUNTEUR" tableName="EMPRUNTEUR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-31">
+        <createIndex indexName="FK1_EXCLUSION" tableName="EXCLUSION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-32">
+        <createIndex indexName="FK1_GAR_CNTRT_REF" tableName="GAR_CNTRT_REF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-33">
+        <createIndex indexName="FK1_GRP_LIBELLE" tableName="GRP_LIBELLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-34">
+        <createIndex indexName="FK1_HISTO_ANNUL" tableName="HISTO_ANNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-35">
+        <createIndex indexName="FK1_HISTO_AVOCAT" tableName="HISTO_AVOCAT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-36">
+        <createIndex indexName="FK1_HISTO_CPAYEUR" tableName="HISTO_CENTREPAYEUR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-37">
+        <createIndex indexName="FK1_HISTO_PRET" tableName="HISTO_PRET"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-38">
+        <createIndex indexName="FK1_INTERLOCUTEUR" tableName="INTERLOCUTEUR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-39">
+        <createIndex indexName="FK1_PARAM_CLOTURE" tableName="PARAM_CLOTURE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-40">
+        <createIndex indexName="FK1_PARAM_TP" tableName="PARAM_TIERS_PAYANT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-41">
+        <createIndex indexName="FK1_PERS_MORALE" tableName="PERS_HISTO_MORALE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-42">
+        <createIndex indexName="FK1_PORTE_EXPORT" tableName="PORTE_EXPORT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-43">
+        <createIndex indexName="FK1_PORTE_IMPORT" tableName="PORTE_IMPORT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-44">
+        <createIndex indexName="FK1_PRET" tableName="PRET"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-45">
+        <createIndex indexName="FK1_REMISE_EXPORT" tableName="REMISE_EXPORT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-46">
+        <createIndex indexName="FK1_REMISE_IMPORT" tableName="REMISE_IMPORT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-47">
+        <createIndex indexName="FK1_RETRO_ANNUL" tableName="RETRO_ANNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-48">
+        <createIndex indexName="FK1_RIB" tableName="RIB"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-49">
+        <createIndex indexName="FK1_SITU_PRET" tableName="SITU_PRET"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-50">
+        <createIndex indexName="FK1_SOCIETE" tableName="PERS_SOCIETE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-51">
+        <createIndex indexName="FK1_TEXTE_EXCLUSION" tableName="TEXTE_EXCLUSION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-52">
+        <createIndex indexName="FK1_VALIDE_TEXTE" tableName="VALIDE_TEXTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-53">
+        <createIndex indexName="FK2_ADHE_COLL_GAR" tableName="ADHE_COLL_GAR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-54">
+        <createIndex indexName="FK2_ADHE_PRET" tableName="ADHE_PRET"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-55">
+        <createIndex indexName="FK2_BENEFICIAIRE" tableName="BENEFICIAIRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-56">
+        <createIndex indexName="FK2_CNTRT_TRAIT" tableName="CNTRT_TRAIT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-57">
+        <createIndex indexName="FK2_DEMANDE_TP_AD" tableName="DEMANDE_TP_AD"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-58">
+        <createIndex indexName="FK2_EMPRUNTEUR" tableName="EMPRUNTEUR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-59">
+        <createIndex indexName="FK2_HISTO_ANNUL" tableName="HISTO_ANNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-60">
+        <createIndex indexName="FK2_PERS_BANQUE" tableName="PERS_BANQUE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-61">
+        <createIndex indexName="HISTO_MANDAT_PK" tableName="HISTO_MANDAT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-62">
+        <createIndex indexName="HISTO_MANDAT_RIB_FK" tableName="HISTO_MANDAT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-63">
+        <createIndex indexName="HISTO_QUERABLE_PK" tableName="HISTO_QUERABLE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-64">
+        <createIndex indexName="IDX$$_3788D0001" tableName="HISTO_DOSSIER"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-65">
+        <createIndex indexName="IDX$$_3788E0001" tableName="HISTO_DOSSIER"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-66">
+        <createIndex indexName="IDX10_SINISTRE" tableName="SINISTRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-67">
+        <createIndex indexName="IDX10_SNTR_ANNUL" tableName="SINISTRE_ANNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-68">
+        <createIndex indexName="IDX1_ADHESION" tableName="ADHESION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-69">
+        <createIndex indexName="IDX1_ADHE_CNTRT" tableName="ADHE_CNTRT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-70">
+        <createIndex indexName="IDX1_ADHE_CNTRT_MEMBRE" tableName="ADHE_CNTRT_MEMBRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-71">
+        <createIndex indexName="IDX1_ADHE_COLLECTIVE" tableName="ADHE_COLLECTIVE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-72">
+        <createIndex indexName="IDX1_ADR_INTERNATIONALE" tableName="ADR_INTERNATIONALE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-73">
+        <createIndex indexName="IDX1_AFFECTATION" tableName="AFFECTATION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-74">
+        <createIndex indexName="IDX1_AFFECTATION_ANNUL" tableName="AFFECTATION_ANNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-75">
+        <createIndex indexName="IDX1_AFFIL_TRACE" tableName="AFFIL_TRACE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-76">
+        <createIndex indexName="IDX1_APPLI" tableName="APPLICATIONS"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-77">
+        <createIndex indexName="IDX1_APPORTEUR" tableName="APPORTEUR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-78">
+        <createIndex indexName="IDX1_ARRET" tableName="ARRET"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-79">
+        <createIndex indexName="IDX1_AVNT_CNTRT_GART" tableName="AVNT_CNTRT_GART"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-80">
+        <createIndex indexName="IDX1_CALCUL" tableName="CALCUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-81">
+        <createIndex indexName="IDX1_CHANGE" tableName="CHANGE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-82">
+        <createIndex indexName="IDX1_CLE_EXTERNE" tableName="CLE_EXTERNE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-83">
+        <createIndex indexName="IDX1_CLE_INTERNE" tableName="CLE_INTERNE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-84">
+        <createIndex indexName="IDX1_CLIENT" tableName="CLIENT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-85">
+        <createIndex indexName="IDX1_CLIENT_MODELE" tableName="CLIENT_MODELE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-86">
+        <createIndex indexName="IDX1_CLIENT_OBJECTS" tableName="CLIENT_OBJECTS"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-87">
+        <createIndex indexName="IDX1_COMM_FONCTION" tableName="COMM_FONCTION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-88">
+        <createIndex indexName="IDX1_COMPTA" tableName="COMPTA"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-89">
+        <createIndex indexName="IDX1_COMPTE" tableName="COMPTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-90">
+        <createIndex indexName="IDX1_COMPTE_TIERS" tableName="COMPTE_TIERS"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-91">
+        <createIndex indexName="IDX1_CONTACT" tableName="CONTACT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-92">
+        <createIndex indexName="IDX1_CONTRAT_REF" tableName="CONTRAT_REF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-93">
+        <createIndex indexName="IDX1_COURRIER" tableName="COURRIER"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-94">
+        <createIndex indexName="IDX1_COURRIER_INFO" tableName="COURRIER_INFO"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-95">
+        <createIndex indexName="IDX1_CPTCLI" tableName="COMPTE_CLIENT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-96">
+        <createIndex indexName="IDX1_CRNC" tableName="CARENCE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-97">
+        <createIndex indexName="IDX1_DECAISMT" tableName="DECAISMT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-98">
+        <createIndex indexName="IDX1_DECLA_DETAIL1" tableName="DECLA_DETAIL1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-99">
+        <createIndex indexName="IDX1_DECLA_DETAIL2" tableName="DECLA_DETAIL2"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-100">
+        <createIndex indexName="IDX1_DECLA_SYNTHESE" tableName="DECLA_SYNTHESE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-101">
+        <createIndex indexName="IDX1_DECOMPTE" tableName="DECOMPTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-102">
+        <createIndex indexName="IDX1_DECOMPTE_ANNUL" tableName="DECOMPTE_ANNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-103">
+        <createIndex indexName="IDX1_DECOMPTE_PREV" tableName="DECOMPTE_PREV"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-104">
+        <createIndex indexName="IDX1_DEMANDE_TIERS_PAYANT" tableName="DEMANDE_TIERS_PAYANT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-105">
+        <createIndex indexName="IDX1_DEPENDANCE" tableName="DEPENDANCE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-106">
+        <createIndex indexName="IDX1_DETTE" tableName="DETTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-107">
+        <createIndex indexName="IDX1_DFRB" tableName="DEFRUB"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-108">
+        <createIndex indexName="IDX1_DOSSIER_PREV" tableName="DOSSIER_SINISTRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-109">
+        <createIndex indexName="IDX1_DOSSIER_SANTE" tableName="DOSSIER_SANTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-110">
+        <createIndex indexName="IDX1_EMISSION" tableName="EMISSION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-111">
+        <createIndex indexName="IDX1_ENCAISMT" tableName="ENCAISMT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-112">
+        <createIndex indexName="IDX1_ENVOI" tableName="ENVOI"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-113">
+        <createIndex indexName="IDX1_FACTURE" tableName="FACTURE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-114">
+        <createIndex indexName="IDX1_FACTURE_ANNUL" tableName="FACTURE_ANNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-115">
+        <createIndex indexName="IDX1_FACTURE_REGUL" tableName="FACTURE_REGUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-116">
+        <createIndex indexName="IDX1_FILE_BATCH" tableName="FILE_BATCH"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-117">
+        <createIndex indexName="IDX1_FILE_EDITION" tableName="FILE_EDITION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-118">
+        <createIndex indexName="IDX1_FORCAGE" tableName="FORCAGE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-119">
+        <createIndex indexName="IDX1_FOR_VARIABLE" tableName="FOR_VARIABLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-120">
+        <createIndex indexName="IDX1_FRANACT" tableName="FRANACT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-121">
+        <createIndex indexName="IDX1_FRMLS" tableName="FORMULE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-122">
+        <createIndex indexName="IDX1_FRMLVAR_DETAIL" tableName="FRMLVAR_DETAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-123">
+        <createIndex indexName="IDX1_FRML_PRIME" tableName="FRML_PRIME_SIMPLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-124">
+        <createIndex indexName="IDX1_FRML_TFC" tableName="FRML_TFC"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-125">
+        <createIndex indexName="IDX1_GARANTIES" tableName="GARANTIES"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-126">
+        <createIndex indexName="IDX1_GAR_CNTRT_REF" tableName="GAR_CNTRT_REF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-127">
+        <createIndex indexName="IDX1_GRP_GAR" tableName="GRP_GAR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-128">
+        <createIndex indexName="IDX1_GRP_GAR_DEF" tableName="GRP_GAR_DEF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-129">
+        <createIndex indexName="IDX1_HISTO_ADHESION" tableName="HISTO_ADHESION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-130">
+        <createIndex indexName="IDX1_HISTO_CALCUL" tableName="HISTO_CALCUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-131">
+        <createIndex indexName="IDX1_HISTO_CPAYEUR" tableName="HISTO_CENTREPAYEUR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-132">
+        <createIndex indexName="IDX1_HISTO_DEDU" tableName="HISTO_DEDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-133">
+        <createIndex indexName="IDX1_HISTO_DEST" tableName="HISTO_DEST"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-134">
+        <createIndex indexName="IDX1_HISTO_DOSSIER" tableName="HISTO_DOSSIER"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-135">
+        <createIndex indexName="IDX1_HISTO_EXPORT" tableName="HISTO_EXPORT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-136">
+        <createIndex indexName="IDX1_HISTO_FRMLVAR" tableName="HISTO_FRMLVAR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-137">
+        <createIndex indexName="IDX1_HISTO_IMPORT" tableName="HISTO_IMPORT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-138">
+        <createIndex indexName="IDX1_HISTO_JOURS" tableName="HISTO_JOURS"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-139">
+        <createIndex indexName="IDX1_HISTO_MANDAT" tableName="HISTO_MANDAT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-140">
+        <createIndex indexName="IDX1_HISTO_QUERABLE" tableName="HISTO_QUERABLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-141">
+        <createIndex indexName="IDX1_HISTO_REGUL" tableName="HISTO_REGUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-142">
+        <createIndex indexName="IDX1_HISTO_RIB" tableName="HISTO_RIB"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-143">
+        <createIndex indexName="IDX1_HISTO_RIB_ADHE" tableName="HISTO_RIB_ADHE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-144">
+        <createIndex indexName="IDX1_HISTO_TRANSFERT" tableName="HISTO_TRANSFERT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-145">
+        <createIndex indexName="IDX1_IDAFFEC_ATTENTE" tableName="IDAFFEC_ATTENTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-146">
+        <createIndex indexName="IDX1_IDAFFEC_REGUL" tableName="IDAFFEC_REGUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-147">
+        <createIndex indexName="IDX1_INDICE" tableName="INDICE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-148">
+        <createIndex indexName="IDX1_INDIVIDU" tableName="INDIVIDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-149">
+        <createIndex indexName="IDX1_INTERLOCUTEUR" tableName="INTERLOCUTEUR" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-150">
+        <createIndex indexName="IDX1_LBLE" tableName="LIBELLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-151">
+        <createIndex indexName="IDX1_LBLE_EXT" tableName="LBLE_EXT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-152">
+        <createIndex indexName="IDX1_LIBELLE_BIS" tableName="LIBELLE_BIS"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-153">
+        <createIndex indexName="IDX1_LIBGAR" tableName="LIBGAR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-154">
+        <createIndex indexName="IDX1_LIB_ECRITURE" tableName="LIB_ECRITURE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-155">
+        <createIndex indexName="IDX1_LIB_EDITION" tableName="LIB_EDITION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-156">
+        <createIndex indexName="IDX1_LIB_TABLEAU" tableName="LIB_TABLEAU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-157">
+        <createIndex indexName="IDX1_LIVRE_APPLI" tableName="LIVRE_APPLI"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-158">
+        <createIndex indexName="IDX1_MAXACT" tableName="MAXACT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-159">
+        <createIndex indexName="IDX1_NOEMIE" tableName="NOEMIE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-160">
+        <createIndex indexName="IDX1_PAPIER_OPE" tableName="PAPIER_OPE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-161">
+        <createIndex indexName="IDX1_PARAM_TEXTE" tableName="PARAM_TEXTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-162">
+        <createIndex indexName="IDX1_PARPORTE" tableName="PARPORTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-163">
+        <createIndex indexName="IDX1_PERS_ADRESSE" tableName="PERS_ADRESSE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-164">
+        <createIndex indexName="IDX1_PERS_BANQUE" tableName="PERS_BANQUE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-165">
+        <createIndex indexName="IDX1_PERS_HISTO_PHYS" tableName="PERS_HISTO_PHYS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-166">
+        <createIndex indexName="IDX1_PERS_ORGANISME" tableName="PERS_ORGANISME"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-167">
+        <createIndex indexName="IDX1_PERS_TIERSPAYANT" tableName="PERS_TIERSPAYANT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-168">
+        <createIndex indexName="IDX1_PIECES" tableName="PIECES"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-169">
+        <createIndex indexName="IDX1_PNUL" tableName="PNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-170">
+        <createIndex indexName="IDX1_PORTE_ADHESION" tableName="PORTE_ADHESION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-171">
+        <createIndex indexName="IDX1_PORTE_NATFRAIS" tableName="PORTE_NATFRAIS"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-172">
+        <createIndex indexName="IDX1_PORTE_TIERS" tableName="PORTE_TIERS"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-173">
+        <createIndex indexName="IDX1_PRELEVEMENT" tableName="PRELEVEMENT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-174">
+        <createIndex indexName="IDX1_PRELEVEMENT_DETAIL" tableName="PRELEVEMENT_DETAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-175">
+        <createIndex indexName="IDX1_PROFIL" tableName="PROFIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-176">
+        <createIndex indexName="IDX1_PROPOSITION" tableName="PROPOSITION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-177">
+        <createIndex indexName="IDX1_QTTC_AFFEC" tableName="QTTC_AFFEC"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-178">
+        <createIndex indexName="IDX1_QTTC_AFFEC_TFC" tableName="QTTC_AFFEC_TFC"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-179">
+        <createIndex indexName="IDX1_QTTC_ANNUELLE" tableName="QTTC_ANNUELLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-180">
+        <createIndex indexName="IDX1_QTTC_ANO" tableName="QTTC_ANO"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-181">
+        <createIndex indexName="IDX1_QTTC_COMM" tableName="QTTC_COMM"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-182">
+        <createIndex indexName="IDX1_QTTC_FRAIS" tableName="QTTC_FRAIS"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-183">
+        <createIndex indexName="IDX1_QTTC_GAR" tableName="QTTC_GAR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-184">
+        <createIndex indexName="IDX1_QTTC_GLOBAL" tableName="QTTC_GLOBAL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-185">
+        <createIndex indexName="IDX1_QTTC_TAXE" tableName="QTTC_TAXE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-186">
+        <createIndex indexName="IDX1_QTTC_VARIABLE" tableName="QTTC_VARIABLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-187">
+        <createIndex indexName="IDX1_RBTCPTCLI" tableName="RBTCPTCLI"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-188">
+        <createIndex indexName="IDX1_RECOURS_DETAIL" tableName="RECOURS_DETAILS"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-189">
+        <createIndex indexName="IDX1_RECOURS_FACTURE" tableName="RECOURS_FACTURE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-190">
+        <createIndex indexName="IDX1_REJET_NOEMIE" tableName="REJET_NOEMIE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-191">
+        <createIndex indexName="IDX1_REMISE" tableName="REMISE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-192">
+        <createIndex indexName="IDX1_REMISE_BANQUE" tableName="REMISE_BANQUE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-193">
+        <createIndex indexName="IDX1_REMISE_COMPTA" tableName="REMISE_COMPTA"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-194">
+        <createIndex indexName="IDX1_REMISE_EC" tableName="REMISE_EC"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-195">
+        <createIndex indexName="IDX1_REMISE_EXTERNE" tableName="REMISE_EXTERNE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-196">
+        <createIndex indexName="IDX1_REMISE_GLOBALE" tableName="REMISE_GLOBALE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-197">
+        <createIndex indexName="IDX1_REMISE_OP_DETAIL" tableName="REMISE_OP_DETAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-198">
+        <createIndex indexName="IDX1_REMISE_VIRE_DETAIL" tableName="REMISE_VIRE_DETAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-199">
+        <createIndex indexName="IDX1_REPARTITION" tableName="REPARTITION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-200">
+        <createIndex indexName="IDX1_RESULT_REASS_DETAIL" tableName="RESULT_REASS_DETAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-201">
+        <createIndex indexName="IDX1_RETROCESSION" tableName="RETROCESSION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-202">
+        <createIndex indexName="IDX1_REVERSEMENT" tableName="REVERSEMENT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-203">
+        <createIndex indexName="IDX1_REVERS_TAXE" tableName="REVERS_TAXE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-204">
+        <createIndex indexName="IDX1_RIB" tableName="RIB"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-205">
+        <createIndex indexName="IDX1_SEQRUB" tableName="SEQRUB"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-206">
+        <createIndex indexName="IDX1_SINISTRE" tableName="SINISTRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-207">
+        <createIndex indexName="IDX1_SINISTRE_ANO" tableName="SINISTRE_ANO"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-208">
+        <createIndex indexName="IDX1_SINISTRE_PORTE" tableName="SINISTRE_PORTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-209">
+        <createIndex indexName="IDX1_SNTR_ANNUL" tableName="SINISTRE_ANNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-210">
+        <createIndex indexName="IDX1_SNTR_REF" tableName="SNTR_REF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-211">
+        <createIndex indexName="IDX1_STATS_FAM" tableName="STATS_FAM"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-212">
+        <createIndex indexName="IDX1_STOCK_ENTITE" tableName="STOCK_ENTITE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-213">
+        <createIndex indexName="IDX1_STOCK_ENTITE_P" tableName="STOCK_ENTITE_P"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-214">
+        <createIndex indexName="IDX1_SUIVI_FACT_TPE" tableName="SUIVI_FACT_TPE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-215">
+        <createIndex indexName="IDX1_TEXTE" tableName="TEXTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-216">
+        <createIndex indexName="IDX1_TIERS" tableName="PERS_TIERS"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-217">
+        <createIndex indexName="IDX1_TO_SEPA" tableName="TO_SEPA"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-218">
+        <createIndex indexName="IDX1_TRAVSN" tableName="TRAVSN"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-219">
+        <createIndex indexName="IDX1_TRAV_AD01" tableName="TRAV_AD01"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-220">
+        <createIndex indexName="IDX1_TRAV_COMPTA" tableName="TRAV_COMPTA"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-221">
+        <createIndex indexName="IDX1_TRAV_PLAFOND" tableName="TRAV_PLAFOND"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-222">
+        <createIndex indexName="IDX1_TRAV_PRELEVEMENT" tableName="TRAV_PRELEVEMENT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-223">
+        <createIndex indexName="IDX1_TRFS" tableName="TARIF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-224">
+        <createIndex indexName="IDX1_TYPE_INFO" tableName="TYPE_INFO"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-225">
+        <createIndex indexName="IDX1_TYPE_OPE" tableName="TYPE_OPE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-226">
+        <createIndex indexName="IDX1_TYP_BATCH" tableName="TYP_BATCH"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-227">
+        <createIndex indexName="IDX1_TYP_EDITION" tableName="TYP_EDITION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-228">
+        <createIndex indexName="IDX1_TYP_IMPRIM" tableName="TYP_IMPRIM"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-229">
+        <createIndex indexName="IDX1_TYP_PAPIER" tableName="TYP_PAPIER"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-230">
+        <createIndex indexName="IDX1_VALID_OPE" tableName="VALID_OPE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-231">
+        <createIndex indexName="IDX1_VAL_VARIABLE" tableName="VAL_VARIABLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-232">
+        <createIndex indexName="IDX2_ADHESION" tableName="ADHESION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-233">
+        <createIndex indexName="IDX2_ADHE_CNTRT" tableName="ADHE_CNTRT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-234">
+        <createIndex indexName="IDX2_ADHE_CNTRT_MEMBRE" tableName="ADHE_CNTRT_MEMBRE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-235">
+        <createIndex indexName="IDX2_ADHE_COLLECTIVE" tableName="ADHE_COLLECTIVE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-236">
+        <createIndex indexName="IDX2_AFFECTATION" tableName="AFFECTATION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-237">
+        <createIndex indexName="IDX2_AFFECTATION_ANNUL" tableName="AFFECTATION_ANNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-238">
+        <createIndex indexName="IDX2_AFFIL_FICHIER" tableName="AFFIL_FICHIER"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-239">
+        <createIndex indexName="IDX2_APPLI" tableName="APPLICATIONS"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-240">
+        <createIndex indexName="IDX2_APPORTEUR" tableName="APPORTEUR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-241">
+        <createIndex indexName="IDX2_AVENANT" tableName="AVENANT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-242">
+        <createIndex indexName="IDX2_AVNT_CNTRT_GART" tableName="AVNT_CNTRT_GART"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-243">
+        <createIndex indexName="IDX2_COMPTA" tableName="COMPTA"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-244">
+        <createIndex indexName="IDX2_COMPTE" tableName="COMPTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-245">
+        <createIndex indexName="IDX2_COMPTE_TIERS" tableName="COMPTE_TIERS"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-246">
+        <createIndex indexName="IDX2_CONTACT" tableName="CONTACT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-247">
+        <createIndex indexName="IDX2_CONTRAT_REF" tableName="CONTRAT_REF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-248">
+        <createIndex indexName="IDX2_COURRIER" tableName="COURRIER"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-249">
+        <createIndex indexName="IDX2_CPTCLI" tableName="COMPTE_CLIENT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-250">
+        <createIndex indexName="IDX2_DECAISMT" tableName="DECAISMT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-251">
+        <createIndex indexName="IDX2_DECOMPTE" tableName="DECOMPTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-252">
+        <createIndex indexName="IDX2_DECOMPTE_PREV" tableName="DECOMPTE_PREV"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-253">
+        <createIndex indexName="IDX2_DEPENDANCE" tableName="DEPENDANCE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-254">
+        <createIndex indexName="IDX2_ENCAISMT" tableName="ENCAISMT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-255">
+        <createIndex indexName="IDX2_ENVOI" tableName="ENVOI"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-256">
+        <createIndex indexName="IDX2_FACTURE" tableName="FACTURE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-257">
+        <createIndex indexName="IDX2_FILE_EDITION" tableName="FILE_EDITION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-258">
+        <createIndex indexName="IDX2_FRMLS" tableName="FORMULE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-259">
+        <createIndex indexName="IDX2_FRMLVAR_DETAIL" tableName="FRMLVAR_DETAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-260">
+        <createIndex indexName="IDX2_FRML_PRIME" tableName="FRML_PRIME_SIMPLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-261">
+        <createIndex indexName="IDX2_FRML_TFC" tableName="FRML_TFC"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-262">
+        <createIndex indexName="IDX2_GAR_CNTRT_REF" tableName="GAR_CNTRT_REF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-263">
+        <createIndex indexName="IDX2_GRP_GAR" tableName="GRP_GAR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-264">
+        <createIndex indexName="IDX2_GRP_GAR_DEF" tableName="GRP_GAR_DEF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-265">
+        <createIndex indexName="IDX2_HISTO_ADHESION" tableName="HISTO_ADHESION" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-266">
+        <createIndex indexName="IDX2_HISTO_CALCUL" tableName="HISTO_CALCUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-267">
+        <createIndex indexName="IDX2_HISTO_CPAYEUR" tableName="HISTO_CENTREPAYEUR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-268">
+        <createIndex indexName="IDX2_HISTO_FRMLVAR" tableName="HISTO_FRMLVAR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-269">
+        <createIndex indexName="IDX2_HISTO_QUERABLE" tableName="HISTO_QUERABLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-270">
+        <createIndex indexName="IDX2_HISTO_RIB" tableName="HISTO_RIB"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-271">
+        <createIndex indexName="IDX2_INDIVIDU" tableName="INDIVIDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-272">
+        <createIndex indexName="IDX2_INTERLOCUTEUR" tableName="INTERLOCUTEUR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-273">
+        <createIndex indexName="IDX2_PERS_ADRESSE" tableName="PERS_ADRESSE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-274">
+        <createIndex indexName="IDX2_PERS_BANQUE" tableName="PERS_BANQUE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-275">
+        <createIndex indexName="IDX2_PIECES" tableName="PIECES"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-276">
+        <createIndex indexName="IDX2_PNUL" tableName="PNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-277">
+        <createIndex indexName="IDX2_PORTE_ADHESION" tableName="PORTE_ADHESION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-278">
+        <createIndex indexName="IDX2_PORTE_NATFRAIS" tableName="PORTE_NATFRAIS"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-279">
+        <createIndex indexName="IDX2_PRELEVEMENT" tableName="PRELEVEMENT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-280">
+        <createIndex indexName="IDX2_PRELEVEMENT_DETAIL" tableName="PRELEVEMENT_DETAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-281">
+        <createIndex indexName="IDX2_PRET" tableName="PRET"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-282">
+        <createIndex indexName="IDX2_PROFIL" tableName="PROFIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-283">
+        <createIndex indexName="IDX2_QTTC_AFFEC" tableName="QTTC_AFFEC"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-284">
+        <createIndex indexName="IDX2_QTTC_AFFEC_TFC" tableName="QTTC_AFFEC_TFC"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-285">
+        <createIndex indexName="IDX2_QTTC_GAR" tableName="QTTC_GAR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-286">
+        <createIndex indexName="IDX2_QTTC_GLOBAL" tableName="QTTC_GLOBAL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-287">
+        <createIndex indexName="IDX2_REJET_NOEMIE" tableName="REJET_NOEMIE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-288">
+        <createIndex indexName="IDX2_REMISE_OP_DETAIL" tableName="REMISE_OP_DETAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-289">
+        <createIndex indexName="IDX2_REMISE_VIRE_DETAIL" tableName="REMISE_VIRE_DETAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-290">
+        <createIndex indexName="IDX2_RESULT_REASS_DETAIL" tableName="RESULT_REASS_DETAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-291">
+        <createIndex indexName="IDX2_REVERSEMENT" tableName="REVERSEMENT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-292">
+        <createIndex indexName="IDX2_RIB" tableName="RIB"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-293">
+        <createIndex indexName="IDX2_SINISTRE" tableName="SINISTRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-294">
+        <createIndex indexName="IDX2_SINISTRE_PORTE" tableName="SINISTRE_PORTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-295">
+        <createIndex indexName="IDX2_SNTR_REF" tableName="SNTR_REF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-296">
+        <createIndex indexName="IDX2_STOCK_ENTITE" tableName="STOCK_ENTITE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-297">
+        <createIndex indexName="IDX2_STOCK_ENTITE_P" tableName="STOCK_ENTITE_P"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-298">
+        <createIndex indexName="IDX2_SUIVI_FACT_TPE" tableName="SUIVI_FACT_TPE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-299">
+        <createIndex indexName="IDX2_TRAV_PRELEVEMENT" tableName="TRAV_PRELEVEMENT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-300">
+        <createIndex indexName="IDX2_TYP_EDITION" tableName="TYP_EDITION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-301">
+        <createIndex indexName="IDX2_TYP_IMPRIM" tableName="TYP_IMPRIM"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-302">
+        <createIndex indexName="IDX2_TYP_PAPIER" tableName="TYP_PAPIER"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-303">
+        <createIndex indexName="IDX2_VAL_VARIABLE" tableName="VAL_VARIABLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-304">
+        <createIndex indexName="IDX3_ADHESION" tableName="ADHESION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-305">
+        <createIndex indexName="IDX3_AFFECTATION" tableName="AFFECTATION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-306">
+        <createIndex indexName="IDX3_COMPTE_TIERS" tableName="COMPTE_TIERS"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-307">
+        <createIndex indexName="IDX3_CONTRAT_REF" tableName="CONTRAT_REF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-308">
+        <createIndex indexName="IDX3_COURRIER" tableName="COURRIER"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-309">
+        <createIndex indexName="IDX3_CPTCLI" tableName="COMPTE_CLIENT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-310">
+        <createIndex indexName="IDX3_DECAISMT" tableName="DECAISMT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-311">
+        <createIndex indexName="IDX3_DECOMPTE" tableName="DECOMPTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-312">
+        <createIndex indexName="IDX3_ENCAISMT" tableName="ENCAISMT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-313">
+        <createIndex indexName="IDX3_ENVOI" tableName="ENVOI"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-314">
+        <createIndex indexName="IDX3_FACTURE" tableName="FACTURE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-315">
+        <createIndex indexName="IDX3_FILE_EDITION" tableName="FILE_EDITION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-316">
+        <createIndex indexName="IDX3_FORMULE" tableName="FORMULE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-317">
+        <createIndex indexName="IDX3_INDIVIDU" tableName="INDIVIDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-318">
+        <createIndex indexName="IDX3_PERS_ADRESSE" tableName="PERS_ADRESSE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-319">
+        <createIndex indexName="IDX3_PIECES" tableName="PIECES"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-320">
+        <createIndex indexName="IDX3_PNUL" tableName="PNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-321">
+        <createIndex indexName="IDX3_PORTE_ADHESION" tableName="PORTE_ADHESION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-322">
+        <createIndex indexName="IDX3_PRELEVEMENT" tableName="PRELEVEMENT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-323">
+        <createIndex indexName="IDX3_QTTC_AFFEC" tableName="QTTC_AFFEC"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-324">
+        <createIndex indexName="IDX3_QTTC_AFFEC_TFC" tableName="QTTC_AFFEC_TFC"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-325">
+        <createIndex indexName="IDX3_QTTC_GLOBAL" tableName="QTTC_GLOBAL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-326">
+        <createIndex indexName="IDX3_QTTC_VARIABLE" tableName="QTTC_VARIABLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-327">
+        <createIndex indexName="IDX3_REMISE_VIRE_DETAIL" tableName="REMISE_VIRE_DETAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-328">
+        <createIndex indexName="IDX3_RIB" tableName="RIB"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-329">
+        <createIndex indexName="IDX3_SINISTRE" tableName="SINISTRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-330">
+        <createIndex indexName="IDX3_SINISTRE_PORTE" tableName="SINISTRE_PORTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-331">
+        <createIndex indexName="IDX3_STOCK_ENTITE" tableName="STOCK_ENTITE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-332">
+        <createIndex indexName="IDX3_STOCK_ENTITE_P" tableName="STOCK_ENTITE_P"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-333">
+        <createIndex indexName="IDX3_SUIVI_FACT_TPE" tableName="SUIVI_FACT_TPE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-334">
+        <createIndex indexName="IDX3_TRAV_PRELEVEMENT" tableName="TRAV_PRELEVEMENT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-335">
+        <createIndex indexName="IDX3_VAL_VARIABLE" tableName="VAL_VARIABLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-336">
+        <createIndex indexName="IDX4_ADHESION" tableName="ADHESION" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-337">
+        <createIndex indexName="IDX4_AFFECTATION" tableName="AFFECTATION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-338">
+        <createIndex indexName="IDX4_CONTRAT_REF" tableName="CONTRAT_REF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-339">
+        <createIndex indexName="IDX4_CPTCLI" tableName="COMPTE_CLIENT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-340">
+        <createIndex indexName="IDX4_DECAISMT" tableName="DECAISMT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-341">
+        <createIndex indexName="IDX4_DECOMPTE" tableName="DECOMPTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-342">
+        <createIndex indexName="IDX4_EMISSION" tableName="EMISSION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-343">
+        <createIndex indexName="IDX4_ENCAISMT" tableName="ENCAISMT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-344">
+        <createIndex indexName="IDX4_INDIVIDU" tableName="INDIVIDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-345">
+        <createIndex indexName="IDX4_PNUL" tableName="PNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-346">
+        <createIndex indexName="IDX4_PORTE_ADHESION" tableName="PORTE_ADHESION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-347">
+        <createIndex indexName="IDX4_PRELEVEMENT" tableName="PRELEVEMENT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-348">
+        <createIndex indexName="IDX4_QTTC_GLOBAL" tableName="QTTC_GLOBAL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-349">
+        <createIndex indexName="IDX4_REMISE_VIRE_DETAIL" tableName="REMISE_VIRE_DETAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-350">
+        <createIndex indexName="IDX4_SINISTRE" tableName="SINISTRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-351">
+        <createIndex indexName="IDX4_SINISTRE_PORTE" tableName="SINISTRE_PORTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-352">
+        <createIndex indexName="IDX4_SUIVI_FACT_TPE" tableName="SUIVI_FACT_TPE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-353">
+        <createIndex indexName="IDX5_AFFECTATION" tableName="AFFECTATION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-354">
+        <createIndex indexName="IDX5_CONTRAT_REF" tableName="CONTRAT_REF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-355">
+        <createIndex indexName="IDX5_CPTCLI" tableName="COMPTE_CLIENT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-356">
+        <createIndex indexName="IDX5_DECAISMT" tableName="DECAISMT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-357">
+        <createIndex indexName="IDX5_DECOMPTE" tableName="DECOMPTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-358">
+        <createIndex indexName="IDX5_PNUL" tableName="PNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-359">
+        <createIndex indexName="IDX5_QTTC_GLOBAL" tableName="QTTC_GLOBAL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-360">
+        <createIndex indexName="IDX5_SINISTRE" tableName="SINISTRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-361">
+        <createIndex indexName="IDX5_SINISTRE_PORTE" tableName="SINISTRE_PORTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-362">
+        <createIndex indexName="IDX5_SUIVI_FACT_TPE" tableName="SUIVI_FACT_TPE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-363">
+        <createIndex indexName="IDX6_AFFECTATION" tableName="AFFECTATION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-364">
+        <createIndex indexName="IDX6_CONTRAT_REF" tableName="CONTRAT_REF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-365">
+        <createIndex indexName="IDX6_DECAISMT" tableName="DECAISMT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-366">
+        <createIndex indexName="IDX6_SINISTRE" tableName="SINISTRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-367">
+        <createIndex indexName="IDX6_SINISTRE_PORTE" tableName="SINISTRE_PORTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-368">
+        <createIndex indexName="IDX7_CONTRAT_REF" tableName="CONTRAT_REF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-369">
+        <createIndex indexName="IDX7_SINISTRE" tableName="SINISTRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-370">
+        <createIndex indexName="IDX8_SINISTRE" tableName="SINISTRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-371">
+        <createIndex indexName="IDX8_SNTR" tableName="SINISTRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-372">
+        <createIndex indexName="IDX8_SNTR_ANNUL" tableName="SINISTRE_ANNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-373">
+        <createIndex indexName="IDX9_SNTR_ANNUL" tableName="SINISTRE_ANNUL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-374">
+        <createIndex indexName="IDX_AFFIL_FICHIER" tableName="AFFIL_FICHIER"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-375">
+        <createIndex indexName="IDX_AFFIL_PORTE" tableName="AFFIL_PORTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-376">
+        <createIndex indexName="IDX_AFFIL_PORTE_FORCAGE" tableName="AFFIL_PORTE_FORCAGE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-377">
+        <createIndex indexName="IDX_COMPTA_IDCPTACENT" tableName="COMPTA"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-378">
+        <createIndex indexName="IDX_COMPTA_REFPIECE" tableName="COMPTA"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-379">
+        <createIndex indexName="IDX_COMPTA_REFPIECECENT" tableName="COMPTA"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-380">
+        <createIndex indexName="IDX_DSN_FICHE_TARIF" tableName="DSN_FICHE_TARIF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-381">
+        <createIndex indexName="IDX_ENVOI_MAIL" tableName="ENVOI_MAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-382">
+        <createIndex indexName="IDX_FK_DSN_CRM_CONTEXTE" tableName="DSN_CRM_CONTEXTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-383">
+        <createIndex indexName="IDX_FLUX" tableName="FLUX"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-384">
+        <createIndex indexName="IDX_JOURNAL_ADM" tableName="JOURNAL_ADM"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-385">
+        <createIndex indexName="IDX_JOURNAL_ADM_IDSESSION" tableName="JOURNAL_ADM"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-386">
+        <createIndex indexName="IDX_LIEN_GED" tableName="LIEN_GED"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-387">
+        <createIndex indexName="IDX_QTTC" tableName="AFFIL_PORTE_QTTC"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-388">
+        <createIndex indexName="IDX_QTTC2" tableName="AFFIL_PORTE_QTTC"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-389">
+        <createIndex indexName="IDX_QTTC_ELT" tableName="AFFIL_PORTE_QTTC_ELT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-390">
+        <createIndex indexName="IDX_QTTC_INDIV" tableName="AFFIL_PORTE_QTTC_INDIV"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-391">
+        <createIndex indexName="IDX_RAPPEL1" tableName="RAPPEL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-392">
+        <createIndex indexName="IDX_RAPPEL2" tableName="RAPPEL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-393">
+        <createIndex indexName="IDX_RAPPEL3" tableName="RAPPEL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-394">
+        <createIndex indexName="IDX_RAPPEL_SOUSC" tableName="RAPPEL_SOUSCRIPT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-395">
+        <createIndex indexName="IDX_REL_COMPTE_ECR" tableName="RELEVE_COMPTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-396">
+        <createIndex indexName="IDX_REM_OP_DETAIL_NUMDECAISMT" tableName="REMISE_OP_DETAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-397">
+        <createIndex indexName="IDX_SINISTRE_VERRE" tableName="SINISTRE_VERRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-398">
+        <createIndex indexName="IDX_SNTR_DEV_NUMDEC" tableName="SINISTRE_DEV"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-399">
+        <createIndex indexName="IDX_SNTR_DOSS_NUMSIN" tableName="SNTR_DOSSIER" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-400">
+        <createIndex indexName="IDX_SNTR_SANTE_NUMBORD" tableName="SINISTRE_SANTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-401">
+        <createIndex indexName="IDX_SNTR_SANTE_NUMFACT" tableName="SINISTRE_SANTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-402">
+        <createIndex indexName="IDX_VALIDE_TEXTE" tableName="VALIDE_TEXTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-403">
+        <createIndex indexName="IDX_VIR_FICHIER" tableName="VIR_FICHIER"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-404">
+        <createIndex indexName="IDX_VIR_PORTE" tableName="VIR_PORTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-405">
+        <createIndex indexName="IDX_XML_04_06" tableName="XML_04_06"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-406">
+        <createIndex indexName="INDX_LIVRE_LIBELLE" tableName="LIVRE_LIBELLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-407">
+        <createIndex indexName="IX_DEF_VARIABLE_QUALEA_1" tableName="DEF_VARIABLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-408">
+        <createIndex indexName="IX_GAR_CNTRT_REF_QUALEA_1" tableName="GAR_CNTRT_REF"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-409">
+        <createIndex indexName="IX_QTTC_AFFEC_QUALEA_1" tableName="QTTC_AFFEC"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-410">
+        <createIndex indexName="IX_QTTC_GAR_QUALEA_1" tableName="QTTC_GAR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-411">
+        <createIndex indexName="IX_QTTC_VARIABLE_QUALEA_1" tableName="QTTC_VARIABLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-412">
+        <createIndex indexName="NTFRS_PLV_PK" tableName="NTFRS_PLV" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-413">
+        <createIndex indexName="PK_ACCORD_FOND" tableName="ACCORD_FOND" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-414">
+        <createIndex indexName="PK_ACTE_DATES" tableName="PARAM_ACTES_PDS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-415">
+        <createIndex indexName="PK_ACTE_LIB" tableName="ACTE_LIB" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-416">
+        <createIndex indexName="PK_ACTE_TP" tableName="ACTE_TP" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-417">
+        <createIndex indexName="PK_ACTIVITE" tableName="ACTIVITE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-418">
+        <createIndex indexName="PK_ADHE_CNTRT" tableName="ADHE_CNTRT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-419">
+        <createIndex indexName="PK_ADHE_CNTRT_MEMBRE" tableName="ADHE_CNTRT_MEMBRE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-420">
+        <createIndex indexName="PK_ADHE_COLLECTIVE" tableName="ADHE_COLLECTIVE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-421">
+        <createIndex indexName="PK_ADHE_COLL_GAR" tableName="ADHE_COLL_GAR" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-422">
+        <createIndex indexName="PK_ADR_INTERNATIONALE" tableName="ADR_INTERNATIONALE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-423">
+        <createIndex indexName="PK_AFFECTATION" tableName="AFFECTATION" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-424">
+        <createIndex indexName="PK_AFFECTATION_ANNUL" tableName="AFFECTATION_ANNUL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-425">
+        <createIndex indexName="PK_AFFIL_PORTE" tableName="AFFIL_PORTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-426">
+        <createIndex indexName="PK_AFFIL_PORTE_ADH" tableName="AFFIL_PORTE_ADH" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-427">
+        <createIndex indexName="PK_AFFIL_PORTE_AYD" tableName="AFFIL_PORTE_AYD" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-428">
+        <createIndex indexName="PK_AFFIL_PORTE_CNTRT" tableName="AFFIL_PORTE_CNTRT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-429">
+        <createIndex indexName="PK_AFFIL_PORTE_PAIEMENT" tableName="AFFIL_PORTE_PAIEMENT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-430">
+        <createIndex indexName="PK_AFFIL_PORTE_RIB" tableName="AFFIL_PORTE_RIB" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-431">
+        <createIndex indexName="PK_ANNUL_ENCAIS" tableName="ANNUL_ENCAIS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-432">
+        <createIndex indexName="PK_APPLI_CLIENT" tableName="APPLI_CLIENT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-433">
+        <createIndex indexName="PK_APPLI_CONTEXTE" tableName="APPLI_CONTEXTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-434">
+        <createIndex indexName="PK_APPLI_DESCRIPT" tableName="APPLI_DESCRIPT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-435">
+        <createIndex indexName="PK_ARRET" tableName="ARRET" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-436">
+        <createIndex indexName="PK_ASCENDANT" tableName="ASCENDANT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-437">
+        <createIndex indexName="PK_AVENANT" tableName="AVENANT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-438">
+        <createIndex indexName="PK_BENE_FISC" tableName="BENE_FISC" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-439">
+        <createIndex indexName="PK_CHEQUIER" tableName="CHEQUIER" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-440">
+        <createIndex indexName="PK_CLIENT" tableName="CLIENT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-441">
+        <createIndex indexName="PK_COD_ICD9" tableName="COD_ICD9" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-442">
+        <createIndex indexName="PK_COD_ZONE_GEO" tableName="COD_ZONE_GEO" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-443">
+        <createIndex indexName="PK_COMPENSATION" tableName="COMPENSATION" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-444">
+        <createIndex indexName="PK_COMPTA_IDPIECE" tableName="COMPTA_IDPIECE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-445">
+        <createIndex indexName="PK_COMPTA_LIB_REGLT" tableName="COMPTA_LIB_REGLT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-446">
+        <createIndex indexName="PK_COMPTA_SCHEMA" tableName="COMPTA_SCHEMA" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-447">
+        <createIndex indexName="PK_COMPTE" tableName="COMPTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-448">
+        <createIndex indexName="PK_COND_ADHESION" tableName="COND_ADHESION" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-449">
+        <createIndex indexName="PK_COND_ADHESION_GAR" tableName="COND_ADHESION_GAR" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-450">
+        <createIndex indexName="PK_COND_SOUSCRIPTION" tableName="COND_SOUSCRIPTION" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-451">
+        <createIndex indexName="PK_CONTRAT_REF" tableName="CONTRAT_REF" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-452">
+        <createIndex indexName="PK_CORRESPONDANT" tableName="CORRESPONDANT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-453">
+        <createIndex indexName="PK_COURR_DEST" tableName="COURR_DEST" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-454">
+        <createIndex indexName="PK_COURR_PREV" tableName="COURR_PREV" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-455">
+        <createIndex indexName="PK_DCPTCIE" tableName="DCPTCIE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-456">
+        <createIndex indexName="PK_DCPTDEDU" tableName="DCPTDEDU" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-457">
+        <createIndex indexName="PK_DECAISMT" tableName="DECAISMT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-458">
+        <createIndex indexName="PK_DECLA_DETAIL1" tableName="DECLA_DETAIL1" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-459">
+        <createIndex indexName="PK_DECLA_SYNTHESE" tableName="DECLA_SYNTHESE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-460">
+        <createIndex indexName="PK_DECOMPTE" tableName="DECOMPTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-461">
+        <createIndex indexName="PK_DECOMPTE_PREV" tableName="DECOMPTE_PREV" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-462">
+        <createIndex indexName="PK_DEF_ENTITE" tableName="DEF_ENTITE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-463">
+        <createIndex indexName="PK_DEF_FORMULE" tableName="DEF_FORMULE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-464">
+        <createIndex indexName="PK_DEF_GRP_LIBELLE" tableName="DEF_GRP_LIBELLE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-465">
+        <createIndex indexName="PK_DEF_PORTE" tableName="DEF_PORTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-466">
+        <createIndex indexName="PK_DEF_VARIABLE" tableName="DEF_VARIABLE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-467">
+        <createIndex indexName="PK_DEF_VAR_PORTE" tableName="DEF_VAR_PORTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-468">
+        <createIndex indexName="PK_DEMANDE_TP" tableName="DEMANDE_TP" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-469">
+        <createIndex indexName="PK_DEMANDE_TP_AD" tableName="DEMANDE_TP_AD" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-470">
+        <createIndex indexName="PK_DETAIL_ANNUL" tableName="DETAIL_ANNUL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-471">
+        <createIndex indexName="PK_DETTE" tableName="DETTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-472">
+        <createIndex indexName="PK_DETTE_PREV" tableName="DETTE_PREV" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-473">
+        <createIndex indexName="PK_DETTE_PREV_DETAIL" tableName="DETTE_PREV_DETAIL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-474">
+        <createIndex indexName="PK_DOMAINE_TP" tableName="DOMAINE_TP" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-475">
+        <createIndex indexName="PK_DOSSIER_SANTE" tableName="DOSSIER_SANTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-476">
+        <createIndex indexName="PK_DOSSIER_SINISTRE" tableName="DOSSIER_SINISTRE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-477">
+        <createIndex indexName="PK_DOS_SIN_DETENTEUR" tableName="DOS_SIN_DETENTEUR" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-478">
+        <createIndex indexName="PK_DSN_CRM" tableName="DSN_CRM" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-479">
+        <createIndex indexName="PK_DSN_CRM_RETOUR" tableName="DSN_CRM_RETOUR" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-480">
+        <createIndex indexName="PK_DSN_FICHE" tableName="DSN_FICHE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-481">
+        <createIndex indexName="PK_DSN_FICHE_CONTRAT" tableName="DSN_FICHE_CONTRAT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-482">
+        <createIndex indexName="PK_DS_CONDPART" tableName="DS_CONDPART" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-483">
+        <createIndex indexName="PK_ECART_PIECE" tableName="ECART_PIECE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-484">
+        <createIndex indexName="PK_ENCAISMT" tableName="ENCAISMT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-485">
+        <createIndex indexName="PK_EXCLUSION" tableName="EXCLUSION" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-486">
+        <createIndex indexName="PK_FACTURE" tableName="FACTURE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-487">
+        <createIndex indexName="PK_FACTURE_ANNUL" tableName="FACTURE_ANNUL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-488">
+        <createIndex indexName="PK_FILE_BATCH" tableName="FILE_BATCH" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-489">
+        <createIndex indexName="PK_FILE_EDITION" tableName="FILE_EDITION" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-490">
+        <createIndex indexName="PK_FLUX" tableName="FLUX" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-491">
+        <createIndex indexName="PK_FORMULE" tableName="FORMULE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-492">
+        <createIndex indexName="PK_FRANDOSS" tableName="FRANDOSS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-493">
+        <createIndex indexName="PK_FRMLVAR" tableName="FRMLVAR" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-494">
+        <createIndex indexName="PK_FRML_DEDU" tableName="FRML_DEDU" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-495">
+        <createIndex indexName="PK_FRML_PREST" tableName="FRML_PREST" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-496">
+        <createIndex indexName="PK_FRML_REASS" tableName="FRML_REASS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-497">
+        <createIndex indexName="PK_FRML_REVAL" tableName="FRML_REVAL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-498">
+        <createIndex indexName="PK_FRML_TFC_REASS" tableName="FRML_TFC_REASS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-499">
+        <createIndex indexName="PK_GARANTIES" tableName="GARANTIES" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-500">
+        <createIndex indexName="PK_GAR_CNTRT_REF" tableName="GAR_CNTRT_REF" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-501">
+        <createIndex indexName="PK_GAR_PARAM_DETAIL" tableName="GAR_PARAM_DETAIL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-502">
+        <createIndex indexName="PK_GAR_PARAM_TP" tableName="GAR_PARAM_TP" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-503">
+        <createIndex indexName="PK_GAR_PREV" tableName="GAR_PREV" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-504">
+        <createIndex indexName="PK_GEST_DETAIL" tableName="GEST_DETAIL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-505">
+        <createIndex indexName="PK_GEST_DETAIL_RISQ" tableName="GEST_DETAIL_RISQ" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-506">
+        <createIndex indexName="PK_HISTORIB" tableName="HISTO_RIB" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-507">
+        <createIndex indexName="PK_HISTO_CALCUL" tableName="HISTO_CALCUL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-508">
+        <createIndex indexName="PK_HISTO_DEDU" tableName="HISTO_DEDU" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-509">
+        <createIndex indexName="PK_HISTO_FLUX_WS_SC" tableName="HISTO_FLUX_WS_SC" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-510">
+        <createIndex indexName="PK_HISTO_JOURS" tableName="HISTO_JOURS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-511">
+        <createIndex indexName="PK_HISTO_PARTENARIAT" tableName="HISTO_PARTENARIAT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-512">
+        <createIndex indexName="PK_HISTO_PROPOSITION" tableName="HISTO_PROPOSITION" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-513">
+        <createIndex indexName="PK_HISTO_REVAL" tableName="HISTO_REVAL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-514">
+        <createIndex indexName="PK_HISTO_SINISTRE_SANTE" tableName="HISTO_SINISTRE_SANTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-515">
+        <createIndex indexName="PK_HISTO_SNTR_PREV" tableName="HISTO_SNTR_PREV" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-516">
+        <createIndex indexName="PK_IDAFFEC_ATTENTE" tableName="IDAFFEC_ATTENTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-517">
+        <createIndex indexName="PK_IDAFFEC_REGUL" tableName="IDAFFEC_REGUL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-518">
+        <createIndex indexName="PK_IDFXPR" tableName="PRDGPRFX" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-519">
+        <createIndex indexName="PK_INDIVIDU" tableName="INDIVIDU" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-520">
+        <createIndex indexName="PK_INTERM_ACCORD" tableName="INTERM_ACCORD" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-521">
+        <createIndex indexName="PK_INTERM_TYPAPPORT" tableName="INTERM_TYPAPPORT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-522">
+        <createIndex indexName="PK_INVAL" tableName="INVAL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-523">
+        <createIndex indexName="PK_LANGUE" tableName="LANGUE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-524">
+        <createIndex indexName="PK_LBLEPRFL" tableName="LBLEPRFL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-525">
+        <createIndex indexName="PK_LIBELLE_BIS" tableName="LIBELLE_BIS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-526">
+        <createIndex indexName="PK_LIBFORMATH" tableName="LIBFORMATH" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-527">
+        <createIndex indexName="PK_LIB_TABLEAU" tableName="LIB_TABLEAU" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-528">
+        <createIndex indexName="PK_MAXDOSS" tableName="MAXDOSS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-529">
+        <createIndex indexName="PK_MESSAGE_ENTETE" tableName="MESSAGE_ENTETE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-530">
+        <createIndex indexName="PK_MESSAGE_ERREUR" tableName="MESS_ERREUR" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-531">
+        <createIndex indexName="PK_MESSAGE_PARAM" tableName="MESSAGE_PARAM" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-532">
+        <createIndex indexName="PK_MESSAGE_TEXTE" tableName="MESSAGE_TEXTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-533">
+        <createIndex indexName="PK_MONNAIE" tableName="MONNAIE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-534">
+        <createIndex indexName="PK_NATFRAIS" tableName="NATFRAIS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-535">
+        <createIndex indexName="PK_NUMERO" tableName="NUMERO" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-536">
+        <createIndex indexName="PK_PARAM_BASCULE" tableName="PARAM_BASCULE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-537">
+        <createIndex indexName="PK_PARAM_BATCH" tableName="PARAM_BATCH" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-538">
+        <createIndex indexName="PK_PARAM_CLOTURE" tableName="PARAM_CLOTURE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-539">
+        <createIndex indexName="PK_PARAM_COMPTE" tableName="PARAM_COMPTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-540">
+        <createIndex indexName="PK_PARAM_CONTRAT" tableName="PARAM_CONTRAT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-541">
+        <createIndex indexName="PK_PARAM_DEMANDE_TP" tableName="PARAM_DEMANDE_TP" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-542">
+        <createIndex indexName="PK_PARAM_DEVISE" tableName="PARAM_DEVISE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-543">
+        <createIndex indexName="PK_PARAM_DMNDE" tableName="PARAM_DMNDE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-544">
+        <createIndex indexName="PK_PARAM_LANGUE" tableName="PARAM_LANGUE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-545">
+        <createIndex indexName="PK_PARAM_OPE" tableName="PARAM_OPE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-546">
+        <createIndex indexName="PK_PARAM_PIECES" tableName="PARAM_PIECES" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-547">
+        <createIndex indexName="PK_PARAM_PRODUIT" tableName="PARAM_PRODUIT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-548">
+        <createIndex indexName="PK_PARAM_PROFIL" tableName="PARAM_PROFIL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-549">
+        <createIndex indexName="PK_PARAM_RELANCE" tableName="PARAM_RELANCE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-550">
+        <createIndex indexName="PK_PARAM_TEXTE" tableName="PARAM_TEXTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-551">
+        <createIndex indexName="PK_PARAM_TP" tableName="PARAM_TIERS_PAYANT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-552">
+        <createIndex indexName="PK_PARAM_TRAITE" tableName="PARAM_TRAITE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-553">
+        <createIndex indexName="PK_PARPORTE" tableName="PARPORTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-554">
+        <createIndex indexName="PK_PAYS" tableName="PAYS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-555">
+        <createIndex indexName="PK_PAYS_LANGUE" tableName="PAYS_LANGUE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-556">
+        <createIndex indexName="PK_PERS_ADRESSE" tableName="PERS_ADRESSE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-557">
+        <createIndex indexName="PK_PERS_AVOCAT" tableName="PERS_AVOCAT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-558">
+        <createIndex indexName="PK_PERS_BANQUE" tableName="PERS_BANQUE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-559">
+        <createIndex indexName="PK_PERS_CENTREPAYEUR" tableName="PERS_CENTREPAYEUR" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-560">
+        <createIndex indexName="PK_PERS_HISTO_PHYS" tableName="PERS_HISTO_PHYS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-561">
+        <createIndex indexName="PK_PERS_INTERMEDIAIRE" tableName="PERS_INTERMEDIAIRE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-562">
+        <createIndex indexName="PK_PERS_MORALE" tableName="PERS_MORALE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-563">
+        <createIndex indexName="PK_PERS_ORGANISME" tableName="PERS_ORGANISME" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-564">
+        <createIndex indexName="PK_PERS_REASS" tableName="PERS_REASS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-565">
+        <createIndex indexName="PK_PERS_SOCIETE" tableName="PERS_SOCIETE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-566">
+        <createIndex indexName="PK_PERS_TIERS" tableName="PERS_TIERS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-567">
+        <createIndex indexName="PK_PERS_TIERSPAYANT" tableName="PERS_TIERSPAYANT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-568">
+        <createIndex indexName="PK_PL_DESCRIPT" tableName="PL_DESCRIPT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-569">
+        <createIndex indexName="PK_PL_TABLES" tableName="PL_TABLES" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-570">
+        <createIndex indexName="PK_PORTE_ADHESION" tableName="PORTE_ADHESION" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-571">
+        <createIndex indexName="PK_PORTE_CONTRAT" tableName="PORTE_CONTRAT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-572">
+        <createIndex indexName="PK_PORTE_ECHANGE" tableName="PORTE_ECHANGE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-573">
+        <createIndex indexName="PK_PORTE_ENTITE" tableName="PORTE_ENTITE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-574">
+        <createIndex indexName="PK_PORTE_ENTITE_ORDRE" tableName="PORTE_ENTITE_ORDRE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-575">
+        <createIndex indexName="PK_PORTE_PARAM" tableName="PORTE_PARAM" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-576">
+        <createIndex indexName="PK_POST_IT" tableName="POST_IT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-577">
+        <createIndex indexName="PK_PRDGDONNEE" tableName="PRDGDONNEE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-578">
+        <createIndex indexName="PK_PRDGECHANGE" tableName="PRDGECHANGE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-579">
+        <createIndex indexName="PK_PRDGFLUX" tableName="PRDGFLUX" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-580">
+        <createIndex indexName="PK_PRDGFXDO" tableName="PRDGFXDO" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-581">
+        <createIndex indexName="PK_PRDGFXSG" tableName="PRDGFXSG" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-582">
+        <createIndex indexName="PK_PRDGSGDO" tableName="PRDGSGDO" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-583">
+        <createIndex indexName="PK_PRELEVEMENT" tableName="PRELEVEMENT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-584">
+        <createIndex indexName="PK_PREVERS" tableName="PREVERS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-585">
+        <createIndex indexName="PK_PRICHARGE" tableName="PRICHARGE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-586">
+        <createIndex indexName="PK_PROPOSITION" tableName="PROPOSITION" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-587">
+        <createIndex indexName="PK_QTTC_GAR" tableName="QTTC_GAR" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-588">
+        <createIndex indexName="PK_QTTC_GLOBAL" tableName="QTTC_GLOBAL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-589">
+        <createIndex indexName="PK_QTTC_RETRO" tableName="QTTC_RETRO" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-590">
+        <createIndex indexName="PK_RBTCPTCLI" tableName="RBTCPTCLI" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-591">
+        <createIndex indexName="PK_RB_DEST_RGLT" tableName="RB_DEST_RGLT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-592">
+        <createIndex indexName="PK_RECOURS" tableName="RECOURS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-593">
+        <createIndex indexName="PK_REGUL_REASS" tableName="REGUL_REASS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-594">
+        <createIndex indexName="PK_RELEVE_COMPTE" tableName="RELEVE_COMPTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-595">
+        <createIndex indexName="PK_REMISE_BANQUE" tableName="REMISE_BANQUE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-596">
+        <createIndex indexName="PK_REMISE_BANQUE_ANNUL" tableName="REMISE_BANQUE_ANNUL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-597">
+        <createIndex indexName="PK_REMISE_COMPTA_GLOBALE" tableName="REMISE_COMPTA_GLOBALE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-598">
+        <createIndex indexName="PK_REMISE_DECLA" tableName="REMISE_DECLA" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-599">
+        <createIndex indexName="PK_REMISE_EC" tableName="REMISE_EC" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-600">
+        <createIndex indexName="PK_REMISE_EXPORT" tableName="REMISE_EXPORT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-601">
+        <createIndex indexName="PK_REMISE_GLOBALE" tableName="REMISE_GLOBALE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-602">
+        <createIndex indexName="PK_REMISE_IMPORT" tableName="REMISE_IMPORT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-603">
+        <createIndex indexName="PK_REMISE_OP" tableName="REMISE_OP" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-604">
+        <createIndex indexName="PK_REMISE_OP_DETAIL" tableName="REMISE_OP_DETAIL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-605">
+        <createIndex indexName="PK_REMISE_PRELEV" tableName="REMISE_PRELEV" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-606">
+        <createIndex indexName="PK_REMISE_PREST" tableName="REMISE_PREST" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-607">
+        <createIndex indexName="PK_REMISE_REPORT" tableName="REMISE_REPORT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-608">
+        <createIndex indexName="PK_REMISE_TRANSFERT" tableName="REMISE_TRANSFERT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-609">
+        <createIndex indexName="PK_REMISE_VIRE" tableName="REMISE_VIRE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-610">
+        <createIndex indexName="PK_REPARTITION" tableName="REPARTITION" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-611">
+        <createIndex indexName="PK_REPARTITION_BENE" tableName="REPARTITION_BENE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-612">
+        <createIndex indexName="PK_REPART_DEBI" tableName="REPART_DEBI" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-613">
+        <createIndex indexName="PK_REPORT_NUMPAGE" tableName="REPORT_NUMPAGE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-614">
+        <createIndex indexName="PK_REP_FONCTION_TOUS" tableName="REP_FONCTION_TOUS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-615">
+        <createIndex indexName="PK_RESULT_REASS" tableName="RESULT_REASS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-616">
+        <createIndex indexName="PK_RESULT_REASS_DETAIL" tableName="RESULT_REASS_DETAIL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-617">
+        <createIndex indexName="PK_RESULT_REASS_TFC" tableName="RESULT_REASS_TFC" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-618">
+        <createIndex indexName="PK_RETROCESSION" tableName="RETROCESSION" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-619">
+        <createIndex indexName="PK_REVERSEMENT" tableName="REVERSEMENT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-620">
+        <createIndex indexName="PK_REVERS_TAXE" tableName="REVERS_TAXE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-621">
+        <createIndex indexName="PK_RIB_ADHE" tableName="RIB_ADHE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-622">
+        <createIndex indexName="PK_RQSM" tableName="RQSM" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-623">
+        <createIndex indexName="PK_SECTEURTP" tableName="SECTEURTP" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-624">
+        <createIndex indexName="PK_SEGMENT" tableName="PRDGSEGMENT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-625">
+        <createIndex indexName="PK_SINISTRE_DEV" tableName="SINISTRE_DEV" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-626">
+        <createIndex indexName="PK_SINISTRE_PORTE_FORCAGE" tableName="SINISTRE_PORTE_FORCAGE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-627">
+        <createIndex indexName="PK_SINISTRE_SANTE" tableName="SINISTRE_SANTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-628">
+        <createIndex indexName="PK_SINISTRE_SANTE_ANNUL" tableName="SINISTRE_SANTE_ANNUL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-629">
+        <createIndex indexName="PK_SNTR_DOSSIER" tableName="SNTR_DOSSIER" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-630">
+        <createIndex indexName="PK_SNTR_DOSSIER_ANNUL" tableName="SNTR_DOSSIER_ANNUL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-631">
+        <createIndex indexName="PK_SNTR_PREV" tableName="SNTR_PREV" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-632">
+        <createIndex indexName="PK_SNTR_REMB" tableName="SNTR_REMB" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-633">
+        <createIndex indexName="PK_SNTR_TPE_ANNUL" tableName="SNTR_TPE_ANNUL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-634">
+        <createIndex indexName="PK_SNTR_TPE_ANO" tableName="SNTR_TPE_ANO" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-635">
+        <createIndex indexName="PK_STOCK_ENTITE" tableName="STOCK_ENTITE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-636">
+        <createIndex indexName="PK_STOCK_ENTITE_P" tableName="STOCK_ENTITE_P" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-637">
+        <createIndex indexName="PK_STOCK_ENTITE_R" tableName="STOCK_ENTITE_R" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-638">
+        <createIndex indexName="PK_TABLEAU_DOUBLE" tableName="TABLEAU_DOUBLE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-639">
+        <createIndex indexName="PK_TAUX_TFC" tableName="TAUX_TFC" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-640">
+        <createIndex indexName="PK_TAUX_TFC_REASS" tableName="TAUX_TFC_REASS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-641">
+        <createIndex indexName="PK_TMP_DECAISMT" tableName="TMP_DECAISMT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-642">
+        <createIndex indexName="PK_TRAITE" tableName="TRAITE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-643">
+        <createIndex indexName="PK_TRAVSN" tableName="TRAVSN" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-644">
+        <createIndex indexName="PK_TRAV_LECTURE_FICHIER" tableName="TRAV_LECTURE_FICHIER" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-645">
+        <createIndex indexName="PK_TRT_PRODUIT" tableName="TRT_PRODUIT" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-646">
+        <createIndex indexName="PK_UTILISATEURS" tableName="UTILISATEURS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-647">
+        <createIndex indexName="PK_UTIL_SOC" tableName="UTIL_SOC" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-648">
+        <createIndex indexName="PK_XML_04_01" tableName="XML_04_01" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-649">
+        <createIndex indexName="PK_XML_04_02" tableName="XML_04_02" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-650">
+        <createIndex indexName="PK_XML_04_03" tableName="XML_04_03" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-651">
+        <createIndex indexName="PK_XML_04_04" tableName="XML_04_04" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-652">
+        <createIndex indexName="PK_XML_04_05" tableName="XML_04_05" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-653">
+        <createIndex indexName="PK_XML_04_06" tableName="XML_04_06" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-654">
+        <createIndex indexName="PK_XML_04_07" tableName="XML_04_07" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-655">
+        <createIndex indexName="PK_XML_04_12" tableName="XML_04_12_NET" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-656">
+        <createIndex indexName="PK_ZONES_ACTES" tableName="ZONES_ACTES" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-657">
+        <createIndex indexName="PK_ZONES_INCLUSIONS" tableName="ZONES_INCLUSIONS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-658">
+        <createIndex indexName="PK_ZONE_TERR" tableName="ZONE_TERR" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-659">
+        <createIndex indexName="PREST_IJ_PK" tableName="PREST_IJ" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-660">
+        <createIndex indexName="QUALEA_1" tableName="RAPPEL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-661">
+        <createIndex indexName="QUALEA_2" tableName="AFFIL_PORTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-662">
+        <createIndex indexName="QUALEA_3" tableName="PERS_ADRESSE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-663">
+        <createIndex indexName="QUALEA_4A" tableName="INDIVIDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-664">
+        <createIndex indexName="QUALEA_4B" tableName="INDIVIDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-665">
+        <createIndex indexName="QUALEA_5A" tableName="CONTACT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-666">
+        <createIndex indexName="QUALEA_5B" tableName="CONTACT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-667">
+        <createIndex indexName="QUALEA_6" tableName="HISTO_COURRIER_INFO"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-668">
+        <createIndex indexName="QUALEA_7" tableName="ADHESION"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-669">
+        <createIndex indexName="QUALEA_B1" tableName="AFFIL_PORTE_QTTC_ELT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-670">
+        <createIndex indexName="QUALEA_B2" tableName="AFFIL_PORTE_QTTC"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-671">
+        <createIndex indexName="QUALEA_B5VW" tableName="PIECES"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-672">
+        <createIndex indexName="QUALEA_B6" tableName="INDIVIDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-673">
+        <createIndex indexName="QUALEA_B7" tableName="LIEN_GED"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-674">
+        <createIndex indexName="QUALEA_B8" tableName="HISTO_RAPPEL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-675">
+        <createIndex indexName="QUALEA_C1" tableName="ENVOI_MAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-676">
+        <createIndex indexName="QUALEA_C2" tableName="RIB"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-677">
+        <createIndex indexName="QUALEA_C3" tableName="PERS_TIERS"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-678">
+        <createIndex indexName="QUALEA_C4" tableName="INDIVIDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-679">
+        <createIndex indexName="QUALEA_C5" tableName="INDIVIDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-680">
+        <createIndex indexName="QUALEA_C6" tableName="PERS_ADRESSE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-681">
+        <createIndex indexName="QUALEA_D1A" tableName="INDIVIDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-682">
+        <createIndex indexName="QUALEA_D1B" tableName="INDIVIDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-683">
+        <createIndex indexName="QUALEA_D1C" tableName="INDIVIDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-684">
+        <createIndex indexName="QUALEA_E1" tableName="ENVOI_MAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-685">
+        <createIndex indexName="QUALEA_W1" tableName="HISTO_RAPPEL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-686">
+        <createIndex indexName="QUALEA_W10" tableName="AFFIL_ANO"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-687">
+        <createIndex indexName="QUALEA_W11" tableName="ENVOI_MAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-688">
+        <createIndex indexName="QUALEA_W14" tableName="INDIVIDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-689">
+        <createIndex indexName="QUALEA_W17" tableName="LIBELLE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-690">
+        <createIndex indexName="QUALEA_W19" tableName="DEVIS_SANTE_DETAIL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-691">
+        <createIndex indexName="QUALEA_W20" tableName="SINISTRE_PORTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-692">
+        <createIndex indexName="QUALEA_W21" tableName="HISTO_PLAFOND"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-693">
+        <createIndex indexName="QUALEA_W22" tableName="TRAVSN"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-694">
+        <createIndex indexName="QUALEA_W23" tableName="QTTC_GLOBAL"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-695">
+        <createIndex indexName="QUALEA_W24A" tableName="INDIVIDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-696">
+        <createIndex indexName="QUALEA_W24B" tableName="INDIVIDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-697">
+        <createIndex indexName="QUALEA_W25" tableName="TMP_DECAISMT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-698">
+        <createIndex indexName="QUALEA_W26" tableName="COURRIER_INFO"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-699">
+        <createIndex indexName="QUALEA_W27A" tableName="DECAISMT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-700">
+        <createIndex indexName="QUALEA_W27B" tableName="DECAISMT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-701">
+        <createIndex indexName="QUALEA_W3" tableName="TRAVSN"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-702">
+        <createIndex indexName="QUALEA_W4" tableName="DOSSIER_SANTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-703">
+        <createIndex indexName="QUALEA_W5" tableName="SINISTRE_DENT"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-704">
+        <createIndex indexName="QUALEA_W6" tableName="INDIVIDU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-705">
+        <createIndex indexName="QUALEA_W7" tableName="SNTR_PREV"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-706">
+        <createIndex indexName="QUALEA_W9" tableName="HISTO_SINISTRE_SANTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-707">
+        <createIndex indexName="REMISE_PRESTIJ_PK" tableName="REMISE_PRESTIJ" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-708">
+        <createIndex indexName="SYS_C006073" tableName="DELEG_REMB_CIE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-709">
+        <createIndex indexName="SYS_C006120" tableName="SYS_EXPORT_FULL_01" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-710">
+        <createIndex indexName="SYS_C006124" tableName="CLAUSE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-711">
+        <createIndex indexName="SYS_C006140" tableName="XML_04_09_ITELIS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-712">
+        <createIndex indexName="SYS_C006162" tableName="XML_04_12_ITELIS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-713">
+        <createIndex indexName="SYS_C006186" tableName="MESS_ERR_CALC" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-714">
+        <createIndex indexName="SYS_C006194" tableName="MAIL_TEXTE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-715">
+        <createIndex indexName="SYS_C006238" tableName="TO_SEPA" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-716">
+        <createIndex indexName="SYS_C006241" tableName="XML_04_11_ITELIS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-717">
+        <createIndex indexName="SYS_C006244" tableName="XML_04_08_ITELIS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-718">
+        <createIndex indexName="SYS_C006283" tableName="XML_04_12_WS_WEB_MAJ" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-719">
+        <createIndex indexName="SYS_C006290" tableName="XML_04_10_ITELIS" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-720">
+        <createIndex indexName="SYS_C006404" tableName="SYS_EXPORT_FULL_02" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-721">
+        <createIndex indexName="SYS_C0073399" tableName="JOE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-722">
+        <createIndex indexName="SYS_MTABLE_000067115_IND_1" tableName="SYS_EXPORT_FULL_01"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-723">
+        <createIndex indexName="SYS_MTABLE_000067115_IND_2" tableName="SYS_EXPORT_FULL_01"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-724">
+        <createIndex indexName="SYS_MTABLE_000067477_IND_1" tableName="SYS_EXPORT_FULL_02"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-725">
+        <createIndex indexName="SYS_MTABLE_000067477_IND_2" tableName="SYS_EXPORT_FULL_02"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-726">
+        <createIndex indexName="TRANSCO_PK" tableName="TRANSCO" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-727">
+        <createIndex indexName="UDX1_DEF_VAR" tableName="DEF_VARIABLE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-728">
+        <createIndex indexName="UDX1_FACTURE_REGUL" tableName="FACTURE_REGUL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-729">
+        <createIndex indexName="UDX1_FRANFOR" tableName="FRANFOR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-730">
+        <createIndex indexName="UDX1_MAXFOR" tableName="MAXFOR"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-731">
+        <createIndex indexName="UDX1_QTTC_GBL_DEL" tableName="QTTC_GLOBAL_DELETE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-732">
+        <createIndex indexName="UDX1_RECSIN" tableName="RECOURS_SINISTRE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-733">
+        <createIndex indexName="UDX1_REMISE_VIRE_DETAIL" tableName="REMISE_VIRE_DETAIL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-734">
+        <createIndex indexName="UDX1_SINISTRE_PORTE" tableName="SINISTRE_PORTE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-735">
+        <createIndex indexName="UDX1_TABLEAU" tableName="TABLEAU"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-736">
+        <createIndex indexName="UDX2_PORTE_REMISE" tableName="PORTE_REMISE" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-737">
+        <createIndex indexName="UDX2_QTTC_GBL_DEL" tableName="QTTC_GLOBAL_DELETE"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-738">
+        <createIndex indexName="UDX2_REMISE_VIRE_DETAIL" tableName="REMISE_VIRE_DETAIL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-739">
+        <createIndex indexName="UK_DETTE_PREV_DETAIL" tableName="DETTE_PREV_DETAIL" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-740">
+        <createIndex indexName="flyway_schema_history_pk" tableName="flyway_schema_history" unique="true"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="1786361410784-741">
+        <createIndex indexName="flyway_schema_history_s_idx" tableName="flyway_schema_history"/>
+    </changeSet>
+</databaseChangeLog>
