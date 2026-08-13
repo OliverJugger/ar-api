@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.FRMLS
+-- Cible      : ARTHUS.FORMULE
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.FRMLS FOR ARTHUS.FORMULE;

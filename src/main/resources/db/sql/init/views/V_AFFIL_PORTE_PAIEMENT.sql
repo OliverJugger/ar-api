@@ -1,0 +1,21 @@
+CREATE FORCE VIEW ARTHUS.V_AFFIL_PORTE_PAIEMENT AS
+SELECT  af.DATEFIC,
+          af.FICHIER,
+          af.NUMREMISE,
+          af.NUMCLI,
+          af.NUMPORTE,
+          af.NUM_ORDRE,
+          afp.periode,
+          afp.DATE_PAIE,
+          afp.MT_PAIE,
+          afp.REF_ORGN_CNTRT,
+          afp.ENTREPRISE,
+          afp.IDPAIEMENT
+    FROM AFFIL_FICHIER af, AFFIL_PORTE_PAIEMENT afp
+    WHERE afp.ENTREPRISE  = af.ENTREPRISE
+      AND afp.ETABLI      = af.ETABLI
+      AND afp.NUM_ORDRE   = af.NUM_ORDRE
+      AND afp.NUMPORTE    = af.NUMPORTE
+      AND afp.NUMREMISE   = af.NUMREMISE
+GO
+CREATE OR REPLACE PUBLIC SYNONYM V_AFFIL_PORTE_PAIEMENT FOR ARTHUS.V_AFFIL_PORTE_PAIEMENT

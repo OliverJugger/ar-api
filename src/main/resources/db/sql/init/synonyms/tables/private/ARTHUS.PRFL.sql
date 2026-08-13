@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.PRFL
+-- Cible      : ARTHUS.PROFIL
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.PRFL FOR ARTHUS.PROFIL;

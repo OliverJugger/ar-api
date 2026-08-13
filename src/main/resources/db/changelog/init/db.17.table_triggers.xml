@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="1" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_ad_texte</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_ad_texte.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="2" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_DEL_FACTURE_CPTA</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_DEL_FACTURE_CPTA.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="3" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_UPD_FACTURE_CPTA</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_UPD_FACTURE_CPTA.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="4" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_RENEW_LENTILLE</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_RENEW_LENTILLE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="5" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_PORTE_NATFRAIS</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_PORTE_NATFRAIS.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="6" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_porte_natfrais</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_porte_natfrais.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="7" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_NTFRS_OPTIQUE</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_NTFRS_OPTIQUE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="8" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bi_histo_pret</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bi_histo_pret.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="9" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_prelevement</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_prelevement.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="10" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bd_histo_annul</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bd_histo_annul.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="11" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bf_upd_histo_centrepayeur</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bf_upd_histo_centrepayeur.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="12" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_FRML_REASS</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_FRML_REASS.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="13" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_AF_INS_UPD_EMISSION</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_AF_INS_UPD_EMISSION.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="14" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_FLUX</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_FLUX.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="15" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_decompte</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_decompte.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="16" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_DEL_DECOMPTE_CPTA</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_DEL_DECOMPTE_CPTA.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="17" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_UPD_DETTE_PREV</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_UPD_DETTE_PREV.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="18" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_AF_INS_INDIVIDU</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_AF_INS_INDIVIDU.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="19" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_AF_UPD_INDIVIDU</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_AF_UPD_INDIVIDU.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="20" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_AF_UPD_INDIVIDU2</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_AF_UPD_INDIVIDU2.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="21" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bf_del_individu</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bf_del_individu.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="22" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bf_ins_upd_individu</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bf_ins_upd_individu.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="23" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bd_compte_client</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bd_compte_client.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="24" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bf_ins_compte_client</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bf_ins_compte_client.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="25" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_remise_vire</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_remise_vire.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="26" author="OMIGNOT">
+        <comment>CREATE TRIGGER Trg_af_upd_produit</comment>
+        <sqlFile path="db/sql/init/table_triggers/Trg_af_upd_produit.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="27" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bd_produit</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bd_produit.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="28" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_upd_adr4_internationale</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_upd_adr4_internationale.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="29" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_upd_adr5_internationale</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_upd_adr5_internationale.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="30" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bf_del_sinistre_porte</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bf_del_sinistre_porte.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="31" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_SINISTRE_PORTE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_SINISTRE_PORTE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="32" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_UPD_SINISTRE_PORTE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_UPD_SINISTRE_PORTE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="33" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bd_dcptdedu</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bd_dcptdedu.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="34" author="OMIGNOT">
+        <comment>CREATE TRIGGER Trg_af_upd_gar_cntrt</comment>
+        <sqlFile path="db/sql/init/table_triggers/Trg_af_upd_gar_cntrt.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="35" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bd_gar_cntrt</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bd_gar_cntrt.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="36" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_AFTER_DEL_ARRET</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_AFTER_DEL_ARRET.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="37" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bd_dfrb</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bd_dfrb.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="38" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BD_REMISE_EXTERNE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BD_REMISE_EXTERNE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="39" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bu_remise_externe</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bu_remise_externe.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="40" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_PORTE_REMISE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_PORTE_REMISE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="41" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_NTFRS_VISION</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_NTFRS_VISION.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="42" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_affectation</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_affectation.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="43" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_UPD_AFFECTATION_CPTA</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_UPD_AFFECTATION_CPTA.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="44" author="OMIGNOT">
+        <comment>CREATE TRIGGER Trg_af_del_adhesion</comment>
+        <sqlFile path="db/sql/init/table_triggers/Trg_af_del_adhesion.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="45" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_ADHESION</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_ADHESION.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="46" author="OMIGNOT">
+        <comment>CREATE TRIGGER Trg_af_upd_adhesion</comment>
+        <sqlFile path="db/sql/init/table_triggers/Trg_af_upd_adhesion.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="47" author="OMIGNOT">
+        <comment>CREATE TRIGGER Trg_af_upd_adhesion2</comment>
+        <sqlFile path="db/sql/init/table_triggers/Trg_af_upd_adhesion2.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="48" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_AI_ADHESION</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_AI_ADHESION.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="49" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_IUD_ADHESION</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_IUD_ADHESION.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="50" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_NTFRS_TYP_VISION</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_NTFRS_TYP_VISION.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="51" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_FRML_DEDU</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_FRML_DEDU.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="52" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_LIBELLE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_LIBELLE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="53" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_LIBELLE_DELETE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_LIBELLE_DELETE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="54" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_CARENCE</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_CARENCE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="55" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_ANNUL_ENCAIS</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_ANNUL_ENCAIS.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="56" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_INTERLOCUTEUR</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_INTERLOCUTEUR.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="57" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_PARPORTE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_PARPORTE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="58" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_AF_INS_ADHE_COLL</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_AF_INS_ADHE_COLL.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="59" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bf_adhe_collective</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bf_adhe_collective.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="60" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_UPD_ADHE_COLL</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_UPD_ADHE_COLL.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="61" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_CLAUSE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_CLAUSE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="62" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_UPD_CLAUSE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_UPD_CLAUSE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="63" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_AF_DIU_HISTO_DEST</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_AF_DIU_HISTO_DEST.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="64" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_HISTO_DEST</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_HISTO_DEST.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="65" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_UPD_HISTO_DEST</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_UPD_HISTO_DEST.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="66" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bi_stock_entite_r</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bi_stock_entite_r.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="67" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bi_stock_entite</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bi_stock_entite.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="68" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_MAXFOR</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_MAXFOR.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="69" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_AD_QTTC_GLOBAL</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_AD_QTTC_GLOBAL.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="70" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_ai_qttc_global</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_ai_qttc_global.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="71" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_au_qttc_global</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_au_qttc_global.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="72" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_DEL_SNTR_DOSSIER</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_DEL_SNTR_DOSSIER.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="73" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_NATFRAIS</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_NATFRAIS.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="74" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_FRML_PREST</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_FRML_PREST.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="75" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_UPD_LIBELLE_BIS</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_UPD_LIBELLE_BIS.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="76" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_prelevement_detail</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_prelevement_detail.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="77" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_LIBFORMATH</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_LIBFORMATH.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="78" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bf_upd_pers_centrepayeur</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bf_upd_pers_centrepayeur.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="79" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bd_remise_import</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bd_remise_import.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="80" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_CONTRAT_REF</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_CONTRAT_REF.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="81" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_AF_INS_CONTRAT_REF</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_AF_INS_CONTRAT_REF.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="82" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_UPD_CONTRAT_REF</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_UPD_CONTRAT_REF.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="83" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_applications</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_applications.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="84" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BI_PERS_HISTO_PHYS</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BI_PERS_HISTO_PHYS.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="85" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bu_pers_histo_phys</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bu_pers_histo_phys.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="86" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_ins_rib_adhe</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_ins_rib_adhe.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="87" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_COURRIER_INFO</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_COURRIER_INFO.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="88" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_MAXACT</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_MAXACT.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="89" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bd_reversement</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bd_reversement.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="90" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_SUP_LPP</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_SUP_LPP.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="91" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_decompte_prev</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_decompte_prev.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="92" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BD_DECOMPTE_PREV</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BD_DECOMPTE_PREV.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="93" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BI_DECOMPTE_PREV</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BI_DECOMPTE_PREV.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="94" author="OMIGNOT">
+        <comment>CREATE TRIGGER TD_APPLI_CONTEXTE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TD_APPLI_CONTEXTE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="95" author="OMIGNOT">
+        <comment>CREATE TRIGGER TI_APPLI_CONTEXTE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TI_APPLI_CONTEXTE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="96" author="OMIGNOT">
+        <comment>CREATE TRIGGER TU_APPLI_CONTEXTE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TU_APPLI_CONTEXTE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="97" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_AF_DEL_ADHE_CNTRT</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_AF_DEL_ADHE_CNTRT.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="98" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_AF_INS_ADHE_CNTRT2</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_AF_INS_ADHE_CNTRT2.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="99" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_upd_adhe_cntrt</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_upd_adhe_cntrt.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="100" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_AF_UPD_ADHE_CNTRT2</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_AF_UPD_ADHE_CNTRT2.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="101" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_UPD_ADHE_CNTRT</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_UPD_ADHE_CNTRT.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="102" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_IUD_ADHE_CNTRT</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_IUD_ADHE_CNTRT.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="103" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bi_emprunteur</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bi_emprunteur.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="104" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bu_emprunteur</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bu_emprunteur.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="105" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_CALCUL</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_CALCUL.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="106" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_CALCUL</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_CALCUL.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="107" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_UPD_CALCUL</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_UPD_CALCUL.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="108" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_del_encaismt</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_del_encaismt.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="109" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_encaismt</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_encaismt.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="110" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_UPD_ENCAISMT</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_UPD_ENCAISMT.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="111" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_pnul</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_pnul.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="112" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bf_upd_histo_avocat</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bf_upd_histo_avocat.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="113" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bf_ins_upd_suivi_factpe</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bf_ins_upd_suivi_factpe.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="114" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_FRML_PRIME_SIMPLE</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_FRML_PRIME_SIMPLE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="115" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bf_del_result_reass</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bf_del_result_reass.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="116" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_IU_PORTE_CONTRAT</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_IU_PORTE_CONTRAT.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="117" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_porte_contrat</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_porte_contrat.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="118" author="OMIGNOT">
+        <comment>CREATE TRIGGER t_af_diu_porte_contrat</comment>
+        <sqlFile path="db/sql/init/table_triggers/t_af_diu_porte_contrat.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="119" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bf_ins_upd_def_grp_libelle</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bf_ins_upd_def_grp_libelle.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="120" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_B_DELETE_RECOURS_FACTURE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_B_DELETE_RECOURS_FACTURE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="121" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_remise_decla</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_remise_decla.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="122" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_ai_beneficiaire</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_ai_beneficiaire.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="123" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bd_remise_export</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bd_remise_export.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="124" author="OMIGNOT">
+        <comment>CREATE TRIGGER maj_appli_descript</comment>
+        <sqlFile path="db/sql/init/table_triggers/maj_appli_descript.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="125" author="OMIGNOT">
+        <comment>CREATE TRIGGER TD_APPLI_DESCRIPT</comment>
+        <sqlFile path="db/sql/init/table_triggers/TD_APPLI_DESCRIPT.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="126" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bi_pret</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bi_pret.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="127" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bu_pret</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bu_pret.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="128" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_UPD_DETTE_PREV_DETA</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_UPD_DETTE_PREV_DETA.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="129" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bf_upd_pers_avocat</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bf_upd_pers_avocat.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="130" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_remise_op</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_remise_op.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="131" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bf_upd_avenant</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bf_upd_avenant.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="132" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_FRML_REVAL</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_FRML_REVAL.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="133" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_contact</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_contact.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="134" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_AI_CONTACT</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_AI_CONTACT.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="135" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_CONTACT</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_CONTACT.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="136" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_TYPE_MONTURE</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_TYPE_MONTURE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="137" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_SINISTRE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_SINISTRE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="138" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_HISTO_FRMLVAR</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_HISTO_FRMLVAR.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="139" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_FACTURE_ANNUL_CPTA</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_FACTURE_ANNUL_CPTA.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="140" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_FRML_TFC</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_FRML_TFC.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="141" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_DEL_SINISTRE_SANTE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_DEL_SINISTRE_SANTE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="142" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_afu_pers_adresse</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_afu_pers_adresse.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="143" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_upd_pers_adresse</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_upd_pers_adresse.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="144" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bi_pers_adresse</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bi_pers_adresse.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="145" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bu_pers_adresse</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bu_pers_adresse.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="146" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_IU_GAR_PARAM_DETAIL</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_IU_GAR_PARAM_DETAIL.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="147" author="OMIGNOT">
+        <comment>CREATE TRIGGER TI_DECAISMT</comment>
+        <sqlFile path="db/sql/init/table_triggers/TI_DECAISMT.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="148" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_decaismt</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_decaismt.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="149" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_DEL_DECAISMT_CPTA</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_DEL_DECAISMT_CPTA.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="150" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_UPD_DECAISMT</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_UPD_DECAISMT.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="151" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_UPD_DECAISMT</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_UPD_DECAISMT.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="152" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_UPD_DECAISMT_CPTA</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_UPD_DECAISMT_CPTA.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="153" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_FRMLVAR_DETAIL</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_FRMLVAR_DETAIL.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="154" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_remise_prelev</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_remise_prelev.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="155" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_ai_rejet_noemie</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_ai_rejet_noemie.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="156" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bd_rejet_noemie</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bd_rejet_noemie.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="157" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_ai_rib</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_ai_rib.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="158" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BUD_RIB</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BUD_RIB.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="159" author="OMIGNOT">
+        <comment>CREATE TRIGGER AF_INS_REPARTITION_BENE</comment>
+        <sqlFile path="db/sql/init/table_triggers/AF_INS_REPARTITION_BENE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="160" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_MAXDOSS</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_MAXDOSS.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="161" author="OMIGNOT">
+        <comment>CREATE TRIGGER TI_BF_compte_tiers</comment>
+        <sqlFile path="db/sql/init/table_triggers/TI_BF_compte_tiers.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="162" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_VAL_VARIABLE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_VAL_VARIABLE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="163" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_UPD_VAL_VARIABLE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_UPD_VAL_VARIABLE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="164" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_NTFRS_DETAIL</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_NTFRS_DETAIL.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="165" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_PORTE_TIERS</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_PORTE_TIERS.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="166" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bf_upd_traite</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bf_upd_traite.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="167" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_ai_histo_adhesion</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_ai_histo_adhesion.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="168" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_HISTO_ADHESION</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_HISTO_ADHESION.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="169" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_ai_adhe_cntrt_membre</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_ai_adhe_cntrt_membre.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="170" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_ADHE_CNTRT_MEMBRE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_ADHE_CNTRT_MEMBRE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="171" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_FRANACT</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_FRANACT.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="172" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bi_situ_pret</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bi_situ_pret.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="173" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_PRDGECHANGE</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_PRDGECHANGE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="174" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_remise_vire_detail</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_remise_vire_detail.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="175" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_SINISTRE_DEV</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_SINISTRE_DEV.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="176" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_noemie</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_noemie.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="177" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_NTFRS_MATIERE</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_NTFRS_MATIERE.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="178" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_bi_stock_entite_p</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_bi_stock_entite_p.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="179" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_ad_porte_adhesion</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_ad_porte_adhesion.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="180" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BU_PORTE_ADHESION</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BU_PORTE_ADHESION.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="181" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_FRMLVAR</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_FRMLVAR.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="182" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_NTFRS_TYPE_SUP</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_NTFRS_TYPE_SUP.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="183" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_AF_UPD_UTILISATEURS_PROFIL</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_AF_UPD_UTILISATEURS_PROFIL.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="184" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_UTILISATEURS</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_UTILISATEURS.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="185" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_diu_remise_op_detail</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_diu_remise_op_detail.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="186" author="OMIGNOT">
+        <comment>CREATE TRIGGER trg_af_upd_remise_globale</comment>
+        <sqlFile path="db/sql/init/table_triggers/trg_af_upd_remise_globale.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="187" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_BF_INS_PIECES</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_BF_INS_PIECES.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+    <changeSet id="188" author="OMIGNOT">
+        <comment>CREATE TRIGGER TRG_AF_INS_RAPPEL</comment>
+        <sqlFile path="db/sql/init/table_triggers/TRG_AF_INS_RAPPEL.sql" splitStatements="false" stripComments="false"/>
+    </changeSet>
+
+</databaseChangeLog>

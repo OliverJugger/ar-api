@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.PROD
+-- Cible      : ARTHUS.PRODUIT
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.PROD FOR ARTHUS.PRODUIT;

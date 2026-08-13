@@ -1,0 +1,6 @@
+# Environnement : Production
+oracle:
+  jdbc:
+    host: 192.168.18.2
+    port: 1521
+    service: GEREPP

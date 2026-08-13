@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : D2J
+-- Cible      : ARTHUS.D2J
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM D2J FOR ARTHUS.D2J;

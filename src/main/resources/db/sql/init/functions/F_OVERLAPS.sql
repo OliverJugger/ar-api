@@ -1,0 +1,19 @@
+CREATE function ARTHUS.F_OVERLAPS
+								(
+								I_DEB1 DATE,
+								I_FIN1 DATE,
+								I_DEB2 DATE,
+								I_FIN2 DATE
+								)
+RETURN NUMBER
+	AS
+  loc_nb NUMBER;
+BEGIN
+	loc_nb:=0;
+
+	SELECT 1 INTO loc_nb FROM DUAL
+	WHERE (I_DEB1 , NVL(I_FIN1,sysdate+1000)) OVERLAPS (I_DEB2, NVL(I_FIN2,sysdate+1001)) ;
+	RETURN loc_nb;
+	EXCEPTION
+	  WHEN OTHERS THEN RETURN 0;
+END F_OVERLAPS;

@@ -1,0 +1,1887 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+  <changeSet id="1" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PARAM_BASCULE</comment>
+    <sqlFile path="db/sql/init/views/V_PARAM_BASCULE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="2" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_MODELE</comment>
+    <sqlFile path="db/sql/init/views/V_MODELE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="3" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ARTHUS_OBJECTS</comment>
+    <sqlFile path="db/sql/init/views/V_ARTHUS_OBJECTS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="4" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CLIENT_OBJECTS</comment>
+    <sqlFile path="db/sql/init/views/V_CLIENT_OBJECTS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="5" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ARTHUS_ARGUMENTS</comment>
+    <sqlFile path="db/sql/init/views/V_ARTHUS_ARGUMENTS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="6" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ARTHUS_SOURCE</comment>
+    <sqlFile path="db/sql/init/views/V_ARTHUS_SOURCE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="7" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ARTHUS_PACK</comment>
+    <sqlFile path="db/sql/init/views/V_ARTHUS_PACK.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="8" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_STORAGE</comment>
+    <sqlFile path="db/sql/init/views/V_STORAGE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="9" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW QUALEA_V_DOSSIER_SIN_CONTRAT</comment>
+    <sqlFile path="db/sql/init/views/QUALEA_V_DOSSIER_SIN_CONTRAT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="10" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PIECES_DMNDE</comment>
+    <sqlFile path="db/sql/init/views/V_PIECES_DMNDE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="11" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REPARTITION_BENE</comment>
+    <sqlFile path="db/sql/init/views/V_REPARTITION_BENE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="12" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TOTAFFEC</comment>
+    <sqlFile path="db/sql/init/views/V_TOTAFFEC.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="13" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_VIR_IMPORT</comment>
+    <sqlFile path="db/sql/init/views/V_VIR_IMPORT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="14" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AFFECTATION</comment>
+    <sqlFile path="db/sql/init/views/V_AFFECTATION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="15" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA_8</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA_8.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="16" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CPTCLI_EXT</comment>
+    <sqlFile path="db/sql/init/views/V_CPTCLI_EXT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="17" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DELEG_ARRET</comment>
+    <sqlFile path="db/sql/init/views/V_DELEG_ARRET.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="18" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_VIREMENT</comment>
+    <sqlFile path="db/sql/init/views/V_VIREMENT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="19" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_UPD_DATPAY</comment>
+    <sqlFile path="db/sql/init/views/V_UPD_DATPAY.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="20" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMM_RATIO</comment>
+    <sqlFile path="db/sql/init/views/V_COMM_RATIO.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="21" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SINISTRE_CPTA</comment>
+    <sqlFile path="db/sql/init/views/V_SINISTRE_CPTA.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="22" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SINISTRE_CPTA2</comment>
+    <sqlFile path="db/sql/init/views/V_SINISTRE_CPTA2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="23" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_NTFRS_EXT</comment>
+    <sqlFile path="db/sql/init/views/V_NTFRS_EXT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="24" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SIN_DELEG</comment>
+    <sqlFile path="db/sql/init/views/V_SIN_DELEG.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="25" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_BRANCHE</comment>
+    <sqlFile path="db/sql/init/views/V_BRANCHE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="26" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FRMLGAR</comment>
+    <sqlFile path="db/sql/init/views/V_FRMLGAR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="27" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ADHESION</comment>
+    <sqlFile path="db/sql/init/views/V_ADHESION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="28" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW ORGANISME</comment>
+    <sqlFile path="db/sql/init/views/ORGANISME.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="29" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_LIB_DECAISMT</comment>
+    <sqlFile path="db/sql/init/views/V_LIB_DECAISMT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="30" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_EDIT_DCPT</comment>
+    <sqlFile path="db/sql/init/views/V_EDIT_DCPT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="31" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AFFEC_CHQ</comment>
+    <sqlFile path="db/sql/init/views/V_AFFEC_CHQ.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="32" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_RG20</comment>
+    <sqlFile path="db/sql/init/views/V_RG20.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="33" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_EDIT_AFFEC</comment>
+    <sqlFile path="db/sql/init/views/V_EDIT_AFFEC.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="34" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMM_SP</comment>
+    <sqlFile path="db/sql/init/views/V_COMM_SP.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="35" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMM</comment>
+    <sqlFile path="db/sql/init/views/V_COMM.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="36" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REMISE_COMPTA_DETAIL</comment>
+    <sqlFile path="db/sql/init/views/V_REMISE_COMPTA_DETAIL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="37" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REMISE_COMPTA</comment>
+    <sqlFile path="db/sql/init/views/V_REMISE_COMPTA.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="38" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTE_TIERS_DEV</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTE_TIERS_DEV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="39" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SOLDE_PIECE_BIS</comment>
+    <sqlFile path="db/sql/init/views/V_SOLDE_PIECE_BIS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="40" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTE_TIERS</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTE_TIERS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="41" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_A_PRELEVER</comment>
+    <sqlFile path="db/sql/init/views/V_A_PRELEVER.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="42" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CREDIT</comment>
+    <sqlFile path="db/sql/init/views/V_CREDIT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="43" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_EDIT_PRELEVEMENT</comment>
+    <sqlFile path="db/sql/init/views/V_EDIT_PRELEVEMENT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="44" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DEF_NIVEAU</comment>
+    <sqlFile path="db/sql/init/views/V_DEF_NIVEAU.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="45" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ENVOI_DEST</comment>
+    <sqlFile path="db/sql/init/views/V_ENVOI_DEST.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="46" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REMISE_EXPORT</comment>
+    <sqlFile path="db/sql/init/views/V_REMISE_EXPORT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="47" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DOUBL_SIN</comment>
+    <sqlFile path="db/sql/init/views/V_DOUBL_SIN.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="48" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA_CENT_ECRAN</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA_CENT_ECRAN.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="49" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QTTC_ANO</comment>
+    <sqlFile path="db/sql/init/views/V_QTTC_ANO.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="50" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW GAR_CNTRT</comment>
+    <sqlFile path="db/sql/init/views/GAR_CNTRT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="51" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GAR_ADHECOLL</comment>
+    <sqlFile path="db/sql/init/views/V_GAR_ADHECOLL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="52" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REP_FONCTION_SEULE</comment>
+    <sqlFile path="db/sql/init/views/V_REP_FONCTION_SEULE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="53" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GAR_COTI</comment>
+    <sqlFile path="db/sql/init/views/V_GAR_COTI.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="54" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GAR_COTI_INDV</comment>
+    <sqlFile path="db/sql/init/views/V_GAR_COTI_INDV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="55" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_NUMMATH</comment>
+    <sqlFile path="db/sql/init/views/V_NUMMATH.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="56" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ACTE_DELEG</comment>
+    <sqlFile path="db/sql/init/views/V_ACTE_DELEG.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="57" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW ADH_GRP</comment>
+    <sqlFile path="db/sql/init/views/ADH_GRP.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="58" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_EXCLUSION</comment>
+    <sqlFile path="db/sql/init/views/V_EXCLUSION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="59" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GU05</comment>
+    <sqlFile path="db/sql/init/views/V_GU05.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="60" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_LIB_ENCAISMT</comment>
+    <sqlFile path="db/sql/init/views/V_LIB_ENCAISMT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="61" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REMISE_BANQUE</comment>
+    <sqlFile path="db/sql/init/views/V_REMISE_BANQUE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="62" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_EN01</comment>
+    <sqlFile path="db/sql/init/views/V_EN01.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="63" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTE_CLIENT</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTE_CLIENT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="64" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REGROUP_MANDAT</comment>
+    <sqlFile path="db/sql/init/views/V_REGROUP_MANDAT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="65" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SINISTRE_RPT</comment>
+    <sqlFile path="db/sql/init/views/V_SINISTRE_RPT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="66" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DISTINCT_NUMFOR_SINISTRE</comment>
+    <sqlFile path="db/sql/init/views/V_DISTINCT_NUMFOR_SINISTRE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="67" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CTR_MONTANT</comment>
+    <sqlFile path="db/sql/init/views/V_CTR_MONTANT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="68" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AFFIL_PORTE_PAIEMENT</comment>
+    <sqlFile path="db/sql/init/views/V_AFFIL_PORTE_PAIEMENT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="69" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DECOMPTE_ANNUL</comment>
+    <sqlFile path="db/sql/init/views/V_DECOMPTE_ANNUL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="70" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DECOMPTE_CPTA</comment>
+    <sqlFile path="db/sql/init/views/V_DECOMPTE_CPTA.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="71" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TYPE_INFO</comment>
+    <sqlFile path="db/sql/init/views/V_TYPE_INFO.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="72" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_LIB_OPE_MODPMT</comment>
+    <sqlFile path="db/sql/init/views/V_LIB_OPE_MODPMT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="73" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_STATUTS_LIG_DOSS</comment>
+    <sqlFile path="db/sql/init/views/V_STATUTS_LIG_DOSS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="74" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_BA02</comment>
+    <sqlFile path="db/sql/init/views/V_BA02.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="75" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_NUMPIECE</comment>
+    <sqlFile path="db/sql/init/views/V_NUMPIECE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="76" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA_BALANCE</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA_BALANCE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="77" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FRAIS</comment>
+    <sqlFile path="db/sql/init/views/V_FRAIS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="78" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_HISTO_ADHESION</comment>
+    <sqlFile path="db/sql/init/views/V_HISTO_ADHESION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="79" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ADHESION_N</comment>
+    <sqlFile path="db/sql/init/views/V_ADHESION_N.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="80" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AFFECTATION_CPTA</comment>
+    <sqlFile path="db/sql/init/views/V_AFFECTATION_CPTA.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="81" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_LIST_DECAISMT</comment>
+    <sqlFile path="db/sql/init/views/V_LIST_DECAISMT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="82" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ADHESION_N1</comment>
+    <sqlFile path="db/sql/init/views/V_ADHESION_N1.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="83" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ARRET_ASSU</comment>
+    <sqlFile path="db/sql/init/views/V_ARRET_ASSU.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="84" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW VS_COMPTE</comment>
+    <sqlFile path="db/sql/init/views/VS_COMPTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="85" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REP_FONCTION</comment>
+    <sqlFile path="db/sql/init/views/V_REP_FONCTION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="86" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_LISTE_VARIABLE</comment>
+    <sqlFile path="db/sql/init/views/V_LISTE_VARIABLE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="87" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DONNEE_COMP</comment>
+    <sqlFile path="db/sql/init/views/V_DONNEE_COMP.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="88" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW TIERS</comment>
+    <sqlFile path="db/sql/init/views/TIERS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="89" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DOSS_SINISTREINDIV</comment>
+    <sqlFile path="db/sql/init/views/V_DOSS_SINISTREINDIV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="90" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DOS_SIN</comment>
+    <sqlFile path="db/sql/init/views/V_DOS_SIN.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="91" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DOSSIER_SIN_CONTRAT</comment>
+    <sqlFile path="db/sql/init/views/V_DOSSIER_SIN_CONTRAT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="92" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW SIN_PREV</comment>
+    <sqlFile path="db/sql/init/views/SIN_PREV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="93" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AFFILIATION_COT</comment>
+    <sqlFile path="db/sql/init/views/V_AFFILIATION_COT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="94" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AFFIL_QTTC_MOIS</comment>
+    <sqlFile path="db/sql/init/views/V_AFFIL_QTTC_MOIS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="95" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AFFIL_AYD_ADH</comment>
+    <sqlFile path="db/sql/init/views/V_AFFIL_AYD_ADH.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="96" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AFFIL_QTTC_ELT</comment>
+    <sqlFile path="db/sql/init/views/V_AFFIL_QTTC_ELT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="97" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FILE_EDITION</comment>
+    <sqlFile path="db/sql/init/views/V_FILE_EDITION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="98" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FACT_TPE_PAYEAUTORITE</comment>
+    <sqlFile path="db/sql/init/views/V_FACT_TPE_PAYEAUTORITE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="99" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FACT_TPE_ANOMALIE</comment>
+    <sqlFile path="db/sql/init/views/V_FACT_TPE_ANOMALIE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="100" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FACT_TPE_IMPORT</comment>
+    <sqlFile path="db/sql/init/views/V_FACT_TPE_IMPORT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="101" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FACT_TPE_ENCOURS</comment>
+    <sqlFile path="db/sql/init/views/V_FACT_TPE_ENCOURS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="102" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FACT_TPE_REJET</comment>
+    <sqlFile path="db/sql/init/views/V_FACT_TPE_REJET.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="103" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FACT_TPE_REJETAMC</comment>
+    <sqlFile path="db/sql/init/views/V_FACT_TPE_REJETAMC.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="104" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FACT_TPE_PAYE</comment>
+    <sqlFile path="db/sql/init/views/V_FACT_TPE_PAYE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="105" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FACT_TPE_ACCEPTE</comment>
+    <sqlFile path="db/sql/init/views/V_FACT_TPE_ACCEPTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="106" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GS20</comment>
+    <sqlFile path="db/sql/init/views/V_GS20.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="107" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FN05</comment>
+    <sqlFile path="db/sql/init/views/V_FN05.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="108" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_LIG_DOSS_SIMPLE</comment>
+    <sqlFile path="db/sql/init/views/V_LIG_DOSS_SIMPLE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="109" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GS22</comment>
+    <sqlFile path="db/sql/init/views/V_GS22.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="110" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GS23</comment>
+    <sqlFile path="db/sql/init/views/V_GS23.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="111" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW VM_ENTETE</comment>
+    <sqlFile path="db/sql/init/views/VM_ENTETE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="112" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_VILLE</comment>
+    <sqlFile path="db/sql/init/views/V_VILLE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="113" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DEMANDE_TP</comment>
+    <sqlFile path="db/sql/init/views/V_DEMANDE_TP.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="114" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW SOCIETE</comment>
+    <sqlFile path="db/sql/init/views/SOCIETE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="115" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW VS_TYPE_OPE</comment>
+    <sqlFile path="db/sql/init/views/VS_TYPE_OPE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="116" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW VD_COMPTE</comment>
+    <sqlFile path="db/sql/init/views/VD_COMPTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="117" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_VIR_PORTE</comment>
+    <sqlFile path="db/sql/init/views/V_VIR_PORTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="118" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_HISTO_DEDU</comment>
+    <sqlFile path="db/sql/init/views/V_HISTO_DEDU.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="119" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_HISTO_JOURS</comment>
+    <sqlFile path="db/sql/init/views/V_HISTO_JOURS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="120" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ECHEANCE_LBEN</comment>
+    <sqlFile path="db/sql/init/views/V_ECHEANCE_LBEN.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="121" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_HISTO_BENE</comment>
+    <sqlFile path="db/sql/init/views/V_HISTO_BENE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="122" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ECHEANCE_LBENE</comment>
+    <sqlFile path="db/sql/init/views/V_ECHEANCE_LBENE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="123" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_HISTO_CALCUL</comment>
+    <sqlFile path="db/sql/init/views/V_HISTO_CALCUL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="124" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_HISTO_DCPTDEDU</comment>
+    <sqlFile path="db/sql/init/views/V_HISTO_DCPTDEDU.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="125" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_BENE_JUSTIF19</comment>
+    <sqlFile path="db/sql/init/views/V_BENE_JUSTIF19.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="126" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW CONTRAT</comment>
+    <sqlFile path="db/sql/init/views/CONTRAT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="127" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GAR_CNTRT</comment>
+    <sqlFile path="db/sql/init/views/V_GAR_CNTRT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="128" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GAR_CONTRAT</comment>
+    <sqlFile path="db/sql/init/views/V_GAR_CONTRAT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="129" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PRODTRT</comment>
+    <sqlFile path="db/sql/init/views/V_PRODTRT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="130" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TRTPRODUIT</comment>
+    <sqlFile path="db/sql/init/views/V_TRTPRODUIT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="131" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TRTPROD</comment>
+    <sqlFile path="db/sql/init/views/V_TRTPROD.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="132" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ECRITURE</comment>
+    <sqlFile path="db/sql/init/views/V_ECRITURE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="133" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW CPT_TIERS</comment>
+    <sqlFile path="db/sql/init/views/CPT_TIERS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="134" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SOLDE_TIERS</comment>
+    <sqlFile path="db/sql/init/views/V_SOLDE_TIERS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="135" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA_4</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA_4.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="136" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FICHE_TO_GEN</comment>
+    <sqlFile path="db/sql/init/views/V_FICHE_TO_GEN.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="137" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AVIS_CREDIT</comment>
+    <sqlFile path="db/sql/init/views/V_AVIS_CREDIT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="138" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REMISE_PRELEV</comment>
+    <sqlFile path="db/sql/init/views/V_REMISE_PRELEV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="139" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_RETRO_BASE</comment>
+    <sqlFile path="db/sql/init/views/V_RETRO_BASE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="140" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_RETRO_DETAIL</comment>
+    <sqlFile path="db/sql/init/views/V_RETRO_DETAIL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="141" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_RETRO_EDITION_ADHESION</comment>
+    <sqlFile path="db/sql/init/views/V_RETRO_EDITION_ADHESION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="142" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TAXES</comment>
+    <sqlFile path="db/sql/init/views/V_TAXES.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="143" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_RETRO_EDITION</comment>
+    <sqlFile path="db/sql/init/views/V_RETRO_EDITION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="144" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COTIS_SP</comment>
+    <sqlFile path="db/sql/init/views/V_COTIS_SP.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="145" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TRAV_RETROCESSION</comment>
+    <sqlFile path="db/sql/init/views/V_TRAV_RETROCESSION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="146" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TRAV_REVERS_TAXE</comment>
+    <sqlFile path="db/sql/init/views/V_TRAV_REVERS_TAXE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="147" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_LIB_FACT</comment>
+    <sqlFile path="db/sql/init/views/V_LIB_FACT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="148" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PIECE_CONTRAT</comment>
+    <sqlFile path="db/sql/init/views/V_PIECE_CONTRAT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="149" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COURRIER</comment>
+    <sqlFile path="db/sql/init/views/V_COURRIER.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="150" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_HISTO_TRAV_TRANSFERT</comment>
+    <sqlFile path="db/sql/init/views/V_HISTO_TRAV_TRANSFERT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="151" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CORRES</comment>
+    <sqlFile path="db/sql/init/views/V_CORRES.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="152" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CORRES_MAIL</comment>
+    <sqlFile path="db/sql/init/views/V_CORRES_MAIL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="153" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ADHE_CNTRT_MEMBRE</comment>
+    <sqlFile path="db/sql/init/views/V_ADHE_CNTRT_MEMBRE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="154" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_MODPMT</comment>
+    <sqlFile path="db/sql/init/views/V_MODPMT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="155" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PAPIER_OPE</comment>
+    <sqlFile path="db/sql/init/views/V_PAPIER_OPE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="156" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TRAIT_EXECUTES</comment>
+    <sqlFile path="db/sql/init/views/V_TRAIT_EXECUTES.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="157" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TRTAVT</comment>
+    <sqlFile path="db/sql/init/views/V_TRTAVT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="158" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TRTCTR</comment>
+    <sqlFile path="db/sql/init/views/V_TRTCTR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="159" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW INTERMEDIAIRE</comment>
+    <sqlFile path="db/sql/init/views/INTERMEDIAIRE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="160" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA_1</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA_1.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="161" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA_12</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA_12.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="162" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_VALID_BASE</comment>
+    <sqlFile path="db/sql/init/views/V_VALID_BASE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="163" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CHEQUIER</comment>
+    <sqlFile path="db/sql/init/views/V_CHEQUIER.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="164" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_VIREMENT_OP</comment>
+    <sqlFile path="db/sql/init/views/V_VIREMENT_OP.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="165" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DECAISMT</comment>
+    <sqlFile path="db/sql/init/views/V_DECAISMT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="166" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_LIB_PIECE</comment>
+    <sqlFile path="db/sql/init/views/V_LIB_PIECE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="167" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FACTURE_DUE</comment>
+    <sqlFile path="db/sql/init/views/V_FACTURE_DUE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="168" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FACTURE</comment>
+    <sqlFile path="db/sql/init/views/V_FACTURE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="169" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CPTA_PRESTA_REMB</comment>
+    <sqlFile path="db/sql/init/views/V_CPTA_PRESTA_REMB.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="170" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FACTURE_TEST</comment>
+    <sqlFile path="db/sql/init/views/V_FACTURE_TEST.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="171" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PERS_ADRESSE</comment>
+    <sqlFile path="db/sql/init/views/V_PERS_ADRESSE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="172" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PERS_ADR</comment>
+    <sqlFile path="db/sql/init/views/V_PERS_ADR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="173" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FOURNISSEUR</comment>
+    <sqlFile path="db/sql/init/views/V_FOURNISSEUR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="174" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMMPRELEV</comment>
+    <sqlFile path="db/sql/init/views/V_COMMPRELEV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="175" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ECHEANCIER</comment>
+    <sqlFile path="db/sql/init/views/V_ECHEANCIER.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="176" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FORMULE</comment>
+    <sqlFile path="db/sql/init/views/V_FORMULE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="177" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CORRES_BENE</comment>
+    <sqlFile path="db/sql/init/views/V_CORRES_BENE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="178" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DCPTDEDU</comment>
+    <sqlFile path="db/sql/init/views/V_DCPTDEDU.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="179" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA_SCHEMA_CM14</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA_SCHEMA_CM14.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="180" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA_SCHEMA</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA_SCHEMA.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="181" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REPARTITION_HISTO_DEST</comment>
+    <sqlFile path="db/sql/init/views/V_REPARTITION_HISTO_DEST.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="182" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CALLTRT</comment>
+    <sqlFile path="db/sql/init/views/V_CALLTRT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="183" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CALLAVT</comment>
+    <sqlFile path="db/sql/init/views/V_CALLAVT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="184" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SIN_NON_REGLES</comment>
+    <sqlFile path="db/sql/init/views/V_SIN_NON_REGLES.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="185" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SIN_REGLES</comment>
+    <sqlFile path="db/sql/init/views/V_SIN_REGLES.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="186" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SIN_SITU</comment>
+    <sqlFile path="db/sql/init/views/V_SIN_SITU.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="187" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REP_FONCTION_EXT</comment>
+    <sqlFile path="db/sql/init/views/V_REP_FONCTION_EXT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="188" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TABLEAU_DOUBLE</comment>
+    <sqlFile path="db/sql/init/views/V_TABLEAU_DOUBLE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="189" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SNTR_ANNUL</comment>
+    <sqlFile path="db/sql/init/views/V_SNTR_ANNUL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="190" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FACTURE_SOLDE</comment>
+    <sqlFile path="db/sql/init/views/V_FACTURE_SOLDE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="191" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AFFEC_DETAIL</comment>
+    <sqlFile path="db/sql/init/views/V_AFFEC_DETAIL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="192" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FACTURE_TIERS</comment>
+    <sqlFile path="db/sql/init/views/V_FACTURE_TIERS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="193" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TRTPRODUIT2</comment>
+    <sqlFile path="db/sql/init/views/V_TRTPRODUIT2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="194" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TRTAVT2</comment>
+    <sqlFile path="db/sql/init/views/V_TRTAVT2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="195" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_HISTO_RIB</comment>
+    <sqlFile path="db/sql/init/views/V_HISTO_RIB.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="196" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PREST_N1</comment>
+    <sqlFile path="db/sql/init/views/V_PREST_N1.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="197" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PREST_N</comment>
+    <sqlFile path="db/sql/init/views/V_PREST_N.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="198" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PORTE_SNTR</comment>
+    <sqlFile path="db/sql/init/views/V_PORTE_SNTR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="199" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CONTACT</comment>
+    <sqlFile path="db/sql/init/views/V_CONTACT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="200" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AVTTRT</comment>
+    <sqlFile path="db/sql/init/views/V_AVTTRT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="201" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GAR_REASS</comment>
+    <sqlFile path="db/sql/init/views/V_GAR_REASS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="202" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TRTPER</comment>
+    <sqlFile path="db/sql/init/views/V_TRTPER.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="203" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AVT2</comment>
+    <sqlFile path="db/sql/init/views/V_AVT2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="204" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AVTPER</comment>
+    <sqlFile path="db/sql/init/views/V_AVTPER.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="205" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CTRAVT</comment>
+    <sqlFile path="db/sql/init/views/V_CTRAVT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="206" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ADHE_CNTRT</comment>
+    <sqlFile path="db/sql/init/views/V_ADHE_CNTRT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="207" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ANO_TRANSFERT</comment>
+    <sqlFile path="db/sql/init/views/V_ANO_TRANSFERT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="208" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PORTE_ADHESION_2110</comment>
+    <sqlFile path="db/sql/init/views/V_PORTE_ADHESION_2110.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="209" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ANO_VARIABLE</comment>
+    <sqlFile path="db/sql/init/views/V_ANO_VARIABLE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="210" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ADHE_QUER</comment>
+    <sqlFile path="db/sql/init/views/V_ADHE_QUER.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="211" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PORTE_ASS</comment>
+    <sqlFile path="db/sql/init/views/V_PORTE_ASS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="212" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COTIS_EXO_INDIV</comment>
+    <sqlFile path="db/sql/init/views/V_COTIS_EXO_INDIV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="213" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REPARTITION</comment>
+    <sqlFile path="db/sql/init/views/V_REPARTITION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="214" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ASSURE</comment>
+    <sqlFile path="db/sql/init/views/V_ASSURE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="215" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GA19</comment>
+    <sqlFile path="db/sql/init/views/V_GA19.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="216" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PORTE_ADHESION_2102</comment>
+    <sqlFile path="db/sql/init/views/V_PORTE_ADHESION_2102.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="217" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SITU_ADHE</comment>
+    <sqlFile path="db/sql/init/views/V_SITU_ADHE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="218" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ETENDUE</comment>
+    <sqlFile path="db/sql/init/views/V_ETENDUE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="219" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PR05</comment>
+    <sqlFile path="db/sql/init/views/V_PR05.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="220" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TRAV_AD01</comment>
+    <sqlFile path="db/sql/init/views/V_TRAV_AD01.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="221" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_OP_EC</comment>
+    <sqlFile path="db/sql/init/views/V_OP_EC.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="222" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ORDRE_PAIEMENT</comment>
+    <sqlFile path="db/sql/init/views/V_ORDRE_PAIEMENT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="223" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GARCTRAVT</comment>
+    <sqlFile path="db/sql/init/views/V_GARCTRAVT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="224" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CNTRT_TRT_AVT</comment>
+    <sqlFile path="db/sql/init/views/V_CNTRT_TRT_AVT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="225" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_EN03</comment>
+    <sqlFile path="db/sql/init/views/V_EN03.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="226" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AFFEC_VALID</comment>
+    <sqlFile path="db/sql/init/views/V_AFFEC_VALID.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="227" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DCPTDELEG</comment>
+    <sqlFile path="db/sql/init/views/V_DCPTDELEG.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="228" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW GAR_CNTRT_EDIT</comment>
+    <sqlFile path="db/sql/init/views/GAR_CNTRT_EDIT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="229" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ASSUR_DELEGAT</comment>
+    <sqlFile path="db/sql/init/views/V_ASSUR_DELEGAT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="230" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ASSUR_REVERS</comment>
+    <sqlFile path="db/sql/init/views/V_ASSUR_REVERS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="231" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DEDU</comment>
+    <sqlFile path="db/sql/init/views/V_DEDU.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="232" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA_11</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA_11.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="233" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTE_ATTENTE</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTE_ATTENTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="234" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CPTCLI</comment>
+    <sqlFile path="db/sql/init/views/V_CPTCLI.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="235" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PRETEUR</comment>
+    <sqlFile path="db/sql/init/views/V_PRETEUR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="236" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_EMPRUNTEUR</comment>
+    <sqlFile path="db/sql/init/views/V_EMPRUNTEUR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="237" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DOSSIER_PRET</comment>
+    <sqlFile path="db/sql/init/views/V_DOSSIER_PRET.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="238" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_BENE_RIB_CODE</comment>
+    <sqlFile path="db/sql/init/views/V_BENE_RIB_CODE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="239" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PRICHARGE</comment>
+    <sqlFile path="db/sql/init/views/V_PRICHARGE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="240" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_BENE_RIB_NUMGAR</comment>
+    <sqlFile path="db/sql/init/views/V_BENE_RIB_NUMGAR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="241" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_RIB_TEMP</comment>
+    <sqlFile path="db/sql/init/views/V_RIB_TEMP.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="242" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_RIB_AFFICHE</comment>
+    <sqlFile path="db/sql/init/views/V_RIB_AFFICHE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="243" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REJNOEMIE</comment>
+    <sqlFile path="db/sql/init/views/V_REJNOEMIE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="244" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_OBJET</comment>
+    <sqlFile path="db/sql/init/views/V_OBJET.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="245" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CPT_CLI</comment>
+    <sqlFile path="db/sql/init/views/V_CPT_CLI.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="246" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DCPTPRV</comment>
+    <sqlFile path="db/sql/init/views/V_DCPTPRV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="247" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GD03</comment>
+    <sqlFile path="db/sql/init/views/V_GD03.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="248" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CPTA_COTIS_ENCAIS</comment>
+    <sqlFile path="db/sql/init/views/V_CPTA_COTIS_ENCAIS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="249" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DETTE_PREV</comment>
+    <sqlFile path="db/sql/init/views/V_DETTE_PREV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="250" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QTTC_RETRO</comment>
+    <sqlFile path="db/sql/init/views/V_QTTC_RETRO.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="251" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QTTC_GAR</comment>
+    <sqlFile path="db/sql/init/views/V_QTTC_GAR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="252" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW ACTE</comment>
+    <sqlFile path="db/sql/init/views/ACTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="253" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW RBRQ</comment>
+    <sqlFile path="db/sql/init/views/RBRQ.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="254" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SEQRUB</comment>
+    <sqlFile path="db/sql/init/views/V_SEQRUB.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="255" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GAR_PROD</comment>
+    <sqlFile path="db/sql/init/views/V_GAR_PROD.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="256" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ADHE_AUTO</comment>
+    <sqlFile path="db/sql/init/views/V_ADHE_AUTO.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="257" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW COUVERTURE</comment>
+    <sqlFile path="db/sql/init/views/COUVERTURE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="258" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CVRT</comment>
+    <sqlFile path="db/sql/init/views/V_CVRT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="259" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_STATS_BRANCHE</comment>
+    <sqlFile path="db/sql/init/views/V_STATS_BRANCHE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="260" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_EDITION_DCPT</comment>
+    <sqlFile path="db/sql/init/views/V_EDITION_DCPT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="261" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QTTC_COMM</comment>
+    <sqlFile path="db/sql/init/views/V_QTTC_COMM.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="262" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SNTR01</comment>
+    <sqlFile path="db/sql/init/views/V_SNTR01.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="263" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SINISTRE_PORTE</comment>
+    <sqlFile path="db/sql/init/views/V_SINISTRE_PORTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="264" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FACTRECOURS</comment>
+    <sqlFile path="db/sql/init/views/V_FACTRECOURS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="265" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CRIT_SP_ADHE</comment>
+    <sqlFile path="db/sql/init/views/V_CRIT_SP_ADHE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="266" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QTTC_DETAIL</comment>
+    <sqlFile path="db/sql/init/views/V_QTTC_DETAIL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="267" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW POPULATION</comment>
+    <sqlFile path="db/sql/init/views/POPULATION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="268" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CRIT_SP</comment>
+    <sqlFile path="db/sql/init/views/V_CRIT_SP.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="269" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GC02</comment>
+    <sqlFile path="db/sql/init/views/V_GC02.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="270" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW SNTR_TOTAL</comment>
+    <sqlFile path="db/sql/init/views/SNTR_TOTAL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="271" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PMTS</comment>
+    <sqlFile path="db/sql/init/views/V_PMTS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="272" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SOCIETE</comment>
+    <sqlFile path="db/sql/init/views/V_SOCIETE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="273" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTE</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="274" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CONTRAT</comment>
+    <sqlFile path="db/sql/init/views/V_CONTRAT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="275" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW VS_GRNTS</comment>
+    <sqlFile path="db/sql/init/views/VS_GRNTS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="276" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW VD_SOCIETE</comment>
+    <sqlFile path="db/sql/init/views/VD_SOCIETE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="277" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PR02</comment>
+    <sqlFile path="db/sql/init/views/V_PR02.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="278" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_APPLI_CONTEXTE</comment>
+    <sqlFile path="db/sql/init/views/V_APPLI_CONTEXTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="279" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_APPLI_MENU</comment>
+    <sqlFile path="db/sql/init/views/V_APPLI_MENU.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="280" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FORCAGE</comment>
+    <sqlFile path="db/sql/init/views/V_FORCAGE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="281" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PR04</comment>
+    <sqlFile path="db/sql/init/views/V_PR04.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="282" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ST01</comment>
+    <sqlFile path="db/sql/init/views/V_ST01.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="283" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DETTE</comment>
+    <sqlFile path="db/sql/init/views/V_DETTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="284" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PRDG_DCS</comment>
+    <sqlFile path="db/sql/init/views/V_PRDG_DCS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="285" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ROLE_FROM_SINISTRE</comment>
+    <sqlFile path="db/sql/init/views/V_ROLE_FROM_SINISTRE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="286" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GS18</comment>
+    <sqlFile path="db/sql/init/views/V_GS18.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="287" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_RECOURS_SINISTRE</comment>
+    <sqlFile path="db/sql/init/views/V_RECOURS_SINISTRE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="288" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DELEG_PREST</comment>
+    <sqlFile path="db/sql/init/views/V_DELEG_PREST.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="289" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_LISTLBLE</comment>
+    <sqlFile path="db/sql/init/views/V_LISTLBLE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="290" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_HELP_VAR</comment>
+    <sqlFile path="db/sql/init/views/V_HELP_VAR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="291" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PORTE1</comment>
+    <sqlFile path="db/sql/init/views/V_PORTE1.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="292" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SITU_CONTRAT</comment>
+    <sqlFile path="db/sql/init/views/V_SITU_CONTRAT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="293" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PORTE</comment>
+    <sqlFile path="db/sql/init/views/V_PORTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="294" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QTTC_FRAIS</comment>
+    <sqlFile path="db/sql/init/views/V_QTTC_FRAIS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="295" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PRDG_ADS</comment>
+    <sqlFile path="db/sql/init/views/V_PRDG_ADS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="296" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CREANCE</comment>
+    <sqlFile path="db/sql/init/views/V_CREANCE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="297" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_LIB_AFFEC</comment>
+    <sqlFile path="db/sql/init/views/V_LIB_AFFEC.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="298" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ARRET</comment>
+    <sqlFile path="db/sql/init/views/V_ARRET.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="299" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SUIVI_FACT_TPE</comment>
+    <sqlFile path="db/sql/init/views/V_SUIVI_FACT_TPE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="300" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_NUMGAR</comment>
+    <sqlFile path="db/sql/init/views/V_NUMGAR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="301" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CRRR</comment>
+    <sqlFile path="db/sql/init/views/V_CRRR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="302" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_LISTE_VILLE</comment>
+    <sqlFile path="db/sql/init/views/V_LISTE_VILLE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="303" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SOC_ORGNS</comment>
+    <sqlFile path="db/sql/init/views/V_SOC_ORGNS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="304" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_VALID</comment>
+    <sqlFile path="db/sql/init/views/V_VALID.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="305" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_BENE_JUSTIF</comment>
+    <sqlFile path="db/sql/init/views/V_BENE_JUSTIF.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="306" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA_2</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA_2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="307" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SIN_PROD</comment>
+    <sqlFile path="db/sql/init/views/V_SIN_PROD.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="308" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA_PREST</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA_PREST.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="309" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ASSU_DCPT</comment>
+    <sqlFile path="db/sql/init/views/V_ASSU_DCPT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="310" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ST05</comment>
+    <sqlFile path="db/sql/init/views/V_ST05.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="311" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CONTRAT_SOUS</comment>
+    <sqlFile path="db/sql/init/views/V_CONTRAT_SOUS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="312" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CONTRAT_DELEG</comment>
+    <sqlFile path="db/sql/init/views/V_CONTRAT_DELEG.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="313" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ALL_GAR</comment>
+    <sqlFile path="db/sql/init/views/V_ALL_GAR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="314" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GAR_COTI2</comment>
+    <sqlFile path="db/sql/init/views/V_GAR_COTI2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="315" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA_COTIS</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA_COTIS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="316" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CPTA_COTIS_REVERS</comment>
+    <sqlFile path="db/sql/init/views/V_CPTA_COTIS_REVERS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="317" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REVERSEMENT_ADHESION</comment>
+    <sqlFile path="db/sql/init/views/V_REVERSEMENT_ADHESION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="318" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PRIMES</comment>
+    <sqlFile path="db/sql/init/views/V_PRIMES.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="319" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REVERSEMENT_BRANCHE</comment>
+    <sqlFile path="db/sql/init/views/V_REVERSEMENT_BRANCHE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="320" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REVERSEMENT</comment>
+    <sqlFile path="db/sql/init/views/V_REVERSEMENT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="321" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TRAV_REVERSEMENT</comment>
+    <sqlFile path="db/sql/init/views/V_TRAV_REVERSEMENT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="322" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REVERSEMENT_PRETOT</comment>
+    <sqlFile path="db/sql/init/views/V_REVERSEMENT_PRETOT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="323" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REVERSEMENT_CONTRAT</comment>
+    <sqlFile path="db/sql/init/views/V_REVERSEMENT_CONTRAT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="324" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_RETROCESSION</comment>
+    <sqlFile path="db/sql/init/views/V_RETROCESSION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="325" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA_5</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA_5.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="326" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QTTC_TAXE</comment>
+    <sqlFile path="db/sql/init/views/V_QTTC_TAXE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="327" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW ASSURES</comment>
+    <sqlFile path="db/sql/init/views/ASSURES.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="328" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW ASSURES_PREV</comment>
+    <sqlFile path="db/sql/init/views/ASSURES_PREV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="329" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PVVUE</comment>
+    <sqlFile path="db/sql/init/views/V_PVVUE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="330" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REMISE_VIRE_DETAIL</comment>
+    <sqlFile path="db/sql/init/views/V_REMISE_VIRE_DETAIL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="331" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CPTA_COTIS_REVERS_TAXE</comment>
+    <sqlFile path="db/sql/init/views/V_CPTA_COTIS_REVERS_TAXE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="332" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_RETRO_COTIS</comment>
+    <sqlFile path="db/sql/init/views/V_RETRO_COTIS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="333" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_APPLI</comment>
+    <sqlFile path="db/sql/init/views/V_APPLI.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="334" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_BENE_JUSTIF_SIN_R</comment>
+    <sqlFile path="db/sql/init/views/V_BENE_JUSTIF_SIN_R.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="335" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_BENE_JUSTIF_SIN</comment>
+    <sqlFile path="db/sql/init/views/V_BENE_JUSTIF_SIN.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="336" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AFFIL_QTTC_MLO</comment>
+    <sqlFile path="db/sql/init/views/V_AFFIL_QTTC_MLO.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="337" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AFFIL_QTTC</comment>
+    <sqlFile path="db/sql/init/views/V_AFFIL_QTTC.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="338" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AFFIL_QTTC2</comment>
+    <sqlFile path="db/sql/init/views/V_AFFIL_QTTC2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="339" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CONTRAT_SIN</comment>
+    <sqlFile path="db/sql/init/views/V_CONTRAT_SIN.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="340" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ENTITE3</comment>
+    <sqlFile path="db/sql/init/views/V_ENTITE3.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="341" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CLEF_CORRES</comment>
+    <sqlFile path="db/sql/init/views/V_CLEF_CORRES.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="342" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW GRILLE</comment>
+    <sqlFile path="db/sql/init/views/GRILLE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="343" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW T</comment>
+    <sqlFile path="db/sql/init/views/T.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="344" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GS17</comment>
+    <sqlFile path="db/sql/init/views/V_GS17.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="345" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW VM_PRICHARGE</comment>
+    <sqlFile path="db/sql/init/views/VM_PRICHARGE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="346" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_BENE_RIB_SPECIF</comment>
+    <sqlFile path="db/sql/init/views/V_BENE_RIB_SPECIF.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="347" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_EDIT_DCPTRO</comment>
+    <sqlFile path="db/sql/init/views/V_EDIT_DCPTRO.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="348" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_EDITION_DCPTRO</comment>
+    <sqlFile path="db/sql/init/views/V_EDITION_DCPTRO.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="349" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PNUL</comment>
+    <sqlFile path="db/sql/init/views/V_PNUL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="350" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FRAIS_INDIV</comment>
+    <sqlFile path="db/sql/init/views/V_FRAIS_INDIV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="351" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_LIB_PARAM</comment>
+    <sqlFile path="db/sql/init/views/V_LIB_PARAM.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="352" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QG25</comment>
+    <sqlFile path="db/sql/init/views/V_QG25.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="353" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SOUS_QUER</comment>
+    <sqlFile path="db/sql/init/views/V_SOUS_QUER.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="354" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QG21</comment>
+    <sqlFile path="db/sql/init/views/V_QG21.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="355" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CLEF_CORRES2</comment>
+    <sqlFile path="db/sql/init/views/V_CLEF_CORRES2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="356" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_VAL_VARIABLE3</comment>
+    <sqlFile path="db/sql/init/views/V_VAL_VARIABLE3.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="357" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW PMTS</comment>
+    <sqlFile path="db/sql/init/views/PMTS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="358" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMM_INDIV</comment>
+    <sqlFile path="db/sql/init/views/V_COMM_INDIV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="359" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CODFRAIS</comment>
+    <sqlFile path="db/sql/init/views/V_CODFRAIS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="360" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DCPTDEDU_TOT</comment>
+    <sqlFile path="db/sql/init/views/V_DCPTDEDU_TOT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="361" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_EXO_COTIS</comment>
+    <sqlFile path="db/sql/init/views/V_EXO_COTIS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="362" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PRIMES_GROUPE</comment>
+    <sqlFile path="db/sql/init/views/V_PRIMES_GROUPE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="363" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SYNTH_COTIS_ADHE</comment>
+    <sqlFile path="db/sql/init/views/V_SYNTH_COTIS_ADHE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="364" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SYNTH_COTIS_GAR</comment>
+    <sqlFile path="db/sql/init/views/V_SYNTH_COTIS_GAR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="365" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_VAL_VARIABLE2</comment>
+    <sqlFile path="db/sql/init/views/V_VAL_VARIABLE2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="366" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ADHESION_INDIV</comment>
+    <sqlFile path="db/sql/init/views/V_ADHESION_INDIV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="367" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QG24</comment>
+    <sqlFile path="db/sql/init/views/V_QG24.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="368" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QG22</comment>
+    <sqlFile path="db/sql/init/views/V_QG22.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="369" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SYNTH_PREST_ADHE</comment>
+    <sqlFile path="db/sql/init/views/V_SYNTH_PREST_ADHE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="370" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SYNTH_PREST</comment>
+    <sqlFile path="db/sql/init/views/V_SYNTH_PREST.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="371" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GARANTIE</comment>
+    <sqlFile path="db/sql/init/views/V_GARANTIE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="372" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GC52</comment>
+    <sqlFile path="db/sql/init/views/V_GC52.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="373" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DCPT1</comment>
+    <sqlFile path="db/sql/init/views/V_DCPT1.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="374" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GC03</comment>
+    <sqlFile path="db/sql/init/views/V_GC03.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="375" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DCPT_ANNUL</comment>
+    <sqlFile path="db/sql/init/views/V_DCPT_ANNUL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="376" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GC05</comment>
+    <sqlFile path="db/sql/init/views/V_GC05.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="377" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QTTC_TOTALE</comment>
+    <sqlFile path="db/sql/init/views/V_QTTC_TOTALE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="378" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QTTC_SOUS</comment>
+    <sqlFile path="db/sql/init/views/V_QTTC_SOUS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="379" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QTTC_GLOBAL</comment>
+    <sqlFile path="db/sql/init/views/V_QTTC_GLOBAL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="380" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QTTC_ADHE</comment>
+    <sqlFile path="db/sql/init/views/V_QTTC_ADHE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="381" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_STATS_MAL02</comment>
+    <sqlFile path="db/sql/init/views/V_STATS_MAL02.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="382" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_STATS_MAL</comment>
+    <sqlFile path="db/sql/init/views/V_STATS_MAL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="383" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DCPTCIE02</comment>
+    <sqlFile path="db/sql/init/views/V_DCPTCIE02.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="384" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ECART_PIECE</comment>
+    <sqlFile path="db/sql/init/views/V_ECART_PIECE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="385" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DCPT</comment>
+    <sqlFile path="db/sql/init/views/V_DCPT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="386" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AFFEC</comment>
+    <sqlFile path="db/sql/init/views/V_AFFEC.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="387" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMM_GROUPE</comment>
+    <sqlFile path="db/sql/init/views/V_COMM_GROUPE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="388" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TAXE_INDIV</comment>
+    <sqlFile path="db/sql/init/views/V_TAXE_INDIV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="389" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COTIS_INDIV</comment>
+    <sqlFile path="db/sql/init/views/V_COTIS_INDIV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="390" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TAXE_GROUPE</comment>
+    <sqlFile path="db/sql/init/views/V_TAXE_GROUPE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="391" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_FRAIS_GROUPE</comment>
+    <sqlFile path="db/sql/init/views/V_FRAIS_GROUPE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="392" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TEST</comment>
+    <sqlFile path="db/sql/init/views/V_TEST.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="393" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COTIS_GROUPE</comment>
+    <sqlFile path="db/sql/init/views/V_COTIS_GROUPE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="394" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PV21</comment>
+    <sqlFile path="db/sql/init/views/V_PV21.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="395" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SYNTH_PREST_GAR</comment>
+    <sqlFile path="db/sql/init/views/V_SYNTH_PREST_GAR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="396" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_RECUP_VARIABLE</comment>
+    <sqlFile path="db/sql/init/views/V_RECUP_VARIABLE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="397" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_VAL_VARIABLE</comment>
+    <sqlFile path="db/sql/init/views/V_VAL_VARIABLE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="398" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SYNTH_PREST_CLASSE</comment>
+    <sqlFile path="db/sql/init/views/V_SYNTH_PREST_CLASSE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="399" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CRITERE</comment>
+    <sqlFile path="db/sql/init/views/V_CRITERE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="400" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CRITERE_INDIV</comment>
+    <sqlFile path="db/sql/init/views/V_CRITERE_INDIV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="401" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PRIMES_INDIV</comment>
+    <sqlFile path="db/sql/init/views/V_PRIMES_INDIV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="402" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SP</comment>
+    <sqlFile path="db/sql/init/views/V_SP.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="403" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SYNTH_COTIS_PREV</comment>
+    <sqlFile path="db/sql/init/views/V_SYNTH_COTIS_PREV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="404" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SYNTH_COTIS_CLASSE</comment>
+    <sqlFile path="db/sql/init/views/V_SYNTH_COTIS_CLASSE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="405" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REVERS_BRANCHE</comment>
+    <sqlFile path="db/sql/init/views/V_REVERS_BRANCHE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="406" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REVERSEMENT_TOT</comment>
+    <sqlFile path="db/sql/init/views/V_REVERSEMENT_TOT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="407" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_SYNTH_COTIS</comment>
+    <sqlFile path="db/sql/init/views/V_SYNTH_COTIS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="408" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_CPTA_COTISATIONS</comment>
+    <sqlFile path="db/sql/init/views/V_CPTA_COTISATIONS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="409" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA_3</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA_3.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="410" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_RUBRIQUE</comment>
+    <sqlFile path="db/sql/init/views/V_RUBRIQUE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="411" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PRIMES_DUES</comment>
+    <sqlFile path="db/sql/init/views/V_PRIMES_DUES.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="412" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_EDIT_GAR</comment>
+    <sqlFile path="db/sql/init/views/V_EDIT_GAR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="413" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GAR</comment>
+    <sqlFile path="db/sql/init/views/V_GAR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="414" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ENTITE</comment>
+    <sqlFile path="db/sql/init/views/V_ENTITE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="415" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COTIS_EXO_GROUPE</comment>
+    <sqlFile path="db/sql/init/views/V_COTIS_EXO_GROUPE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="416" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REMUNERATION</comment>
+    <sqlFile path="db/sql/init/views/V_REMUNERATION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="417" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ENTITE2</comment>
+    <sqlFile path="db/sql/init/views/V_ENTITE2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="418" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QTTC_GLOB</comment>
+    <sqlFile path="db/sql/init/views/V_QTTC_GLOB.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="419" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_HISTO_TRANSFERT</comment>
+    <sqlFile path="db/sql/init/views/V_HISTO_TRANSFERT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="420" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_VAL_VARIABLE4</comment>
+    <sqlFile path="db/sql/init/views/V_VAL_VARIABLE4.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="421" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_NEW_ROLE</comment>
+    <sqlFile path="db/sql/init/views/V_NEW_ROLE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="422" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ASSU_ADH</comment>
+    <sqlFile path="db/sql/init/views/V_ASSU_ADH.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="423" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ROLE</comment>
+    <sqlFile path="db/sql/init/views/V_ROLE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="424" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW TIERSPAYANT</comment>
+    <sqlFile path="db/sql/init/views/TIERSPAYANT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="425" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_AFFILIATION</comment>
+    <sqlFile path="db/sql/init/views/V_AFFILIATION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="426" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ANNUL_ENCAIS</comment>
+    <sqlFile path="db/sql/init/views/V_ANNUL_ENCAIS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="427" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_BENE</comment>
+    <sqlFile path="db/sql/init/views/V_BENE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="428" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="429" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA10_A</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA10_A.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="430" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA10_R</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA10_R.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="431" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA332</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA332.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="432" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA342</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA342.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="433" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA51</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA51.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="434" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA511</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA511.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="435" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA512</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA512.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="436" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA9271</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA9271.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="437" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA9281</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA9281.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="438" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA_ECRAN</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA_ECRAN.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="439" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_COMPTA_PIECE</comment>
+    <sqlFile path="db/sql/init/views/V_COMPTA_PIECE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="440" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DCPTCIE</comment>
+    <sqlFile path="db/sql/init/views/V_DCPTCIE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="441" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DCPTCIE_TEMP</comment>
+    <sqlFile path="db/sql/init/views/V_DCPTCIE_TEMP.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="442" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DCPTCIE_TEST</comment>
+    <sqlFile path="db/sql/init/views/V_DCPTCIE_TEST.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="443" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_DCPTCIE_TOT</comment>
+    <sqlFile path="db/sql/init/views/V_DCPTCIE_TOT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="444" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ENCAISMT</comment>
+    <sqlFile path="db/sql/init/views/V_ENCAISMT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="445" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ENVOI</comment>
+    <sqlFile path="db/sql/init/views/V_ENVOI.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="446" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_EXPORT_ASS</comment>
+    <sqlFile path="db/sql/init/views/V_EXPORT_ASS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="447" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GD06</comment>
+    <sqlFile path="db/sql/init/views/V_GD06.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="448" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_GD06_D</comment>
+    <sqlFile path="db/sql/init/views/V_GD06_D.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="449" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_HISTO_JOURS_DEST</comment>
+    <sqlFile path="db/sql/init/views/V_HISTO_JOURS_DEST.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="450" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_IEMIE</comment>
+    <sqlFile path="db/sql/init/views/V_IEMIE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="451" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_IMPORT_SNTR</comment>
+    <sqlFile path="db/sql/init/views/V_IMPORT_SNTR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="452" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_INDVS_DEST</comment>
+    <sqlFile path="db/sql/init/views/V_INDVS_DEST.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="453" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_LBLE_EXT</comment>
+    <sqlFile path="db/sql/init/views/V_LBLE_EXT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="454" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_LIBELLE_BIS</comment>
+    <sqlFile path="db/sql/init/views/V_LIBELLE_BIS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="455" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PERSONNE</comment>
+    <sqlFile path="db/sql/init/views/V_PERSONNE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="456" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PORTE_REMISE</comment>
+    <sqlFile path="db/sql/init/views/V_PORTE_REMISE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="457" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PORTE_REMISE_AFF</comment>
+    <sqlFile path="db/sql/init/views/V_PORTE_REMISE_AFF.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="458" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PRELEVEMENT</comment>
+    <sqlFile path="db/sql/init/views/V_PRELEVEMENT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="459" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_PROPOSITION</comment>
+    <sqlFile path="db/sql/init/views/V_PROPOSITION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="460" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_QTTC_ANNEXE</comment>
+    <sqlFile path="db/sql/init/views/V_QTTC_ANNEXE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="461" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REMISE_EXTERNE</comment>
+    <sqlFile path="db/sql/init/views/V_REMISE_EXTERNE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="462" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REMISE_OP</comment>
+    <sqlFile path="db/sql/init/views/V_REMISE_OP.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="463" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REMISE_OP_DETAIL</comment>
+    <sqlFile path="db/sql/init/views/V_REMISE_OP_DETAIL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="464" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REMISE_PRELEV_DETAIL</comment>
+    <sqlFile path="db/sql/init/views/V_REMISE_PRELEV_DETAIL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="465" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REMISE_PRELEV_DETAIL1</comment>
+    <sqlFile path="db/sql/init/views/V_REMISE_PRELEV_DETAIL1.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="466" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REMISE_VIRE</comment>
+    <sqlFile path="db/sql/init/views/V_REMISE_VIRE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="467" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_REMISE_VIRE_DETAIL_BATCH</comment>
+    <sqlFile path="db/sql/init/views/V_REMISE_VIRE_DETAIL_BATCH.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="468" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_ROLE_BIS</comment>
+    <sqlFile path="db/sql/init/views/V_ROLE_BIS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="469" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TIERS_BALANCE</comment>
+    <sqlFile path="db/sql/init/views/V_TIERS_BALANCE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="470" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TIERS_NON_SOLDE</comment>
+    <sqlFile path="db/sql/init/views/V_TIERS_NON_SOLDE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="471" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE VIEW V_TIERS_P</comment>
+    <sqlFile path="db/sql/init/views/V_TIERS_P.sql" endDelimiter="GO"/>
+  </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : J405_2
+-- Cible      : ARTHUS.J405_2
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM J405_2 FOR ARTHUS.J405_2;

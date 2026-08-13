@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : TRFS
+-- Cible      : ARTHUS.TARIF
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM TRFS FOR ARTHUS.TARIF;

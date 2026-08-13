@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : F_NB_ADR
+-- Cible      : ARTHUS.F_NB_ADR
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM F_NB_ADR FOR ARTHUS.F_NB_ADR;

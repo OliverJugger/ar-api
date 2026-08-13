@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.FRCG
+-- Cible      : ARTHUS.FORCAGE
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.FRCG FOR ARTHUS.FORCAGE;

@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.DFRB
+-- Cible      : ARTHUS.DEFRUB
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.DFRB FOR ARTHUS.DEFRUB;

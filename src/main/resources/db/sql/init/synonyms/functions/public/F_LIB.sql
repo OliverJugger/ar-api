@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : F_LIB
+-- Cible      : ARTHUS.F_LIB
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM F_LIB FOR ARTHUS.F_LIB;

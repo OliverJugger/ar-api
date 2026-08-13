@@ -1,0 +1,9 @@
+CREATE FORCE VIEW ARTHUS.V_COMM_SP AS
+select	NUMQUIT,
+	NUMFOR,
+	sum(MONTANT) montant
+from	qttc_comm
+group
+by	numquit,numfor
+GO
+CREATE OR REPLACE PUBLIC SYNONYM V_COMM_SP FOR ARTHUS.V_COMM_SP

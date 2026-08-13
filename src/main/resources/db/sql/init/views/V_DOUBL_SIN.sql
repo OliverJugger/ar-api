@@ -1,0 +1,48 @@
+CREATE FORCE VIEW ARTHUS.V_DOUBL_SIN AS
+select 
+  sinistre.CODFRAIS,
+  sinistre.NUMGAR,
+  sinistre.NUMINDIV,
+  sinistre.DATSIN,
+  sinistre.MTPREST,
+  sinistre.MTREMB,
+  sinistre.MTFRAIS,
+  sinistre.DATSAI,
+  sinistre.NBACTE,
+  sinistre.AUTRB,
+  sinistre.MTFRAN,
+  sinistre.SENS,
+  sinistre.MTMAX,
+  sinistre.MTREEL,
+  sinistre.NUMDEC,
+  sinistre.NUMASSU,
+  sinistre.NUMBENE,
+  sinistre.NUMSIN,
+  sinistre.NUMANNUL,
+  sinistre.USERNAME,
+  sinistre.FLAGAM,
+  sinistre.TYPBENE,
+  sinistre.NUMPOPU,
+  sinistre.NUMFOR,
+  sinistre.NUM_FACT,
+  sinistre.NUMMATH,
+  sinistre.NUMPC,
+  sinistre.X,
+  sinistre.IDADHESION,
+  sinistre.PDSQLS,
+  sinistre.SPE_EXE,
+  sinistre.FRA_DEP,
+  sinistre.RACMON,
+  sinistre.DATEDIT_RC,
+  sinistre.EDTDCPT,
+  sinistre.MONNAIE,
+  sinistre.NUMASSU_RC,
+  sinistre.NUMDCPTCIE,
+  sinistre.NUMDEC_RC,
+  sinistre.FLAG_REGIME,
+  sntr_ref.numsin_porte
+FROM sntr_ref, sinistre 
+WHERE sntr_ref.numremise = 5875
+and sntr_ref.numsin = sinistre.numsin
+GO
+CREATE OR REPLACE PUBLIC SYNONYM V_DOUBL_SIN FOR ARTHUS.V_DOUBL_SIN

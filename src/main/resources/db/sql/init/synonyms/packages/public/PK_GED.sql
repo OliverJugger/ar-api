@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : PK_GED
+-- Cible      : ARTHUS.PK_GED
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM PK_GED FOR ARTHUS.PK_GED;

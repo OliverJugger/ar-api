@@ -26,109 +26,118 @@
         <openapi-spec>${project.basedir}/src/main/resources/openapi/openapi.yaml</openapi-spec>
         <api-package>com.arwc3.generated.api</api-package>
         <model-package>com.arwc3.generated.model</model-package>
-        <default-profile>gerep-catamania</default-profile>
+        <default-profile>local-docker</default-profile>
+		<!-- default configuration -->
+		<arthus.profile.name>catamania</arthus.profile.name>
+		<arthus.profile.path>classpath:/profiles/gerep/</arthus.profile.path>
     </properties>
 
     <profiles>
+	
+		<profile>
+            <id>local-docker</id>
+            <properties>			
+				<arthus.profile.name>local-docker</arthus.profile.name>
+				<arthus.profile.path>classpath:/profiles/</arthus.profile.path>
+            </properties>
+        </profile>
+		
         <!-- GEREP -->
-
         <profile>
             <id>gerep-catamania</id>
             <properties>
-                <spring.config.location>file:/conf/gerep/</spring.config.location>
-                <spring.active.profile>catamania</spring.active.profile>
+                <arthus.profile.name>catamania</arthus.profile.name>
+                <arthus.profile.path>classpath:/profiles/gerep/</arthus.profile.path>
             </properties>
         </profile>
         
         <profile>
             <id>gerep-dev</id>
             <properties>
-                <spring.config.location>file:/conf/gerep/</spring.config.location>
-                <spring.active.profile>dev</spring.active.profile>
+                <arthus.profile.name>dev</arthus.profile.name>
+                <arthus.profile.path>classpath:/profiles/gerep/</arthus.profile.path>
             </properties>
         </profile>
         
         <profile>
             <id>gerep-pre</id>
             <properties>
-                <spring.config.location>file:/conf/gerep/</spring.config.location>
-                <spring.active.profile>pre</spring.active.profile>
+                <arthus.profile.name>pre</arthus.profile.name>
+                <arthus.profile.path>classpath:/profiles/gerep/</arthus.profile.path>
             </properties>
         </profile>
         
         <profile>
             <id>gerep-prod</id>
             <properties>
-                <spring.config.location>file:/conf/gerep/</spring.config.location>
-                <spring.active.profile>prod</spring.active.profile>
+                <arthus.profile.name>prod</arthus.profile.name>
+                <arthus.profile.path>classpath:/profiles/gerep/</arthus.profile.path>
             </properties>
         </profile>
         
         <profile>
             <id>gerep-qualif</id>
             <properties>
-                <spring.config.location>file:/conf/gerep/</spring.config.location>
-                <spring.active.profile>qualif</spring.active.profile>
+                <arthus.profile.name>qualif</arthus.profile.name>
+                <arthus.profile.path>classpath:/profiles/gerep/</arthus.profile.path>
             </properties>
         </profile>
         
         <profile>
             <id>gerep-recette1</id>
             <properties>
-                <spring.config.location>file:/conf/gerep/</spring.config.location>
-                <spring.active.profile>recette1</spring.active.profile>
+                <arthus.profile.name>recette1</arthus.profile.name>
+                <arthus.profile.path>classpath:/profiles/gerep/</arthus.profile.path>
             </properties>
         </profile>
 
         <profile>
             <id>gerep-recette2</id>
             <properties>
-                <spring.config.location>file:/conf/gerep/</spring.config.location>
-                <spring.active.profile>recette1</spring.active.profile>
+                <arthus.profile.name>recette2</arthus.profile.name>
+                <arthus.profile.path>classpath:/profiles/gerep/</arthus.profile.path>
             </properties>
         </profile>
 
         <!-- CARCO -->
-
         <profile>
             <id>carco-catamania</id>
             <properties>
-                <spring.config.location>file:/conf/CARCO/</spring.config.location>
-                <spring.active.profile>catamania</spring.active.profile>
+                <arthus.profile.name>catamania</arthus.profile.name>
+                <arthus.profile.path>classpath:/profiles/carco/</arthus.profile.path>
             </properties>
         </profile>
         
         <profile>
             <id>carco-pre</id>
             <properties>
-                <spring.config.location>file:/conf/carco/</spring.config.location>
-                <spring.active.profile>pre</spring.active.profile>
+                <arthus.profile.name>pre</arthus.profile.name>
+                <arthus.profile.path>classpath:/profiles/carco/</arthus.profile.path>
             </properties>
         </profile>
         
         <profile>
             <id>carco-prod</id>
             <properties>
-                <spring.config.location>file:/conf/carco/</spring.config.location>
-                <spring.active.profile>prod</spring.active.profile>
+                <arthus.profile.name>prod</arthus.profile.name>
+                <arthus.profile.path>classpath:/profiles/carco/</arthus.profile.path>
             </properties>
         </profile>
         
         <profile>
             <id>carco-recette</id>
             <properties>
-                <spring.config.location>file:/conf/carco/</spring.config.location>
-                <spring.active.profile>recette</spring.active.profile>
+                <arthus.profile.name>recette</arthus.profile.name>
+                <arthus.profile.path>classpath:/profiles/carco/</arthus.profile.path>
             </properties>
         </profile>
         
         <!-- SMI -->
-
         <profile>
             <id>smi-catamania</id>
             <properties>
-                <spring.config.location>file:/conf/smi/</spring.config.location>
-                <spring.active.profile>catamania</spring.active.profile>
+                <arthus.profile.name>catamania</arthus.profile.name>
+                <arthus.profile.path>classpath:/profiles/smi/</arthus.profile.path>
             </properties>
         </profile>
 
@@ -159,6 +168,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+		
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
         </dependency>
 
         <!-- Oracle JDBC driver (version gérée par le BOM Spring Boot) -->
@@ -217,7 +231,17 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	
     <build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+			<resource>
+				<directory>conf</directory>
+			</resource>
+		</resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -227,11 +251,6 @@
                         <profile>${default-profile}</profile>
                     </profiles>
                 </configuration>
-                 <!-- initialization in 2 ms
-                    jdbc:oracle:thin:@//null:null/null
-                    false
-                    jdbc:oracle:thin:@//null:null/null
-                    false -->
             </plugin>
 
             <plugin>

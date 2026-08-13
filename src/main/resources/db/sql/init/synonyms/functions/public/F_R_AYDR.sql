@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : F_R_AYDR
+-- Cible      : ARTHUS.F_R_AYDR
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM F_R_AYDR FOR ARTHUS.F_R_AYDR;

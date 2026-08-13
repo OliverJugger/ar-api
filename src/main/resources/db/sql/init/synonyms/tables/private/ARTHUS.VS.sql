@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.VS
+-- Cible      : ARTHUS.PIECES
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.VS FOR ARTHUS.PIECES;

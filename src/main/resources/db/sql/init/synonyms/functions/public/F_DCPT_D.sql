@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : F_DCPT_D
+-- Cible      : ARTHUS.F_DCPT_D
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM F_DCPT_D FOR ARTHUS.F_DCPT_D;

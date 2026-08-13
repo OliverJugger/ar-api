@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : MIN3
+-- Cible      : ARTHUS.MIN3
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM MIN3 FOR ARTHUS.MIN3;

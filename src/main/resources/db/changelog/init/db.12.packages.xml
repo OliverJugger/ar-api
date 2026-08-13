@@ -1,0 +1,635 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+  <changeSet id="1" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE Pg_test</comment>
+    <sqlFile path="db/sql/init/packages/Pg_test.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="2" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_ADHESION</comment>
+    <sqlFile path="db/sql/init/packages/PK_ADHESION.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="3" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_affiche_texte</comment>
+    <sqlFile path="db/sql/init/packages/pk_affiche_texte.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="4" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_AF10</comment>
+    <sqlFile path="db/sql/init/packages/PK_AF10.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="5" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_ARTHUS</comment>
+    <sqlFile path="db/sql/init/packages/PK_ARTHUS.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="6" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_ARTHUS_CACHE</comment>
+    <sqlFile path="db/sql/init/packages/PK_ARTHUS_CACHE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="7" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_arthusora</comment>
+    <sqlFile path="db/sql/init/packages/pk_arthusora.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="8" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_AS_ZIP</comment>
+    <sqlFile path="db/sql/init/packages/PK_AS_ZIP.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="9" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_AUTO_FLUX</comment>
+    <sqlFile path="db/sql/init/packages/PK_AUTO_FLUX.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="10" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_A408B</comment>
+    <sqlFile path="db/sql/init/packages/PK_A408B.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="11" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_BATCH</comment>
+    <sqlFile path="db/sql/init/packages/PK_BATCH.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="12" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_boucle</comment>
+    <sqlFile path="db/sql/init/packages/pk_boucle.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="13" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_calcul</comment>
+    <sqlFile path="db/sql/init/packages/pk_calcul.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="14" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_CALCUL_DOSSIER</comment>
+    <sqlFile path="db/sql/init/packages/PK_CALCUL_DOSSIER.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="15" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_cheq_piece</comment>
+    <sqlFile path="db/sql/init/packages/pk_cheq_piece.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="16" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_chofne</comment>
+    <sqlFile path="db/sql/init/packages/pk_chofne.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="17" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_cm06b</comment>
+    <sqlFile path="db/sql/init/packages/pk_cm06b.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="18" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_COMPTA</comment>
+    <sqlFile path="db/sql/init/packages/PK_COMPTA.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="19" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_compte_tiers</comment>
+    <sqlFile path="db/sql/init/packages/pk_compte_tiers.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="20" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_contexte</comment>
+    <sqlFile path="db/sql/init/packages/pk_contexte.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="21" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_CONTRAT</comment>
+    <sqlFile path="db/sql/init/packages/PK_CONTRAT.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="22" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_convert_to_xlsx</comment>
+    <sqlFile path="db/sql/init/packages/pk_convert_to_xlsx.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="23" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_corrige_texte</comment>
+    <sqlFile path="db/sql/init/packages/pk_corrige_texte.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="24" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_COTIS</comment>
+    <sqlFile path="db/sql/init/packages/PK_COTIS.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="25" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_CP_ACTE_REG</comment>
+    <sqlFile path="db/sql/init/packages/PK_CP_ACTE_REG.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="26" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_CTRL_AFFIL</comment>
+    <sqlFile path="db/sql/init/packages/PK_CTRL_AFFIL.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="27" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_CTRL_TP</comment>
+    <sqlFile path="db/sql/init/packages/PK_CTRL_TP.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="28" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_def</comment>
+    <sqlFile path="db/sql/init/packages/pk_def.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="29" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_DEVISE</comment>
+    <sqlFile path="db/sql/init/packages/PK_DEVISE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="30" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_dev_pv01b</comment>
+    <sqlFile path="db/sql/init/packages/pk_dev_pv01b.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="31" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_DEV_PV01B_SEPA</comment>
+    <sqlFile path="db/sql/init/packages/PK_DEV_PV01B_SEPA.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="32" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_dev_pv02b</comment>
+    <sqlFile path="db/sql/init/packages/pk_dev_pv02b.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="33" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_DEV_PV03B</comment>
+    <sqlFile path="db/sql/init/packages/PK_DEV_PV03B.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="34" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_DEV_QG08B</comment>
+    <sqlFile path="db/sql/init/packages/PK_DEV_QG08B.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="35" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_DEV_VR01B</comment>
+    <sqlFile path="db/sql/init/packages/PK_DEV_VR01B.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="36" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_DEV_VR01B_SEPA</comment>
+    <sqlFile path="db/sql/init/packages/PK_DEV_VR01B_SEPA.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="37" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_DEV_VR03B</comment>
+    <sqlFile path="db/sql/init/packages/PK_DEV_VR03B.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="38" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_DEV_VR89B</comment>
+    <sqlFile path="db/sql/init/packages/PK_DEV_VR89B.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="39" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_donnee</comment>
+    <sqlFile path="db/sql/init/packages/pk_donnee.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="40" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_DUPLIQ_GAR</comment>
+    <sqlFile path="db/sql/init/packages/PK_DUPLIQ_GAR.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="41" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_dyn</comment>
+    <sqlFile path="db/sql/init/packages/pk_dyn.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="42" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_ec01b</comment>
+    <sqlFile path="db/sql/init/packages/pk_ec01b.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="43" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_EDITION</comment>
+    <sqlFile path="db/sql/init/packages/PK_EDITION.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="44" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_EXPORT</comment>
+    <sqlFile path="db/sql/init/packages/PK_EXPORT.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="45" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_EXPORT_CRM_DSN</comment>
+    <sqlFile path="db/sql/init/packages/PK_EXPORT_CRM_DSN.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="46" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_ext_assures</comment>
+    <sqlFile path="db/sql/init/packages/pk_ext_assures.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="47" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_extraction</comment>
+    <sqlFile path="db/sql/init/packages/pk_extraction.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="48" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_EXTRACTION_AUTO</comment>
+    <sqlFile path="db/sql/init/packages/PK_EXTRACTION_AUTO.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="49" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_extraction_cli</comment>
+    <sqlFile path="db/sql/init/packages/pk_extraction_cli.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="50" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_ex25t</comment>
+    <sqlFile path="db/sql/init/packages/pk_ex25t.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="51" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_ex26t</comment>
+    <sqlFile path="db/sql/init/packages/pk_ex26t.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="52" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_ex98t</comment>
+    <sqlFile path="db/sql/init/packages/pk_ex98t.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="53" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_ex99t</comment>
+    <sqlFile path="db/sql/init/packages/pk_ex99t.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="54" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_fic_ecrit</comment>
+    <sqlFile path="db/sql/init/packages/PK_fic_ecrit.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="55" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_FICHIER</comment>
+    <sqlFile path="db/sql/init/packages/PK_FICHIER.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="56" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_fn01b</comment>
+    <sqlFile path="db/sql/init/packages/pk_fn01b.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="57" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_FONCTION</comment>
+    <sqlFile path="db/sql/init/packages/PK_FONCTION.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="58" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_FRAIS_RESEAUX</comment>
+    <sqlFile path="db/sql/init/packages/PK_FRAIS_RESEAUX.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="59" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_FUNCT</comment>
+    <sqlFile path="db/sql/init/packages/PK_FUNCT.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="60" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_GDP4B</comment>
+    <sqlFile path="db/sql/init/packages/PK_GDP4B.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="61" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_GDP7B</comment>
+    <sqlFile path="db/sql/init/packages/PK_GDP7B.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="62" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_gdp8b</comment>
+    <sqlFile path="db/sql/init/packages/pk_gdp8b.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="63" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_GD03B</comment>
+    <sqlFile path="db/sql/init/packages/PK_GD03B.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="64" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_GED</comment>
+    <sqlFile path="db/sql/init/packages/PK_GED.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="65" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_GEST_AFFIL</comment>
+    <sqlFile path="db/sql/init/packages/PK_GEST_AFFIL.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="66" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_GEST_COTIS_AF06T</comment>
+    <sqlFile path="db/sql/init/packages/PK_GEST_COTIS_AF06T.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="67" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_HISTO_CONTRAT</comment>
+    <sqlFile path="db/sql/init/packages/PK_HISTO_CONTRAT.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="68" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_import</comment>
+    <sqlFile path="db/sql/init/packages/pk_import.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="69" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_IMPORT_AFFIL</comment>
+    <sqlFile path="db/sql/init/packages/PK_IMPORT_AFFIL.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="70" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_IMPORT_AFFIL_DSN</comment>
+    <sqlFile path="db/sql/init/packages/PK_IMPORT_AFFIL_DSN.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="71" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_IMPORT_VIREMENT</comment>
+    <sqlFile path="db/sql/init/packages/PK_IMPORT_VIREMENT.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="72" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_INSERT_VAR</comment>
+    <sqlFile path="db/sql/init/packages/PK_INSERT_VAR.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="73" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_INS_HISTO_EXPORT</comment>
+    <sqlFile path="db/sql/init/packages/PK_INS_HISTO_EXPORT.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="74" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_ITELIS</comment>
+    <sqlFile path="db/sql/init/packages/PK_ITELIS.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="75" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_LIBELLE</comment>
+    <sqlFile path="db/sql/init/packages/PK_LIBELLE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="76" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_MAIL</comment>
+    <sqlFile path="db/sql/init/packages/PK_MAIL.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="77" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_MAIL_EXCEPT</comment>
+    <sqlFile path="db/sql/init/packages/PK_MAIL_EXCEPT.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="78" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_MAIL_RATTRAPE</comment>
+    <sqlFile path="db/sql/init/packages/PK_MAIL_RATTRAPE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="79" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_MAIL_REPRISE</comment>
+    <sqlFile path="db/sql/init/packages/PK_MAIL_REPRISE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="80" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_maj_datope</comment>
+    <sqlFile path="db/sql/init/packages/pk_maj_datope.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="81" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_MA01T</comment>
+    <sqlFile path="db/sql/init/packages/PK_MA01T.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="82" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_mpd</comment>
+    <sqlFile path="db/sql/init/packages/pk_mpd.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="83" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_M0005524</comment>
+    <sqlFile path="db/sql/init/packages/PK_M0005524.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="84" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_NOEMIE</comment>
+    <sqlFile path="db/sql/init/packages/PK_NOEMIE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="85" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_NO04B</comment>
+    <sqlFile path="db/sql/init/packages/PK_NO04B.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="86" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_no08b</comment>
+    <sqlFile path="db/sql/init/packages/pk_no08b.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="87" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_NO21B</comment>
+    <sqlFile path="db/sql/init/packages/PK_NO21B.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="88" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_OUTILS</comment>
+    <sqlFile path="db/sql/init/packages/PK_OUTILS.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="89" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_PARTENARIAT</comment>
+    <sqlFile path="db/sql/init/packages/PK_PARTENARIAT.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="90" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_PERSONNE</comment>
+    <sqlFile path="db/sql/init/packages/PK_PERSONNE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="91" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_PIECES</comment>
+    <sqlFile path="db/sql/init/packages/PK_PIECES.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="92" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_PORTE</comment>
+    <sqlFile path="db/sql/init/packages/PK_PORTE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="93" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_PORTE_JBO</comment>
+    <sqlFile path="db/sql/init/packages/PK_PORTE_JBO.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="94" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_PRDG_DYNAMIC_CURSOR</comment>
+    <sqlFile path="db/sql/init/packages/PK_PRDG_DYNAMIC_CURSOR.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="95" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_PRDG_EXPORT</comment>
+    <sqlFile path="db/sql/init/packages/PK_PRDG_EXPORT.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="96" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_PRDG_FONCT</comment>
+    <sqlFile path="db/sql/init/packages/PK_PRDG_FONCT.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="97" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_pret</comment>
+    <sqlFile path="db/sql/init/packages/pk_pret.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="98" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_PREV</comment>
+    <sqlFile path="db/sql/init/packages/PK_PREV.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="99" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_PREV_BPIJ</comment>
+    <sqlFile path="db/sql/init/packages/PK_PREV_BPIJ.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="100" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_PREV_GESTIP</comment>
+    <sqlFile path="db/sql/init/packages/PK_PREV_GESTIP.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="101" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_PRODUIT</comment>
+    <sqlFile path="db/sql/init/packages/PK_PRODUIT.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="102" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_PURGE_ARTHUS</comment>
+    <sqlFile path="db/sql/init/packages/PK_PURGE_ARTHUS.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="103" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_purge_sntr</comment>
+    <sqlFile path="db/sql/init/packages/pk_purge_sntr.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="104" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_pv01b</comment>
+    <sqlFile path="db/sql/init/packages/pk_pv01b.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="105" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_PV03B</comment>
+    <sqlFile path="db/sql/init/packages/PK_PV03B.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="106" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_qg08b</comment>
+    <sqlFile path="db/sql/init/packages/pk_qg08b.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="107" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_qttc</comment>
+    <sqlFile path="db/sql/init/packages/pk_qttc.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="108" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_QT01</comment>
+    <sqlFile path="db/sql/init/packages/PK_QT01.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="109" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_reassurance</comment>
+    <sqlFile path="db/sql/init/packages/pk_reassurance.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="110" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_REJ_PREL</comment>
+    <sqlFile path="db/sql/init/packages/PK_REJ_PREL.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="111" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_RELANCE</comment>
+    <sqlFile path="db/sql/init/packages/PK_RELANCE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="112" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_REQUETE_ENGLOB</comment>
+    <sqlFile path="db/sql/init/packages/PK_REQUETE_ENGLOB.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="113" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_RETROCESSION</comment>
+    <sqlFile path="db/sql/init/packages/PK_RETROCESSION.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="114" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_rg10b</comment>
+    <sqlFile path="db/sql/init/packages/pk_rg10b.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="115" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_RIB</comment>
+    <sqlFile path="db/sql/init/packages/PK_RIB.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="116" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_RUWA</comment>
+    <sqlFile path="db/sql/init/packages/PK_RUWA.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="117" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_RUWA_TPE</comment>
+    <sqlFile path="db/sql/init/packages/PK_RUWA_TPE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="118" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_santeclair</comment>
+    <sqlFile path="db/sql/init/packages/pk_santeclair.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="119" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_SANTECLAIR_FACTURATION</comment>
+    <sqlFile path="db/sql/init/packages/PK_SANTECLAIR_FACTURATION.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="120" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_SEPA</comment>
+    <sqlFile path="db/sql/init/packages/PK_SEPA.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="121" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_SEVEANE</comment>
+    <sqlFile path="db/sql/init/packages/PK_SEVEANE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="122" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_sinistre</comment>
+    <sqlFile path="db/sql/init/packages/pk_sinistre.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="123" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_SP_FACT</comment>
+    <sqlFile path="db/sql/init/packages/PK_SP_FACT.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="124" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_SP_ISANTE</comment>
+    <sqlFile path="db/sql/init/packages/PK_SP_ISANTE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="125" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_SPSANTE</comment>
+    <sqlFile path="db/sql/init/packages/PK_SPSANTE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="126" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_SPSANTE_FACTURATION</comment>
+    <sqlFile path="db/sql/init/packages/PK_SPSANTE_FACTURATION.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="127" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_SPSANTE_04</comment>
+    <sqlFile path="db/sql/init/packages/PK_SPSANTE_04.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="128" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_sp02b</comment>
+    <sqlFile path="db/sql/init/packages/pk_sp02b.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="129" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_SP03T</comment>
+    <sqlFile path="db/sql/init/packages/PK_SP03T.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="130" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_test_report</comment>
+    <sqlFile path="db/sql/init/packages/pk_test_report.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="131" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_TEXTE</comment>
+    <sqlFile path="db/sql/init/packages/PK_TEXTE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="132" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_TPE</comment>
+    <sqlFile path="db/sql/init/packages/PK_TPE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="133" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_TPE_687</comment>
+    <sqlFile path="db/sql/init/packages/PK_TPE_687.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="134" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_TPE_689</comment>
+    <sqlFile path="db/sql/init/packages/PK_TPE_689.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="135" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_TP_GROUPAMA</comment>
+    <sqlFile path="db/sql/init/packages/PK_TP_GROUPAMA.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="136" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_TRACE</comment>
+    <sqlFile path="db/sql/init/packages/PK_TRACE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="137" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_TRANSFERT</comment>
+    <sqlFile path="db/sql/init/packages/PK_TRANSFERT.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="138" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_TRESO</comment>
+    <sqlFile path="db/sql/init/packages/PK_TRESO.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="139" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_types</comment>
+    <sqlFile path="db/sql/init/packages/pk_types.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="140" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_val_variable</comment>
+    <sqlFile path="db/sql/init/packages/pk_val_variable.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="141" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_var_texte</comment>
+    <sqlFile path="db/sql/init/packages/pk_var_texte.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="142" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_vire</comment>
+    <sqlFile path="db/sql/init/packages/pk_vire.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="143" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_VIREM</comment>
+    <sqlFile path="db/sql/init/packages/PK_VIREM.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="144" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_virement</comment>
+    <sqlFile path="db/sql/init/packages/PK_virement.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="145" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_vr01b</comment>
+    <sqlFile path="db/sql/init/packages/pk_vr01b.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="146" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE pk_vr03b</comment>
+    <sqlFile path="db/sql/init/packages/pk_vr03b.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="147" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_WS</comment>
+    <sqlFile path="db/sql/init/packages/PK_WS.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="148" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_WS_BACK_SANTECLAIR</comment>
+    <sqlFile path="db/sql/init/packages/PK_WS_BACK_SANTECLAIR.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="149" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_WS_CLEAN_DEMANDE</comment>
+    <sqlFile path="db/sql/init/packages/PK_WS_CLEAN_DEMANDE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="150" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_WS_FRONT_SANTECLAIR</comment>
+    <sqlFile path="db/sql/init/packages/PK_WS_FRONT_SANTECLAIR.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="151" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_WS_WEB_BACK</comment>
+    <sqlFile path="db/sql/init/packages/PK_WS_WEB_BACK.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="152" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_WS_WEB_FRONT</comment>
+    <sqlFile path="db/sql/init/packages/PK_WS_WEB_FRONT.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="153" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_WS_WEB_MAJ_BACK</comment>
+    <sqlFile path="db/sql/init/packages/PK_WS_WEB_MAJ_BACK.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="154" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_WS_WEB_MAJ_FRONT</comment>
+    <sqlFile path="db/sql/init/packages/PK_WS_WEB_MAJ_FRONT.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="155" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE PK_XML</comment>
+    <sqlFile path="db/sql/init/packages/PK_XML.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="156" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE scal_fonctions</comment>
+    <sqlFile path="db/sql/init/packages/scal_fonctions.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="157" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE TRACE</comment>
+    <sqlFile path="db/sql/init/packages/TRACE.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+  <changeSet id="158" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PACKAGE WEBUTIL_DB</comment>
+    <sqlFile path="db/sql/init/packages/WEBUTIL_DB.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+</databaseChangeLog>

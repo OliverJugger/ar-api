@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.DMNDE
+-- Cible      : ARTHUS.DEMANDE
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.DMNDE FOR ARTHUS.DEMANDE;

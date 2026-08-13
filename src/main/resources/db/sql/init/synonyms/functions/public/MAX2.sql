@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : MAX2
+-- Cible      : ARTHUS.MAX2
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM MAX2 FOR ARTHUS.MAX2;

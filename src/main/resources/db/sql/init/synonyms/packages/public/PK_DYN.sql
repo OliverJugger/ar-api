@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : PK_DYN
+-- Cible      : ARTHUS.PK_DYN
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM PK_DYN FOR ARTHUS.PK_DYN;

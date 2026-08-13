@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+	<changeSet author="OMIGNOT" id="1" runOnChange="false">
+        <sql>            
+			CREATE USER ARTHUS IDENTIFIED BY iFUo9z6MpKRt7YCk_4No;
+			GRANT CONNECT, RESOURCE TO ARTHUS;
+			ALTER USER ARTHUS QUOTA UNLIMITED ON USERS;
+			GRANT CREATE ANY TABLE TO ARTHUS;
+			GRANT CREATE USER TO ARTHUS;
+			GRANT CREATE TABLESPACE TO ARTHUS;
+			GRANT CREATE ANY INDEX TO ARTHUS;
+			GRANT CREATE SYNONYM TO ARTHUS;
+			GRANT ALTER USER TO ARTHUS;
+			GRANT DROP USER TO ARTHUS;
+			GRANT GRANT ANY PRIVILEGE TO ARTHUS;
+        </sql>
+        <rollback>
+            <sql>DROP USER ARTHUS CASCADE;</sql>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="OMIGNOT" id="2" runOnChange="false">
+        <sql>
+            CREATE USER ARTHUS_PARAM IDENTIFIED BY "arthus_param_pwd_123!"
+            DEFAULT TABLESPACE ARTHUS_DATA
+            TEMPORARY TABLESPACE TEMP;
+        </sql>
+        <rollback>
+            <sql>DROP USER ARTHUS_PARAM CASCADE;</sql>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="OMIGNOT" id="3" runOnChange="false">
+        <sql>
+            GRANT CREATE SESSION TO ARTHUS_PARAM;
+        </sql>
+        <rollback>
+            <sql>REVOKE CREATE SESSION FROM ARTHUS_PARAM;</sql>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="OMIGNOT" id="4" runOnChange="false">
+        <sql>
+            ALTER USER ARTHUS_PARAM QUOTA UNLIMITED ON ARTHUS_DATA;
+            ALTER USER ARTHUS_PARAM QUOTA UNLIMITED ON ARTHUS_INDX;
+        </sql>
+        <rollback>
+            <sql>
+                ALTER USER ARTHUS_PARAM QUOTA 0 ON ARTHUS_DATA;
+                ALTER USER ARTHUS_PARAM QUOTA 0 ON ARTHUS_INDX;
+            </sql>
+        </rollback>
+    </changeSet>
+	
+	<changeSet author="OMIGNOT" id="5" runOnChange="false">
+        <sql>            
+			GRANT ADMINISTER DATABASE TRIGGER TO ARTHUS;
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>

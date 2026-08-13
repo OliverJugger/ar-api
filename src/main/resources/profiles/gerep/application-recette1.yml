@@ -1,0 +1,6 @@
+# Environnement : Recette 1
+oracle:
+  jdbc:
+    host: 192.168.18.109
+    port: 1521
+    service: GEREPR1

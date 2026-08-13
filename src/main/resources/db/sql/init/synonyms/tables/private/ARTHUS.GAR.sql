@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.GAR
+-- Cible      : ARTHUS.GARANTIES
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.GAR FOR ARTHUS.GARANTIES;

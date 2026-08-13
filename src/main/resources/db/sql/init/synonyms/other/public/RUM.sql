@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : RUM
+-- Cible      : ARTHUS.RUM
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM RUM FOR ARTHUS.RUM;

@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.SNTR
+-- Cible      : ARTHUS.SINISTRE
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.SNTR FOR ARTHUS.SINISTRE;

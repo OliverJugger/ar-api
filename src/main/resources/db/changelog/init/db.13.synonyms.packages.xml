@@ -1,0 +1,635 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+  <changeSet id="1" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PG_TEST</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PG_TEST.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="2" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_A408B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_A408B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="3" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_ADHESION</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_ADHESION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="4" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_AF10</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_AF10.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="5" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_AFFICHE_TEXTE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_AFFICHE_TEXTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="6" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_ARTHUS</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_ARTHUS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="7" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_ARTHUSORA</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_ARTHUSORA.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="8" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_ARTHUS_CACHE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_ARTHUS_CACHE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="9" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_AS_ZIP</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_AS_ZIP.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="10" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_AUTO_FLUX</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_AUTO_FLUX.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="11" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_BATCH</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_BATCH.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="12" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_BOUCLE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_BOUCLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="13" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_CALCUL</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_CALCUL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="14" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_CALCUL_DOSSIER</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_CALCUL_DOSSIER.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="15" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_CHEQ_PIECE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_CHEQ_PIECE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="16" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_CHOFNE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_CHOFNE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="17" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_CM06B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_CM06B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="18" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_COMPTA</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_COMPTA.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="19" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_COMPTE_TIERS</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_COMPTE_TIERS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="20" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_CONTEXTE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_CONTEXTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="21" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_CONTRAT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_CONTRAT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="22" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_CONVERT_TO_XLSX</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_CONVERT_TO_XLSX.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="23" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_CORRIGE_TEXTE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_CORRIGE_TEXTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="24" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_COTIS</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_COTIS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="25" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_CP_ACTE_REG</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_CP_ACTE_REG.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="26" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_CTRL_AFFIL</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_CTRL_AFFIL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="27" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_CTRL_TP</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_CTRL_TP.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="28" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_DEF</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_DEF.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="29" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_DEVISE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_DEVISE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="30" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_DEV_PV01B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_DEV_PV01B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="31" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_DEV_PV01B_SEPA</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_DEV_PV01B_SEPA.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="32" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_DEV_PV02B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_DEV_PV02B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="33" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_DEV_PV03B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_DEV_PV03B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="34" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_DEV_QG08B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_DEV_QG08B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="35" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_DEV_VR01B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_DEV_VR01B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="36" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_DEV_VR01B_SEPA</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_DEV_VR01B_SEPA.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="37" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_DEV_VR03B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_DEV_VR03B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="38" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_DEV_VR89B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_DEV_VR89B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="39" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_DONNEE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_DONNEE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="40" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_DUPLIQ_GAR</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_DUPLIQ_GAR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="41" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_DYN</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_DYN.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="42" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_EC01B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_EC01B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="43" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_EDITION</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_EDITION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="44" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_EX25T</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_EX25T.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="45" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_EX26T</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_EX26T.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="46" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_EX98T</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_EX98T.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="47" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_EX99T</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_EX99T.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="48" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_EXPORT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_EXPORT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="49" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_EXPORT_CRM_DSN</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_EXPORT_CRM_DSN.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="50" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_EXTRACTION</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_EXTRACTION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="51" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_EXTRACTION_AUTO</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_EXTRACTION_AUTO.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="52" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_EXTRACTION_CLI</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_EXTRACTION_CLI.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="53" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_EXT_ASSURES</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_EXT_ASSURES.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="54" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_FICHIER</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_FICHIER.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="55" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_FIC_ECRIT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_FIC_ECRIT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="56" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_FN01B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_FN01B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="57" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_FONCTION</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_FONCTION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="58" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_FRAIS_RESEAUX</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_FRAIS_RESEAUX.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="59" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_FUNCT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_FUNCT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="60" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_GD03B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_GD03B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="61" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_GDP4B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_GDP4B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="62" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_GDP7B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_GDP7B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="63" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_GDP8B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_GDP8B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="64" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_GED</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_GED.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="65" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_GEST_AFFIL</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_GEST_AFFIL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="66" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_GEST_COTIS_AF06T</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_GEST_COTIS_AF06T.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="67" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_HISTO_CONTRAT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_HISTO_CONTRAT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="68" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_IMPORT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_IMPORT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="69" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_IMPORT_AFFIL</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_IMPORT_AFFIL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="70" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_IMPORT_AFFIL_DSN</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_IMPORT_AFFIL_DSN.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="71" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_IMPORT_VIREMENT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_IMPORT_VIREMENT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="72" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_INSERT_VAR</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_INSERT_VAR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="73" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_INS_HISTO_EXPORT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_INS_HISTO_EXPORT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="74" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_ITELIS</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_ITELIS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="75" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_LIBELLE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_LIBELLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="76" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_M0005524</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_M0005524.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="77" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_MA01T</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_MA01T.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="78" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_MAIL</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_MAIL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="79" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_MAIL_EXCEPT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_MAIL_EXCEPT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="80" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_MAIL_RATTRAPE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_MAIL_RATTRAPE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="81" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_MAIL_REPRISE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_MAIL_REPRISE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="82" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_MAJ_DATOPE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_MAJ_DATOPE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="83" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_MPD</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_MPD.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="84" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_NO04B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_NO04B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="85" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_NO08B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_NO08B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="86" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_NO21B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_NO21B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="87" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_NOEMIE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_NOEMIE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="88" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_OUTILS</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_OUTILS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="89" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PARTENARIAT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PARTENARIAT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="90" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PERSONNE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PERSONNE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="91" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PIECES</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PIECES.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="92" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PORTE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PORTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="93" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PORTE_JBO</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PORTE_JBO.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="94" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PRDG_DYNAMIC_CURSOR</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PRDG_DYNAMIC_CURSOR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="95" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PRDG_EXPORT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PRDG_EXPORT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="96" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PRDG_FONCT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PRDG_FONCT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="97" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PRET</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PRET.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="98" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PREV</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PREV.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="99" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PREV_BPIJ</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PREV_BPIJ.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="100" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PREV_GESTIP</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PREV_GESTIP.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="101" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PRODUIT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PRODUIT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="102" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PURGE_ARTHUS</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PURGE_ARTHUS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="103" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PURGE_SNTR</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PURGE_SNTR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="104" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PV01B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PV01B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="105" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_PV03B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_PV03B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="106" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_QG08B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_QG08B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="107" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_QT01</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_QT01.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="108" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_QTTC</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_QTTC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="109" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_REASSURANCE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_REASSURANCE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="110" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_REJ_PREL</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_REJ_PREL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="111" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_RELANCE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_RELANCE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="112" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_REQUETE_ENGLOB</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_REQUETE_ENGLOB.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="113" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_RETROCESSION</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_RETROCESSION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="114" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_RG10B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_RG10B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="115" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_RIB</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_RIB.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="116" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_RUWA</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_RUWA.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="117" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_RUWA_TPE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_RUWA_TPE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="118" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_SANTECLAIR</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_SANTECLAIR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="119" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_SANTECLAIR_FACTURATION</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_SANTECLAIR_FACTURATION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="120" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_SEPA</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_SEPA.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="121" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_SEVEANE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_SEVEANE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="122" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_SINISTRE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_SINISTRE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="123" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_SP02B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_SP02B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="124" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_SP03T</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_SP03T.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="125" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_SPSANTE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_SPSANTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="126" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_SPSANTE_04</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_SPSANTE_04.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="127" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_SPSANTE_FACTURATION</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_SPSANTE_FACTURATION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="128" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_SP_FACT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_SP_FACT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="129" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_SP_ISANTE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_SP_ISANTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="130" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_TEST_REPORT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_TEST_REPORT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="131" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_TEXTE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_TEXTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="132" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_TPE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_TPE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="133" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_TPE_687</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_TPE_687.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="134" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_TPE_689</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_TPE_689.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="135" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_TP_GROUPAMA</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_TP_GROUPAMA.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="136" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_TRACE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_TRACE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="137" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_TRANSFERT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_TRANSFERT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="138" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_TRESO</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_TRESO.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="139" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_TYPES</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_TYPES.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="140" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_VAL_VARIABLE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_VAL_VARIABLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="141" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_VAR_TEXTE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_VAR_TEXTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="142" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_VIRE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_VIRE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="143" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_VIREM</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_VIREM.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="144" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_VIREMENT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_VIREMENT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="145" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_VR01B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_VR01B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="146" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_VR03B</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_VR03B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="147" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_WS</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_WS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="148" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_WS_BACK_SANTECLAIR</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_WS_BACK_SANTECLAIR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="149" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_WS_CLEAN_DEMANDE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_WS_CLEAN_DEMANDE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="150" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_WS_FRONT_SANTECLAIR</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_WS_FRONT_SANTECLAIR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="151" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_WS_WEB_BACK</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_WS_WEB_BACK.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="152" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_WS_WEB_FRONT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_WS_WEB_FRONT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="153" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_WS_WEB_MAJ_BACK</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_WS_WEB_MAJ_BACK.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="154" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_WS_WEB_MAJ_FRONT</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_WS_WEB_MAJ_FRONT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="155" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PK_XML</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/PK_XML.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="156" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM SCAL_FONCTIONS</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/SCAL_FONCTIONS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="157" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM TRACE</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/TRACE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="158" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM WEBUTIL_DB</comment>
+    <sqlFile path="db/sql/init/synonyms/packages/public/WEBUTIL_DB.sql" endDelimiter=";"/>
+  </changeSet>
+</databaseChangeLog>

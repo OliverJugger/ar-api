@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : F_CIE
+-- Cible      : ARTHUS.F_CIE
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM F_CIE FOR ARTHUS.F_CIE;

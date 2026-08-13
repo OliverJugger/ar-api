@@ -1,0 +1,6 @@
+CREATE FORCE VIEW ARTHUS.V_SOUS_QUER AS
+SELECT DISTINCT grnts.numcli, grnts.numquerable
+              FROM grnts
+              WHERE grnts.numquerable IS NOT NULL
+GO
+CREATE OR REPLACE PUBLIC SYNONYM V_SOUS_QUER FOR ARTHUS.V_SOUS_QUER

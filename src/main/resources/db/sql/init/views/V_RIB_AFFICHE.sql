@@ -1,0 +1,22 @@
+CREATE FORCE VIEW ARTHUS.V_RIB_AFFICHE (IDRIB, DOMICIALISATION, COMPTE, INTITULE) AS
+SELECT idrib
+       , CODBQUE||' '||GUICHET||' '|| COMPTE
+       , COMPTE
+       , INTITULE
+    FROM rib
+   WHERE rib.bic IS NULL
+     AND TYPE = 2
+     AND modpmt = 2
+     AND debut <= SYSDATE
+  UNION
+  SELECT idrib
+       , CLEF_IBAN||' '||BBAN||' '|| BIC
+       , COMPTE
+       , INTITULE
+    FROM rib
+   WHERE rib.bic IS NOT NULL
+     AND TYPE = 2
+     AND modpmt = 2
+     AND debut <= SYSDATE
+GO
+CREATE OR REPLACE PUBLIC SYNONYM V_RIB_AFFICHE FOR ARTHUS.V_RIB_AFFICHE

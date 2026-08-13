@@ -1,0 +1,9 @@
+# Config for VPN connexion
+# REC_ADM does not exist, only the admin "arthus" for this DB
+# REC_ADM exist in GEREPD, not plugged in VPN
+# Environnement : VPN Catamania (deduit de l'alias GEREP19C dans tnsnames.ora)
+oracle:
+  jdbc:
+    host: SRVVBDDARTH01
+    port: 1551
+    base: GEREP19C

@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : PK_WS
+-- Cible      : ARTHUS.PK_WS
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM PK_WS FOR ARTHUS.PK_WS;

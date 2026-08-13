@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : F_NOM
+-- Cible      : ARTHUS.F_NOM
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM F_NOM FOR ARTHUS.F_NOM;

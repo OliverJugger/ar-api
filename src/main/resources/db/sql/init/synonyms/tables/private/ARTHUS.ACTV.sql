@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.ACTV
+-- Cible      : ARTHUS.ACTIVITE
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.ACTV FOR ARTHUS.ACTIVITE;

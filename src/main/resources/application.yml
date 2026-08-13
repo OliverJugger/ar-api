@@ -1,15 +1,10 @@
-oracle:
-  jdbc:
-    url-prefix:
-      jdbc:oracle:thin:@
 spring:
   application:
-    name: ar-wc3-backend
-  datasource:
-    url: ${ORACLE_URL:jdbc:oracle:thin:@//SRVVBDDARTH01:1551/GEREP19C}
-    username: ${ORACLE_USERNAME:arthus}
-    password: ${ORACLE_PASSWORD:iFUo9z6MpKRt7YCk_4No}
-    driver-class-name: oracle.jdbc.OracleDriver
+    name: arthus-nova-api
+  profiles:
+    active: "@arthus.profile.name@"
+  config:
+    import: "@arthus.profile.path@"
   flyway:
     baseline-on-migrate: true
     baseline-version: 1
@@ -27,13 +22,22 @@ spring:
       hibernate:
         format_sql: true
 
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/db.changelog-master.xml
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+oracle:
+  jdbc:
+    url-prefix:
+      jdbc:oracle:thin:@
+
 server:
   port: 8080
 
 logging:
   level:
     com.arwc3: DEBUG
-
-springdoc:
-  swagger-ui:
-    path: /swagger-ui.html

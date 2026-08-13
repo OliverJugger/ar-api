@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : PK_XML
+-- Cible      : ARTHUS.PK_XML
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM PK_XML FOR ARTHUS.PK_XML;

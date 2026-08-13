@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.VRMT
+-- Cible      : ARTHUS.VIREMENT
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.VRMT FOR ARTHUS.VIREMENT;

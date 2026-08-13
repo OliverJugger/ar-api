@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : D2E
+-- Cible      : ARTHUS.D2E
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM D2E FOR ARTHUS.D2E;

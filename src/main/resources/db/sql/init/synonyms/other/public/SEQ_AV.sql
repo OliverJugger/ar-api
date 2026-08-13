@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : SEQ_AV
+-- Cible      : ARTHUS.SEQ_AV
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM SEQ_AV FOR ARTHUS.SEQ_AV;

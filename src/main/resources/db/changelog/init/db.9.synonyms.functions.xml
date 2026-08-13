@@ -1,0 +1,1687 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+  <changeSet id="1" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM AGE_MP</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/AGE_MP.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="2" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM AGE_P</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/AGE_P.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="3" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM ALGO_SIRET</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/ALGO_SIRET.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="4" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM AN</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/AN.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="5" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM ARTHUS_CF_NTFRS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/ARTHUS_CF_NTFRS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="6" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM BLOB_TO_CLOB</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/BLOB_TO_CLOB.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="7" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM CA01_XIT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/CA01_XIT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="8" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM D2E</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/D2E.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="9" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM D2J</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/D2J.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="10" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM DEF</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/DEF.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="11" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM DEPEND</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/DEPEND.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="12" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM E2D</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/E2D.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="13" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM EDATE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/EDATE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="14" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM EV01_XIT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/EV01_XIT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="15" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ADHESION</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ADHESION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="16" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ADHESION_EXTERNE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ADHESION_EXTERNE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="17" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ADHESION_INDIV</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ADHESION_INDIV.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="18" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ADHE_SOUSCRIPTION</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ADHE_SOUSCRIPTION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="19" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_AFFICHE_TEXTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_AFFICHE_TEXTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="20" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_AGE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_AGE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="21" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ANO_TIERS_PAYANT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ANO_TIERS_PAYANT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="22" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_APPORTEUR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_APPORTEUR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="23" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ARGUMENT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ARGUMENT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="24" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ARRET_CONTINU</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ARRET_CONTINU.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="25" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ARRET_DEBUT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ARRET_DEBUT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="26" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ARRET_PREV</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ARRET_PREV.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="27" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ARRONDI</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ARRONDI.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="28" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ASSUREUR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ASSUREUR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="29" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ASSUREUR_CT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ASSUREUR_CT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="30" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_BENE_MODPMT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_BENE_MODPMT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="31" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_BENE_NB_RIB</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_BENE_NB_RIB.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="32" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_BENE_RIB</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_BENE_RIB.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="33" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_BENE_VIREMENT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_BENE_VIREMENT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="34" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CAISSE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CAISSE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="35" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CALCUL_PLAFOND</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CALCUL_PLAFOND.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="36" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CALCUL_SINISTRE_DEV</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CALCUL_SINISTRE_DEV.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="37" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CARTE_TP</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CARTE_TP.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="38" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CENTRE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CENTRE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="39" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CHARGE_CLE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CHARGE_CLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="40" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CHEQUIER</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CHEQUIER.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="41" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CIE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CIE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="42" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CLE_PHYS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CLE_PHYS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="43" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CLIENT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CLIENT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="44" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CODE_CMCR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CODE_CMCR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="45" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CODE_LANGUE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CODE_LANGUE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="46" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CODE_REASS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CODE_REASS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="47" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CODE_REGROUPEMENT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CODE_REGROUPEMENT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="48" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CODPOS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CODPOS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="49" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_COLUMN_ID</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_COLUMN_ID.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="50" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_COLUMN_NAME</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_COLUMN_NAME.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="51" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_COMM_A_PRELEVER</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_COMM_A_PRELEVER.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="52" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_COMPTE_OPE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_COMPTE_OPE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="53" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CONCATENE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CONCATENE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="54" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CONSO_RESTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CONSO_RESTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="55" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CONTACT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CONTACT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="56" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CONTEXTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CONTEXTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="57" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CONTEXTE_INTERM</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CONTEXTE_INTERM.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="58" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CONTREPARTIE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CONTREPARTIE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="59" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CONTREPARTIE_D</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CONTREPARTIE_D.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="60" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CONTROLE_DATE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CONTROLE_DATE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="61" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CONTROLE_RIB</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CONTROLE_RIB.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="62" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CONVERT_MONTANT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CONVERT_MONTANT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="63" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_COORDONNE_CONTACT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_COORDONNE_CONTACT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="64" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_COPY_CLE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_COPY_CLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="65" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_COTIS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_COTIS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="66" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_COT_GAR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_COT_GAR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="67" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_COUVERTURE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_COUVERTURE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="68" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_COUV_JOUR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_COUV_JOUR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="69" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_COMPTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_COMPTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="70" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_DATE_CONSTATATION</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_DATE_CONSTATATION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="71" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_DATE_DECAISMT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_DATE_DECAISMT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="72" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_DATE_DECAISMT_OPERATION</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_DATE_DECAISMT_OPERATION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="73" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_DATE_ENCAISMT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_DATE_ENCAISMT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="74" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_DATE_ENCAISMT_OPERATION</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_DATE_ENCAISMT_OPERATION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="75" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_DE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_DE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="76" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_EN</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_EN.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="77" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_INTERM_SANTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_INTERM_SANTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="78" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_LIB_ANNUL_ENCAIS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_LIB_ANNUL_ENCAIS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="79" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_LIB_ECR_DECAISS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_LIB_ECR_DECAISS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="80" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_LIB_ENCAISMT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_LIB_ENCAISMT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="81" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_LIB_REGLT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_LIB_REGLT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="82" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_LIB_REG_DEC_COURT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_LIB_REG_DEC_COURT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="83" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_OP</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_OP.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="84" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_ROLE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_ROLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="85" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_ROLE_FORCE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_ROLE_FORCE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="86" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_ROLE_TEST</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_ROLE_TEST.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="87" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_TRESO_VALIDE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_TRESO_VALIDE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="88" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_TYPE_DEV</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_TYPE_DEV.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="89" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_TYPE_DEV_ENC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_TYPE_DEV_ENC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="90" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_TYPE_PMT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_TYPE_PMT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="91" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPTA_VAR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPTA_VAR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="92" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CPT_ETAT_REMISE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CPT_ETAT_REMISE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="93" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CRNC1</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CRNC1.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="94" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CRRR_ACTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CRRR_ACTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="95" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CRRR_ACTE_RO</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CRRR_ACTE_RO.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="96" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CTRL_DOUBLON_DENT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CTRL_DOUBLON_DENT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="97" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CTRL_MT_FORFAIT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CTRL_MT_FORFAIT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="98" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CTRL_PERSONNE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CTRL_PERSONNE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="99" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CTRL_REMISE_BANQUE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CTRL_REMISE_BANQUE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="100" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CT_RESP</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CT_RESP.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="101" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_CVRTSANTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_CVRTSANTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="102" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DATEFIN_SNTRT_NUMSIN</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DATEFIN_SNTRT_NUMSIN.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="103" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DATEMIS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DATEMIS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="104" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DATE_NAIS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DATE_NAIS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="105" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DATE_NAISSANCE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DATE_NAISSANCE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="106" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DATE_SPECIALE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DATE_SPECIALE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="107" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DCPT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DCPT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="108" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DCPTCIE_REMB</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DCPTCIE_REMB.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="109" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DCPTCIE_REMB_D</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DCPTCIE_REMB_D.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="110" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DCPT_D</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DCPT_D.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="111" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DCPT_DEST</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DCPT_DEST.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="112" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DCPT_IDADHESION</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DCPT_IDADHESION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="113" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DCPT_REMBTOTAL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DCPT_REMBTOTAL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="114" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DCPT_ROLEDEST</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DCPT_ROLEDEST.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="115" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DELIMITE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DELIMITE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="116" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DEPEND</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DEPEND.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="117" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DERNIER_AVIS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DERNIER_AVIS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="118" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DERNIER_AVIS_DCPT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DERNIER_AVIS_DCPT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="119" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DESACCENTUE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DESACCENTUE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="120" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DEST_ROLE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DEST_ROLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="121" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DEVISE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DEVISE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="122" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DEVISE_DEBUT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DEVISE_DEBUT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="123" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DIFPAYS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DIFPAYS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="124" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DOMICILE_FISCAL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DOMICILE_FISCAL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="125" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DOUBLE_QUOTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DOUBLE_QUOTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="126" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DUPLIQUE_DOSSIER_SANTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DUPLIQUE_DOSSIER_SANTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="127" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_DYNAMIQUE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_DYNAMIQUE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="128" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ECHEANCE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ECHEANCE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="129" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ECHEANCIER</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ECHEANCIER.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="130" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ECHE_ANNIV</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ECHE_ANNIV.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="131" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ECHE_REGL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ECHE_REGL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="132" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ENTITE_LIB</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ENTITE_LIB.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="133" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ETAT_ADHE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ETAT_ADHE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="134" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ETAT_ADHE_A</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ETAT_ADHE_A.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="135" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ETAT_ADHE_B</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ETAT_ADHE_B.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="136" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ETAT_ADHE_C</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ETAT_ADHE_C.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="137" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ETAT_ADHE_SIN</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ETAT_ADHE_SIN.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="138" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ETAT_DETTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ETAT_DETTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="139" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ETAT_DOSSIER_SANTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ETAT_DOSSIER_SANTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="140" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ETAT_GARANTIE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ETAT_GARANTIE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="141" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ETAT_INSTANCE_UNIQUE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ETAT_INSTANCE_UNIQUE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="142" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ETAT_PROPO</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ETAT_PROPO.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="143" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ETAT_RAPPEL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ETAT_RAPPEL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="144" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ETAT_SBRGT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ETAT_SBRGT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="145" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ETAT_SINISTRE_SANTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ETAT_SINISTRE_SANTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="146" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ETAT_SNTRT_BY_DATE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ETAT_SNTRT_BY_DATE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="147" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ETAT_SNTR_PREV</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ETAT_SNTR_PREV.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="148" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_EVALUE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_EVALUE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="149" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_EVALUE_ALPHA</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_EVALUE_ALPHA.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="150" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_EXISTE_BENE_FISC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_EXISTE_BENE_FISC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="151" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_EXISTE_VALEUR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_EXISTE_VALEUR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="152" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_EXISTE_VARIABLE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_EXISTE_VARIABLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="153" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_EXIST_ADHE_PORTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_EXIST_ADHE_PORTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="154" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_EXIST_PARAM_MSG</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_EXIST_PARAM_MSG.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="155" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_FILIATION</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_FILIATION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="156" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_FIND_BASE_QTTC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_FIND_BASE_QTTC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="157" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_FIND_NUMQUIT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_FIND_NUMQUIT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="158" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_FIND_PANIER</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_FIND_PANIER.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="159" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_FIND_PLV</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_FIND_PLV.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="160" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_FIND_STATUT_CNTRT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_FIND_STATUT_CNTRT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="161" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_FIND_VAR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_FIND_VAR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="162" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_FORCE_GEST</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_FORCE_GEST.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="163" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_FORCE_TYPE_MT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_FORCE_TYPE_MT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="164" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_FRANCHISE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_FRANCHISE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="165" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_FRA_DEP</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_FRA_DEP.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="166" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_FRMLS_COMPL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_FRMLS_COMPL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="167" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_GARANTIES</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_GARANTIES.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="168" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_GAR_OBLG</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_GAR_OBLG.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="169" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_GAR_UNITCALC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_GAR_UNITCALC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="170" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_GEN_PASSWD</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_GEN_PASSWD.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="171" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_GET_INSTANCE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_GET_INSTANCE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="172" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_GET_TRANSCO</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_GET_TRANSCO.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="173" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_GET_TRANSCO_SP</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_GET_TRANSCO_SP.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="174" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_GET_VALUE_IN_TABLE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_GET_VALUE_IN_TABLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="175" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_GET_VARCHAR_SPLITED</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_GET_VARCHAR_SPLITED.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="176" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDADHESION</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDADHESION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="177" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDADHESION_CONTRAT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDADHESION_CONTRAT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="178" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDADHESION_DCPT_SANTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDADHESION_DCPT_SANTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="179" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDADHESION_GAR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDADHESION_GAR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="180" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDADHESION_PREV</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDADHESION_PREV.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="181" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDARCHIVE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDARCHIVE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="182" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDCOTIS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDCOTIS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="183" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDCVRT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDCVRT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="184" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDCVRT_BRUNO</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDCVRT_BRUNO.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="185" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDDOSSIER</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDDOSSIER.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="186" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDENTIFIANT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDENTIFIANT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="187" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDFACTPE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDFACTPE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="188" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDHISTO_RAPPEL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDHISTO_RAPPEL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="189" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDTEXTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDTEXTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="190" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDTEXTE_DCPT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDTEXTE_DCPT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="191" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDTEXTE_DCPT_2</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDTEXTE_DCPT_2.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="192" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDTEXTE_PARAM</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDTEXTE_PARAM.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="193" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDVAR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDVAR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="194" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IDVARIABLE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IDVARIABLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="195" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_INFO_REG_ASSU</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_INFO_REG_ASSU.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="196" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_INFO_TIERS_PAYANT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_INFO_TIERS_PAYANT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="197" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_INSERT_HISTO_CNX_USERS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_INSERT_HISTO_CNX_USERS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="198" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_INTERMEDIAIRE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_INTERMEDIAIRE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="199" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IS_ALL_LIEN_GED_CHECKED</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IS_ALL_LIEN_GED_CHECKED.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="200" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IS_DEROG</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IS_DEROG.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="201" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IS_IBAN_INT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IS_IBAN_INT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="202" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_IS_ONE_LIEN_GED_OK</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_IS_ONE_LIEN_GED_OK.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="203" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_JOURS_CIVILS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_JOURS_CIVILS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="204" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_J_CONSO</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_J_CONSO.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="205" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_LAST_IDPORTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_LAST_IDPORTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="206" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_LBLE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_LBLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="207" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_LIB</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_LIB.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="208" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_LIBELLE_FORMAT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_LIBELLE_FORMAT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="209" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_LIBGAR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_LIBGAR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="210" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_LIB_AFFEC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_LIB_AFFEC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="211" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_LIB_ATTENTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_LIB_ATTENTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="212" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_LIB_BASE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_LIB_BASE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="213" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_LIB_EDITION</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_LIB_EDITION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="214" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_LIB_PIECE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_LIB_PIECE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="215" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_LIB_POST_IT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_LIB_POST_IT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="216" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_LIB_PROPAL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_LIB_PROPAL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="217" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_LONGUEUR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_LONGUEUR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="218" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_MESSAGE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_MESSAGE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="219" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_MICHEL2</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_MICHEL2.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="220" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_MNEMO_BASE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_MNEMO_BASE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="221" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_MNEMO_DONNEE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_MNEMO_DONNEE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="222" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_MOIS_MATORG</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_MOIS_MATORG.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="223" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_MONTANT_DU</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_MONTANT_DU.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="224" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_MONTANT_DU_D</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_MONTANT_DU_D.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="225" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_MONTANT_SOUMIS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_MONTANT_SOUMIS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="226" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_MT_AFFEC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_MT_AFFEC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="227" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_MT_AFFEC_D</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_MT_AFFEC_D.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="228" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_MT_AFFEC_TFC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_MT_AFFEC_TFC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="229" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_MT_AFFEC_TFC_D</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_MT_AFFEC_TFC_D.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="230" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_MT_AFFEC_TFC_NUMQUIT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_MT_AFFEC_TFC_NUMQUIT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="231" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_MT_AFFEC_TFC_NUMQUIT_D</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_MT_AFFEC_TFC_NUMQUIT_D.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="232" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NAT_CALC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NAT_CALC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="233" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NAT_RISQ</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NAT_RISQ.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="234" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NAT_RISQ_CPTA</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NAT_RISQ_CPTA.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="235" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NAYDR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NAYDR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="236" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NB_ADR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NB_ADR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="237" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NB_TELETRANSMIS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NB_TELETRANSMIS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="238" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NIVEAU_INF</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NIVEAU_INF.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="239" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NOM</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NOM.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="240" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NOMUTIL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NOMUTIL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="241" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NOM_MARITAL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NOM_MARITAL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="242" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NOM_PATRO</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NOM_PATRO.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="243" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NOM_RESO</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NOM_RESO.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="244" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMADHERENT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMADHERENT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="245" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMAFFEC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMAFFEC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="246" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMASSU</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMASSU.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="247" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMASSU_NOEMIE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMASSU_NOEMIE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="248" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMBORD_DECAISMT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMBORD_DECAISMT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="249" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMERO</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMERO.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="250" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMFOR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMFOR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="251" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMGAR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMGAR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="252" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMGAR_2</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMGAR_2.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="253" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMGAR_INUSE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMGAR_INUSE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="254" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMGAR_REF</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMGAR_REF.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="255" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMGAR_REFCIE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMGAR_REFCIE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="256" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMGRPGAR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMGRPGAR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="257" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMINDIV</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMINDIV.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="258" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMINDIV_SIN</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMINDIV_SIN.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="259" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMORG</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMORG.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="260" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMORG_LD</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMORG_LD.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="261" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMORG_PRESCRIPTION</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMORG_PRESCRIPTION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="262" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMRELANCE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMRELANCE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="263" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMRELANCE_2</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMRELANCE_2.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="264" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMSIN_SNTR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMSIN_SNTR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="265" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUMUTIL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUMUTIL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="266" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_NUM_IDADHESION</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_NUM_IDADHESION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="267" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_OBJET_PROPO</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_OBJET_PROPO.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="268" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_OUVERTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_OUVERTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="269" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_OVERLAPS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_OVERLAPS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="270" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PARAM_COMPTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PARAM_COMPTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="271" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PARAM_DEVISE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PARAM_DEVISE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="272" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PARAM_OPE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PARAM_OPE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="273" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PARAM_OPE_VALIDE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PARAM_OPE_VALIDE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="274" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PAYS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PAYS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="275" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PAYS_DEF</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PAYS_DEF.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="276" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PERS_IRREVOCABLE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PERS_IRREVOCABLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="277" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PIECE_BLOCAGE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PIECE_BLOCAGE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="278" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PIECE_CONTRA</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PIECE_CONTRA.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="279" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PIECE_CONTRAT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PIECE_CONTRAT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="280" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PIECE_DETAIL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PIECE_DETAIL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="281" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PLAFOND</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PLAFOND.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="282" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PMT_COMPTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PMT_COMPTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="283" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PORTE_EA</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PORTE_EA.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="284" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PORTE_EMETTEUR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PORTE_EMETTEUR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="285" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PORTE_IDENTIFIANT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PORTE_IDENTIFIANT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="286" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PRCH_IDADHESION</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PRCH_IDADHESION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="287" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PRESTA_ORIGINE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PRESTA_ORIGINE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="288" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PROFIL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PROFIL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="289" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PRORATA</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PRORATA.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="290" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PRORATA2</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PRORATA2.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="291" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PRORATA_JOURS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PRORATA_JOURS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="292" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_PSEUDO</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_PSEUDO.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="293" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_QTTC_ANNUELLE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_QTTC_ANNUELLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="294" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_QTTC_COMPTANT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_QTTC_COMPTANT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="295" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_QTTC_DU</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_QTTC_DU.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="296" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_QTTC_DU_D</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_QTTC_DU_D.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="297" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_QTTC_IMPAYE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_QTTC_IMPAYE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="298" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_REFEXT_FACTURE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_REFEXT_FACTURE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="299" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_REF_PRELEVEMENT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_REF_PRELEVEMENT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="300" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_REG</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_REG.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="301" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_REGIME</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_REGIME.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="302" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_REMPLACE_TEXTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_REMPLACE_TEXTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="303" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_REP_IMP_EXP</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_REP_IMP_EXP.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="304" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_RGLT_AUTO</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_RGLT_AUTO.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="305" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_RIB_SAISI</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_RIB_SAISI.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="306" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_RIB_VALIDE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_RIB_VALIDE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="307" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_ROLE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_ROLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="308" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_R_AYDR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_R_AYDR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="309" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SEL_DATE_EFFET</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SEL_DATE_EFFET.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="310" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SEL_DATE_RESIL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SEL_DATE_RESIL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="311" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SEL_DEST_DCPT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SEL_DEST_DCPT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="312" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SEL_INTERLOCUTEUR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SEL_INTERLOCUTEUR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="313" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SEL_INTERLOCUTEUR_DEFAUT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SEL_INTERLOCUTEUR_DEFAUT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="314" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SEL_INTERLOC_PARAM_OU_DEFAUT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SEL_INTERLOC_PARAM_OU_DEFAUT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="315" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SEL_NUMORG_LIG_DOSS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SEL_NUMORG_LIG_DOSS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="316" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SEL_PARPORTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SEL_PARPORTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="317" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SEL_PARPORTE_IDENT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SEL_PARPORTE_IDENT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="318" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SENS_LIBELLE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SENS_LIBELLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="319" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SIECLE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SIECLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="320" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SIN</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SIN.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="321" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SITU_PRET</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SITU_PRET.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="322" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SITU_PROPAL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SITU_PROPAL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="323" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SNTR_PREV_COR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SNTR_PREV_COR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="324" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SNTR_PREV_DEBUT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SNTR_PREV_DEBUT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="325" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SNTR_PREV_FIN</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SNTR_PREV_FIN.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="326" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SNTR_RECHUTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SNTR_RECHUTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="327" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SNTR_REMB</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SNTR_REMB.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="328" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SOC_ASSU</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SOC_ASSU.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="329" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SPLIT_CHAR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SPLIT_CHAR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="330" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_STATUT_NOEMIE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_STATUT_NOEMIE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="331" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_STR_TO_NUMBER</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_STR_TO_NUMBER.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="332" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SUIVI_FACTPE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SUIVI_FACTPE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="333" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SUIVI_FACTPE_PREC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SUIVI_FACTPE_PREC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="334" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_SUPER_USER</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_SUPER_USER.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="335" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TAUX_TARIF</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TAUX_TARIF.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="336" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TELETRANSMIS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TELETRANSMIS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="337" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TERME_A_ECHOIR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TERME_A_ECHOIR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="338" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TERME_ECHU</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TERME_ECHU.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="339" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TEST_POSTIT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TEST_POSTIT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="340" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TEST_POUR_SPPRIMER_CORRES</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TEST_POUR_SPPRIMER_CORRES.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="341" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TEXTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TEXTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="342" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TEXTE_VARIABLE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TEXTE_VARIABLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="343" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TOTAFFEC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TOTAFFEC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="344" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TOTAFFEC_D</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TOTAFFEC_D.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="345" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TOTAL_HISTO</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TOTAL_HISTO.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="346" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TOTAL_HISTO_D</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TOTAL_HISTO_D.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="347" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TOTAL_IDCALCUL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TOTAL_IDCALCUL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="348" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TOTAL_IDCALCUL_D</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TOTAL_IDCALCUL_D.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="349" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TOTAL_NUMDEC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TOTAL_NUMDEC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="350" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TOTAL_NUMDEC_D</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TOTAL_NUMDEC_D.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="351" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TOTCOMM</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TOTCOMM.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="352" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TOTFRAIS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TOTFRAIS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="353" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TOTFRAIS_GAR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TOTFRAIS_GAR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="354" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TOTFRAIS_GAR_D</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TOTFRAIS_GAR_D.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="355" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TOTQTTC_IND</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TOTQTTC_IND.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="356" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TOTQTTC_IND_OUT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TOTQTTC_IND_OUT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="357" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TOTQTTC_IN_OUT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TOTQTTC_IN_OUT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="358" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TOTTAXE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TOTTAXE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="359" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TRACE_USRXIT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TRACE_USRXIT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="360" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TRANCHE_AGE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TRANCHE_AGE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="361" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TRANSMIS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TRANSMIS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="362" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TYPE_ADRESSE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TYPE_ADRESSE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="363" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TYPE_CALC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TYPE_CALC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="364" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TYPE_COUV</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TYPE_COUV.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="365" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TYPE_DECAISMT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TYPE_DECAISMT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="366" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TYPE_DEST</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TYPE_DEST.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="367" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TYPE_GAR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TYPE_GAR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="368" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TYPE_MODELE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TYPE_MODELE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="369" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TYPE_NUMGAR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TYPE_NUMGAR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="370" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TYPE_PORTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TYPE_PORTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="371" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TYPE_RATTACH_COUR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TYPE_RATTACH_COUR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="372" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TYPTAUX</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TYPTAUX.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="373" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_TYP_EDITION</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_TYP_EDITION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="374" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_T_AYDR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_T_AYDR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="375" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_VALID</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_VALID.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="376" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_VALIDATE_VAR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_VALIDATE_VAR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="377" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_VALIDE_TEXTE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_VALIDE_TEXTE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="378" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_VALID_UTIL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_VALID_UTIL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="379" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM F_VAL_VAR_ALL</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/F_VAL_VAR_ALL.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="380" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM GA02_XIT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/GA02_XIT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="381" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM GS19_PROC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/GS19_PROC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="382" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM GS19_XIT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/GS19_XIT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="383" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM INF</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/INF.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="384" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM INFERER_SEX</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/INFERER_SEX.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="385" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM IS_A_FONCTION</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/IS_A_FONCTION.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="386" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM IS_OPERATEUR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/IS_OPERATEUR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="387" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM J2D</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/J2D.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="388" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM MAX2</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/MAX2.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="389" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM MAX3</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/MAX3.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="390" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM MENS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/MENS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="391" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM MESSAGE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/MESSAGE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="392" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM MIN2</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/MIN2.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="393" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM MIN3</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/MIN3.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="394" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM NB_DEPEND</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/NB_DEPEND.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="395" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM NO06_PROC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/NO06_PROC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="396" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM NO10_687_PROC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/NO10_687_PROC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="397" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PV01_PROC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/PV01_PROC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="398" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM PV01_PROC_RISQ</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/PV01_PROC_RISQ.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="399" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM QG01_PROC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/QG01_PROC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="400" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM QG04_XIT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/QG04_XIT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="401" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM QG05_XIT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/QG05_XIT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="402" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM QUALEA_F_FORMAT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/QUALEA_F_FORMAT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="403" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM RATIO</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/RATIO.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="404" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM RB01_PROC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/RB01_PROC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="405" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM ROUND</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/ROUND.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="406" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM RS01_PROC</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/RS01_PROC.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="407" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM SAN</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/SAN.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="408" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM SEMI</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/SEMI.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="409" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM SID</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/SID.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="410" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM SMENS</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/SMENS.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="411" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM SSEMI</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/SSEMI.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="412" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM STRIM</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/STRIM.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="413" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM SUP</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/SUP.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="414" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM TEST00</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/TEST00.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="415" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM TRIM</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/TRIM.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="416" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM UT01_XIT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/UT01_XIT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="417" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM VA05_XIT</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/VA05_XIT.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="418" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM VALEUR_VARIABLE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/VALEUR_VARIABLE.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="419" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM VAL_VAR</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/VAL_VAR.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="420" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM VAL_VAR2</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/VAL_VAR2.sql" endDelimiter=";"/>
+  </changeSet>
+  <changeSet id="421" author="OMIGNOT" created="2026-08-12">
+    <comment>CREATE PUBLIC SYNONYM Z_INCLUSE</comment>
+    <sqlFile path="db/sql/init/synonyms/functions/public/Z_INCLUSE.sql" endDelimiter=";"/>
+  </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.INDCS
+-- Cible      : ARTHUS.INDICE
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.INDCS FOR ARTHUS.INDICE;

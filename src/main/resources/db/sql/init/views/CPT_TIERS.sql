@@ -1,0 +1,12 @@
+CREATE FORCE VIEW ARTHUS.CPT_TIERS AS
+Select
+	Idmvt,
+	Numcli,
+	Codope,
+	Cle,
+	Datope,
+	Sens,
+	Montant
+From 	compte_tiers
+GO
+CREATE OR REPLACE PUBLIC SYNONYM CPT_TIERS FOR ARTHUS.CPT_TIERS

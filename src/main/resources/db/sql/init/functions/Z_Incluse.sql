@@ -1,0 +1,29 @@
+CREATE FUNCTION ARTHUS.Z_Incluse
+							(
+							a_pays_soins  IN NUMBER,
+							a_num_zone    IN NUMBER
+							)
+RETURN NUMBER
+IS
+CURSOR C_I IS
+	SELECT ALL ZONE_TERR.NUMZONE
+		FROM ZONE_TERR
+		WHERE (ZONE_TERR.CODPAYS = a_pays_soins
+		  AND ZONE_TERR.NUMZONE = a_num_zone);
+	R_I C_I%ROWTYPE;
+
+BEGIN
+	OPEN C_I;
+	FETCH C_I INTO R_I;
+	IF C_I%FOUND THEN
+		return(1);
+	ELSE
+		return(0);
+	END IF;
+	CLOSE C_I;
+	EXCEPTION
+		WHEN TOO_MANY_ROWS THEN return(1); CLOSE C_I;
+		WHEN NO_DATA_FOUND THEN return(0); CLOSE C_I;
+		WHEN OTHERS THEN return(NULL);	CLOSE C_I;
+/* Fin de la fonction */
+END;

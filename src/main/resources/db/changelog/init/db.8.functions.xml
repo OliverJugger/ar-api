@@ -1,0 +1,1691 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+  <changeSet id="1" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION age_mp</comment>
+    <sqlFile path="db/sql/init/functions/age_mp.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="2" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION age_p</comment>
+    <sqlFile path="db/sql/init/functions/age_p.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="3" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION ALGO_SIRET</comment>
+    <sqlFile path="db/sql/init/functions/ALGO_SIRET.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="4" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION an</comment>
+    <sqlFile path="db/sql/init/functions/an.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="5" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION arthus_CF_ntfrs</comment>
+    <sqlFile path="db/sql/init/functions/arthus_CF_ntfrs.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="6" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION blob_to_clob</comment>
+    <sqlFile path="db/sql/init/functions/blob_to_clob.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="7" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION ca01_xit</comment>
+    <sqlFile path="db/sql/init/functions/ca01_xit.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="8" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION def</comment>
+    <sqlFile path="db/sql/init/functions/def.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="9" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION depend</comment>
+    <sqlFile path="db/sql/init/functions/depend.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="10" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION d2e</comment>
+    <sqlFile path="db/sql/init/functions/d2e.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="11" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION d2j</comment>
+    <sqlFile path="db/sql/init/functions/d2j.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="12" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION edate</comment>
+    <sqlFile path="db/sql/init/functions/edate.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="13" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION EV01_XIT</comment>
+    <sqlFile path="db/sql/init/functions/EV01_XIT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="14" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION e2d</comment>
+    <sqlFile path="db/sql/init/functions/e2d.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="15" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_adhesion</comment>
+    <sqlFile path="db/sql/init/functions/f_adhesion.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="16" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_adhesion_externe</comment>
+    <sqlFile path="db/sql/init/functions/f_adhesion_externe.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="17" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_adhesion_indiv</comment>
+    <sqlFile path="db/sql/init/functions/f_adhesion_indiv.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="18" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_ADHE_SOUSCRIPTION</comment>
+    <sqlFile path="db/sql/init/functions/F_ADHE_SOUSCRIPTION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="19" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_affiche_texte</comment>
+    <sqlFile path="db/sql/init/functions/f_affiche_texte.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="20" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_age</comment>
+    <sqlFile path="db/sql/init/functions/f_age.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="21" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_ano_tiers_payant</comment>
+    <sqlFile path="db/sql/init/functions/f_ano_tiers_payant.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="22" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_apporteur</comment>
+    <sqlFile path="db/sql/init/functions/f_apporteur.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="23" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_argument</comment>
+    <sqlFile path="db/sql/init/functions/f_argument.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="24" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_ARRET_CONTINU</comment>
+    <sqlFile path="db/sql/init/functions/F_ARRET_CONTINU.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="25" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_arret_debut</comment>
+    <sqlFile path="db/sql/init/functions/f_arret_debut.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="26" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_ARRET_PREV</comment>
+    <sqlFile path="db/sql/init/functions/F_ARRET_PREV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="27" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_arrondi</comment>
+    <sqlFile path="db/sql/init/functions/f_arrondi.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="28" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_assureur</comment>
+    <sqlFile path="db/sql/init/functions/f_assureur.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="29" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_assureur_ct</comment>
+    <sqlFile path="db/sql/init/functions/f_assureur_ct.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="30" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_BENE_MODPMT</comment>
+    <sqlFile path="db/sql/init/functions/F_BENE_MODPMT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="31" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_bene_nb_rib</comment>
+    <sqlFile path="db/sql/init/functions/f_bene_nb_rib.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="32" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_BENE_RIB</comment>
+    <sqlFile path="db/sql/init/functions/F_BENE_RIB.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="33" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_bene_virement</comment>
+    <sqlFile path="db/sql/init/functions/f_bene_virement.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="34" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CAISSE</comment>
+    <sqlFile path="db/sql/init/functions/F_CAISSE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="35" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_calcul_plafond</comment>
+    <sqlFile path="db/sql/init/functions/f_calcul_plafond.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="36" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_Calcul_Sinistre_dev</comment>
+    <sqlFile path="db/sql/init/functions/f_Calcul_Sinistre_dev.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="37" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_carte_tp</comment>
+    <sqlFile path="db/sql/init/functions/f_carte_tp.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="38" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_centre</comment>
+    <sqlFile path="db/sql/init/functions/f_centre.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="39" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_charge_cle</comment>
+    <sqlFile path="db/sql/init/functions/f_charge_cle.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="40" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_chequier</comment>
+    <sqlFile path="db/sql/init/functions/f_chequier.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="41" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_cie</comment>
+    <sqlFile path="db/sql/init/functions/f_cie.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="42" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_cle_phys</comment>
+    <sqlFile path="db/sql/init/functions/f_cle_phys.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="43" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_client</comment>
+    <sqlFile path="db/sql/init/functions/f_client.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="44" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_code_cmcr</comment>
+    <sqlFile path="db/sql/init/functions/F_code_cmcr.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="45" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CODE_LANGUE</comment>
+    <sqlFile path="db/sql/init/functions/F_CODE_LANGUE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="46" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_code_reass</comment>
+    <sqlFile path="db/sql/init/functions/F_code_reass.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="47" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_code_regroupement</comment>
+    <sqlFile path="db/sql/init/functions/f_code_regroupement.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="48" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_codpos</comment>
+    <sqlFile path="db/sql/init/functions/f_codpos.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="49" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_column_id</comment>
+    <sqlFile path="db/sql/init/functions/f_column_id.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="50" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_column_name</comment>
+    <sqlFile path="db/sql/init/functions/f_column_name.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="51" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_comm_a_prelever</comment>
+    <sqlFile path="db/sql/init/functions/f_comm_a_prelever.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="52" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_compte_ope</comment>
+    <sqlFile path="db/sql/init/functions/f_compte_ope.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="53" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_concatene</comment>
+    <sqlFile path="db/sql/init/functions/f_concatene.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="54" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_conso_reste</comment>
+    <sqlFile path="db/sql/init/functions/f_conso_reste.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="55" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_contact</comment>
+    <sqlFile path="db/sql/init/functions/f_contact.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="56" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_contexte</comment>
+    <sqlFile path="db/sql/init/functions/f_contexte.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="57" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_contexte_interm</comment>
+    <sqlFile path="db/sql/init/functions/f_contexte_interm.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="58" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_contrepartie</comment>
+    <sqlFile path="db/sql/init/functions/f_contrepartie.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="59" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_contrepartie_d</comment>
+    <sqlFile path="db/sql/init/functions/f_contrepartie_d.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="60" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_controle_date</comment>
+    <sqlFile path="db/sql/init/functions/f_controle_date.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="61" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_controle_rib</comment>
+    <sqlFile path="db/sql/init/functions/f_controle_rib.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="62" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_convert_montant</comment>
+    <sqlFile path="db/sql/init/functions/f_convert_montant.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="63" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_COORDONNE_CONTACT</comment>
+    <sqlFile path="db/sql/init/functions/F_COORDONNE_CONTACT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="64" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_copy_cle</comment>
+    <sqlFile path="db/sql/init/functions/f_copy_cle.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="65" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_cot_gar</comment>
+    <sqlFile path="db/sql/init/functions/f_cot_gar.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="66" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_cotis</comment>
+    <sqlFile path="db/sql/init/functions/f_cotis.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="67" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_couverture</comment>
+    <sqlFile path="db/sql/init/functions/f_couverture.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="68" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_couv_jour</comment>
+    <sqlFile path="db/sql/init/functions/f_couv_jour.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="69" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_COMPTE</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_COMPTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="70" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_DATE_CONSTATATION</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_DATE_CONSTATATION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="71" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_DATE_DECAISMT</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_DATE_DECAISMT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="72" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_DATE_decaismt_OPERATION</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_DATE_decaismt_OPERATION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="73" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_DATE_ENCAISMT</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_DATE_ENCAISMT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="74" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_DATE_ENCAISMT_OPERATION</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_DATE_ENCAISMT_OPERATION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="75" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_DE</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_DE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="76" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_cpta_en</comment>
+    <sqlFile path="db/sql/init/functions/f_cpta_en.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="77" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_INTERM_SANTE</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_INTERM_SANTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="78" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_LIB_ANNUL_ENCAIS</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_LIB_ANNUL_ENCAIS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="79" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_LIB_ECR_DECAISS</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_LIB_ECR_DECAISS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="80" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_LIB_ENCAISMT</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_LIB_ENCAISMT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="81" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_LIB_REG_DEC_COURT</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_LIB_REG_DEC_COURT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="82" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_LIB_REGLT</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_LIB_REGLT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="83" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_cpta_op</comment>
+    <sqlFile path="db/sql/init/functions/f_cpta_op.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="84" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_cpta_role</comment>
+    <sqlFile path="db/sql/init/functions/f_cpta_role.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="85" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_ROLE_FORCE</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_ROLE_FORCE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="86" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_cpta_role_test</comment>
+    <sqlFile path="db/sql/init/functions/f_cpta_role_test.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="87" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_TRESO_VALIDE</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_TRESO_VALIDE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="88" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_cpta_type_dev</comment>
+    <sqlFile path="db/sql/init/functions/f_cpta_type_dev.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="89" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_cpta_type_dev_enc</comment>
+    <sqlFile path="db/sql/init/functions/f_cpta_type_dev_enc.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="90" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_TYPE_PMT</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_TYPE_PMT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="91" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CPTA_VAR</comment>
+    <sqlFile path="db/sql/init/functions/F_CPTA_VAR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="92" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_cpt_etat_remise</comment>
+    <sqlFile path="db/sql/init/functions/f_cpt_etat_remise.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="93" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_crnc1</comment>
+    <sqlFile path="db/sql/init/functions/f_crnc1.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="94" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_crrr_acte</comment>
+    <sqlFile path="db/sql/init/functions/F_crrr_acte.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="95" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_crrr_acte_ro</comment>
+    <sqlFile path="db/sql/init/functions/F_crrr_acte_ro.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="96" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CT_RESP</comment>
+    <sqlFile path="db/sql/init/functions/F_CT_RESP.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="97" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CTRL_DOUBLON_DENT</comment>
+    <sqlFile path="db/sql/init/functions/F_CTRL_DOUBLON_DENT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="98" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CTRL_MT_FORFAIT</comment>
+    <sqlFile path="db/sql/init/functions/F_CTRL_MT_FORFAIT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="99" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_CTRL_PERSONNE</comment>
+    <sqlFile path="db/sql/init/functions/F_CTRL_PERSONNE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="100" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_ctrl_remise_banque</comment>
+    <sqlFile path="db/sql/init/functions/f_ctrl_remise_banque.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="101" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_cvrtsante</comment>
+    <sqlFile path="db/sql/init/functions/f_cvrtsante.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="102" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_DATEFIN_SNTRT_NUMSIN</comment>
+    <sqlFile path="db/sql/init/functions/F_DATEFIN_SNTRT_NUMSIN.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="103" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_datemis</comment>
+    <sqlFile path="db/sql/init/functions/f_datemis.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="104" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_date_nais</comment>
+    <sqlFile path="db/sql/init/functions/f_date_nais.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="105" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_date_naissance</comment>
+    <sqlFile path="db/sql/init/functions/f_date_naissance.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="106" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_date_speciale</comment>
+    <sqlFile path="db/sql/init/functions/f_date_speciale.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="107" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_dcpt</comment>
+    <sqlFile path="db/sql/init/functions/f_dcpt.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="108" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_dcptcie_remb</comment>
+    <sqlFile path="db/sql/init/functions/f_dcptcie_remb.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="109" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_dcptcie_remb_d</comment>
+    <sqlFile path="db/sql/init/functions/f_dcptcie_remb_d.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="110" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_dcpt_d</comment>
+    <sqlFile path="db/sql/init/functions/f_dcpt_d.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="111" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_Dcpt_Dest</comment>
+    <sqlFile path="db/sql/init/functions/F_Dcpt_Dest.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="112" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_dcpt_idadhesion</comment>
+    <sqlFile path="db/sql/init/functions/f_dcpt_idadhesion.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="113" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_dcpt_RembTotal</comment>
+    <sqlFile path="db/sql/init/functions/F_dcpt_RembTotal.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="114" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_Dcpt_RoleDest</comment>
+    <sqlFile path="db/sql/init/functions/F_Dcpt_RoleDest.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="115" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_delimite</comment>
+    <sqlFile path="db/sql/init/functions/f_delimite.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="116" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_depend</comment>
+    <sqlFile path="db/sql/init/functions/f_depend.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="117" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_DERNIER_AVIS</comment>
+    <sqlFile path="db/sql/init/functions/F_DERNIER_AVIS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="118" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_DERNIER_AVIS_DCPT</comment>
+    <sqlFile path="db/sql/init/functions/F_DERNIER_AVIS_DCPT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="119" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_desaccentue</comment>
+    <sqlFile path="db/sql/init/functions/f_desaccentue.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="120" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_dest_role</comment>
+    <sqlFile path="db/sql/init/functions/f_dest_role.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="121" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_devise</comment>
+    <sqlFile path="db/sql/init/functions/f_devise.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="122" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_devise_debut</comment>
+    <sqlFile path="db/sql/init/functions/f_devise_debut.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="123" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_difpays</comment>
+    <sqlFile path="db/sql/init/functions/f_difpays.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="124" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_domicile_fiscal</comment>
+    <sqlFile path="db/sql/init/functions/f_domicile_fiscal.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="125" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_double_quote</comment>
+    <sqlFile path="db/sql/init/functions/f_double_quote.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="126" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_DUPLIQUE_DOSSIER_SANTE</comment>
+    <sqlFile path="db/sql/init/functions/F_DUPLIQUE_DOSSIER_SANTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="127" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_dynamique</comment>
+    <sqlFile path="db/sql/init/functions/f_dynamique.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="128" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_ECHEANCE</comment>
+    <sqlFile path="db/sql/init/functions/F_ECHEANCE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="129" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_echeancier</comment>
+    <sqlFile path="db/sql/init/functions/f_echeancier.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="130" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_eche_anniv</comment>
+    <sqlFile path="db/sql/init/functions/f_eche_anniv.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="131" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_eche_regl</comment>
+    <sqlFile path="db/sql/init/functions/f_eche_regl.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="132" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_ENTITE_LIB</comment>
+    <sqlFile path="db/sql/init/functions/F_ENTITE_LIB.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="133" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_ETAT_ADHE</comment>
+    <sqlFile path="db/sql/init/functions/F_ETAT_ADHE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="134" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_etat_adhe_a</comment>
+    <sqlFile path="db/sql/init/functions/f_etat_adhe_a.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="135" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_etat_adhe_b</comment>
+    <sqlFile path="db/sql/init/functions/f_etat_adhe_b.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="136" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_etat_adhe_c</comment>
+    <sqlFile path="db/sql/init/functions/f_etat_adhe_c.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="137" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_etat_adhe_sin</comment>
+    <sqlFile path="db/sql/init/functions/f_etat_adhe_sin.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="138" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_ETAT_DETTE</comment>
+    <sqlFile path="db/sql/init/functions/F_ETAT_DETTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="139" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_ETAT_DOSSIER_SANTE</comment>
+    <sqlFile path="db/sql/init/functions/F_ETAT_DOSSIER_SANTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="140" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_ETAT_GARANTIE</comment>
+    <sqlFile path="db/sql/init/functions/F_ETAT_GARANTIE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="141" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_ETAT_INSTANCE_UNIQUE</comment>
+    <sqlFile path="db/sql/init/functions/F_ETAT_INSTANCE_UNIQUE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="142" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_etat_propo</comment>
+    <sqlFile path="db/sql/init/functions/f_etat_propo.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="143" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_ETAT_RAPPEL</comment>
+    <sqlFile path="db/sql/init/functions/F_ETAT_RAPPEL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="144" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_etat_sbrgt</comment>
+    <sqlFile path="db/sql/init/functions/f_etat_sbrgt.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="145" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_ETAT_SINISTRE_SANTE</comment>
+    <sqlFile path="db/sql/init/functions/F_ETAT_SINISTRE_SANTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="146" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_etat_sntr_prev</comment>
+    <sqlFile path="db/sql/init/functions/f_etat_sntr_prev.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="147" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_ETAT_SNTRT_BY_DATE</comment>
+    <sqlFile path="db/sql/init/functions/F_ETAT_SNTRT_BY_DATE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="148" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_evalue</comment>
+    <sqlFile path="db/sql/init/functions/f_evalue.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="149" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_evalue_alpha</comment>
+    <sqlFile path="db/sql/init/functions/f_evalue_alpha.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="150" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_exist_adhe_porte</comment>
+    <sqlFile path="db/sql/init/functions/f_exist_adhe_porte.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="151" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_existe_bene_fisc</comment>
+    <sqlFile path="db/sql/init/functions/f_existe_bene_fisc.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="152" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_existe_valeur</comment>
+    <sqlFile path="db/sql/init/functions/f_existe_valeur.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="153" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_existe_variable</comment>
+    <sqlFile path="db/sql/init/functions/f_existe_variable.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="154" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_exist_param_msg</comment>
+    <sqlFile path="db/sql/init/functions/F_exist_param_msg.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="155" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_filiation</comment>
+    <sqlFile path="db/sql/init/functions/f_filiation.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="156" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_FIND_BASE_QTTC</comment>
+    <sqlFile path="db/sql/init/functions/F_FIND_BASE_QTTC.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="157" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_FIND_NUMQUIT</comment>
+    <sqlFile path="db/sql/init/functions/F_FIND_NUMQUIT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="158" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_FIND_PANIER</comment>
+    <sqlFile path="db/sql/init/functions/F_FIND_PANIER.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="159" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_FIND_PLV</comment>
+    <sqlFile path="db/sql/init/functions/F_FIND_PLV.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="160" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_FIND_STATUT_CNTRT</comment>
+    <sqlFile path="db/sql/init/functions/F_FIND_STATUT_CNTRT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="161" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_FIND_VAR</comment>
+    <sqlFile path="db/sql/init/functions/F_FIND_VAR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="162" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_force_gest</comment>
+    <sqlFile path="db/sql/init/functions/f_force_gest.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="163" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_force_type_mt</comment>
+    <sqlFile path="db/sql/init/functions/f_force_type_mt.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="164" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_fra_dep</comment>
+    <sqlFile path="db/sql/init/functions/f_fra_dep.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="165" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_FRANCHISE</comment>
+    <sqlFile path="db/sql/init/functions/F_FRANCHISE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="166" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_frmls_compl</comment>
+    <sqlFile path="db/sql/init/functions/F_frmls_compl.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="167" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_garanties</comment>
+    <sqlFile path="db/sql/init/functions/f_garanties.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="168" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_gar_oblg</comment>
+    <sqlFile path="db/sql/init/functions/f_gar_oblg.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="169" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_gar_unitcalc</comment>
+    <sqlFile path="db/sql/init/functions/f_gar_unitcalc.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="170" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_GEN_PASSWD</comment>
+    <sqlFile path="db/sql/init/functions/F_GEN_PASSWD.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="171" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_get_instance</comment>
+    <sqlFile path="db/sql/init/functions/f_get_instance.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="172" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_GET_TRANSCO</comment>
+    <sqlFile path="db/sql/init/functions/F_GET_TRANSCO.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="173" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_GET_TRANSCO_SP</comment>
+    <sqlFile path="db/sql/init/functions/F_GET_TRANSCO_SP.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="174" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_GET_VALUE_IN_TABLE</comment>
+    <sqlFile path="db/sql/init/functions/F_GET_VALUE_IN_TABLE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="175" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_get_varchar_splited</comment>
+    <sqlFile path="db/sql/init/functions/f_get_varchar_splited.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="176" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_idadhesion</comment>
+    <sqlFile path="db/sql/init/functions/f_idadhesion.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="177" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_idadhesion_contrat</comment>
+    <sqlFile path="db/sql/init/functions/f_idadhesion_contrat.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="178" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_idadhesion_dcpt_sante</comment>
+    <sqlFile path="db/sql/init/functions/F_idadhesion_dcpt_sante.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="179" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_idadhesion_gar</comment>
+    <sqlFile path="db/sql/init/functions/f_idadhesion_gar.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="180" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_idadhesion_prev</comment>
+    <sqlFile path="db/sql/init/functions/f_idadhesion_prev.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="181" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_idarchive</comment>
+    <sqlFile path="db/sql/init/functions/f_idarchive.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="182" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_idcotis</comment>
+    <sqlFile path="db/sql/init/functions/f_idcotis.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="183" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_idcvrt</comment>
+    <sqlFile path="db/sql/init/functions/f_idcvrt.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="184" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_idcvrt_bruno</comment>
+    <sqlFile path="db/sql/init/functions/f_idcvrt_bruno.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="185" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_iddossier</comment>
+    <sqlFile path="db/sql/init/functions/f_iddossier.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="186" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_identifiant</comment>
+    <sqlFile path="db/sql/init/functions/f_identifiant.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="187" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_IDFACTPE</comment>
+    <sqlFile path="db/sql/init/functions/F_IDFACTPE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="188" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_IDHISTO_RAPPEL</comment>
+    <sqlFile path="db/sql/init/functions/F_IDHISTO_RAPPEL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="189" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_IDTEXTE</comment>
+    <sqlFile path="db/sql/init/functions/F_IDTEXTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="190" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_IDTEXTE_DCPT</comment>
+    <sqlFile path="db/sql/init/functions/F_IDTEXTE_DCPT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="191" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_idtexte_DCPT_2</comment>
+    <sqlFile path="db/sql/init/functions/f_idtexte_DCPT_2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="192" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_IDTEXTE_PARAM</comment>
+    <sqlFile path="db/sql/init/functions/F_IDTEXTE_PARAM.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="193" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_idvar</comment>
+    <sqlFile path="db/sql/init/functions/f_idvar.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="194" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_idvariable</comment>
+    <sqlFile path="db/sql/init/functions/f_idvariable.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="195" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_INFO_REG_ASSU</comment>
+    <sqlFile path="db/sql/init/functions/F_INFO_REG_ASSU.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="196" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_info_tiers_payant</comment>
+    <sqlFile path="db/sql/init/functions/f_info_tiers_payant.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="197" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_INSERT_HISTO_CNX_USERS</comment>
+    <sqlFile path="db/sql/init/functions/F_INSERT_HISTO_CNX_USERS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="198" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_intermediaire</comment>
+    <sqlFile path="db/sql/init/functions/f_intermediaire.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="199" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_IS_ALL_LIEN_GED_CHECKED</comment>
+    <sqlFile path="db/sql/init/functions/F_IS_ALL_LIEN_GED_CHECKED.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="200" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_IS_DEROG</comment>
+    <sqlFile path="db/sql/init/functions/F_IS_DEROG.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="201" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_is_iban_int</comment>
+    <sqlFile path="db/sql/init/functions/f_is_iban_int.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="202" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_IS_ONE_LIEN_GED_OK</comment>
+    <sqlFile path="db/sql/init/functions/F_IS_ONE_LIEN_GED_OK.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="203" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_j_conso</comment>
+    <sqlFile path="db/sql/init/functions/f_j_conso.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="204" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_jours_civils</comment>
+    <sqlFile path="db/sql/init/functions/f_jours_civils.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="205" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_last_idporte</comment>
+    <sqlFile path="db/sql/init/functions/f_last_idporte.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="206" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_lble</comment>
+    <sqlFile path="db/sql/init/functions/f_lble.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="207" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_lib</comment>
+    <sqlFile path="db/sql/init/functions/f_lib.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="208" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_lib_affec</comment>
+    <sqlFile path="db/sql/init/functions/f_lib_affec.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="209" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_lib_attente</comment>
+    <sqlFile path="db/sql/init/functions/f_lib_attente.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="210" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_lib_base</comment>
+    <sqlFile path="db/sql/init/functions/F_lib_base.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="211" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_lib_edition</comment>
+    <sqlFile path="db/sql/init/functions/F_lib_edition.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="212" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_LIBELLE_FORMAT</comment>
+    <sqlFile path="db/sql/init/functions/F_LIBELLE_FORMAT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="213" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_libgar</comment>
+    <sqlFile path="db/sql/init/functions/f_libgar.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="214" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_lib_piece</comment>
+    <sqlFile path="db/sql/init/functions/f_lib_piece.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="215" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_LIB_POST_IT</comment>
+    <sqlFile path="db/sql/init/functions/F_LIB_POST_IT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="216" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_lib_propal</comment>
+    <sqlFile path="db/sql/init/functions/f_lib_propal.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="217" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_longueur</comment>
+    <sqlFile path="db/sql/init/functions/f_longueur.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="218" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_message</comment>
+    <sqlFile path="db/sql/init/functions/f_message.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="219" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_michel2</comment>
+    <sqlFile path="db/sql/init/functions/F_michel2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="220" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_mnemo_base</comment>
+    <sqlFile path="db/sql/init/functions/f_mnemo_base.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="221" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_mnemo_donnee</comment>
+    <sqlFile path="db/sql/init/functions/f_mnemo_donnee.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="222" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_mois_matorg</comment>
+    <sqlFile path="db/sql/init/functions/f_mois_matorg.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="223" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_MONTANT_DU</comment>
+    <sqlFile path="db/sql/init/functions/F_MONTANT_DU.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="224" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_MONTANT_DU_D</comment>
+    <sqlFile path="db/sql/init/functions/F_MONTANT_DU_D.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="225" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_montant_soumis</comment>
+    <sqlFile path="db/sql/init/functions/f_montant_soumis.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="226" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_mt_affec</comment>
+    <sqlFile path="db/sql/init/functions/f_mt_affec.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="227" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_mt_affec_d</comment>
+    <sqlFile path="db/sql/init/functions/f_mt_affec_d.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="228" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_mt_affec_tfc</comment>
+    <sqlFile path="db/sql/init/functions/f_mt_affec_tfc.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="229" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_mt_affec_tfc_d</comment>
+    <sqlFile path="db/sql/init/functions/f_mt_affec_tfc_d.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="230" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_mt_affec_tfc_numquit</comment>
+    <sqlFile path="db/sql/init/functions/f_mt_affec_tfc_numquit.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="231" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_mt_affec_tfc_numquit_d</comment>
+    <sqlFile path="db/sql/init/functions/f_mt_affec_tfc_numquit_d.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="232" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_nat_calc</comment>
+    <sqlFile path="db/sql/init/functions/f_nat_calc.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="233" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_nat_risq</comment>
+    <sqlFile path="db/sql/init/functions/F_nat_risq.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="234" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_nat_risq_cpta</comment>
+    <sqlFile path="db/sql/init/functions/F_nat_risq_cpta.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="235" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_naydr</comment>
+    <sqlFile path="db/sql/init/functions/f_naydr.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="236" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_nb_adr</comment>
+    <sqlFile path="db/sql/init/functions/f_nb_adr.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="237" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_nb_teletransmis</comment>
+    <sqlFile path="db/sql/init/functions/f_nb_teletransmis.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="238" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_niveau_inf</comment>
+    <sqlFile path="db/sql/init/functions/f_niveau_inf.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="239" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_nom</comment>
+    <sqlFile path="db/sql/init/functions/f_nom.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="240" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_nom_marital</comment>
+    <sqlFile path="db/sql/init/functions/f_nom_marital.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="241" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_nom_patro</comment>
+    <sqlFile path="db/sql/init/functions/f_nom_patro.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="242" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_nom_reso</comment>
+    <sqlFile path="db/sql/init/functions/f_nom_reso.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="243" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_nomutil</comment>
+    <sqlFile path="db/sql/init/functions/f_nomutil.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="244" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_NUMADHERENT</comment>
+    <sqlFile path="db/sql/init/functions/F_NUMADHERENT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="245" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_NUMAFFEC</comment>
+    <sqlFile path="db/sql/init/functions/F_NUMAFFEC.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="246" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_numassu</comment>
+    <sqlFile path="db/sql/init/functions/f_numassu.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="247" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_numassu_noemie</comment>
+    <sqlFile path="db/sql/init/functions/F_numassu_noemie.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="248" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_numbord_decaismt</comment>
+    <sqlFile path="db/sql/init/functions/f_numbord_decaismt.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="249" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_numero</comment>
+    <sqlFile path="db/sql/init/functions/f_numero.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="250" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_numfor</comment>
+    <sqlFile path="db/sql/init/functions/f_numfor.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="251" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_numgar</comment>
+    <sqlFile path="db/sql/init/functions/f_numgar.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="252" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_NUMGAR_INUSE</comment>
+    <sqlFile path="db/sql/init/functions/F_NUMGAR_INUSE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="253" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_NUMGAR_REF</comment>
+    <sqlFile path="db/sql/init/functions/F_NUMGAR_REF.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="254" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_NUMGAR_REFCIE</comment>
+    <sqlFile path="db/sql/init/functions/F_NUMGAR_REFCIE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="255" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_numgar_2</comment>
+    <sqlFile path="db/sql/init/functions/f_numgar_2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="256" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_NUMGRPGAR</comment>
+    <sqlFile path="db/sql/init/functions/F_NUMGRPGAR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="257" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_num_idadhesion</comment>
+    <sqlFile path="db/sql/init/functions/f_num_idadhesion.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="258" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_numindiv</comment>
+    <sqlFile path="db/sql/init/functions/f_numindiv.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="259" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_numindiv_sin</comment>
+    <sqlFile path="db/sql/init/functions/f_numindiv_sin.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="260" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_numorg</comment>
+    <sqlFile path="db/sql/init/functions/f_numorg.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="261" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_numorg_LD</comment>
+    <sqlFile path="db/sql/init/functions/F_numorg_LD.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="262" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_NUMORG_PRESCRIPTION</comment>
+    <sqlFile path="db/sql/init/functions/F_NUMORG_PRESCRIPTION.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="263" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_numrelance</comment>
+    <sqlFile path="db/sql/init/functions/f_numrelance.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="264" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_numrelance_2</comment>
+    <sqlFile path="db/sql/init/functions/f_numrelance_2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="265" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_numsin_sntr</comment>
+    <sqlFile path="db/sql/init/functions/f_numsin_sntr.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="266" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_numutil</comment>
+    <sqlFile path="db/sql/init/functions/f_numutil.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="267" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_objet_propo</comment>
+    <sqlFile path="db/sql/init/functions/f_objet_propo.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="268" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_ouverte</comment>
+    <sqlFile path="db/sql/init/functions/F_ouverte.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="269" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_OVERLAPS</comment>
+    <sqlFile path="db/sql/init/functions/F_OVERLAPS.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="270" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_param_compte</comment>
+    <sqlFile path="db/sql/init/functions/f_param_compte.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="271" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_param_devise</comment>
+    <sqlFile path="db/sql/init/functions/f_param_devise.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="272" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_param_ope</comment>
+    <sqlFile path="db/sql/init/functions/f_param_ope.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="273" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_PARAM_OPE_VALIDE</comment>
+    <sqlFile path="db/sql/init/functions/F_PARAM_OPE_VALIDE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="274" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_pays</comment>
+    <sqlFile path="db/sql/init/functions/f_pays.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="275" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_pays_def</comment>
+    <sqlFile path="db/sql/init/functions/f_pays_def.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="276" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_pers_irrevocable</comment>
+    <sqlFile path="db/sql/init/functions/F_pers_irrevocable.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="277" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_PIECE_BLOCAGE</comment>
+    <sqlFile path="db/sql/init/functions/F_PIECE_BLOCAGE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="278" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_piece_contra</comment>
+    <sqlFile path="db/sql/init/functions/f_piece_contra.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="279" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_piece_contrat</comment>
+    <sqlFile path="db/sql/init/functions/f_piece_contrat.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="280" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_piece_detail</comment>
+    <sqlFile path="db/sql/init/functions/f_piece_detail.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="281" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_PLAFOND</comment>
+    <sqlFile path="db/sql/init/functions/F_PLAFOND.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="282" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_pmt_compte</comment>
+    <sqlFile path="db/sql/init/functions/f_pmt_compte.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="283" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_PORTE_EA</comment>
+    <sqlFile path="db/sql/init/functions/F_PORTE_EA.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="284" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_porte_emetteur</comment>
+    <sqlFile path="db/sql/init/functions/f_porte_emetteur.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="285" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_porte_identifiant</comment>
+    <sqlFile path="db/sql/init/functions/f_porte_identifiant.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="286" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_prch_idadhesion</comment>
+    <sqlFile path="db/sql/init/functions/f_prch_idadhesion.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="287" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_PRESTA_ORIGINE</comment>
+    <sqlFile path="db/sql/init/functions/F_PRESTA_ORIGINE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="288" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_profil</comment>
+    <sqlFile path="db/sql/init/functions/f_profil.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="289" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_prorata</comment>
+    <sqlFile path="db/sql/init/functions/f_prorata.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="290" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_prorata_jours</comment>
+    <sqlFile path="db/sql/init/functions/f_prorata_jours.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="291" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_prorata2</comment>
+    <sqlFile path="db/sql/init/functions/f_prorata2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="292" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_pseudo</comment>
+    <sqlFile path="db/sql/init/functions/f_pseudo.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="293" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_QTTC_ANNUELLE</comment>
+    <sqlFile path="db/sql/init/functions/F_QTTC_ANNUELLE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="294" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_qttc_comptant</comment>
+    <sqlFile path="db/sql/init/functions/f_qttc_comptant.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="295" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_QTTC_DU</comment>
+    <sqlFile path="db/sql/init/functions/F_QTTC_DU.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="296" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_QTTC_DU_D</comment>
+    <sqlFile path="db/sql/init/functions/F_QTTC_DU_D.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="297" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_QTTC_IMPAYE</comment>
+    <sqlFile path="db/sql/init/functions/F_QTTC_IMPAYE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="298" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_r_aydr</comment>
+    <sqlFile path="db/sql/init/functions/f_r_aydr.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="299" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_REFEXT_FACTURE</comment>
+    <sqlFile path="db/sql/init/functions/F_REFEXT_FACTURE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="300" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_ref_prelevement</comment>
+    <sqlFile path="db/sql/init/functions/f_ref_prelevement.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="301" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_reg</comment>
+    <sqlFile path="db/sql/init/functions/f_reg.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="302" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_regime</comment>
+    <sqlFile path="db/sql/init/functions/f_regime.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="303" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_remplace_texte</comment>
+    <sqlFile path="db/sql/init/functions/f_remplace_texte.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="304" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_rep_imp_exp</comment>
+    <sqlFile path="db/sql/init/functions/f_rep_imp_exp.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="305" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_rglt_auto</comment>
+    <sqlFile path="db/sql/init/functions/f_rglt_auto.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="306" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_RIB_SAISI</comment>
+    <sqlFile path="db/sql/init/functions/F_RIB_SAISI.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="307" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_RIB_VALIDE</comment>
+    <sqlFile path="db/sql/init/functions/F_RIB_VALIDE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="308" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_role</comment>
+    <sqlFile path="db/sql/init/functions/f_role.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="309" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_SEL_date_effet</comment>
+    <sqlFile path="db/sql/init/functions/F_SEL_date_effet.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="310" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_SEL_DATE_RESIL</comment>
+    <sqlFile path="db/sql/init/functions/F_SEL_DATE_RESIL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="311" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_SEL_DEST_DCPT</comment>
+    <sqlFile path="db/sql/init/functions/F_SEL_DEST_DCPT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="312" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_SEL_INTERLOC_PARAM_OU_DEFAUT</comment>
+    <sqlFile path="db/sql/init/functions/F_SEL_INTERLOC_PARAM_OU_DEFAUT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="313" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_SEL_INTERLOCUTEUR</comment>
+    <sqlFile path="db/sql/init/functions/F_SEL_INTERLOCUTEUR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="314" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_SEL_INTERLOCUTEUR_DEFAUT</comment>
+    <sqlFile path="db/sql/init/functions/F_SEL_INTERLOCUTEUR_DEFAUT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="315" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_SEL_Numorg_Lig_Doss</comment>
+    <sqlFile path="db/sql/init/functions/F_SEL_Numorg_Lig_Doss.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="316" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_sel_parporte</comment>
+    <sqlFile path="db/sql/init/functions/f_sel_parporte.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="317" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_sel_parporte_ident</comment>
+    <sqlFile path="db/sql/init/functions/f_sel_parporte_ident.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="318" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_SENS_LIBELLE</comment>
+    <sqlFile path="db/sql/init/functions/F_SENS_LIBELLE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="319" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_siecle</comment>
+    <sqlFile path="db/sql/init/functions/f_siecle.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="320" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_sin</comment>
+    <sqlFile path="db/sql/init/functions/f_sin.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="321" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_situ_pret</comment>
+    <sqlFile path="db/sql/init/functions/f_situ_pret.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="322" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_situ_propal</comment>
+    <sqlFile path="db/sql/init/functions/f_situ_propal.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="323" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_SNTR_PREV_COR</comment>
+    <sqlFile path="db/sql/init/functions/F_SNTR_PREV_COR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="324" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_SNTR_PREV_DEBUT</comment>
+    <sqlFile path="db/sql/init/functions/F_SNTR_PREV_DEBUT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="325" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_SNTR_PREV_FIN</comment>
+    <sqlFile path="db/sql/init/functions/F_SNTR_PREV_FIN.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="326" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_SNTR_RECHUTE</comment>
+    <sqlFile path="db/sql/init/functions/F_SNTR_RECHUTE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="327" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_sntr_remb</comment>
+    <sqlFile path="db/sql/init/functions/f_sntr_remb.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="328" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_soc_assu</comment>
+    <sqlFile path="db/sql/init/functions/f_soc_assu.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="329" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_SPLIT_CHAR</comment>
+    <sqlFile path="db/sql/init/functions/F_SPLIT_CHAR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="330" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_statut_noemie</comment>
+    <sqlFile path="db/sql/init/functions/f_statut_noemie.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="331" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_STR_TO_NUMBER</comment>
+    <sqlFile path="db/sql/init/functions/F_STR_TO_NUMBER.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="332" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_suivi_factpe</comment>
+    <sqlFile path="db/sql/init/functions/f_suivi_factpe.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="333" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_suivi_factpe_prec</comment>
+    <sqlFile path="db/sql/init/functions/f_suivi_factpe_prec.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="334" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_super_user</comment>
+    <sqlFile path="db/sql/init/functions/f_super_user.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="335" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_Taux_Tarif</comment>
+    <sqlFile path="db/sql/init/functions/F_Taux_Tarif.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="336" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_t_aydr</comment>
+    <sqlFile path="db/sql/init/functions/f_t_aydr.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="337" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_teletransmis</comment>
+    <sqlFile path="db/sql/init/functions/f_teletransmis.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="338" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_terme_a_echoir</comment>
+    <sqlFile path="db/sql/init/functions/f_terme_a_echoir.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="339" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_terme_echu</comment>
+    <sqlFile path="db/sql/init/functions/f_terme_echu.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="340" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_test_postit</comment>
+    <sqlFile path="db/sql/init/functions/F_test_postit.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="341" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_TEST_POUR_SPPRIMER_CORRES</comment>
+    <sqlFile path="db/sql/init/functions/F_TEST_POUR_SPPRIMER_CORRES.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="342" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_texte</comment>
+    <sqlFile path="db/sql/init/functions/f_texte.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="343" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_texte_variable</comment>
+    <sqlFile path="db/sql/init/functions/f_texte_variable.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="344" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_totaffec</comment>
+    <sqlFile path="db/sql/init/functions/f_totaffec.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="345" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_totaffec_d</comment>
+    <sqlFile path="db/sql/init/functions/f_totaffec_d.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="346" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_total_histo</comment>
+    <sqlFile path="db/sql/init/functions/f_total_histo.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="347" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_total_histo_d</comment>
+    <sqlFile path="db/sql/init/functions/f_total_histo_d.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="348" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_total_idcalcul</comment>
+    <sqlFile path="db/sql/init/functions/f_total_idcalcul.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="349" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_total_idcalcul_d</comment>
+    <sqlFile path="db/sql/init/functions/f_total_idcalcul_d.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="350" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_total_numdec</comment>
+    <sqlFile path="db/sql/init/functions/f_total_numdec.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="351" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_total_numdec_d</comment>
+    <sqlFile path="db/sql/init/functions/f_total_numdec_d.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="352" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_totcomm</comment>
+    <sqlFile path="db/sql/init/functions/f_totcomm.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="353" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_totfrais</comment>
+    <sqlFile path="db/sql/init/functions/f_totfrais.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="354" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_totfrais_gar</comment>
+    <sqlFile path="db/sql/init/functions/f_totfrais_gar.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="355" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_totfrais_gar_d</comment>
+    <sqlFile path="db/sql/init/functions/f_totfrais_gar_d.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="356" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_TOTQTTC_IND</comment>
+    <sqlFile path="db/sql/init/functions/F_TOTQTTC_IND.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="357" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_TOTQTTC_IND_OUT</comment>
+    <sqlFile path="db/sql/init/functions/F_TOTQTTC_IND_OUT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="358" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_TOTQTTC_IN_OUT</comment>
+    <sqlFile path="db/sql/init/functions/F_TOTQTTC_IN_OUT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="359" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_tottaxe</comment>
+    <sqlFile path="db/sql/init/functions/f_tottaxe.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="360" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_trace_usrxit</comment>
+    <sqlFile path="db/sql/init/functions/F_trace_usrxit.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="361" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_TRANCHE_AGE</comment>
+    <sqlFile path="db/sql/init/functions/F_TRANCHE_AGE.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="362" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_transmis</comment>
+    <sqlFile path="db/sql/init/functions/f_transmis.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="363" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_type_adresse</comment>
+    <sqlFile path="db/sql/init/functions/f_type_adresse.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="364" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_type_calc</comment>
+    <sqlFile path="db/sql/init/functions/f_type_calc.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="365" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_type_couv</comment>
+    <sqlFile path="db/sql/init/functions/F_type_couv.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="366" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_type_decaismt</comment>
+    <sqlFile path="db/sql/init/functions/f_type_decaismt.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="367" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_Type_Dest</comment>
+    <sqlFile path="db/sql/init/functions/F_Type_Dest.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="368" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_typ_edition</comment>
+    <sqlFile path="db/sql/init/functions/f_typ_edition.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="369" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_TYPE_GAR</comment>
+    <sqlFile path="db/sql/init/functions/F_TYPE_GAR.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="370" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_type_modele</comment>
+    <sqlFile path="db/sql/init/functions/F_type_modele.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="371" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_type_numgar</comment>
+    <sqlFile path="db/sql/init/functions/f_type_numgar.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="372" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_type_porte</comment>
+    <sqlFile path="db/sql/init/functions/f_type_porte.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="373" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_type_rattach_cour</comment>
+    <sqlFile path="db/sql/init/functions/f_type_rattach_cour.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="374" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_typtaux</comment>
+    <sqlFile path="db/sql/init/functions/F_typtaux.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="375" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_valid</comment>
+    <sqlFile path="db/sql/init/functions/f_valid.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="376" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_validate_var</comment>
+    <sqlFile path="db/sql/init/functions/f_validate_var.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="377" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION f_valide_texte</comment>
+    <sqlFile path="db/sql/init/functions/f_valide_texte.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="378" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_VALID_UTIL</comment>
+    <sqlFile path="db/sql/init/functions/F_VALID_UTIL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="379" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION F_VAL_VAR_ALL</comment>
+    <sqlFile path="db/sql/init/functions/F_VAL_VAR_ALL.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="380" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION ga02_xit</comment>
+    <sqlFile path="db/sql/init/functions/ga02_xit.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="381" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION gs19_proc</comment>
+    <sqlFile path="db/sql/init/functions/gs19_proc.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="382" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION gs19_xit</comment>
+    <sqlFile path="db/sql/init/functions/gs19_xit.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="383" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION ind</comment>
+    <sqlFile path="db/sql/init/functions/ind.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="384" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION inf</comment>
+    <sqlFile path="db/sql/init/functions/inf.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="385" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION inferer_sex</comment>
+    <sqlFile path="db/sql/init/functions/inferer_sex.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="386" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION is_a_fonction</comment>
+    <sqlFile path="db/sql/init/functions/is_a_fonction.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="387" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION is_operateur</comment>
+    <sqlFile path="db/sql/init/functions/is_operateur.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="388" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION j2d</comment>
+    <sqlFile path="db/sql/init/functions/j2d.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="389" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION max2</comment>
+    <sqlFile path="db/sql/init/functions/max2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="390" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION max3</comment>
+    <sqlFile path="db/sql/init/functions/max3.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="391" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION mens</comment>
+    <sqlFile path="db/sql/init/functions/mens.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="392" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION message</comment>
+    <sqlFile path="db/sql/init/functions/message.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="393" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION min2</comment>
+    <sqlFile path="db/sql/init/functions/min2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="394" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION min3</comment>
+    <sqlFile path="db/sql/init/functions/min3.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="395" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION nb_depend</comment>
+    <sqlFile path="db/sql/init/functions/nb_depend.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="396" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION no06_proc</comment>
+    <sqlFile path="db/sql/init/functions/no06_proc.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="397" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION no10_687_proc</comment>
+    <sqlFile path="db/sql/init/functions/no10_687_proc.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="398" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION pv01_proc</comment>
+    <sqlFile path="db/sql/init/functions/pv01_proc.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="399" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION pv01_proc_risq</comment>
+    <sqlFile path="db/sql/init/functions/pv01_proc_risq.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="400" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION qg01_proc</comment>
+    <sqlFile path="db/sql/init/functions/qg01_proc.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="401" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION qg04_xit</comment>
+    <sqlFile path="db/sql/init/functions/qg04_xit.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="402" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION qg05_xit</comment>
+    <sqlFile path="db/sql/init/functions/qg05_xit.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="403" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION QUALEA_F_FORMAT</comment>
+    <sqlFile path="db/sql/init/functions/QUALEA_F_FORMAT.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="404" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION ratio</comment>
+    <sqlFile path="db/sql/init/functions/ratio.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="405" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION rb01_proc</comment>
+    <sqlFile path="db/sql/init/functions/rb01_proc.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="406" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION ROUND</comment>
+    <sqlFile path="db/sql/init/functions/ROUND.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="407" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION rs01_proc</comment>
+    <sqlFile path="db/sql/init/functions/rs01_proc.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="408" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION san</comment>
+    <sqlFile path="db/sql/init/functions/san.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="409" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION semi</comment>
+    <sqlFile path="db/sql/init/functions/semi.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="410" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION sid</comment>
+    <sqlFile path="db/sql/init/functions/sid.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="411" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION smens</comment>
+    <sqlFile path="db/sql/init/functions/smens.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="412" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION ssemi</comment>
+    <sqlFile path="db/sql/init/functions/ssemi.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="413" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION strim</comment>
+    <sqlFile path="db/sql/init/functions/strim.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="414" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION sup</comment>
+    <sqlFile path="db/sql/init/functions/sup.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="415" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION test00</comment>
+    <sqlFile path="db/sql/init/functions/test00.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="416" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION trim</comment>
+    <sqlFile path="db/sql/init/functions/trim.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="417" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION ut01_xit</comment>
+    <sqlFile path="db/sql/init/functions/ut01_xit.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="418" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION Valeur_variable</comment>
+    <sqlFile path="db/sql/init/functions/Valeur_variable.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="419" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION Val_var</comment>
+    <sqlFile path="db/sql/init/functions/Val_var.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="420" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION val_var2</comment>
+    <sqlFile path="db/sql/init/functions/val_var2.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="421" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION va05_xit</comment>
+    <sqlFile path="db/sql/init/functions/va05_xit.sql" endDelimiter="GO"/>
+  </changeSet>
+  <changeSet id="422" author="OMIGNOT" created="2026-08-11">
+    <comment>CREATE FUNCTION Z_Incluse</comment>
+    <sqlFile path="db/sql/init/functions/Z_Incluse.sql" endDelimiter="GO"/>
+  </changeSet>
+</databaseChangeLog>

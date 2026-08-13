@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : DEF
+-- Cible      : ARTHUS.DEF
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM DEF FOR ARTHUS.DEF;

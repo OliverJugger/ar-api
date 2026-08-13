@@ -1,0 +1,86 @@
+CREATE TRIGGER ARTHUS.TRG_BUD_RIB
+BEFORE UPDATE OR DELETE
+ON RIB
+REFERENCING NEW AS NEW OLD AS OLD FOR EACH ROW
+
+BEGIN
+
+--DBMS_OUTPUT.PUT_LINE('historisation debut '||:OLD.IDRIB );
+
+    INSERT INTO HISTO_RIB
+     (      IDHISTORIB   ,
+             DAT_HISTO   ,
+             NUMUTIL_HISTO         ,
+             IDRIB                         ,
+             TYPE                         ,
+             NUMINDIV                 ,
+             NUMGAR                   ,
+             CODOPE                    ,
+             MODPMT                  ,
+             CODBQUE                      ,
+             GUICHET                       ,
+             COMPTE                        ,
+             CLERIB                          ,
+             INTITULE                        ,
+             DEBUT                            ,
+             DEVISE_COMPTE        ,
+             DEVISE_OPE              ,
+             CREATION                      ,
+             MAJ                         ,
+             NUMUTIL_CREATION     ,
+             NUMUTIL_MAJ         ,
+             DOMICILIATION            ,
+             CLERIB_ETRG             ,
+             CODBQUE_ETRG            ,
+             COMPTE_ETRG              ,
+             GUICHET_ETRG            ,
+             NATURE              ,
+             NUMINDIV_ETRG       ,
+             TYP_BQ_ETRG         ,
+             TYP_CLE_ETRG        ,
+             TYP_GUI_ETRG       ,
+             CLEF_IBAN               ,
+             BBAN                     ,
+             BIC                     ,
+             CODPAYS,
+             FIN             )
+    VALUES (
+                  IDHISTORIB.NEXTVAL,
+                  SYSDATE,
+                  F_NUMUTIL,
+                  :OLD.IDRIB ,
+                  :OLD.TYPE    ,
+                  :OLD.NUMINDIV ,
+                  :OLD.NUMGAR   ,
+                  :OLD.CODOPE   ,
+                  :OLD.MODPMT ,
+                  :OLD.CODBQUE ,
+                  :OLD.GUICHET,
+                  :OLD.COMPTE ,
+                  :OLD.CLERIB  ,
+                  :OLD.INTITULE,
+                  :OLD.DEBUT ,
+                  :OLD.DEVISE_COMPTE ,
+                  :OLD.DEVISE_OPE ,
+                  :OLD.CREATION ,
+                  :OLD.MAJ  ,
+                  :OLD.NUMUTIL_CREATION  ,
+                  :OLD.NUMUTIL_MAJ      ,
+                  :OLD.DOMICILIATION  ,
+                  :OLD.CLERIB_ETRG  ,
+                  :OLD.CODBQUE_ETRG    ,
+                  :OLD.COMPTE_ETRG    ,
+                  :OLD.GUICHET_ETRG   ,
+                  :OLD.NATURE,
+                  :OLD.NUMINDIV_ETRG ,
+                  :OLD.TYP_BQ_ETRG,
+                  :OLD.TYP_CLE_ETRG ,
+                  :OLD.TYP_GUI_ETRG,
+                  :OLD.CLEF_IBAN,
+                  :OLD.BBAN ,
+                  :OLD.BIC ,
+                  :OLD.CODPAYS,
+                  :OLD.FIN)
+ ;
+
+END;

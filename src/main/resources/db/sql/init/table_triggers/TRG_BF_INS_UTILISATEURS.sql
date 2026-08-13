@@ -1,0 +1,9 @@
+CREATE TRIGGER ARTHUS."TRG_BF_INS_UTILISATEURS"
+BEFORE INSERT OR UPDATE
+ON utilisateurs
+FOR EACH ROW
+BEGIN
+  IF :new.password IS NULL THEN
+    :new.password := 'NULL';
+  END IF;
+END;

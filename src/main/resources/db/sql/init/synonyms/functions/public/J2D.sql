@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : J2D
+-- Cible      : ARTHUS.J2D
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM J2D FOR ARTHUS.J2D;

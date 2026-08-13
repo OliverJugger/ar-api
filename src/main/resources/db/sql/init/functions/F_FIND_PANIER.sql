@@ -1,0 +1,21 @@
+CREATE FUNCTION ARTHUS.F_FIND_PANIER(i_codfrais NTFRS_PLV.codfrais%TYPE) RETURN NUMBER IS
+  loc_panier libelle.code%TYPE;
+BEGIN
+	SELECT panier INTO loc_panier
+	FROM NTFRS_DENTAIRE
+	WHERE codfrais = i_codfrais
+  UNION
+  SELECT panier
+  FROM NTFRS_OPTIQUE
+	WHERE codfrais = i_codfrais
+  UNION
+  SELECT panier
+  FROM NTFRS_AUDITIF
+	WHERE codfrais = i_codfrais;
+
+	RETURN loc_panier;
+EXCEPTION
+	WHEN NO_DATA_FOUND THEN RETURN NULL;
+	WHEN OTHERS THEN RETURN -1;
+
+END F_FIND_PANIER;

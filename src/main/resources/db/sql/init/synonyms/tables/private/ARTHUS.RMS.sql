@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.RMS
+-- Cible      : ARTHUS.REMISE
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.RMS FOR ARTHUS.REMISE;

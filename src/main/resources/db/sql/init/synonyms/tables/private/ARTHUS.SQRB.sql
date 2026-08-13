@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.SQRB
+-- Cible      : ARTHUS.SEQRUB
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.SQRB FOR ARTHUS.SEQRUB;

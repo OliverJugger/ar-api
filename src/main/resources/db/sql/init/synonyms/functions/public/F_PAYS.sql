@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : F_PAYS
+-- Cible      : ARTHUS.F_PAYS
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM F_PAYS FOR ARTHUS.F_PAYS;

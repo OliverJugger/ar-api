@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <changeSet id="1" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/Affecte.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="2" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/Annul_encaismt.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="3" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/annul_histo_calcul.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="4" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_adhe_cntrt.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="5" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_adhecoll.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="6" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_adhesion.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="7" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_contrat.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="8" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/CHARGE_COTISATION.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="9" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/CHARGE_COTISATION_GAR.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="10" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/CHARGE_DECAISMT.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="11" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_decla.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="12" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_dette.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="13" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_donnee.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="14" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_dsante.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="15" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_echeancier.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="16" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_encaismt.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="17" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_frais.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="18" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_garantie.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="19" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_histo_ss.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="20" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_indice.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="21" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_indvs.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="22" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_interm.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="23" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/CHARGE_MEMBRE.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="24" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_orgns.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="25" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_parametres.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="26" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_prch.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="27" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_prest.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="28" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_prest_prev.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="29" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/CHARGE_PREV.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="30" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_produit.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="31" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_prospect.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="32" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/CHARGE_RELANCE.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="33" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_rib.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="34" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_sntrprt.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="35" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_societe.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="36" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_souscr.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="37" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_tiers.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="38" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/charge_tiers_payant.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="39" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/control_extents.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="40" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/cre_defaut.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="41" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/CRE_REPARTITION.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="42" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/cre_variable.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="43" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/del_garanties.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="44" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/dup_tableau.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="45" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/FETCH_FORMULE.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="46" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/fetch_variable.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="47" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/get_enc_img_from_fs.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="48" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/get_html_varchar_from_fs.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="49" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/init_parametres.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="50" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_appli_client.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="51" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_arret_regul.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="52" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_bene.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="53" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_bene_fisc.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="54" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/Ins_beneficiaire.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="55" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_carence.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="56" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/INS_CARTE_TPE.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="57" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_cond.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="58" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_def_formule.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="59" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_demande_tiers_payant.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="60" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_force_porte_annul.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="61" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_histo_calcul.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="62" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_histo_dedu.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="63" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_histo_export.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="64" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_histo_jours.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="65" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_histo_regul.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="66" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_justif.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="67" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_mvt_noemie_new_affil.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="68" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/Ins_new_beneficiaire.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="69" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/INS_NOEMIE.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="70" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/INS_NOEMIE_MATORG.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="71" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_param_compte.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="72" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_param_devise.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="73" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_param_ope.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="74" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_param_produit.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="75" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_porte_annul.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="76" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_porte_tiers.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="77" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_remise_export.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="78" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/INS_REMISE_IMPORT.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="79" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_rib.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="80" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_sinistre_ano.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="81" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_tableau.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="82" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/INS_TEXTE.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="83" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_variable.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="84" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/INS_VS.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="85" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ins_vs_reprise.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="86" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/lettrage.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="87" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/liste_pharma.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="88" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/MAJ_Applications.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="89" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/maj_cmcr.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="90" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/Maj_crrr.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="91" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/maj_doublons.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="92" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/maj_echesuiv.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="93" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/maj_gar_prev.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="94" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/maj_groupe.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="95" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/maj_natur.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="96" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/MAJ_OUV_DE_DROIT.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="97" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/maj_parporte.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="98" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/maj_tfc.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="99" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/maj_tiers.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="100" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/mimi.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="101" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/ouvre_tableau.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="102" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_AFFECT_QTTC_NUMQUIT.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="103" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/p_affil_prevoyance.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="104" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_annul_bord_ordre_pmt.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="105" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_ANNUL_ENCAIS.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="106" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_ANNUL_FN_ENVOI.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="107" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_ANNUL_FN_ENVOI2.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="108" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_ANNUL_MASSIF.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="109" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_annul_ordre_pmt.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="110" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_ANNUL_prelev.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="111" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/p_annul_sinistre.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="112" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_BENEF_ITELIS.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="113" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_Calc_Sinistre_dev.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="114" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_Calcul_Sinistre_dev_all.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="115" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_Charge_statuts.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="116" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_charge_variable.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="117" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_COMPUTE_EC.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="118" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/p_creation_mandat_reprise.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="119" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_CTRL_compte_tiers.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="120" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_CTRL_TRAITEMENT.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="121" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_dedouble_texte.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="122" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_del_qttc_global.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="123" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_DMNDE_carte.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="124" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_DUP_RG.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="125" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_ENVOI_MAIL_BATCH.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="126" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/p_error_flux.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="127" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/p_fichier.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="128" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_IDENT_COT_DSN.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="129" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_IDENT_COT_DSN_R.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="130" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_IMP_REP_PREV_GAR.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="131" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_IMPORT_FILES_DSN.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="132" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_IMPORT_FILES_DSN_EXCEPT.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="133" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_IMPORT_FILES_DSN_INT.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="134" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_IMPORT_FILES_DSN_M0005555.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="135" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_IMPORT_FILES_DSN_ONE_SHOT.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="136" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_IMPORT_VIREMENTS_AUTO.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="137" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_INIT_DEL_TRAVSN.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="138" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_INS_calcul.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="139" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_INS_histo_export.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="140" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_INS_SINISTRE_VERRE.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="141" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_INS_SNTR_VERRE_SC.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="142" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_INS_var_plein.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="143" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_INS_variable.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="144" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_INSERT_TRAV_SAISIE.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="145" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_J405.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="146" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_KILL_SESSION.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="147" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/p_levee_plafond.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="148" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/p_levee_plafond_2019.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="149" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_LIQ_DOSSIER.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="150" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_livre_libelle.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="151" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_LOCK_USER_INACTIF.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="152" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_M0006644.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="153" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_M0006830.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="154" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_M0007142.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="155" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_M0007172.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="156" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_M0007172_2.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="157" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_MAJ_dateremb.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="158" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_MAJ_datope.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="159" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_MAJ_etendue.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="160" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_MAJ_histo_export.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="161" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_maj_numbene.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="162" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_MAJ_numero.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="163" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_maj_rib.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="164" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_MAJ_SIN_DOUBLON.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="165" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_MAJ_type_interm.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="166" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_Nb_Numgar.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="167" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_RATTRAPAGE_M0006615.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="168" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/p_refsin.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="169" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/p_remise_plafond.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="170" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/p_remise_plafond_2019.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="171" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_REP_PREV_GAR.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="172" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_REPRISE_SIN_PREV.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="173" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_REPRISE_SIN_PREV_GAN.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="174" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_REPRISE_SIN_PREV_SAL_AN_MOY.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="175" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_REPRISE_SIN_PREV_VAR.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="176" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_REPRISE_SIN_PREV_XEROX.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="177" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_Stat_lig_doss.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="178" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_TRANSCO_CODFRAIS_SPSANTE.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="179" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_transfert_dupli_job.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="180" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_transfert_job.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="181" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_transfert_socotec_job.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="182" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_Trt_Rel_Cpte.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="183" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_Val_ZReg.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="184" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_VALIDE_RAPPEL.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="185" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_VAR_0.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="186" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_VAR_1.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="187" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/P_VIRE_CPTE.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="188" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/pec_sp_except.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="189" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/prch_numero.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="190" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/pret_non_calcule.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="191" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/proc_test.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="192" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/qttc_reventil.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="193" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/qttc_revers.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="194" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/QTTC_VENTIL.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="195" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/rech_noemie.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="196" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/rech_rejet.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="197" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/reouvre_noemie.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="198" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/RESET_SEQ.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="199" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/test_donnee.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="200" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/test_qttc.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="201" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/valide_compta.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+
+    <changeSet id="202" author="OMIGNOT">
+        <sqlFile path="db/sql/init/procedures/verif_adresse.sql" splitStatements="false" endDelimiter="/"/>
+    </changeSet>
+</databaseChangeLog>

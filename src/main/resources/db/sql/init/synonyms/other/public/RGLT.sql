@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : RGLT
+-- Cible      : ARTHUS.RGLT
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM RGLT FOR ARTHUS.RGLT;

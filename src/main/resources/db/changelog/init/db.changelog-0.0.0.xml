@@ -1,0 +1,31 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd"
+	objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS"
+	logicalFilePath="db.changelog-0.0.0.xml">
+	
+	<include file="db.0.tablespaces.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.1.users.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>	
+	<include file="db.2.tables_arthus_param.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.3.tables.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.4.synonyms.tables.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.5.foreignKeys.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.6.indexes.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.7.sequences.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.8.functions.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.9.synonyms.functions.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.10.procedures.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.11.synonyms.procedures.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.12.packages.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.13.synonyms.packages.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.14.synonyms.other.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.15.views.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.16.schema_triggers.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.17.table_triggers.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.18.recompilation.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	
+</databaseChangeLog>

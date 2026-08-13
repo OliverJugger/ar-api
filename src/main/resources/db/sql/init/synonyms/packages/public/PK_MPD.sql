@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : PK_MPD
+-- Cible      : ARTHUS.PK_MPD
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM PK_MPD FOR ARTHUS.PK_MPD;

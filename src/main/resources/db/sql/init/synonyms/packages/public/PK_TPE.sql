@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : PK_TPE
+-- Cible      : ARTHUS.PK_TPE
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM PK_TPE FOR ARTHUS.PK_TPE;

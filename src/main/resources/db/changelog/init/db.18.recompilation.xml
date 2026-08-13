@@ -1,0 +1,7 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+  <changeSet id="1" author="OMIGNOT" created="2026-08-13">
+    <comment>RECOMPILATION DES OBJETS INVALID DU SCHEMA ARTHUS</comment>
+    <sqlFile path="db/sql/init/recompilation/recompile_arthus.sql" endDelimiter="\n/\n" stripComments="false"/>
+  </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.LBPF
+-- Cible      : ARTHUS.LBLEPRFL
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.LBPF FOR ARTHUS.LBLEPRFL;

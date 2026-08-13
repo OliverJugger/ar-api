@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : E2D
+-- Cible      : ARTHUS.E2D
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM E2D FOR ARTHUS.E2D;

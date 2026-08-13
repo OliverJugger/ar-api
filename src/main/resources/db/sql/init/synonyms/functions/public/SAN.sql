@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : SAN
+-- Cible      : ARTHUS.SAN
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM SAN FOR ARTHUS.SAN;

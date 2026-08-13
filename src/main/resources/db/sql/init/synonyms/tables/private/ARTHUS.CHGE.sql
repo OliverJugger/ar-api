@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.CHGE
+-- Cible      : ARTHUS.CHANGE
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.CHGE FOR ARTHUS.CHANGE;

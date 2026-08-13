@@ -1,0 +1,18 @@
+CREATE FUNCTION ARTHUS.F_ETAT_RAPPEL(i_idrappel NUMBER) RETURN NUMBER IS
+retour number;
+BEGIN
+ BEGIN
+    SELECT h.ETAT
+    INTO retour
+    FROM HISTO_RAPPEL h
+    WHERE h.IDHISTORAPPEL =  F_IDHISTO_RAPPEL(i_idrappel );
+    RETURN retour;
+ EXCEPTION WHEN NO_DATA_FOUND THEN
+    SELECT etat
+    INTO retour
+    FROM rappel
+    WHERE idrappel = i_idrappel;
+ END;
+RETURN retour;
+
+END F_ETAT_RAPPEL;

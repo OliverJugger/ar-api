@@ -1,0 +1,6 @@
+# Environnement : Developpement
+oracle:
+  jdbc:
+    host: 192.168.18.108
+    port: 1521
+    service: GEREPD

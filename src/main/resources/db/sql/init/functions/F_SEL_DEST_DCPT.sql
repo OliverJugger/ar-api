@@ -1,0 +1,38 @@
+CREATE FUNCTION ARTHUS."F_SEL_DEST_DCPT" (
+   a_numdec    IN   HISTO_CALCUL.NUMDEC%TYPE,
+   a_numdest   IN   HISTO_CALCUL.NUMBENE%TYPE,
+   a_numbene   IN   HISTO_CALCUL.NUMBENE%TYPE
+)
+   RETURN NUMBER
+AS
+   loc_retour   NUMBER   DEFAULT 0;
+
+   CURSOR c_dest
+   IS
+      SELECT DISTINCT NUMCORRES
+FROM CORRESPONDANT, REPARTITION, HISTO_CALCUL
+WHERE CORRESPONDANT.ENTITE = REPARTITION.NOSIN
+  AND CORRESPONDANT.CONTEXTE = 15
+  AND CORRESPONDANT.DEFAUT_SNTR = 'O'
+  AND REPARTITION.IDREPARTITION = HISTO_CALCUL.IDREPARTITION
+  AND HISTO_CALCUL.NUMDEC = a_numdec;
+
+   rec_c_dest   c_dest%ROWTYPE;
+
+BEGIN
+   BEGIN
+      OPEN c_dest;
+
+      FETCH c_dest INTO rec_c_dest;
+
+      IF (c_dest%FOUND) THEN
+         loc_retour := rec_c_dest.NUMCORRES;
+      ELSE
+         loc_retour := a_numdest;
+      END IF;
+
+      CLOSE c_dest;
+   END;
+   RETURN loc_retour;
+   EXCEPTION WHEN OTHERS THEN RETURN loc_retour;
+END F_SEL_DEST_DCPT;

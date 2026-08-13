@@ -1,0 +1,384 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="OMIGNOT" id="1">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="SEQ_STOCK_ENTITE" startValue="148504081"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="2">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMVIREMENT" startValue="9839657"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="3">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMENCAISMT" startValue="1392818"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="4">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDHISTO" startValue="136060"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="5">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDADHESION" startValue="723934"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="6">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDCONTACT" startValue="532472"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="7">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDMVT" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="8">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="ID_REMISE_PRESTIJ" startValue="4107"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="9">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDDETAIL" startValue="67330"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="10">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMREMISE_REPORT" startValue="8692"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="11">
+        <createSequence schemaName="ARTHUS" cacheSize="2" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="SEQ_AFFIL_PORTE" startValue="124602"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="12">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="SEQ_STOCK_ENTITE_P" startValue="140305188"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="13">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="ID_CORRES" startValue="132115"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="14">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDPIECE" startValue="70816"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="15">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDRIB" startValue="2883931"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="16">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMDECAISMT" startValue="11285211"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="17">
+        <createSequence schemaName="ARTHUS" cacheSize="0" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="SEQ_NUMREMISE" startValue="35922"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="18">
+        <createSequence schemaName="ARTHUS" cacheSize="0" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDPERSHISTPHYS" startValue="999329873"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="19">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="ID_PREST_IJ" startValue="7092"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="20">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDADHECNTRTMB" startValue="1592649"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="21">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="true" sequenceName="SEQ_IDTFC" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="22">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="HISTO_SNTR_SANTE" startValue="4216772"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="23">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="SEQ_NUMLIGNE" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="24">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="ID_STOCK_FACT_SP" startValue="48000"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="25">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDINTERLOCUTEUR" startValue="18994"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="26">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMSIN" startValue="97251632"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="27">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDRAPPEL" startValue="1422057"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="28">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDHISTORIB" startValue="614877"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="29">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDHISTOMANDAT" startValue="102953"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="30">
+        <createSequence schemaName="ARTHUS" cacheSize="2" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="SEQ_PIECES" startValue="1206925"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="31">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMPRELEV" startValue="3065404"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="32">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="ID_DECLA_PRESTIJ" startValue="4266"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="33">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDFLUX" startValue="32045717"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="34">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMOP" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="35">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMPC" startValue="607599"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="36">
+        <createSequence schemaName="ARTHUS" cacheSize="2" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="SEQ_DSN_CRM" startValue="195816"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="37">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMDMNDE" startValue="3430095"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="38">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="SEQ_STOCK_ENTITE_R" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="39">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMDEC" startValue="14556926"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="40">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="RUM" startValue="92536"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="41">
+        <createSequence schemaName="ARTHUS" cacheSize="2" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="SEQ_DSN_FICHE" startValue="21237"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="42">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDAFFEC" startValue="3832919"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="43">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="ID_ASSU_PRESTIJ" startValue="5147"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="44">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDTABLEAU" startValue="4785"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="45">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMENVOI" startValue="7988277"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="46">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDARRET" startValue="530665"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="47">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMDCPTCIE" startValue="8987"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="48">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="true" sequenceName="SEQ_IDDETAIL" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="49">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDCOUVERTURE" startValue="1862248"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="50">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDHISTOQUERABLE" startValue="701877"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="51">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDFLUXPRDG" startValue="4901"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="52">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="99999" minValue="0" ordered="false" sequenceName="ID_NUM_DOSSIER" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="53">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDHISTOADHE" startValue="1717065"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="54">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMFOR" startValue="129312"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="55">
+        <createSequence schemaName="ARTHUS" cacheSize="0" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMENVOIMAIL" startValue="4666480"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="56">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDREVERS" startValue="6761"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="57">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDFACTPE" startValue="9624504"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="58">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDADRESSE" startValue="1401521"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="59">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDHISTORAPPEL" startValue="1817833"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="60">
+        <createSequence schemaName="ARTHUS" cacheSize="2" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="SEQ_LIEN_GED" startValue="2164086"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="61">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMEDIT" startValue="5494194"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="62">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDREPARTITION" startValue="86628"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="63">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="BQUEPRV_IDCOMPTE" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="64">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="CODPAYS" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="65">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="DCPTPRV_NUMDEC" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="66">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="HOST_SEQ" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="67">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDBASCULE" startValue="371915"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="68">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDCLOTURE" startValue="203"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="69">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDDECLA" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="70">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDDETTE" startValue="1000"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="71">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDDETTE_PREV" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="72">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDDEVIS_SANTE" startValue="251989"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="73">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDEXCLUSION" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="74">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDGAR" startValue="5190130"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="75">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDINVAL" startValue="1000"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="76">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDLIGNE" startValue="106055"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="77">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDOPERATION" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="78">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDPAIEMENT" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="79">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDPERIODE" startValue="316122"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="80">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDPMTINT" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="81">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDPRET" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="82">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDREGLT" startValue="316234"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="83">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDRELEVE_COMPTE" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="84">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDSEQUENCE" startValue="687503"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="85">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDSYNTHESE" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="86">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDTEXTE" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="87">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="IDVARIABLE" startValue="10125"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="88">
+        <createSequence schemaName="ARTHUS" cacheSize="0" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="ID_FLUX_SC" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="89">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="ID_PEC_DETAILS" startValue="4111"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="90">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="LIGNE" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="91">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="LIGNE_JNLADM" startValue="10181"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="92">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NOMBRE" startValue="565"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="93">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NOPMT" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="94">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NORUB" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="95">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NOSIN" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="96">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMBATCH" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="97">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMBDX" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="98">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMBORD" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="99">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMBORD1" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="100">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMCHQ" startValue="1258"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="101">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMCPTE" startValue="43"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="102">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMDREC" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="103">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMFACT" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="104">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMGAR" startValue="954"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="105">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMGRPGAR" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="106">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMINTERM" startValue="84"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="107">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMLIGNE" startValue="6329133"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="108">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMMATH" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="109">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMPIECE" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="110">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMPOPU" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="111">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMPORTE" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="112">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMQUIT" startValue="3990916"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="113">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMREMB" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="114">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMREMISE" startValue="21"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="115">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMREMISE_EXTERNE" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="116">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMREMISE_PORTE" startValue="44"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="117">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMREMISE_VIRE" startValue="582"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="118">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMSOC" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="119">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMTRANSFERT" startValue="392"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="120">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUMUTIL" startValue="21"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="121">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="NUM_NOM_CRRR" startValue="402"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="122">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="RGLT" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="123">
+        <createSequence schemaName="ARTHUS" cacheSize="0" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="true" sequenceName="SEQ_AV" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="124">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="true" sequenceName="SEQ_IDGLOB" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="125">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="true" sequenceName="SEQ_IDLITFC" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="126">
+        <createSequence schemaName="ARTHUS" cacheSize="0" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="true" sequenceName="SEQ_TR" startValue="1"/>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="127">
+        <createSequence schemaName="ARTHUS" cacheSize="20" cycle="false" incrementBy="1" maxValue="999999999999999999999999999" minValue="1" ordered="false" sequenceName="TRANSAC_SEQ" startValue="1"/>
+    </changeSet>
+</databaseChangeLog>

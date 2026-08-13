@@ -1,0 +1,2664 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="OMIGNOT" id="1">
+        <createIndex schemaName="ARTHUS" indexName="AFFEC_DCPT" tableName="AFFEC_DCPT">
+            <column name="NUMEDIT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="2">
+        <createIndex schemaName="ARTHUS" indexName="FK1_ADHE_COLL_GAR" tableName="ADHE_COLL_GAR">
+            <column name="NUMFOR_REF"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="3">
+        <createIndex schemaName="ARTHUS" indexName="FK1_ADHE_PRET" tableName="ADHE_PRET">
+            <column name="IDPRET"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="4">
+        <createIndex schemaName="ARTHUS" indexName="FK1_ADRESSE" tableName="PERS_ADRESSE">
+            <column name="NUMINDIV"/>
+            <column name="DEFAUT"/>
+            <column name="DEBUT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="5">
+        <createIndex schemaName="ARTHUS" indexName="FK1_ANNUL_CPTCLI" tableName="ANNUL_CPTCLI">
+            <column name="NUMENCAISMT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="6">
+        <createIndex schemaName="ARTHUS" indexName="FK1_BENEFICIAIRE" tableName="BENEFICIAIRE">
+            <column name="NUMBENE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="7">
+        <createIndex schemaName="ARTHUS" indexName="FK1_BENE_GAR" tableName="BENE_GAR">
+            <column name="NUMFOR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="8">
+        <createIndex schemaName="ARTHUS" indexName="FK1_CNTRT_TRAIT" tableName="CNTRT_TRAIT">
+            <column name="NUMAV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="9">
+        <createIndex schemaName="ARTHUS" indexName="FK1_COMPENSATION" tableName="COMPENSATION">
+            <column name="IDCOMP"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="10">
+        <createIndex schemaName="ARTHUS" indexName="FK1_COMPTE" tableName="COMPTE">
+            <column name="NUMSOC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="11">
+        <createIndex schemaName="ARTHUS" indexName="FK1_COMPTE_TIERS" tableName="COMPTE_TIERS">
+            <column name="NUMCLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="12">
+        <createIndex schemaName="ARTHUS" indexName="FK1_CONTRAT_REF" tableName="CONTRAT_REF">
+            <column name="NUMGAR_REF"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="13">
+        <createIndex schemaName="ARTHUS" indexName="FK1_DEDU_ANNUL" tableName="DEDU_ANNUL">
+            <column name="IDDETAIL"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="14">
+        <createIndex schemaName="ARTHUS" indexName="FK1_DEMANDE_TP" tableName="DEMANDE_TP">
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="15">
+        <createIndex schemaName="ARTHUS" indexName="FK1_DETAIL_ANNUL" tableName="DETAIL_ANNUL">
+            <column name="IDPIECE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="16">
+        <createIndex schemaName="ARTHUS" indexName="FK1_DOSSIER_PREV" tableName="DOSSIER_SINISTRE">
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="17">
+        <createIndex schemaName="ARTHUS" indexName="FK1_EMPRUNTEUR" tableName="EMPRUNTEUR">
+            <column name="IDPRET"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="18">
+        <createIndex schemaName="ARTHUS" indexName="FK1_EXCLUSION" tableName="EXCLUSION">
+            <column name="IDADHESION"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="19">
+        <createIndex schemaName="ARTHUS" indexName="FK1_GAR_CNTRT_REF" tableName="GAR_CNTRT_REF">
+            <column name="NUMGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="20">
+        <createIndex schemaName="ARTHUS" indexName="FK1_GRP_LIBELLE" tableName="GRP_LIBELLE">
+            <column name="MNEMO"/>
+            <column name="CODE_GROUPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="21">
+        <createIndex schemaName="ARTHUS" indexName="FK1_HISTO_ANNUL" tableName="HISTO_ANNUL">
+            <column name="IDCALCUL"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="22">
+        <createIndex schemaName="ARTHUS" indexName="FK1_HISTO_AVOCAT" tableName="HISTO_AVOCAT">
+            <column name="NUMINDIV"/>
+            <column name="DEBUT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="23">
+        <createIndex schemaName="ARTHUS" indexName="FK1_HISTO_CPAYEUR" tableName="HISTO_CENTREPAYEUR">
+            <column name="NUMINDIV"/>
+            <column name="DEBUT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="24">
+        <createIndex schemaName="ARTHUS" indexName="FK1_HISTO_PRET" tableName="HISTO_PRET">
+            <column name="IDPRET"/>
+            <column name="DEBUT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="25">
+        <createIndex schemaName="ARTHUS" indexName="FK1_INTERLOCUTEUR" tableName="INTERLOCUTEUR">
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="26">
+        <createIndex schemaName="ARTHUS" indexName="FK1_PARAM_CLOTURE" tableName="PARAM_CLOTURE">
+            <column name="NUMSOC"/>
+            <column name="DEBUT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="27">
+        <createIndex schemaName="ARTHUS" indexName="FK1_PARAM_TP" tableName="PARAM_TIERS_PAYANT">
+            <column name="NUMPORTE"/>
+            <column name="NUMGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="28">
+        <createIndex schemaName="ARTHUS" indexName="FK1_PERS_MORALE" tableName="PERS_HISTO_MORALE">
+            <column name="NUMINDIV"/>
+            <column name="DEBUT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="29">
+        <createIndex schemaName="ARTHUS" indexName="FK1_PORTE_EXPORT" tableName="PORTE_EXPORT">
+            <column name="IDPORTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="30">
+        <createIndex schemaName="ARTHUS" indexName="FK1_PORTE_IMPORT" tableName="PORTE_IMPORT">
+            <column name="IDPORTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="31">
+        <createIndex schemaName="ARTHUS" indexName="FK1_PRET" tableName="PRET">
+            <column name="PRETEUR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="32">
+        <createIndex schemaName="ARTHUS" indexName="FK1_REMISE_EXPORT" tableName="REMISE_EXPORT">
+            <column name="IDPORTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="33">
+        <createIndex schemaName="ARTHUS" indexName="FK1_REMISE_IMPORT" tableName="REMISE_IMPORT">
+            <column name="IDPORTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="34">
+        <createIndex schemaName="ARTHUS" indexName="FK1_RETRO_ANNUL" tableName="RETRO_ANNUL">
+            <column name="IDDETAIL"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="35">
+        <createIndex schemaName="ARTHUS" indexName="FK1_RIB" tableName="RIB">
+            <column name="NUMINDIV"/>
+            <column name="TYPE"/>
+            <column name="DEBUT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="36">
+        <createIndex schemaName="ARTHUS" indexName="FK1_SITU_PRET" tableName="SITU_PRET">
+            <column name="IDPRET"/>
+            <column name="DEBUT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="37">
+        <createIndex schemaName="ARTHUS" indexName="FK1_SOCIETE" tableName="PERS_SOCIETE">
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="38">
+        <createIndex schemaName="ARTHUS" indexName="FK1_TEXTE_EXCLUSION" tableName="TEXTE_EXCLUSION">
+            <column name="IDEXCLUSION"/>
+            <column name="IDLIGNE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="39">
+        <createIndex schemaName="ARTHUS" indexName="FK1_VALIDE_TEXTE" tableName="VALIDE_TEXTE">
+            <column name="IDTEXTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="40">
+        <createIndex schemaName="ARTHUS" indexName="FK2_ADHE_COLL_GAR" tableName="ADHE_COLL_GAR">
+            <column name="NUMGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="41">
+        <createIndex schemaName="ARTHUS" indexName="FK2_ADHE_PRET" tableName="ADHE_PRET">
+            <column name="IDADHESION"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="42">
+        <createIndex schemaName="ARTHUS" indexName="FK2_BENEFICIAIRE" tableName="BENEFICIAIRE">
+            <column name="IDADHESION"/>
+            <column name="NUMFOR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="43">
+        <createIndex schemaName="ARTHUS" indexName="FK2_CNTRT_TRAIT" tableName="CNTRT_TRAIT">
+            <column name="NUMGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="44">
+        <createIndex schemaName="ARTHUS" indexName="FK2_DEMANDE_TP_AD" tableName="DEMANDE_TP_AD">
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="45">
+        <createIndex schemaName="ARTHUS" indexName="FK2_EMPRUNTEUR" tableName="EMPRUNTEUR">
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="46">
+        <createIndex schemaName="ARTHUS" indexName="FK2_HISTO_ANNUL" tableName="HISTO_ANNUL">
+            <column name="IDANNUL"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="47">
+        <createIndex schemaName="ARTHUS" indexName="FK2_PERS_BANQUE" tableName="PERS_BANQUE">
+            <column name="DIRECTION"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="48">
+        <createIndex schemaName="ARTHUS" indexName="HISTO_MANDAT_RIB_FK" tableName="HISTO_MANDAT">
+            <column name="IDRIB"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="49">
+        <createIndex schemaName="ARTHUS" indexName="IDX$$_3788D0001" tableName="HISTO_DOSSIER">
+            <column name="NUM_DOSSIER"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="50">
+        <createIndex schemaName="ARTHUS" indexName="IDX$$_3788E0001" tableName="HISTO_DOSSIER">
+            <column name="TO_NUMBER(&quot;NUM_DOSSIER&quot;)" computed="true"/>
+            <column name="DEBUT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="51">
+        <createIndex schemaName="ARTHUS" indexName="IDX10_SINISTRE" tableName="SINISTRE">
+            <column name="NUMFOR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="52">
+        <createIndex schemaName="ARTHUS" indexName="IDX10_SNTR_ANNUL" tableName="SINISTRE_ANNUL">
+            <column name="NUMFOR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="53">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_ADHESION" tableName="ADHESION">
+            <column name="NUMINDIV"/>
+            <column name="NUMGAR"/>
+            <column name="TYPFOR"/>
+            <column name="NUMFOR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="54">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_ADHE_CNTRT" tableName="ADHE_CNTRT">
+            <column name="NUMADHE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="55">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_ADHE_CNTRT_MEMBRE" tableName="ADHE_CNTRT_MEMBRE">
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="56">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_ADHE_COLLECTIVE" tableName="ADHE_COLLECTIVE">
+            <column name="NUMGAR_REF"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="57">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_ADR_INTERNATIONALE" tableName="ADR_INTERNATIONALE">
+            <column name="ADR5"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="58">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_AFFECTATION" tableName="AFFECTATION">
+            <column name="NUMAFFEC"/>
+            <column name="NUMDECAISMT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="59">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_AFFECTATION_ANNUL" tableName="AFFECTATION_ANNUL">
+            <column name="CODOPE"/>
+            <column name="NUMAFFEC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="60">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_AFFIL_TRACE" tableName="AFFIL_TRACE">
+            <column name="OBJET"/>
+            <column name="NUMREMISE"/>
+            <column name="NUMPORTE"/>
+            <column name="NUMLIGNE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="61">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_APPLI" tableName="APPLICATIONS">
+            <column name="FONCTION"/>
+            <column name="CODAPLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="62">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_APPORTEUR" tableName="APPORTEUR">
+            <column name="ETENDUE"/>
+            <column name="CLE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="63">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_ARRET" tableName="ARRET">
+            <column name="NOSIN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="64">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_AVNT_CNTRT_GART" tableName="AVNT_CNTRT_GART">
+            <column name="NUMAV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="65">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_CALCUL" tableName="CALCUL">
+            <column name="NUMFOR"/>
+            <column name="CODFRAIS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="66">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_CHANGE" tableName="CHANGE">
+            <column name="CODMON"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="67">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_CLE_EXTERNE" tableName="CLE_EXTERNE">
+            <column name="CODAPLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="68">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_CLE_INTERNE" tableName="CLE_INTERNE">
+            <column name="CODAPLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="69">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_CLIENT" tableName="CLIENT">
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="70">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_CLIENT_MODELE" tableName="CLIENT_MODELE">
+            <column name="TABLE_NAME"/>
+            <column name="COLUMN_NAME"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="71">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_CLIENT_OBJECTS" tableName="CLIENT_OBJECTS">
+            <column name="OBJECT_NAME"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="72">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_COMM_FONCTION" tableName="COMM_FONCTION">
+            <column name="NOM_FONCTION"/>
+            <column name="NUMLIG"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="73">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_COMPTA" tableName="COMPTA">
+            <column name="IDCOMPTA"/>
+            <column name="CODOPE"/>
+            <column name="NUMPIECE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="74">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_COMPTE" tableName="COMPTE">
+            <column name="CLEF_IBAN"/>
+            <column name="BBAN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="75">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_COMPTE_TIERS" tableName="COMPTE_TIERS">
+            <column name="CODOPE"/>
+            <column name="CLE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="76">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_CONTACT" tableName="CONTACT" unique="true">
+            <column name="IDCONTACT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="77">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_CONTRAT_REF" tableName="CONTRAT_REF">
+            <column name="NUMORG"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="78">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_COURRIER" tableName="COURRIER">
+            <column name="NUMDEC"/>
+            <column name="NUMSIN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="79">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_COURRIER_INFO" tableName="COURRIER_INFO">
+            <column name="NUMINDIV"/>
+            <column name="TYPE_CRRR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="80">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_CPTCLI" tableName="COMPTE_CLIENT">
+            <column name="CODOPE"/>
+            <column name="NUMFACT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="81">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_CRNC" tableName="CARENCE">
+            <column name="NUMFOR"/>
+            <column name="CODFRAIS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="82">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_DECAISMT" tableName="DECAISMT">
+            <column name="REFPMT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="83">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_DECLA_DETAIL1" tableName="DECLA_DETAIL1">
+            <column name="IDSYNTHESE"/>
+            <column name="IDDECLA"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="84">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_DECLA_DETAIL2" tableName="DECLA_DETAIL2">
+            <column name="IDDECLA"/>
+            <column name="NUMDECAISMT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="85">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_DECLA_SYNTHESE" tableName="DECLA_SYNTHESE">
+            <column name="NUMREMISE"/>
+            <column name="IDSYNTHESE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="86">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_DECOMPTE" tableName="DECOMPTE">
+            <column name="TYPBENE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="87">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_DECOMPTE_ANNUL" tableName="DECOMPTE_ANNUL">
+            <column name="NUMDEC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="88">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_DECOMPTE_PREV" tableName="DECOMPTE_PREV">
+            <column name="NUMDCPTCIE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="89">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_DEMANDE_TIERS_PAYANT" tableName="DEMANDE_TIERS_PAYANT">
+            <column name="IDPORTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="90">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_DEPENDANCE" tableName="DEPENDANCE">
+            <column name="NUMDE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="91">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_DETTE" tableName="DETTE">
+            <column name="NUMCLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="92">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_DFRB" tableName="DEFRUB">
+            <column name="NUMFOR"/>
+            <column name="CODFRAIS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="93">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_DOSSIER_PREV" tableName="DOSSIER_SINISTRE">
+            <column name="REF_EXT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="94">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_DOSSIER_SANTE" tableName="DOSSIER_SANTE">
+            <column name="NUMASSU"/>
+            <column name="NAT_DOSS"/>
+            <column name="TYPE_DOSS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="95">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_EMISSION" tableName="EMISSION">
+            <column name="CODOPE"/>
+            <column name="NUMFACT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="96">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_ENCAISMT" tableName="ENCAISMT">
+            <column name="CODOPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="97">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_ENVOI" tableName="ENVOI">
+            <column name="NUMENVOI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="98">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_FACTURE" tableName="FACTURE">
+            <column name="NUMCLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="99">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_FACTURE_ANNUL" tableName="FACTURE_ANNUL">
+            <column name="IDCOMPTA"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="100">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_FACTURE_REGUL" tableName="FACTURE_REGUL">
+            <column name="CODOPE"/>
+            <column name="NUMFACT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="101">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_FILE_BATCH" tableName="FILE_BATCH">
+            <column name="BATCHID"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="102">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_FILE_EDITION" tableName="FILE_EDITION">
+            <column name="EDITID"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="103">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_FORCAGE" tableName="FORCAGE">
+            <column name="NUMSIN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="104">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_FOR_VARIABLE" tableName="FOR_VARIABLE">
+            <column name="NUMFOR"/>
+            <column name="IDVARIABLE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="105">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_FRANACT" tableName="FRANACT">
+            <column name="NUMFOR"/>
+            <column name="CODFRAIS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="106">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_FRMLS" tableName="FORMULE">
+            <column name="NUMPROD"/>
+            <column name="AVEN"/>
+            <column name="NOMGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="107">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_FRMLVAR_DETAIL" tableName="FRMLVAR_DETAIL">
+            <column name="IDFORMULE"/>
+            <column name="IDVARIABLE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="108">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_FRML_PRIME" tableName="FRML_PRIME_SIMPLE">
+            <column name="NUMFOR"/>
+            <column name="CLEF"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="109">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_FRML_TFC" tableName="FRML_TFC">
+            <column name="NUMFOR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="110">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_GARANTIES" tableName="GARANTIES">
+            <column name="NUMASS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="111">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_GAR_CNTRT_REF" tableName="GAR_CNTRT_REF">
+            <column name="NOMGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="112">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_GRP_GAR" tableName="GRP_GAR">
+            <column name="ETENDUE"/>
+            <column name="CLEF"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="113">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_GRP_GAR_DEF" tableName="GRP_GAR_DEF">
+            <column name="NUMFOR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="114">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_HISTO_ADHESION" tableName="HISTO_ADHESION">
+            <column name="IDADHESION"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="115">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_HISTO_CALCUL" tableName="HISTO_CALCUL">
+            <column name="IDREPARTITION"/>
+            <column name="NUMBENE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="116">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_HISTO_CPAYEUR" tableName="HISTO_CENTREPAYEUR">
+            <column name="REF_CPAYEUR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="117">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_HISTO_DEDU" tableName="HISTO_DEDU">
+            <column name="NUMDEC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="118">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_HISTO_DEST" tableName="HISTO_DEST">
+            <column name="IDREPARTITION"/>
+            <column name="NUMBENE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="119">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_HISTO_DOSSIER" tableName="HISTO_DOSSIER">
+            <column name="NUM_DOSSIER"/>
+            <column name="DEBUT"/>
+            <column name="DATSAI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="120">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_HISTO_EXPORT" tableName="HISTO_EXPORT">
+            <column name="NUMREMISE"/>
+            <column name="IDPORTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="121">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_HISTO_FRMLVAR" tableName="HISTO_FRMLVAR">
+            <column name="IDVARIABLE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="122">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_HISTO_IMPORT" tableName="HISTO_IMPORT">
+            <column name="NUMREMISE"/>
+            <column name="IDPORTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="123">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_HISTO_JOURS" tableName="HISTO_JOURS">
+            <column name="IDCALCUL"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="124">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_HISTO_MANDAT" tableName="HISTO_MANDAT">
+            <column name="MANDAT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="125">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_HISTO_QUERABLE" tableName="HISTO_QUERABLE">
+            <column name="MANDAT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="126">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_HISTO_REGUL" tableName="HISTO_REGUL">
+            <column name="IDHISTO"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="127">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_HISTO_RIB" tableName="HISTO_RIB">
+            <column name="IDRIB"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="128">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_HISTO_RIB_ADHE" tableName="HISTO_RIB_ADHE">
+            <column name="IDADHESION"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="129">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_HISTO_TRANSFERT" tableName="HISTO_TRANSFERT">
+            <column name="NUMREMISE"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="130">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_IDAFFEC_ATTENTE" tableName="IDAFFEC_ATTENTE">
+            <column name="IDAFFEC_ATTENTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="131">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_IDAFFEC_REGUL" tableName="IDAFFEC_REGUL">
+            <column name="IDAFFEC_REGUL"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="132">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_INDICE" tableName="INDICE">
+            <column name="INDICE"/>
+            <column name="DATAPLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="133">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_INDIVIDU" tableName="INDIVIDU">
+            <column name="NUMASSU"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="134">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_INTERLOCUTEUR" tableName="INTERLOCUTEUR" unique="true">
+            <column name="IDINTERLOCUTEUR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="135">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_LBLE" tableName="LIBELLE">
+            <column name="MNEMO"/>
+            <column name="CODE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="136">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_LBLE_EXT" tableName="LBLE_EXT">
+            <column name="MNEMO"/>
+            <column name="CODE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="137">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_LIBELLE_BIS" tableName="LIBELLE_BIS">
+            <column name="MNEMO"/>
+            <column name="SENS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="138">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_LIBGAR" tableName="LIBGAR">
+            <column name="NUMFOR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="139">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_LIB_ECRITURE" tableName="LIB_ECRITURE">
+            <column name="NUMSOC"/>
+            <column name="CODOPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="140">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_LIB_EDITION" tableName="LIB_EDITION">
+            <column name="NUMEDIT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="141">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_LIB_TABLEAU" tableName="LIB_TABLEAU">
+            <column name="TABLEAU"/>
+            <column name="DEBUT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="142">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_LIVRE_APPLI" tableName="LIVRE_APPLI">
+            <column name="CLIENT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="143">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_MAXACT" tableName="MAXACT">
+            <column name="NUMFOR"/>
+            <column name="CODFRAIS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="144">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_NOEMIE" tableName="NOEMIE">
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="145">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PAPIER_OPE" tableName="PAPIER_OPE">
+            <column name="CODOPE"/>
+            <column name="NUMCPTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="146">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PARAM_TEXTE" tableName="PARAM_TEXTE">
+            <column name="CONTEXTE"/>
+            <column name="NUMERO"/>
+            <column name="CODE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="147">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PARPORTE" tableName="PARPORTE">
+            <column name="NUMPORTE"/>
+            <column name="NUMSOC"/>
+            <column name="NUMORG"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="148">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PERS_ADRESSE" tableName="PERS_ADRESSE">
+            <column name="CODPOS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="149">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PERS_BANQUE" tableName="PERS_BANQUE">
+            <column name="CODBQUE"/>
+            <column name="GUICHET"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="150">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PERS_HISTO_PHYS" tableName="PERS_HISTO_PHYS" unique="true">
+            <column name="IDPERSHISTPHYS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="151">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PERS_ORGANISME" tableName="PERS_ORGANISME">
+            <column name="NUMORG"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="152">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PERS_TIERSPAYANT" tableName="PERS_TIERSPAYANT">
+            <column name="TYPE_TIERS"/>
+            <column name="CAISSE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="153">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PIECES" tableName="PIECES">
+            <column name="ENTITE"/>
+            <column name="NUMBENE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="154">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PNUL" tableName="PNUL">
+            <column name="REFPMT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="155">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PORTE_ADHESION" tableName="PORTE_ADHESION">
+            <column name="NUMPORTE"/>
+            <column name="NUMINDIV"/>
+            <column name="IDADHESION"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="156">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PORTE_NATFRAIS" tableName="PORTE_NATFRAIS">
+            <column name="NUMPORTE"/>
+            <column name="CODFRAIS_PORTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="157">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PORTE_TIERS" tableName="PORTE_TIERS">
+            <column name="NUMPORTE"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="158">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PRELEVEMENT" tableName="PRELEVEMENT">
+            <column name="NUMREMISE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="159">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PRELEVEMENT_DETAIL" tableName="PRELEVEMENT_DETAIL">
+            <column name="NUMPRELEV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="160">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PROFIL" tableName="PROFIL">
+            <column name="PROFIL"/>
+            <column name="CODAPLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="161">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_PROPOSITION" tableName="PROPOSITION">
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="162">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_QTTC_AFFEC" tableName="QTTC_AFFEC">
+            <column name="IDAFFEC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="163">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_QTTC_AFFEC_TFC" tableName="QTTC_AFFEC_TFC">
+            <column name="NUMBENE"/>
+            <column name="TFC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="164">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_QTTC_ANNUELLE" tableName="QTTC_ANNUELLE">
+            <column name="NUMINDIV"/>
+            <column name="NUMGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="165">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_QTTC_ANO" tableName="QTTC_ANO">
+            <column name="NUMGAR"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="166">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_QTTC_COMM" tableName="QTTC_COMM">
+            <column name="NUMQUIT"/>
+            <column name="NUMFOR"/>
+            <column name="TYPE_COMM"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="167">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_QTTC_FRAIS" tableName="QTTC_FRAIS">
+            <column name="NUMQUIT"/>
+            <column name="NUMFOR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="168">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_QTTC_GAR" tableName="QTTC_GAR">
+            <column name="NUMQUIT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="169">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_QTTC_GLOBAL" tableName="QTTC_GLOBAL">
+            <column name="NUMGAR"/>
+            <column name="NUMINDIV"/>
+            <column name="DEBUT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="170">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_QTTC_TAXE" tableName="QTTC_TAXE">
+            <column name="NUMQUIT"/>
+            <column name="NUMFOR"/>
+            <column name="TYPE_TAXE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="171">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_QTTC_VARIABLE" tableName="QTTC_VARIABLE">
+            <column name="NUMQUIT"/>
+            <column name="NUMFOR"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="172">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_RBTCPTCLI" tableName="RBTCPTCLI">
+            <column name="NUMAFFEC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="173">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_RECOURS_DETAIL" tableName="RECOURS_DETAILS">
+            <column name="NUMRECOURS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="174">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_RECOURS_FACTURE" tableName="RECOURS_FACTURE">
+            <column name="NUMRECOURS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="175">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_REJET_NOEMIE" tableName="REJET_NOEMIE">
+            <column name="NUMREMISE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="176">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_REMISE" tableName="REMISE">
+            <column name="NUMREMISE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="177">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_REMISE_BANQUE" tableName="REMISE_BANQUE">
+            <column name="NUMREMISE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="178">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_REMISE_COMPTA" tableName="REMISE_COMPTA">
+            <column name="IDCOMPTA"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="179">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_REMISE_EC" tableName="REMISE_EC">
+            <column name="VALIDE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="180">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_REMISE_EXTERNE" tableName="REMISE_EXTERNE">
+            <column name="NUMREMISE"/>
+            <column name="DATE_REMISE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="181">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_REMISE_GLOBALE" tableName="REMISE_GLOBALE">
+            <column name="IDCOMPTA"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="182">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_REMISE_OP_DETAIL" tableName="REMISE_OP_DETAIL">
+            <column name="CLEF_IBAN"/>
+            <column name="BBAN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="183">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_REMISE_VIRE_DETAIL" tableName="REMISE_VIRE_DETAIL">
+            <column name="NUMREMISE"/>
+            <column name="NUMVIREMENT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="184">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_REPARTITION" tableName="REPARTITION">
+            <column name="NOSIN"/>
+            <column name="IDADHESION"/>
+            <column name="NUMFOR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="185">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_RESULT_REASS_DETAIL" tableName="RESULT_REASS_DETAIL">
+            <column name="TYPE_CLE"/>
+            <column name="CLE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="186">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_RETROCESSION" tableName="RETROCESSION">
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="187">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_REVERSEMENT" tableName="REVERSEMENT">
+            <column name="NUMSOC"/>
+            <column name="NUMORG"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="188">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_REVERS_TAXE" tableName="REVERS_TAXE">
+            <column name="NUMSOC"/>
+            <column name="NUMORG"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="189">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_RIB" tableName="RIB">
+            <column name="CLEF_IBAN"/>
+            <column name="BBAN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="190">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_SEQRUB" tableName="SEQRUB">
+            <column name="NUMFOR"/>
+            <column name="CODFRAIS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="191">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_SINISTRE" tableName="SINISTRE">
+            <column name="NUMDEC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="192">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_SINISTRE_ANO" tableName="SINISTRE_ANO">
+            <column name="NUMREMISE"/>
+            <column name="NUMSIN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="193">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_SINISTRE_PORTE" tableName="SINISTRE_PORTE">
+            <column name="NUMREMISE"/>
+            <column name="REFDEC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="194">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_SNTR_ANNUL" tableName="SINISTRE_ANNUL">
+            <column name="NUMDEC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="195">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_SNTR_REF" tableName="SNTR_REF">
+            <column name="NUMSIN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="196">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_STATS_FAM" tableName="STATS_FAM">
+            <column name="CODFRAIS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="197">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_STOCK_ENTITE" tableName="STOCK_ENTITE">
+            <column name="NUMREMISE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="198">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_STOCK_ENTITE_P" tableName="STOCK_ENTITE_P">
+            <column name="NUMREMISE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="199">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_SUIVI_FACT_TPE" tableName="SUIVI_FACT_TPE">
+            <column name="NUMREMISE_IMPORT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="200">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_TEXTE" tableName="TEXTE">
+            <column name="IDTEXTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="201">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_TIERS" tableName="PERS_TIERS">
+            <column name="NUMTIERS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="202">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_TO_SEPA" tableName="TO_SEPA">
+            <column name="BIC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="203">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_TRAVSN" tableName="TRAVSN">
+            <column name="USERNAME"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="204">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_TRAV_AD01" tableName="TRAV_AD01">
+            <column name="IDADHESION"/>
+            <column name="NUMFOR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="205">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_TRAV_COMPTA" tableName="TRAV_COMPTA">
+            <column name="CODOPE"/>
+            <column name="REFPIECE"/>
+            <column name="DAT_PIECE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="206">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_TRAV_PLAFOND" tableName="TRAV_PLAFOND">
+            <column name="NUMSIN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="207">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_TRAV_PRELEVEMENT" tableName="TRAV_PRELEVEMENT">
+            <column name="NUMREMISE"/>
+            <column name="CODBQUE"/>
+            <column name="GUICHET"/>
+            <column name="COMPTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="208">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_TRFS" tableName="TARIF">
+            <column name="NUMORG"/>
+            <column name="TYPTAR"/>
+            <column name="CODFRAIS"/>
+            <column name="DATAPLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="209">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_TYPE_INFO" tableName="TYPE_INFO">
+            <column name="TYPE_DONNEE"/>
+            <column name="CLE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="210">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_TYPE_OPE" tableName="TYPE_OPE">
+            <column name="NUMOPE"/>
+            <column name="NUMCPTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="211">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_TYP_BATCH" tableName="TYP_BATCH">
+            <column name="BATCHID"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="212">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_TYP_EDITION" tableName="TYP_EDITION">
+            <column name="EDITID"/>
+            <column name="BATCHID"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="213">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_TYP_IMPRIM" tableName="TYP_IMPRIM">
+            <column name="IMPID"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="214">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_TYP_PAPIER" tableName="TYP_PAPIER">
+            <column name="PAPID"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="215">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_VALID_OPE" tableName="VALID_OPE">
+            <column name="NUMSOC"/>
+            <column name="CODOPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="216">
+        <createIndex schemaName="ARTHUS" indexName="IDX1_VAL_VARIABLE" tableName="VAL_VARIABLE">
+            <column name="NUMGAR"/>
+            <column name="IDVARIABLE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="217">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_ADHESION" tableName="ADHESION">
+            <column name="NUMGAR"/>
+            <column name="NUMFOR"/>
+            <column name="TYPFOR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="218">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_ADHE_CNTRT" tableName="ADHE_CNTRT">
+            <column name="NUMGAR"/>
+            <column name="NUMADHE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="219">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_ADHE_CNTRT_MEMBRE" tableName="ADHE_CNTRT_MEMBRE" unique="true">
+            <column name="IDADHECNTRTMB"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="220">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_ADHE_COLLECTIVE" tableName="ADHE_COLLECTIVE">
+            <column name="NUMCLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="221">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_AFFECTATION" tableName="AFFECTATION">
+            <column name="NUMDECAISMT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="222">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_AFFECTATION_ANNUL" tableName="AFFECTATION_ANNUL">
+            <column name="NUMDECAISMT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="223">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_AFFIL_FICHIER" tableName="AFFIL_FICHIER">
+            <column name="NUMPORTE"/>
+            <column name="DATEFIC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="224">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_APPLI" tableName="APPLICATIONS">
+            <column name="CODAPLI"/>
+            <column name="FONCTION"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="225">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_APPORTEUR" tableName="APPORTEUR">
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="226">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_AVENANT" tableName="AVENANT">
+            <column name="NUMTR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="227">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_AVNT_CNTRT_GART" tableName="AVNT_CNTRT_GART">
+            <column name="NUMGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="228">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_COMPTA" tableName="COMPTA">
+            <column name="IDCOMPTA"/>
+            <column name="CODOPE"/>
+            <column name="JOURNAL"/>
+            <column name="REFPIECE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="229">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_COMPTE" tableName="COMPTE">
+            <column name="BIC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="230">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_COMPTE_TIERS" tableName="COMPTE_TIERS">
+            <column name="IDCOMPTA"/>
+            <column name="DATOPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="231">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_CONTACT" tableName="CONTACT">
+            <column name="NUMINDIV"/>
+            <column name="NATURE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="232">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_CONTRAT_REF" tableName="CONTRAT_REF">
+            <column name="NUMPROD"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="233">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_COURRIER" tableName="COURRIER">
+            <column name="NUMDEC"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="234">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_CPTCLI" tableName="COMPTE_CLIENT">
+            <column name="NUMCLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="235">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_DECAISMT" tableName="DECAISMT">
+            <column name="NUMEDIT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="236">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_DECOMPTE" tableName="DECOMPTE">
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="237">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_DECOMPTE_PREV" tableName="DECOMPTE_PREV">
+            <column name="IDADHESION"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="238">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_DEPENDANCE" tableName="DEPENDANCE">
+            <column name="NUMENVERS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="239">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_ENCAISMT" tableName="ENCAISMT">
+            <column name="NUMCLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="240">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_ENVOI" tableName="ENVOI">
+            <column name="NUMERO"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="241">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_FACTURE" tableName="FACTURE">
+            <column name="CODOPE"/>
+            <column name="NUMCLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="242">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_FILE_EDITION" tableName="FILE_EDITION">
+            <column name="DATE_EXECUTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="243">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_FRMLS" tableName="FORMULE">
+            <column name="NOMGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="244">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_FRMLVAR_DETAIL" tableName="FRMLVAR_DETAIL">
+            <column name="IDVARIABLE"/>
+            <column name="IDFORMULE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="245">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_FRML_PRIME" tableName="FRML_PRIME_SIMPLE">
+            <column name="CLEF"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="246">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_FRML_TFC" tableName="FRML_TFC">
+            <column name="IDFORMULE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="247">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_GAR_CNTRT_REF" tableName="GAR_CNTRT_REF">
+            <column name="NUMFOR_REF"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="248">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_GRP_GAR" tableName="GRP_GAR">
+            <column name="NUMGRPGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="249">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_GRP_GAR_DEF" tableName="GRP_GAR_DEF">
+            <column name="NUMGRPGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="250">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_HISTO_ADHESION" tableName="HISTO_ADHESION" unique="true">
+            <column name="IDHISTOADHE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="251">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_HISTO_CALCUL" tableName="HISTO_CALCUL">
+            <column name="NUMDEC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="252">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_HISTO_CPAYEUR" tableName="HISTO_CENTREPAYEUR">
+            <column name="CPT_PRINCIPAL"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="253">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_HISTO_FRMLVAR" tableName="HISTO_FRMLVAR">
+            <column name="IDFORMULE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="254">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_HISTO_QUERABLE" tableName="HISTO_QUERABLE">
+            <column name="MANDAT_MAITRE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="255">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_HISTO_RIB" tableName="HISTO_RIB">
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="256">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_INDIVIDU" tableName="INDIVIDU">
+            <column name="REFCIE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="257">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_INTERLOCUTEUR" tableName="INTERLOCUTEUR">
+            <column name="INTERLOCUTEUR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="258">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_PERS_ADRESSE" tableName="PERS_ADRESSE">
+            <column name="VILLE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="259">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_PERS_BANQUE" tableName="PERS_BANQUE">
+            <column name="BIC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="260">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_PIECES" tableName="PIECES">
+            <column name="ENTITE"/>
+            <column name="NUMINDIV_DEST"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="261">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_PNUL" tableName="PNUL">
+            <column name="CODOPE"/>
+            <column name="NUMAFFEC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="262">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_PORTE_ADHESION" tableName="PORTE_ADHESION">
+            <column name="NUMREMISE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="263">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_PORTE_NATFRAIS" tableName="PORTE_NATFRAIS">
+            <column name="NUMPORTE"/>
+            <column name="CODFRAIS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="264">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_PRELEVEMENT" tableName="PRELEVEMENT">
+            <column name="NUMENCAISMT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="265">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_PRELEVEMENT_DETAIL" tableName="PRELEVEMENT_DETAIL">
+            <column name="CODOPE"/>
+            <column name="NUMFACT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="266">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_PRET" tableName="PRET">
+            <column name="REF_EXT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="267">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_PROFIL" tableName="PROFIL">
+            <column name="CODAPLI"/>
+            <column name="PROFIL"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="268">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_QTTC_AFFEC" tableName="QTTC_AFFEC">
+            <column name="NUMQUIT"/>
+            <column name="NUMFOR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="269">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_QTTC_AFFEC_TFC" tableName="QTTC_AFFEC_TFC">
+            <column name="IDAFFEC"/>
+            <column name="NUMQUIT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="270">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_QTTC_GAR" tableName="QTTC_GAR">
+            <column name="NUMFOR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="271">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_QTTC_GLOBAL" tableName="QTTC_GLOBAL">
+            <column name="NUMINDIV"/>
+            <column name="NUMGAR"/>
+            <column name="COMPTANT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="272">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_REJET_NOEMIE" tableName="REJET_NOEMIE">
+            <column name="NUMINDIV"/>
+            <column name="NUMREMISE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="273">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_REMISE_OP_DETAIL" tableName="REMISE_OP_DETAIL">
+            <column name="BIC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="274">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_REMISE_VIRE_DETAIL" tableName="REMISE_VIRE_DETAIL">
+            <column name="NUMVIREMENT"/>
+            <column name="NUMDECAISMT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="275">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_RESULT_REASS_DETAIL" tableName="RESULT_REASS_DETAIL">
+            <column name="NUMAV"/>
+            <column name="NUMGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="276">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_REVERSEMENT" tableName="REVERSEMENT">
+            <column name="VALIDE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="277">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_RIB" tableName="RIB">
+            <column name="BIC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="278">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_SINISTRE" tableName="SINISTRE">
+            <column name="NUMINDIV"/>
+            <column name="CODFRAIS"/>
+            <column name="DATSIN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="279">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_SINISTRE_PORTE" tableName="SINISTRE_PORTE">
+            <column name="NUMREMISE"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="280">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_SNTR_REF" tableName="SNTR_REF">
+            <column name="NUMREMISE"/>
+            <column name="NUMSIN_PORTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="281">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_STOCK_ENTITE" tableName="STOCK_ENTITE">
+            <column name="COD_ENTITE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="282">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_STOCK_ENTITE_P" tableName="STOCK_ENTITE_P">
+            <column name="COD_ENTITE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="283">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_SUIVI_FACT_TPE" tableName="SUIVI_FACT_TPE">
+            <column name="IDFACTPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="284">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_TRAV_PRELEVEMENT" tableName="TRAV_PRELEVEMENT">
+            <column name="CLEF_IBAN"/>
+            <column name="BBAN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="285">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_TYP_EDITION" tableName="TYP_EDITION">
+            <column name="BATCHID"/>
+            <column name="EDITID"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="286">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_TYP_IMPRIM" tableName="TYP_IMPRIM">
+            <column name="USERID"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="287">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_TYP_PAPIER" tableName="TYP_PAPIER">
+            <column name="IMPID"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="288">
+        <createIndex schemaName="ARTHUS" indexName="IDX2_VAL_VARIABLE" tableName="VAL_VARIABLE">
+            <column name="ETENDUE"/>
+            <column name="CLEF"/>
+            <column name="IDVARIABLE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="289">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_ADHESION" tableName="ADHESION">
+            <column name="IDADHESION"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="290">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_AFFECTATION" tableName="AFFECTATION">
+            <column name="NUMCLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="291">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_COMPTE_TIERS" tableName="COMPTE_TIERS">
+            <column name="IDMVT"/>
+            <column name="CLE"/>
+            <column name="CODOPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="292">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_CONTRAT_REF" tableName="CONTRAT_REF">
+            <column name="NUMINTERM"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="293">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_COURRIER" tableName="COURRIER">
+            <column name="NUMSIN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="294">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_CPTCLI" tableName="COMPTE_CLIENT">
+            <column name="NUMENCAISMT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="295">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_DECAISMT" tableName="DECAISMT">
+            <column name="NUMUTIL"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="296">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_DECOMPTE" tableName="DECOMPTE">
+            <column name="NUMBENE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="297">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_ENCAISMT" tableName="ENCAISMT">
+            <column name="DATPAY"/>
+            <column name="CODOPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="298">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_ENVOI" tableName="ENVOI">
+            <column name="NUMEDIT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="299">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_FACTURE" tableName="FACTURE">
+            <column name="IDCOMPTA"/>
+            <column name="CODOPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="300">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_FILE_EDITION" tableName="FILE_EDITION">
+            <column name="NUMBATCH"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="301">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_FORMULE" tableName="FORMULE">
+            <column name="NUMASS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="302">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_INDIVIDU" tableName="INDIVIDU">
+            <column name="NOM"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="303">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_PERS_ADRESSE" tableName="PERS_ADRESSE">
+            <column name="NUMINDIV"/>
+            <column name="DEFAUT"/>
+            <column name="DEBUT"/>
+            <column name="CODOPE"/>
+            <column name="NUMGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="304">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_PIECES" tableName="PIECES">
+            <column name="IDREPARTITION"/>
+            <column name="ENTITE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="305">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_PNUL" tableName="PNUL">
+            <column name="NUMDECAISMT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="306">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_PORTE_ADHESION" tableName="PORTE_ADHESION">
+            <column name="NUMPORTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="307">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_PRELEVEMENT" tableName="PRELEVEMENT">
+            <column name="CLEF_IBAN"/>
+            <column name="BBAN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="308">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_QTTC_AFFEC" tableName="QTTC_AFFEC">
+            <column name="IDREVERS"/>
+            <column name="IDAFFEC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="309">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_QTTC_AFFEC_TFC" tableName="QTTC_AFFEC_TFC">
+            <column name="NUMQUIT"/>
+            <column name="NUMFOR"/>
+            <column name="IDAFFEC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="310">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_QTTC_GLOBAL" tableName="QTTC_GLOBAL">
+            <column name="IDADHESION"/>
+            <column name="DEBUT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="311">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_QTTC_VARIABLE" tableName="QTTC_VARIABLE">
+            <column name="NUMQUIT"/>
+            <column name="IDBASE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="312">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_REMISE_VIRE_DETAIL" tableName="REMISE_VIRE_DETAIL">
+            <column name="CLEF_IBAN"/>
+            <column name="BBAN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="313">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_RIB" tableName="RIB">
+            <column name="NATURE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="314">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_SINISTRE" tableName="SINISTRE">
+            <column name="DATSAI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="315">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_SINISTRE_PORTE" tableName="SINISTRE_PORTE">
+            <column name="NUMREMISE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="316">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_STOCK_ENTITE" tableName="STOCK_ENTITE">
+            <column name="GROUP_REJET"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="317">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_STOCK_ENTITE_P" tableName="STOCK_ENTITE_P">
+            <column name="GROUP_REJET"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="318">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_SUIVI_FACT_TPE" tableName="SUIVI_FACT_TPE">
+            <column name="CODEVEFAC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="319">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_TRAV_PRELEVEMENT" tableName="TRAV_PRELEVEMENT">
+            <column name="BIC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="320">
+        <createIndex schemaName="ARTHUS" indexName="IDX3_VAL_VARIABLE" tableName="VAL_VARIABLE">
+            <column name="IDVARIABLE"/>
+            <column name="CLEF"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="321">
+        <createIndex schemaName="ARTHUS" indexName="IDX4_AFFECTATION" tableName="AFFECTATION">
+            <column name="DATAFFEC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="322">
+        <createIndex schemaName="ARTHUS" indexName="IDX4_CONTRAT_REF" tableName="CONTRAT_REF">
+            <column name="ECHESUIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="323">
+        <createIndex schemaName="ARTHUS" indexName="IDX4_CPTCLI" tableName="COMPTE_CLIENT">
+            <column name="IDAFFEC"/>
+            <column name="DATOPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="324">
+        <createIndex schemaName="ARTHUS" indexName="IDX4_DECAISMT" tableName="DECAISMT">
+            <column name="NUMBENE"/>
+            <column name="NUMEDIT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="325">
+        <createIndex schemaName="ARTHUS" indexName="IDX4_DECOMPTE" tableName="DECOMPTE">
+            <column name="NUMGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="326">
+        <createIndex schemaName="ARTHUS" indexName="IDX4_EMISSION" tableName="EMISSION">
+            <column name="NUMFACT"/>
+            <column name="NUMRELANCE"/>
+            <column name="DATEMIS"/>
+            <column name="ANNUL_DATE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="327">
+        <createIndex schemaName="ARTHUS" indexName="IDX4_ENCAISMT" tableName="ENCAISMT">
+            <column name="IDCOMPTA"/>
+            <column name="DATPAY"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="328">
+        <createIndex schemaName="ARTHUS" indexName="IDX4_INDIVIDU" tableName="INDIVIDU">
+            <column name="MATORG"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="329">
+        <createIndex schemaName="ARTHUS" indexName="IDX4_PNUL" tableName="PNUL">
+            <column name="NUMDCPTCIE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="330">
+        <createIndex schemaName="ARTHUS" indexName="IDX4_PORTE_ADHESION" tableName="PORTE_ADHESION">
+            <column name="IDADHESION"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="331">
+        <createIndex schemaName="ARTHUS" indexName="IDX4_PRELEVEMENT" tableName="PRELEVEMENT">
+            <column name="BIC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="332">
+        <createIndex schemaName="ARTHUS" indexName="IDX4_QTTC_GLOBAL" tableName="QTTC_GLOBAL">
+            <column name="DEBUT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="333">
+        <createIndex schemaName="ARTHUS" indexName="IDX4_REMISE_VIRE_DETAIL" tableName="REMISE_VIRE_DETAIL">
+            <column name="BIC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="334">
+        <createIndex schemaName="ARTHUS" indexName="IDX4_SINISTRE" tableName="SINISTRE">
+            <column name="NUMFOR"/>
+            <column name="CODFRAIS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="335">
+        <createIndex schemaName="ARTHUS" indexName="IDX4_SINISTRE_PORTE" tableName="SINISTRE_PORTE">
+            <column name="CODEVEFAC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="336">
+        <createIndex schemaName="ARTHUS" indexName="IDX4_SUIVI_FACT_TPE" tableName="SUIVI_FACT_TPE">
+            <column name="NUMREMISE_EXPORT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="337">
+        <createIndex schemaName="ARTHUS" indexName="IDX5_AFFECTATION" tableName="AFFECTATION">
+            <column name="NUMAFFEC"/>
+            <column name="NUMDECAISMT"/>
+            <column name="CODOPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="338">
+        <createIndex schemaName="ARTHUS" indexName="IDX5_CONTRAT_REF" tableName="CONTRAT_REF">
+            <column name="REFCIE_CHAPEAU"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="339">
+        <createIndex schemaName="ARTHUS" indexName="IDX5_CPTCLI" tableName="COMPTE_CLIENT">
+            <column name="IDCOMPTA"/>
+            <column name="CODOPE"/>
+            <column name="DATOPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="340">
+        <createIndex schemaName="ARTHUS" indexName="IDX5_DECAISMT" tableName="DECAISMT">
+            <column name="FLAGPAY"/>
+            <column name="DATPAY"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="341">
+        <createIndex schemaName="ARTHUS" indexName="IDX5_DECOMPTE" tableName="DECOMPTE">
+            <column name="NUMDCPTCIE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="342">
+        <createIndex schemaName="ARTHUS" indexName="IDX5_PNUL" tableName="PNUL">
+            <column name="DATANNUL"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="343">
+        <createIndex schemaName="ARTHUS" indexName="IDX5_QTTC_GLOBAL" tableName="QTTC_GLOBAL">
+            <column name="NUMQUERABLE"/>
+            <column name="IDADHESION"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="344">
+        <createIndex schemaName="ARTHUS" indexName="IDX5_SINISTRE" tableName="SINISTRE">
+            <column name="IDADHESION"/>
+            <column name="DATSIN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="345">
+        <createIndex schemaName="ARTHUS" indexName="IDX5_SINISTRE_PORTE" tableName="SINISTRE_PORTE">
+            <column name="IDFACTPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="346">
+        <createIndex schemaName="ARTHUS" indexName="IDX5_SUIVI_FACT_TPE" tableName="SUIVI_FACT_TPE">
+            <column name="CODADELI"/>
+            <column name="NUMFACT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="347">
+        <createIndex schemaName="ARTHUS" indexName="IDX6_AFFECTATION" tableName="AFFECTATION">
+            <column name="MONTANT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="348">
+        <createIndex schemaName="ARTHUS" indexName="IDX6_CONTRAT_REF" tableName="CONTRAT_REF">
+            <column name="REFCIE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="349">
+        <createIndex schemaName="ARTHUS" indexName="IDX6_DECAISMT" tableName="DECAISMT">
+            <column name="IDCOMPTA"/>
+            <column name="CODOPE"/>
+            <column name="DATPAY"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="350">
+        <createIndex schemaName="ARTHUS" indexName="IDX6_SINISTRE" tableName="SINISTRE">
+            <column name="NUMFOR"/>
+            <column name="DATSIN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="351">
+        <createIndex schemaName="ARTHUS" indexName="IDX6_SINISTRE_PORTE" tableName="SINISTRE_PORTE">
+            <column name="IDFACTPE"/>
+            <column name="NUMLIGNE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="352">
+        <createIndex schemaName="ARTHUS" indexName="IDX7_CONTRAT_REF" tableName="CONTRAT_REF">
+            <column name="NUMCLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="353">
+        <createIndex schemaName="ARTHUS" indexName="IDX7_SINISTRE" tableName="SINISTRE">
+            <column name="NUMANNUL"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="354">
+        <createIndex schemaName="ARTHUS" indexName="IDX8_SINISTRE" tableName="SINISTRE">
+            <column name="NUMGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="355">
+        <createIndex schemaName="ARTHUS" indexName="IDX8_SNTR" tableName="SINISTRE">
+            <column name="NUMDCPTCIE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="356">
+        <createIndex schemaName="ARTHUS" indexName="IDX8_SNTR_ANNUL" tableName="SINISTRE_ANNUL">
+            <column name="NUMGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="357">
+        <createIndex schemaName="ARTHUS" indexName="IDX9_SNTR_ANNUL" tableName="SINISTRE_ANNUL">
+            <column name="NUMDCPTCIE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="358">
+        <createIndex schemaName="ARTHUS" indexName="IDX_AFFIL_FICHIER" tableName="AFFIL_FICHIER">
+            <column name="NUMREMISE"/>
+            <column name="NUMPORTE"/>
+            <column name="ENTREPRISE"/>
+            <column name="ETABLI"/>
+            <column name="NUM_ORDRE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="359">
+        <createIndex schemaName="ARTHUS" indexName="IDX_AFFIL_PORTE" tableName="AFFIL_PORTE">
+            <column name="NUMREMISE"/>
+            <column name="NUMLIGNE"/>
+            <column name="NUMPORTE"/>
+            <column name="ENTREPRISE"/>
+            <column name="ETABLI"/>
+            <column name="NUM_ORDRE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="360">
+        <createIndex schemaName="ARTHUS" indexName="IDX_AFFIL_PORTE_FORCAGE" tableName="AFFIL_PORTE_FORCAGE">
+            <column name="NUMREMISE"/>
+            <column name="NUMLIGNE"/>
+            <column name="NUMPORTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="361">
+        <createIndex schemaName="ARTHUS" indexName="IDX_COMPTA_IDCPTACENT" tableName="COMPTA">
+            <column name="IDCPTACENT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="362">
+        <createIndex schemaName="ARTHUS" indexName="IDX_COMPTA_REFPIECE" tableName="COMPTA">
+            <column name="REFPIECE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="363">
+        <createIndex schemaName="ARTHUS" indexName="IDX_COMPTA_REFPIECECENT" tableName="COMPTA">
+            <column name="REFPIECECENT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="364">
+        <createIndex schemaName="ARTHUS" indexName="IDX_DSN_FICHE_TARIF" tableName="DSN_FICHE_TARIF">
+            <column name="IDFICHE"/>
+            <column name="NUMGAR"/>
+            <column name="CODE_OPTION"/>
+            <column name="CODE_POP"/>
+            <column name="ELT_CALCUL"/>
+            <column name="ELT_CALCUL_SPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="365">
+        <createIndex schemaName="ARTHUS" indexName="IDX_ENVOI_MAIL" tableName="ENVOI_MAIL">
+            <column name="NUMINDIV_DEST"/>
+            <column name="IDTEXTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="366">
+        <createIndex schemaName="ARTHUS" indexName="IDX_FK_DSN_CRM_CONTEXTE" tableName="DSN_CRM_CONTEXTE">
+            <column name="IDDSNCRM"/>
+            <column name="IDRETOUR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="367">
+        <createIndex schemaName="ARTHUS" indexName="IDX_FLUX" tableName="FLUX">
+            <column name="DAT_MAJ"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="368">
+        <createIndex schemaName="ARTHUS" indexName="IDX_JOURNAL_ADM" tableName="JOURNAL_ADM">
+            <column name="DATE_ADM"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="369">
+        <createIndex schemaName="ARTHUS" indexName="IDX_JOURNAL_ADM_IDSESSION" tableName="JOURNAL_ADM">
+            <column name="ID_SESSION"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="370">
+        <createIndex schemaName="ARTHUS" indexName="IDX_LIEN_GED" tableName="LIEN_GED">
+            <column name="CLEF"/>
+            <column name="ETENDUE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="371">
+        <createIndex schemaName="ARTHUS" indexName="IDX_QTTC" tableName="AFFIL_PORTE_QTTC">
+            <column name="NUMREMISE"/>
+            <column name="NUMLIGNE"/>
+            <column name="NUMPORTE"/>
+            <column name="NUM_QTTC"/>
+            <column name="NUMQUIT"/>
+            <column name="REF_EXT_CNTRT"/>
+            <column name="REF_EXT_ADH"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="372">
+        <createIndex schemaName="ARTHUS" indexName="IDX_QTTC2" tableName="AFFIL_PORTE_QTTC">
+            <column name="NUMREMISE"/>
+            <column name="NUMLIGNE"/>
+            <column name="NUMPORTE"/>
+            <column name="REF_EXT_CNTRT"/>
+            <column name="REF_EXT_ADH"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="373">
+        <createIndex schemaName="ARTHUS" indexName="IDX_QTTC_ELT" tableName="AFFIL_PORTE_QTTC_ELT">
+            <column name="NUMREMISE"/>
+            <column name="NUMLIGNE"/>
+            <column name="NUMPORTE"/>
+            <column name="NUM_QTTC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="374">
+        <createIndex schemaName="ARTHUS" indexName="IDX_QTTC_INDIV" tableName="AFFIL_PORTE_QTTC_INDIV">
+            <column name="NUMREMISE"/>
+            <column name="NUMLIGNE"/>
+            <column name="NUMPORTE"/>
+            <column name="NUM_QTTC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="375">
+        <createIndex schemaName="ARTHUS" indexName="IDX_RAPPEL1" tableName="RAPPEL">
+            <column name="IDRAPPEL"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="376">
+        <createIndex schemaName="ARTHUS" indexName="IDX_RAPPEL2" tableName="RAPPEL">
+            <column name="NUMASSU"/>
+            <column name="NUMBENE"/>
+            <column name="TYPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="377">
+        <createIndex schemaName="ARTHUS" indexName="IDX_RAPPEL3" tableName="RAPPEL">
+            <column name="ENTITE"/>
+            <column name="NUMBENE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="378">
+        <createIndex schemaName="ARTHUS" indexName="IDX_RAPPEL_SOUSC" tableName="RAPPEL_SOUSCRIPT">
+            <column name="IDRAPPEL"/>
+            <column name="ID_ADHESION"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="379">
+        <createIndex schemaName="ARTHUS" indexName="IDX_REL_COMPTE_ECR" tableName="RELEVE_COMPTE">
+            <column name="NUM_ECRITURE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="380">
+        <createIndex schemaName="ARTHUS" indexName="IDX_REM_OP_DETAIL_NUMDECAISMT" tableName="REMISE_OP_DETAIL">
+            <column name="NUMDECAISMT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="381">
+        <createIndex schemaName="ARTHUS" indexName="IDX_SINISTRE_VERRE" tableName="SINISTRE_VERRE">
+            <column name="NUMSIN"/>
+            <column name="OEIL"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="382">
+        <createIndex schemaName="ARTHUS" indexName="IDX_SNTR_DEV_NUMDEC" tableName="SINISTRE_DEV">
+            <column name="NUMDEC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="383">
+        <createIndex schemaName="ARTHUS" indexName="IDX_SNTR_DOSS_NUMSIN" tableName="SNTR_DOSSIER" unique="true">
+            <column name="NUMSIN_SNTR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="384">
+        <createIndex schemaName="ARTHUS" indexName="IDX_SNTR_SANTE_NUMBORD" tableName="SINISTRE_SANTE">
+            <column name="NUM_BORD"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="385">
+        <createIndex schemaName="ARTHUS" indexName="IDX_SNTR_SANTE_NUMFACT" tableName="SINISTRE_SANTE">
+            <column name="NUMFACT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="386">
+        <createIndex schemaName="ARTHUS" indexName="IDX_VALIDE_TEXTE" tableName="VALIDE_TEXTE">
+            <column name="IDTEXTE"/>
+            <column name="CONTEXTE"/>
+            <column name="NUMERO"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="387">
+        <createIndex schemaName="ARTHUS" indexName="IDX_VIR_FICHIER" tableName="VIR_FICHIER">
+            <column name="NUMREMISE"/>
+            <column name="NUMPORTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="388">
+        <createIndex schemaName="ARTHUS" indexName="IDX_VIR_PORTE" tableName="VIR_PORTE">
+            <column name="NUMREMISE"/>
+            <column name="NUMLIGNE"/>
+            <column name="NUMPORTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="389">
+        <createIndex schemaName="ARTHUS" indexName="IDX_XML_04_06" tableName="XML_04_06">
+            <column name="EXTRACTVALUE(SYS_MAKEXML(&quot;SYS_NC00003$&quot;),'mod:oiamCREQ/mod:priseEnChargeDetaillee[2]/mod:assure/mod:abstract_Identite','xmlns:mod=&quot;http://modele.ws.tpo.cga.com&quot;')" computed="true"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="390">
+        <createIndex schemaName="ARTHUS" indexName="INDX_LIVRE_LIBELLE" tableName="LIVRE_LIBELLE">
+            <column name="CLIENT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="391">
+        <createIndex schemaName="ARTHUS" indexName="IX_DEF_VARIABLE_QUALEA_1" tableName="DEF_VARIABLE">
+            <column name="IDVARIABLE"/>
+            <column name="LIB_VARIABLE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="392">
+        <createIndex schemaName="ARTHUS" indexName="IX_GAR_CNTRT_REF_QUALEA_1" tableName="GAR_CNTRT_REF">
+            <column name="NUMFOR"/>
+            <column name="NUMGAR"/>
+            <column name="LIBELLE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="393">
+        <createIndex schemaName="ARTHUS" indexName="IX_QTTC_AFFEC_QUALEA_1" tableName="QTTC_AFFEC">
+            <column name="NUMFOR"/>
+            <column name="IDGAR"/>
+            <column name="IDREVERS"/>
+            <column name="MONTANT"/>
+            <column name="MONTANT_D"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="394">
+        <createIndex schemaName="ARTHUS" indexName="IX_QTTC_GAR_QUALEA_1" tableName="QTTC_GAR">
+            <column name="NUMFOR"/>
+            <column name="NUMINDIV"/>
+            <column name="NUMQUIT"/>
+            <column name="DEBUT"/>
+            <column name="IDGAR"/>
+            <column name="FIN"/>
+            <column name="MT_NET"/>
+            <column name="MT_TTC"/>
+            <column name="MONNAIE"/>
+            <column name="MONNAIE_D"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="395">
+        <createIndex schemaName="ARTHUS" indexName="IX_QTTC_VARIABLE_QUALEA_1" tableName="QTTC_VARIABLE">
+            <column name="NUMFOR"/>
+            <column name="NUMINDIV"/>
+            <column name="NUMQUIT"/>
+            <column name="IDBASE"/>
+            <column name="IDTAUX"/>
+            <column name="TAUX"/>
+            <column name="BASE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="396">
+        <createIndex schemaName="ARTHUS" indexName="PK_ACTE_DATES" tableName="PARAM_ACTES_PDS" unique="true">
+            <column name="CODFRAIS"/>
+            <column name="DATAPPLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="397">
+        <createIndex schemaName="ARTHUS" indexName="PK_PARAM_LANGUE" tableName="PARAM_LANGUE" unique="true">
+            <column name="LANGUE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="398">
+        <createIndex schemaName="ARTHUS" indexName="PK_PERS_ORGANISME" tableName="PERS_ORGANISME" unique="true">
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="399">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_1" tableName="RAPPEL">
+            <column name="CONTEXTE"/>
+            <column name="ORIGINE"/>
+            <column name="TYPE"/>
+            <column name="TRUNC(&quot;CREATION&quot;)" computed="true"/>
+            <column name="MAJ"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="400">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_2" tableName="AFFIL_PORTE">
+            <column name="NUMINDIV"/>
+            <column name="DEBUTC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="401">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_3" tableName="PERS_ADRESSE">
+            <column name="TRUNC(&quot;MAJ&quot;)" computed="true"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="402">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_4A" tableName="INDIVIDU">
+            <column name="TRUNC(&quot;MAJ&quot;)" computed="true"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="403">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_4B" tableName="INDIVIDU">
+            <column name="TRUNC(&quot;CREATION&quot;)" computed="true"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="404">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_5A" tableName="CONTACT">
+            <column name="TRUNC(&quot;CREATION&quot;)" computed="true"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="405">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_5B" tableName="CONTACT">
+            <column name="TRUNC(&quot;MAJ&quot;)" computed="true"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="406">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_6" tableName="HISTO_COURRIER_INFO">
+            <column name="TYPE_CRRR"/>
+            <column name="TRUNC(&quot;DATE_HISTO&quot;)" computed="true"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="407">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_7" tableName="ADHESION">
+            <column name="TRUNC(&quot;CREATION&quot;)" computed="true"/>
+            <column name="DATAPLI"/>
+            <column name="DATPER"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="408">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_B1" tableName="AFFIL_PORTE_QTTC_ELT">
+            <column name="NUMPORTE"/>
+            <column name="NUMREMISE"/>
+            <column name="NUMLIGNE"/>
+            <column name="REF_EXT_ADH"/>
+            <column name="NUM_QTTC"/>
+            <column name="STATUT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="409">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_B2" tableName="AFFIL_PORTE_QTTC">
+            <column name="NUMPORTE"/>
+            <column name="NUMREMISE"/>
+            <column name="NUMLIGNE"/>
+            <column name="REF_EXT_CNTRT"/>
+            <column name="REF_EXT_ADH"/>
+            <column name="NUM_QTTC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="410">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_B5VW" tableName="PIECES">
+            <column name="NVL(&quot;BLOC&quot;,'N')" computed="true"/>
+            <column name="IDREPARTITION"/>
+            <column name="CONTEXTE"/>
+            <column name="NUMBENE"/>
+            <column name="DATANNUL"/>
+            <column name="DATERECEP"/>
+            <column name="DATEAVIS"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="411">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_B6" tableName="INDIVIDU">
+            <column name="DATNAIS_REGIME"/>
+            <column name="NVL(&quot;RANG&quot;,0)" computed="true"/>
+            <column name="MATORG"/>
+            <column name="MATORG2"/>
+            <column name="NUMINDIV"/>
+            <column name="NUMASSU"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="412">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_B7" tableName="LIEN_GED">
+            <column name="REF_EXT"/>
+            <column name="ID_LIEN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="413">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_B8" tableName="HISTO_RAPPEL">
+            <column name="IDHISTORAPPEL"/>
+            <column name="COMMENTAIRE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="414">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_C1" tableName="ENVOI_MAIL">
+            <column name="TYPE_MAIL"/>
+            <column name="NUMEDIT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="415">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_C2" tableName="RIB">
+            <column name="IDRIB"/>
+            <column name="NUMINDIV"/>
+            <column name="MODPMT"/>
+            <column name="CODBQUE"/>
+            <column name="GUICHET"/>
+            <column name="COMPTE"/>
+            <column name="CLERIB"/>
+            <column name="INTITULE"/>
+            <column name="BBAN"/>
+            <column name="CLEF_IBAN"/>
+            <column name="BIC"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="416">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_C3" tableName="PERS_TIERS">
+            <column name="NUMINDIV"/>
+            <column name="NUMTIERS"/>
+            <column name="NUMDPT"/>
+            <column name="NUMACTV"/>
+            <column name="NUMINSER"/>
+            <column name="NUMCLE"/>
+            <column name="NOMP"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="417">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_C4" tableName="INDIVIDU">
+            <column name="NUMINDIV"/>
+            <column name="NOM"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="418">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_C5" tableName="INDIVIDU">
+            <column name="NUMINDIV"/>
+            <column name="NUMASSU"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="419">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_C6" tableName="PERS_ADRESSE">
+            <column name="NUMINDIV"/>
+            <column name="CODOPE"/>
+            <column name="NUMGAR"/>
+            <column name="TYPE"/>
+            <column name="DEFAUT"/>
+            <column name="DEBUT"/>
+            <column name="IDADRESSE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="420">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_E1" tableName="ENVOI_MAIL">
+            <column name="IDTEXTE"/>
+            <column name="CLEF"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="421">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W1" tableName="HISTO_RAPPEL">
+            <column name="IDRAPPEL"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="422">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W10" tableName="AFFIL_ANO">
+            <column name="NUMREMISE"/>
+            <column name="NUMPORTE"/>
+            <column name="NUMLIGNE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="423">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W11" tableName="ENVOI_MAIL">
+            <column name="NUMBENE"/>
+            <column name="ETENDUE"/>
+            <column name="IDTEXTE"/>
+            <column name="CLEF"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="424">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W14" tableName="INDIVIDU">
+            <column name="NUMINDIV"/>
+            <column name="CAISSE"/>
+            <column name="TO_CHAR(TO_NUMBER(&quot;REGIME&quot;),'00')" computed="true"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="425">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W17" tableName="LIBELLE">
+            <column name="MNEMO"/>
+            <column name="CODE"/>
+            <column name="LIBELLE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="426">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W19" tableName="DEVIS_SANTE_DETAIL">
+            <column name="IDDEVIS_SANTE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="427">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W20" tableName="SINISTRE_PORTE">
+            <column name="NUMPORTE"/>
+            <column name="NUMREMISE"/>
+            <column name="ETAT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="428">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W21" tableName="HISTO_PLAFOND">
+            <column name="NUMSIN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="429">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W22" tableName="TRAVSN">
+            <column name="USERNAME"/>
+            <column name="SID"/>
+            <column name="NUMSIN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="430">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W23" tableName="QTTC_GLOBAL">
+            <column name="IDADHESION"/>
+            <column name="NUMQUERABLE"/>
+            <column name="NUMINDIV"/>
+            <column name="NUMQUIT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="431">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W24A" tableName="INDIVIDU">
+            <column name="DATNAIS"/>
+            <column name="RANG"/>
+            <column name="NATUR"/>
+            <column name="MATORG"/>
+            <column name="MATORG2"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="432">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W24B" tableName="INDIVIDU">
+            <column name="DATNAIS"/>
+            <column name="RANG"/>
+            <column name="NATUR"/>
+            <column name="MATORG2"/>
+            <column name="MATORG"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="433">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W25" tableName="TMP_DECAISMT">
+            <column name="NUMUTIL"/>
+            <column name="PARAM_OPE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="434">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W26" tableName="COURRIER_INFO">
+            <column name="TYPE_CRRR"/>
+            <column name="MOYEN_INFO"/>
+            <column name="NUMINDIV"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="435">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W27A" tableName="DECAISMT">
+            <column name="NUMEDIT"/>
+            <column name="NUMDECAISMT"/>
+            <column name="NUMDEST"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="436">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W27B" tableName="DECAISMT">
+            <column name="NUMEDIT"/>
+            <column name="NUMDEST"/>
+            <column name="NUMDECAISMT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="437">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W3" tableName="TRAVSN">
+            <column name="SID"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="438">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W4" tableName="DOSSIER_SANTE">
+            <column name="TYPE_DOSS"/>
+            <column name="REF_DOSSIER"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="439">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W5" tableName="SINISTRE_DENT">
+            <column name="NUMSIN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="440">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W6" tableName="INDIVIDU">
+            <column name="DATNAIS"/>
+            <column name="RANG"/>
+            <column name="MATORG"/>
+            <column name="NUMINDIV"/>
+            <column name="NOM"/>
+            <column name="PRENOM"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="441">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W7" tableName="SNTR_PREV">
+            <column name="IDDOSSIER"/>
+            <column name="NOSIN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="442">
+        <createIndex schemaName="ARTHUS" indexName="QUALEA_W9" tableName="HISTO_SINISTRE_SANTE">
+            <column name="NUM_DOSSIER"/>
+            <column name="NUMLIGNE"/>
+            <column name="DATETAT"/>
+            <column name="ETAT"/>
+            <column name="MOTIF"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="443">
+        <createIndex schemaName="ARTHUS" indexName="SYS_C0073399" tableName="JOE" unique="true">
+            <column name="NOM"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="444">
+        <createIndex schemaName="ARTHUS" indexName="UDX1_DEF_VAR" tableName="DEF_VARIABLE" unique="true">
+            <column name="NOM_VARIABLE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="445">
+        <createIndex schemaName="ARTHUS" indexName="UDX1_FACTURE_REGUL" tableName="FACTURE_REGUL" unique="true">
+            <column name="CODOPE"/>
+            <column name="NUMFACT_REGUL"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="446">
+        <createIndex schemaName="ARTHUS" indexName="UDX1_FRANFOR" tableName="FRANFOR">
+            <column name="NUMFOR"/>
+            <column name="DATAPLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="447">
+        <createIndex schemaName="ARTHUS" indexName="UDX1_MAXFOR" tableName="MAXFOR">
+            <column name="NUMFOR"/>
+            <column name="DATAPLI"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="448">
+        <createIndex schemaName="ARTHUS" indexName="UDX1_QTTC_GBL_DEL" tableName="QTTC_GLOBAL_DELETE">
+            <column name="NUMQUIT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="449">
+        <createIndex schemaName="ARTHUS" indexName="UDX1_RECSIN" tableName="RECOURS_SINISTRE">
+            <column name="NUMSIN"/>
+            <column name="NUMRECOURS"/>
+            <column name="NUMFACT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="450">
+        <createIndex schemaName="ARTHUS" indexName="UDX1_REMISE_VIRE_DETAIL" tableName="REMISE_VIRE_DETAIL" unique="true">
+            <column name="NUMREMISE"/>
+            <column name="NUMDECAISMT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="451">
+        <createIndex schemaName="ARTHUS" indexName="UDX1_SINISTRE_PORTE" tableName="SINISTRE_PORTE">
+            <column name="NUMREMISE"/>
+            <column name="NUMSIN"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="452">
+        <createIndex schemaName="ARTHUS" indexName="UDX1_TABLEAU" tableName="TABLEAU">
+            <column name="IDTABLEAU"/>
+            <column name="CLEF"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="453">
+        <createIndex schemaName="ARTHUS" indexName="UDX2_PORTE_REMISE" tableName="PORTE_REMISE" unique="true">
+            <column name="NUMPORTE"/>
+            <column name="NUMREMISE"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="454">
+        <createIndex schemaName="ARTHUS" indexName="UDX2_QTTC_GBL_DEL" tableName="QTTC_GLOBAL_DELETE">
+            <column name="NUMGAR"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="455">
+        <createIndex schemaName="ARTHUS" indexName="UDX2_REMISE_VIRE_DETAIL" tableName="REMISE_VIRE_DETAIL" unique="true">
+            <column name="NUMDECAISMT"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="456">
+        <createIndex schemaName="ARTHUS" indexName="UK_DETTE_PREV_DETAIL" tableName="DETTE_PREV_DETAIL" unique="true">
+            <column name="IDDETTE"/>
+            <column name="NUMGAR"/>
+            <column name="NUMFOR"/>
+            <column name="EXERCICE"/>
+            <column name="NUMLIGNE_ANNUL"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="OMIGNOT" id="457">
+        <createIndex schemaName="ARTHUS" indexName="flyway_schema_history_s_idx" tableName="flyway_schema_history">
+            <column name="success"/>
+        </createIndex>
+    </changeSet>
+</databaseChangeLog>

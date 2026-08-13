@@ -1,0 +1,8 @@
+CREATE FORCE VIEW ARTHUS.V_NUMGAR AS
+select	numgar
+from	contrat
+union
+select	0
+from	dual
+GO
+CREATE OR REPLACE PUBLIC SYNONYM V_NUMGAR FOR ARTHUS.V_NUMGAR

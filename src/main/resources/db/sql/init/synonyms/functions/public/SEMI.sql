@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : SEMI
+-- Cible      : ARTHUS.SEMI
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM SEMI FOR ARTHUS.SEMI;

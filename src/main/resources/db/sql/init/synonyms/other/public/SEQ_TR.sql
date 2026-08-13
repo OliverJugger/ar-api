@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : SEQ_TR
+-- Cible      : ARTHUS.SEQ_TR
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM SEQ_TR FOR ARTHUS.SEQ_TR;

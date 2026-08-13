@@ -1,0 +1,6 @@
+# Environnement : Pre-production
+oracle:
+  jdbc:
+    host: 192.168.18.102
+    port: 1521
+    service: GEREPJ

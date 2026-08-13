@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : JOE
+-- Cible      : ARTHUS.JOE
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM JOE FOR ARTHUS.JOE;

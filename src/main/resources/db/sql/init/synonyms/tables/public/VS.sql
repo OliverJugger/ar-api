@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : VS
+-- Cible      : ARTHUS.PIECES
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM VS FOR ARTHUS.PIECES;

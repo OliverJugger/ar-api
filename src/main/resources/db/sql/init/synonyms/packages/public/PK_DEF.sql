@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : PK_DEF
+-- Cible      : ARTHUS.PK_DEF
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM PK_DEF FOR ARTHUS.PK_DEF;

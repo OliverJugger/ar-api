@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.CRRR
+-- Cible      : ARTHUS.COURRIER
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.CRRR FOR ARTHUS.COURRIER;

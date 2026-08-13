@@ -1,0 +1,5 @@
+-- Synonyme prive : ARTHUS.CLTS
+-- Cible      : ARTHUS.CLIENT
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE SYNONYM ARTHUS.CLTS FOR ARTHUS.CLIENT;

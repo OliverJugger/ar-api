@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : PNUL
+-- Cible      : ARTHUS.PNUL
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM PNUL FOR ARTHUS.PNUL;

@@ -1,0 +1,7 @@
+CREATE FUNCTION ARTHUS.F_michel2(I_numedit IN number) RETURN VARCHAR2
+ IS
+ L_retour VARCHAR2(50);
+ BEGIN
+   L_retour := 'RETOUR FONCTION MICHEL';
+   RETURN(L_retour);
+ END;

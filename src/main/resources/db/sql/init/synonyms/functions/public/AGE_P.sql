@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : AGE_P
+-- Cible      : ARTHUS.AGE_P
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM AGE_P FOR ARTHUS.AGE_P;

@@ -40,6 +40,7 @@ au démarrage via `src/main/resources/data.sql` (idempotent, basé sur des
 ```bash
 mvn clean spring-boot:run
 mvn clean spring-boot:run -Pgerep-catamania (default)
+mvn clean spring-boot:run -Plocal-docker (default)
 ```
 
 Les DTO et interfaces de contrôleur sont (re)générés automatiquement dans

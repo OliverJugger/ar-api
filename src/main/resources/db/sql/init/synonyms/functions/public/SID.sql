@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : SID
+-- Cible      : ARTHUS.SID
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM SID FOR ARTHUS.SID;

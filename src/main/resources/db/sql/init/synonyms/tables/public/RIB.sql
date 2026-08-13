@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : RIB
+-- Cible      : ARTHUS.RIB
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM RIB FOR ARTHUS.RIB;

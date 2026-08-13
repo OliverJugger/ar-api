@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <!--
+        NB : les clauses physiques Oracle (PCTFREE, STORAGE, INITRANS,
+        BUFFER_POOL, etc.) du DDL d'origine ne sont pas reprises ici,
+        Liquibase createTable ne les gère pas nativement et elles
+        n'affectent pas le fonctionnement de la vue V_PARAM_BASCULE.
+        Seuls schemaName et tablespace sont conservés.
+    -->
+
+    <changeSet author="OMIGNOT" id="1">
+        <createTable schemaName="ARTHUS_PARAM" tableName="PARAMETRES" tablespace="ARTHUS_DATA">
+            <column name="DFDEV" type="NUMBER(3, 0)"><constraints nullable="false"/></column>
+            <column name="DEVSYMB" type="VARCHAR2(3)"><constraints nullable="false"/></column>
+            <column name="ETAGAR" type="NUMBER(2, 0)"><constraints nullable="false"/></column>
+            <column name="DFMDPMT" type="NUMBER(2, 0)"><constraints nullable="false"/></column>
+            <column name="MDPRVT" type="NUMBER(2, 0)"><constraints nullable="false"/></column>
+            <column name="DFPAYS" type="NUMBER(3, 0)"><constraints nullable="false"/></column>
+            <column name="MDVRT" type="NUMBER(2, 0)"><constraints nullable="false"/></column>
+            <column name="MDCHQ" type="NUMBER(2, 0)"><constraints nullable="false"/></column>
+            <column name="NUMSEC" type="NUMBER(2, 0)"/>
+            <column name="NUMORG" type="NUMBER(4, 0)"/>
+            <column name="DEFETAT" type="NUMBER(1, 0)"/>
+            <column name="PRORATA_JOURS" type="NUMBER(4, 0)"/>
+            <column name="DFSOC" type="NUMBER(3, 0)"/>
+            <column name="RJOURS" type="NUMBER(3, 0)"/>
+            <column name="DELTAQTTC" type="NUMBER(6, 2)"/>
+            <column name="CLIENT" type="NUMBER(3, 0)"/>
+            <column name="DELTA_MALADIE" type="NUMBER(6, 2)" defaultValueNumeric="0.5"/>
+            <column name="DELTA_CVRT" type="NUMBER(2, 0)"/>
+            <column name="RUBRIQUE" type="VARCHAR2(4)"/>
+            <column name="DFRANC" type="NUMBER(3, 0)"/>
+            <column name="COUV_JOUR" type="NUMBER(1, 0)"/>
+            <column name="CODE_RG" type="NUMBER(1, 0)"/>
+            <column name="INSTANCE" type="VARCHAR2(10)"/>
+            <column name="EDIT_REGUL" type="VARCHAR2(1)"/>
+            <column name="TYPE_PREV" type="VARCHAR2(1)" defaultValue="O"/>
+            <column name="TRACE" type="VARCHAR2(10)"/>
+            <column name="PARTENARIAT" type="NUMBER(1, 0)" defaultValueNumeric="0"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="OMIGNOT" id="2">
+        <createTable schemaName="ARTHUS_PARAM" tableName="PARAM_MACHINE" tablespace="ARTHUS_DATA">
+            <column name="ID_MACHINE" type="VARCHAR2(30)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_PARAM_MACHINE"/>
+            </column>
+            <column name="NOM_MACHINE" type="VARCHAR2(30)"><constraints nullable="false"/></column>
+            <column name="RACINE" type="VARCHAR2(45)"/>
+            <column name="DIR_EXE" type="VARCHAR2(45)"/>
+            <column name="DIR_EDITION" type="VARCHAR2(4000)"/>
+            <column name="DIR_TMP" type="VARCHAR2(45)"/>
+            <column name="DIR_LIBPLL" type="VARCHAR2(45)"/>
+            <column name="DIR_LOG" type="VARCHAR2(45)"/>
+            <column name="ALIAS_EDITION" type="VARCHAR2(45)"/>
+            <column name="DIR_DISTRIB" type="VARCHAR2(4000)"/>
+            <column name="DIR_DLL" type="VARCHAR2(45)"/>
+            <column name="DIR_EXPORT" type="VARCHAR2(45)"/>
+            <column name="DIR_IMPORT" type="VARCHAR2(45)"/>
+            <column name="DIR_LIVR" type="VARCHAR2(45)"/>
+            <column name="DIR_REPORT" type="VARCHAR2(45)"/>
+            <column name="DIR_SRC" type="VARCHAR2(45)"/>
+            <column name="LIBELLE" type="VARCHAR2(45)"/>
+            <column name="SRV_TYPE" type="VARCHAR2(2)"/>
+            <column name="SRV_RPT" type="VARCHAR2(45)"/>
+            <column name="DIR_BAT" type="VARCHAR2(45)"/>
+            <column name="PORT_MACHINE" type="NUMBER(2, 0)"/>
+            <column name="COMPTE_MAIL" type="VARCHAR2(100)"/>
+            <column name="PASSWORD" type="VARCHAR2(30)"/>
+            <column name="DOMAINE" type="VARCHAR2(45)"/>
+            <column name="DOMAINE_EDITION" type="VARCHAR2(256)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="OMIGNOT" id="3">
+        <createTable schemaName="ARTHUS_PARAM" tableName="TYPE_FLUX" tablespace="ARTHUS_DATA">
+            <column name="ID_TYPE" type="NUMBER(3, 0)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_TYPE_FLUX"/>
+            </column>
+            <column name="CODE_SERVICE" type="NUMBER(2, 0)"><constraints nullable="false"/></column>
+            <column name="LIB_SERVICE" type="VARCHAR2(50)"/>
+            <column name="NUM_EMETTEUR" type="VARCHAR2(8)"/>
+            <column name="NUM_PORTE" type="NUMBER(3, 0)"><constraints nullable="false"/></column>
+            <column name="EXE_PROC" type="VARCHAR2(100)"/>
+            <column name="XSD" type="VARCHAR2(250)"/>
+            <column name="AR" type="CHAR(1)"/>
+            <column name="REF_ID_TYPE" type="NUMBER(3, 0)"/>
+            <column name="SOAP" type="VARCHAR2(2000)"/>
+            <column name="URL" type="VARCHAR2(200)"/>
+            <column name="TABLE_STOCK" type="VARCHAR2(30)"><constraints nullable="false"/></column>
+            <column name="COL_STOCK" type="VARCHAR2(30)"/>
+            <column name="ER" type="CHAR(1)"/>
+        </createTable>
+    </changeSet>
+	
+	<changeSet author="OMIGNOT" id="4">
+        <sql>
+			GRANT SELECT ON ARTHUS_PARAM.PARAMETRES TO ARTHUS WITH GRANT OPTION;
+			GRANT SELECT ON ARTHUS_PARAM.PARAM_MACHINE TO ARTHUS WITH GRANT OPTION;
+			GRANT SELECT ON ARTHUS_PARAM.TYPE_FLUX TO ARTHUS WITH GRANT OPTION;
+        </sql>
+    </changeSet>
+	
+    <!--
+        Synonymes pour que les vues côté ARTHUS puissent référencer
+        ces tables sans préfixe de schéma (ex: "parametres" dans
+        V_PARAM_BASCULE).
+    -->
+    <changeSet author="OMIGNOT" id="5">
+        <sql>
+            CREATE SYNONYM ARTHUS.PARAMETRES FOR ARTHUS_PARAM.PARAMETRES;
+            CREATE SYNONYM ARTHUS.PARAM_MACHINE FOR ARTHUS_PARAM.PARAM_MACHINE;
+            CREATE SYNONYM ARTHUS.TYPE_FLUX FOR ARTHUS_PARAM.TYPE_FLUX;
+        </sql>
+        <rollback>
+            <sql>
+                DROP SYNONYM ARTHUS.PARAMETRES;
+                DROP SYNONYM ARTHUS.PARAM_MACHINE;
+                DROP SYNONYM ARTHUS.TYPE_FLUX;
+            </sql>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

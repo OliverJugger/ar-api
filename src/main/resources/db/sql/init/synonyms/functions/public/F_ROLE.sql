@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : F_ROLE
+-- Cible      : ARTHUS.F_ROLE
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM F_ROLE FOR ARTHUS.F_ROLE;

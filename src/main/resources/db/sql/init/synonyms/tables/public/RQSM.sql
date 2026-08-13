@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : RQSM
+-- Cible      : ARTHUS.RQSM
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM RQSM FOR ARTHUS.RQSM;

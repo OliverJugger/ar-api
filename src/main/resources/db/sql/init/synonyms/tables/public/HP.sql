@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : HP
+-- Cible      : ARTHUS.HP
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM HP FOR ARTHUS.HP;

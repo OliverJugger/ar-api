@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : F_LBLE
+-- Cible      : ARTHUS.F_LBLE
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM F_LBLE FOR ARTHUS.F_LBLE;

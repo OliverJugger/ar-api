@@ -1,0 +1,5 @@
+-- Synonyme PUBLIC : LPP
+-- Cible      : ARTHUS.LPP
+-- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
+
+CREATE PUBLIC SYNONYM LPP FOR ARTHUS.LPP;

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <!--
+        ATTENTION :
+        - Chemin repris de DBA_DATA_FILES sur le serveur cible
+          (D:\001_ORACLE\ORADATA\DARTHUS\GEREP19C\). Si ce changelog
+          doit s'exécuter sur un AUTRE serveur physique, adapte le
+          chemin en conséquence.
+        - CREATE TABLESPACE exige le privilège système CREATE TABLESPACE.
+        - On repart avec un seul datafile par tablespace (la base source
+          en a accumulé 5 pour ARTHUS_DATA / 3 pour ARTHUS_INDX par
+          croissance progressive dans le temps) ; AUTOEXTEND prendra le
+          relais, ou tu pourras ajouter des fichiers plus tard avec
+          ALTER TABLESPACE ... ADD DATAFILE si besoin.
+        - Vérifie que ARTHUS_DATA_01.DBF / ARTHUS_INDX_01.DBF n'existent
+          pas déjà à cet emplacement avant de lancer (sinon erreur
+          fichier déjà existant).
+
+        Ce changelog doit s'exécuter AVANT db_schema_arthus_param.xml
+        (quotas sur ces tablespaces) et avant db_tables_arthus_param.xml
+        (tables créées dedans).
+    -->
+
+    <changeSet author="OMIGNOT" id="1" runOnChange="false">
+        <sql>
+            CREATE TABLESPACE ARTHUS_DATA
+                DATAFILE 'D:\001_ORACLE\ORADATA\DARTHUS\GEREP19C\ARTHUS_DATA_01.DBF'
+                SIZE 500M
+                AUTOEXTEND ON NEXT 100M MAXSIZE UNLIMITED
+                LOGGING
+                EXTENT MANAGEMENT LOCAL
+                SEGMENT SPACE MANAGEMENT AUTO;
+        </sql>
+        <rollback>
+            <sql>DROP TABLESPACE ARTHUS_DATA INCLUDING CONTENTS AND DATAFILES;</sql>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="OMIGNOT" id="2" runOnChange="false">
+        <sql>
+            CREATE TABLESPACE ARTHUS_INDX
+                DATAFILE 'D:\001_ORACLE\ORADATA\DARTHUS\GEREP19C\ARTHUS_INDX_01.DBF'
+                SIZE 200M
+                AUTOEXTEND ON NEXT 50M MAXSIZE UNLIMITED
+                LOGGING
+                EXTENT MANAGEMENT LOCAL
+                SEGMENT SPACE MANAGEMENT AUTO;
+        </sql>
+        <rollback>
+            <sql>DROP TABLESPACE ARTHUS_INDX INCLUDING CONTENTS AND DATAFILES;</sql>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>
