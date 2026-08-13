@@ -45,7 +45,7 @@ mvn jasypt:encrypt-value -Djasypt.encryptor.password=MOT_DE_PASSE_CHIFFRAGE_A_DE
 
 Déchiffrer
 ```bash
-mvn jasypt:decrypt-value -Djasypt.encryptor.password=MOT_DE_PASSE_CHIFFRAGE_A_DEMANDER -Djasypt.plugin.value=CONTENU_DE_ENC
+mvn jasypt:decrypt-value -Djasypt.encryptor.password=MOT_DE_PASSE_CHIFFRAGE_A_DEMANDER -Djasypt.plugin.value=ENC(XXX)
 ```
 
 Les DTO et interfaces de contrôleur sont (re)générés automatiquement dans
