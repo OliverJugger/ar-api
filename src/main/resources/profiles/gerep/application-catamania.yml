@@ -7,3 +7,15 @@ oracle:
     host: SRVVBDDARTH01
     port: 1551
     base: GEREP19C
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//SRVVBDDARTH01:1551/GEREP19C
+    username: arthus
+    password: ENC(uDAGtKtmfNwD74z1cC7jj6MWcvQFycrXOmw0JW+b59Hf0iRA6I5CNbkYNP85UMSmjBFrSl1Z5teCNgw3V6N9Tg==)
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    properties:
+      hibernate:
+        default_schema: ARTHUS
+        synonyms: true

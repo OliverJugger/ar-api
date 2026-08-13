@@ -26,21 +26,26 @@ Variables d'environnement (valeurs par défaut entre parenthèses) :
 
 | Variable          | Défaut                                     |
 |-------------------|---------------------------------------------|
-| `ORACLE_URL`      | `jdbc:oracle:thin:@localhost:1521/FREEPDB1` |
-| `ORACLE_USERNAME` | `ar_wc3`                                    |
-| `ORACLE_PASSWORD` | `changeit`                                  |
-
-Le schéma est créé/mis à jour automatiquement par Hibernate
-(`spring.jpa.hibernate.ddl-auto=update`). Un jeu de données de démo est inséré
-au démarrage via `src/main/resources/data.sql` (idempotent, basé sur des
-`MERGE`).
+| `ORACLE_URL`      | `jdbc:oracle:thin:@localhost:1521/GEREP19CL` |
+| `ORACLE_USERNAME` | `arthus`                                    |
+| `ORACLE_PASSWORD` | `ENC(BY_JASYPT)`                                  |
 
 ## Lancer le projet
 
 ```bash
-mvn clean spring-boot:run
-mvn clean spring-boot:run -Pgerep-catamania (default)
-mvn clean spring-boot:run -Plocal-docker (default)
+mvn clean spring-boot:run -Pgerep-catamania -Dspring-boot.run.arguments="--jasypt.encryptor.password=MOT_DE_PASSE_CHIFFRAGE_A_DEMANDER"
+```
+
+## Chiffrer/Déchiffrer un nouveau password
+
+Chiffrer
+```bash
+mvn jasypt:encrypt-value -Djasypt.encryptor.password=MOT_DE_PASSE_CHIFFRAGE_A_DEMANDER -Djasypt.plugin.value=MOT_DE_PASSE_A_CHIFFRER
+```
+
+Déchiffrer
+```bash
+mvn jasypt:decrypt-value -Djasypt.encryptor.password=MOT_DE_PASSE_CHIFFRAGE_A_DEMANDER -Djasypt.plugin.value=CONTENU_DE_ENC
 ```
 
 Les DTO et interfaces de contrôleur sont (re)générés automatiquement dans

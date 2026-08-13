@@ -4,3 +4,15 @@ oracle:
     host: 192.168.18.108
     port: 1521
     service: GEREPD
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//192.168.18.108:1521/GEREPD
+    username: arthus
+    password: ENC(SyYGZCo2EmhaGoUMe909X2fqtLg8QyIVCMv8RFDeg2x6HwvW5c+7wELT4lJLjYWyi7paxWT+mXoGgdDe1Nf5mA==)
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    properties:
+      hibernate:
+        default_schema: ARTHUS
+        synonyms: true

@@ -27,9 +27,6 @@
         <api-package>com.arwc3.generated.api</api-package>
         <model-package>com.arwc3.generated.model</model-package>
         <default-profile>local-docker</default-profile>
-		<!-- default configuration -->
-		<arthus.profile.name>catamania</arthus.profile.name>
-		<arthus.profile.path>classpath:/profiles/gerep/</arthus.profile.path>
     </properties>
 
     <profiles>
@@ -38,7 +35,7 @@
             <id>local-docker</id>
             <properties>			
 				<arthus.profile.name>local-docker</arthus.profile.name>
-				<arthus.profile.path>classpath:/profiles/</arthus.profile.path>
+				<arthus.profile.path>classpath:/profiles</arthus.profile.path>
             </properties>
         </profile>
 		
@@ -47,7 +44,7 @@
             <id>gerep-catamania</id>
             <properties>
                 <arthus.profile.name>catamania</arthus.profile.name>
-                <arthus.profile.path>classpath:/profiles/gerep/</arthus.profile.path>
+                <arthus.profile.path>classpath:/profiles/gerep</arthus.profile.path>
             </properties>
         </profile>
         
@@ -55,7 +52,7 @@
             <id>gerep-dev</id>
             <properties>
                 <arthus.profile.name>dev</arthus.profile.name>
-                <arthus.profile.path>classpath:/profiles/gerep/</arthus.profile.path>
+                <arthus.profile.path>classpath:/profiles/gerep</arthus.profile.path>
             </properties>
         </profile>
         
@@ -63,7 +60,7 @@
             <id>gerep-pre</id>
             <properties>
                 <arthus.profile.name>pre</arthus.profile.name>
-                <arthus.profile.path>classpath:/profiles/gerep/</arthus.profile.path>
+                <arthus.profile.path>classpath:/profiles/gerep</arthus.profile.path>
             </properties>
         </profile>
         
@@ -71,7 +68,7 @@
             <id>gerep-prod</id>
             <properties>
                 <arthus.profile.name>prod</arthus.profile.name>
-                <arthus.profile.path>classpath:/profiles/gerep/</arthus.profile.path>
+                <arthus.profile.path>classpath:/profiles/gerep</arthus.profile.path>
             </properties>
         </profile>
         
@@ -79,7 +76,7 @@
             <id>gerep-qualif</id>
             <properties>
                 <arthus.profile.name>qualif</arthus.profile.name>
-                <arthus.profile.path>classpath:/profiles/gerep/</arthus.profile.path>
+                <arthus.profile.path>classpath:/profiles/gerep</arthus.profile.path>
             </properties>
         </profile>
         
@@ -87,7 +84,7 @@
             <id>gerep-recette1</id>
             <properties>
                 <arthus.profile.name>recette1</arthus.profile.name>
-                <arthus.profile.path>classpath:/profiles/gerep/</arthus.profile.path>
+                <arthus.profile.path>classpath:/profiles/gerep</arthus.profile.path>
             </properties>
         </profile>
 
@@ -95,7 +92,7 @@
             <id>gerep-recette2</id>
             <properties>
                 <arthus.profile.name>recette2</arthus.profile.name>
-                <arthus.profile.path>classpath:/profiles/gerep/</arthus.profile.path>
+                <arthus.profile.path>classpath:/profiles/gerep</arthus.profile.path>
             </properties>
         </profile>
 
@@ -104,7 +101,7 @@
             <id>carco-catamania</id>
             <properties>
                 <arthus.profile.name>catamania</arthus.profile.name>
-                <arthus.profile.path>classpath:/profiles/carco/</arthus.profile.path>
+                <arthus.profile.path>classpath:/profiles/carco</arthus.profile.path>
             </properties>
         </profile>
         
@@ -112,7 +109,7 @@
             <id>carco-pre</id>
             <properties>
                 <arthus.profile.name>pre</arthus.profile.name>
-                <arthus.profile.path>classpath:/profiles/carco/</arthus.profile.path>
+                <arthus.profile.path>classpath:/profiles/carco</arthus.profile.path>
             </properties>
         </profile>
         
@@ -120,7 +117,7 @@
             <id>carco-prod</id>
             <properties>
                 <arthus.profile.name>prod</arthus.profile.name>
-                <arthus.profile.path>classpath:/profiles/carco/</arthus.profile.path>
+                <arthus.profile.path>classpath:/profiles/carco</arthus.profile.path>
             </properties>
         </profile>
         
@@ -128,7 +125,7 @@
             <id>carco-recette</id>
             <properties>
                 <arthus.profile.name>recette</arthus.profile.name>
-                <arthus.profile.path>classpath:/profiles/carco/</arthus.profile.path>
+                <arthus.profile.path>classpath:/profiles/carco</arthus.profile.path>
             </properties>
         </profile>
         
@@ -137,7 +134,7 @@
             <id>smi-catamania</id>
             <properties>
                 <arthus.profile.name>catamania</arthus.profile.name>
-                <arthus.profile.path>classpath:/profiles/smi/</arthus.profile.path>
+                <arthus.profile.path>classpath:/profiles/smi</arthus.profile.path>
             </properties>
         </profile>
 
@@ -200,6 +197,13 @@
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
             <version>2.6.0</version>
         </dependency>
+		
+		<!-- ENCRYPT PWD -->
+		<dependency>
+			<groupId>com.github.ulisesbocchio</groupId>
+			<artifactId>jasypt-spring-boot-starter</artifactId>
+			<version>3.0.5</version>
+		</dependency>
 
         <!-- MapStruct -->
         <dependency>
@@ -243,6 +247,13 @@
 			</resource>
 		</resources>
         <plugins>
+            <!-- Jasypt : chiffrement/déchiffrement des mots de passe -->
+            <plugin>
+                <groupId>com.github.ulisesbocchio</groupId>
+                <artifactId>jasypt-maven-plugin</artifactId>
+                <version>3.0.5</version>
+            </plugin>
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

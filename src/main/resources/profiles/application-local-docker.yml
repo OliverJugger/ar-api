@@ -9,7 +9,7 @@ spring:
   datasource:
     url: jdbc:oracle:thin:@//localhost:1521/GEREP19CL
     username: system
-    password: local_oracle_password
+    password: ENC(VciztaPiWbe5z+IyVX85EeX1ZKZ3lTq29ID4eii9JDP1z7GpabOwC4OyukVgRIPeC4msRP2SUfcA6U0hqH/n4Q==)
     driver-class-name: oracle.jdbc.OracleDriver
   jpa:
     properties:
@@ -19,4 +19,4 @@ spring:
   liquibase:
     url: jdbc:oracle:thin:@//localhost:1521/GEREP19CL?internal_logon=sysdba
     user: sys
-    password: local_oracle_password
+    password: ENC(VciztaPiWbe5z+IyVX85EeX1ZKZ3lTq29ID4eii9JDP1z7GpabOwC4OyukVgRIPeC4msRP2SUfcA6U0hqH/n4Q==)
