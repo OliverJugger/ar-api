@@ -36,6 +36,7 @@
             <properties>			
 				<arthus.profile.name>local-docker</arthus.profile.name>
 				<arthus.profile.path>classpath:/profiles</arthus.profile.path>
+				<default-profile>local-docker</default-profile>
             </properties>
         </profile>
 		
@@ -45,6 +46,7 @@
             <properties>
                 <arthus.profile.name>catamania</arthus.profile.name>
                 <arthus.profile.path>classpath:/profiles/gerep</arthus.profile.path>
+                <default-profile>catamania</default-profile>
             </properties>
         </profile>
         
@@ -53,6 +55,7 @@
             <properties>
                 <arthus.profile.name>dev</arthus.profile.name>
                 <arthus.profile.path>classpath:/profiles/gerep</arthus.profile.path>
+                <default-profile>dev</default-profile>
             </properties>
         </profile>
         
@@ -61,6 +64,7 @@
             <properties>
                 <arthus.profile.name>pre</arthus.profile.name>
                 <arthus.profile.path>classpath:/profiles/gerep</arthus.profile.path>
+                <default-profile>pre</default-profile>
             </properties>
         </profile>
         
@@ -69,6 +73,7 @@
             <properties>
                 <arthus.profile.name>prod</arthus.profile.name>
                 <arthus.profile.path>classpath:/profiles/gerep</arthus.profile.path>
+                <default-profile>prod</default-profile>
             </properties>
         </profile>
         
@@ -77,6 +82,7 @@
             <properties>
                 <arthus.profile.name>qualif</arthus.profile.name>
                 <arthus.profile.path>classpath:/profiles/gerep</arthus.profile.path>
+                <default-profile>qualif</default-profile>
             </properties>
         </profile>
         
@@ -85,6 +91,7 @@
             <properties>
                 <arthus.profile.name>recette1</arthus.profile.name>
                 <arthus.profile.path>classpath:/profiles/gerep</arthus.profile.path>
+                <default-profile>recette1</default-profile>
             </properties>
         </profile>
 
@@ -93,6 +100,7 @@
             <properties>
                 <arthus.profile.name>recette2</arthus.profile.name>
                 <arthus.profile.path>classpath:/profiles/gerep</arthus.profile.path>
+                <default-profile>recette2</default-profile>
             </properties>
         </profile>
 
@@ -102,6 +110,7 @@
             <properties>
                 <arthus.profile.name>catamania</arthus.profile.name>
                 <arthus.profile.path>classpath:/profiles/carco</arthus.profile.path>
+                <default-profile>catamania</default-profile>
             </properties>
         </profile>
         
@@ -110,6 +119,7 @@
             <properties>
                 <arthus.profile.name>pre</arthus.profile.name>
                 <arthus.profile.path>classpath:/profiles/carco</arthus.profile.path>
+                <default-profile>pre</default-profile>
             </properties>
         </profile>
         
@@ -118,6 +128,7 @@
             <properties>
                 <arthus.profile.name>prod</arthus.profile.name>
                 <arthus.profile.path>classpath:/profiles/carco</arthus.profile.path>
+                <default-profile>prod</default-profile>
             </properties>
         </profile>
         
@@ -126,6 +137,7 @@
             <properties>
                 <arthus.profile.name>recette</arthus.profile.name>
                 <arthus.profile.path>classpath:/profiles/carco</arthus.profile.path>
+                <default-profile>recette</default-profile>
             </properties>
         </profile>
         
@@ -135,6 +147,7 @@
             <properties>
                 <arthus.profile.name>catamania</arthus.profile.name>
                 <arthus.profile.path>classpath:/profiles/smi</arthus.profile.path>
+                <default-profile>catamania</default-profile>
             </properties>
         </profile>
 
