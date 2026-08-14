@@ -14,5 +14,5 @@ public class OracleJdbcProperties {
     private String urlPrefix;
     private String host;
     private String port;
-    private String base;
+    private String service;
 }

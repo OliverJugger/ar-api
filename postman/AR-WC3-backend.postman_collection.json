@@ -1,14 +1,17 @@
 {
   "info": {
     "name": "AR-WC3 Backend",
-    "description": "Exemples d'appels pour l'API AR-WC3 Backend (Spring Boot), sécurisée en HTTP Basic Auth.",
+    "description": "Exemples d'appels pour l'API AR-WC3 Backend (Spring Boot), sécurisée par JWT.\n\nUtilisation : lancer d'abord 'Auth > Login', qui enregistre automatiquement le jeton dans la variable de collection {{accessToken}}. Toutes les autres requêtes l'envoient ensuite via l'en-tête Authorization: Bearer.\n\nLe jeton expire au bout de 15 minutes : relancer Login si les appels repassent en 401.\n\nAttention : l'authentification est déléguée à Oracle (ouverture d'une connexion JDBC avec les identifiants saisis). username/password doivent donc correspondre à un compte Oracle existant sur la base ciblée.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "auth": {
-    "type": "basic",
-    "basic": [
-      { "key": "username", "value": "{{username}}", "type": "string" },
-      { "key": "password", "value": "{{password}}", "type": "string" }
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{accessToken}}",
+        "type": "string"
+      }
     ]
   },
   "item": [
@@ -24,22 +27,73 @@
                 "type": "text/javascript",
                 "exec": [
                   "pm.test('Statut 200', () => pm.response.to.have.status(200));",
-                  "pm.test('success = true', () => pm.response.json().success === true);"
+                  "",
+                  "if (pm.response.code !== 200) { return; }",
+                  "",
+                  "const body = pm.response.json();",
+                  "",
+                  "pm.test('success = true', () => body.success === true);",
+                  "pm.test('accessToken present', () => typeof body.accessToken === 'string' && body.accessToken.length > 0);",
+                  "pm.test('tokenType = Bearer', () => body.tokenType === 'Bearer');",
+                  "pm.test('expiresIn = 900 s (15 min)', () => body.expiresIn === 900);",
+                  "pm.test('profil utilisateur renvoye', () => !!body.user && !!body.user.username);",
+                  "",
+                  "// Le jeton est stocke en variable de collection : les requetes suivantes",
+                  "// l'utilisent automatiquement via l'auth Bearer heritee.",
+                  "pm.collectionVariables.set('accessToken', body.accessToken);",
+                  "",
+                  "// Decodage du payload pour verifier la duree de vie reelle du jeton.",
+                  "try {",
+                  "    const parts = body.accessToken.split('.');",
+                  "    pm.test('JWT bien forme (3 parties)', () => parts.length === 3);",
+                  "",
+                  "    const payload = JSON.parse(atob(parts[1].replace(/-/g, '+').replace(/_/g, '/')));",
+                  "    pm.test('exp - iat = 900 s', () => (payload.exp - payload.iat) === 900);",
+                  "",
+                  "    console.log('sub         :', payload.sub);",
+                  "    console.log('displayName :', payload.displayName);",
+                  "    console.log('expire le   :', new Date(payload.exp * 1000).toISOString());",
+                  "} catch (e) {",
+                  "    console.log('Decodage du payload impossible :', e.message);",
+                  "}"
                 ]
               }
             }
           ],
           "request": {
+            "auth": {
+              "type": "noauth"
+            },
             "method": "POST",
             "header": [
-              { "key": "Accept", "value": "application/json" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
             ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"{{username}}\",\n  \"password\": \"{{password}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": {
               "raw": "{{baseUrl}}/login",
-              "host": ["{{baseUrl}}"],
-              "path": ["login"]
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "login"
+              ]
             },
-            "description": "Les identifiants sont envoyés via l'en-tête HTTP Basic (configuré au niveau de la collection/environnement), pas dans le corps de la requête."
+            "description": "Seule route publique du contrat (security: [] dans openapi.yaml). Les identifiants passent dans le corps de la requête, plus dans un en-tête Basic.\n\nLe script de test enregistre accessToken dans les variables de collection."
           },
           "response": []
         },
@@ -52,29 +106,95 @@
                 "type": "text/javascript",
                 "exec": [
                   "pm.test('Statut 401', () => pm.response.to.have.status(401));",
-                  "pm.test(\"message d'erreur présent\", () => pm.response.json().message !== undefined);"
+                  "pm.test(\"message d'erreur present\", () => pm.response.json().message !== undefined);"
                 ]
               }
             }
           ],
           "request": {
             "auth": {
-              "type": "basic",
-              "basic": [
-                { "key": "username", "value": "{{username}}", "type": "string" },
-                { "key": "password", "value": "mauvais-mot-de-passe", "type": "string" }
-              ]
+              "type": "noauth"
             },
             "method": "POST",
             "header": [
-              { "key": "Accept", "value": "application/json" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
             ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"{{username}}\",\n  \"password\": \"mauvais-mot-de-passe\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": {
               "raw": "{{baseUrl}}/login",
-              "host": ["{{baseUrl}}"],
-              "path": ["login"]
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "login"
+              ]
             },
-            "description": "Démontre la réponse 401 (ErrorResponse) renvoyée par le JsonAuthenticationEntryPoint en cas d'échec d'authentification."
+            "description": "Oracle refuse la connexion JDBC, AuthService lève une BadCredentialsException, AuthExceptionHandler la traduit en 401 + ErrorResponse."
+          },
+          "response": []
+        },
+        {
+          "name": "Login (password manquant -> 400)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Statut 400', () => pm.response.to.have.status(400));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"{{username}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/login",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "login"
+              ]
+            },
+            "description": "password est requis dans le contrat : la @Valid du contrôleur généré rejette la requête avant d'atteindre le service."
           },
           "response": []
         }
@@ -101,12 +221,123 @@
           "request": {
             "method": "GET",
             "header": [
-              { "key": "Accept", "value": "application/json" }
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
             ],
             "url": {
               "raw": "{{baseUrl}}/statistics",
-              "host": ["{{baseUrl}}"],
-              "path": ["statistics"]
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "statistics"
+              ]
+            },
+            "description": "Hérite de l'auth Bearer de la collection : JwtAuthenticationFilter valide {{accessToken}} et peuple le SecurityContext."
+          },
+          "response": []
+        },
+        {
+          "name": "Statistics sans jeton -> 401",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Statut 401', () => pm.response.to.have.status(401));",
+                  "pm.test(\"message d'erreur present\", () => pm.response.json().message !== undefined);"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/statistics",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "statistics"
+              ]
+            },
+            "description": "Vérifie que l'authenticationEntryPoint de SecurityConfig répond un 401 JSON quand l'en-tête Authorization est absent."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Dossier sinistre",
+      "item": [
+        {
+          "name": "Recherche paginée",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Statut 200', () => pm.response.to.have.status(200));",
+                  "const body = pm.response.json();",
+                  "pm.test('page de resultats', () => Array.isArray(body.data) && typeof body.totalCount === 'number');"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"finNull\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/prestations-prevoyance/dossier-sinistre/recherche?page=0&size=20",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "prestations-prevoyance",
+                "dossier-sinistre",
+                "recherche"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
             }
           },
           "response": []
@@ -115,8 +346,21 @@
     }
   ],
   "variable": [
-    { "key": "baseUrl", "value": "http://localhost:8080" },
-    { "key": "username", "value": "olivier.mignot83" },
-    { "key": "password", "value": "password123" }
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    },
+    {
+      "key": "username",
+      "value": "system"
+    },
+    {
+      "key": "password",
+      "value": ""
+    },
+    {
+      "key": "accessToken",
+      "value": ""
+    }
   ]
 }

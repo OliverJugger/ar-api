@@ -5,12 +5,22 @@ info:
     Contrat OpenAPI de l'application AR-WC3. Ce contrat est la source de
     vérité pour le client HTTP généré côté Angular (voir `ng-openapi-gen.json`)
     ainsi que pour le serveur mocké Mockoon (voir `mockoon/environment.json`).
+
+    Authentification : JWT (Bearer). `/login` est la seule route publique ;
+    elle reçoit les identifiants dans le corps de la requête et retourne un
+    jeton signé à durée de vie courte (15 min) à replacer dans l'en-tête
+    `Authorization: Bearer <token>` de toutes les autres requêtes.
   version: 1.0.0
 servers:
   - url: http://localhost:3001
     description: Serveur mocké (Mockoon)
   - url: http://localhost:8080
     description: Backend Spring Boot (implémentation réelle)
+
+# Sécurité appliquée par défaut à toutes les opérations.
+# Une opération peut l'annuler avec `security: []` (cas de /login).
+security:
+  - bearerAuth: []
 
 tags:
   - name: auth
@@ -25,11 +35,16 @@ paths:
     post:
       tags: [auth]
       summary: >
-        Authentifie un utilisateur via HTTP Basic Auth (en-tête
-        `Authorization: Basic base64(username:password)`) et retourne son profil
+        Authentifie un utilisateur à partir de ses identifiants et retourne
+        un jeton JWT ainsi que son profil
       operationId: login
-      security:
-        - basicAuth: []
+      security: []          # route publique : pas de jeton requis
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
       responses:
         '200':
           description: Authentification réussie
@@ -50,7 +65,7 @@ paths:
       summary: Recherche paginée des dossiers sinistre
       operationId: rechercherDossiersSinistre
       security:
-        - basicAuth: []
+        - bearerAuth: []
       parameters:
         - name: page
           in: query
@@ -81,6 +96,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PageDossierSinistre'
+        '401':
+          description: Jeton absent, invalide ou expiré
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
 
   /statistics:
     get:
@@ -88,7 +109,7 @@ paths:
       summary: Récupère les statistiques utilisées par les 4 graphiques du tableau de bord
       operationId: getStatistics
       security:
-        - basicAuth: []
+        - bearerAuth: []
       responses:
         '200':
           description: Statistiques du tableau de bord
@@ -97,7 +118,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/StatisticsResponse'
         '401':
-          description: Identifiants invalides
+          description: Jeton absent, invalide ou expiré
           content:
             application/json:
               schema:
@@ -105,12 +126,14 @@ paths:
 
 components:
   securitySchemes:
-    basicAuth:
+    bearerAuth:
       type: http
-      scheme: basic
+      scheme: bearer
+      bearerFormat: JWT
       description: >
-        HTTP Basic Auth : en-tête `Authorization: Basic base64(username:password)`
-        envoyé sur chaque requête.
+        Jeton JWT signé (HS256) obtenu via `POST /login`, à envoyer sur chaque
+        requête dans l'en-tête `Authorization: Bearer <token>`.
+        Durée de validité : 15 minutes.
 
   schemas:
     PaginatedResponse:
@@ -166,15 +189,46 @@ components:
           format: date
           description: Borne supérieure de la période de fin
 
+    LoginRequest:
+      type: object
+      required:
+        - username
+        - password
+      properties:
+        username:
+          type: string
+          example: olivier.mignot83
+        password:
+          type: string
+          format: password
+          example: changeit
+
     LoginResponse:
       type: object
       required:
         - success
+        - accessToken
+        - tokenType
+        - expiresIn
         - user
       properties:
         success:
           type: boolean
           example: true
+        accessToken:
+          type: string
+          description: Jeton JWT signé
+          example: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvbGl2aWVyIn0.xxxxx
+        tokenType:
+          type: string
+          description: Schéma à utiliser dans l'en-tête Authorization
+          default: Bearer
+          example: Bearer
+        expiresIn:
+          type: integer
+          format: int64
+          description: Durée de validité restante du jeton, en secondes
+          example: 900
         user:
           $ref: '#/components/schemas/CurrentUser'
 

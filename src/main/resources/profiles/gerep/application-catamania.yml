@@ -6,7 +6,7 @@ oracle:
   jdbc:
     host: SRVVBDDARTH01
     port: 1551
-    base: GEREP19C
+    service: GEREP19C
 
 spring:
   datasource:

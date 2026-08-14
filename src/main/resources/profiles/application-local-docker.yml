@@ -21,3 +21,15 @@ spring:
     url: jdbc:oracle:thin:@//localhost:1521/GEREP19CL?internal_logon=sysdba
     user: sys
     password: ENC(VciztaPiWbe5z+IyVX85EeX1ZKZ3lTq29ID4eii9JDP1z7GpabOwC4OyukVgRIPeC4msRP2SUfcA6U0hqH/n4Q==)
+ 
+
+# PT30S	30 secondes
+# PT5M	5 minutes
+# P1D	1 jour 
+# PT1H30M 1 heure 30
+# P5M	5 mois
+arthus:
+  security:
+    jwt:
+      secret: dev-only-secret-a-remplacer-32-octets-minimum
+      validity: P1D

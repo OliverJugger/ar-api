@@ -179,7 +179,7 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- Sécurité (HTTP Basic) -->
+        <!-- Sécurité (JWT) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
@@ -203,6 +203,27 @@
 			<groupId>com.github.ulisesbocchio</groupId>
 			<artifactId>jasypt-spring-boot-starter</artifactId>
 			<version>3.0.5</version>
+		</dependency>
+		
+		<!-- AUTHENT JWT -->
+		<dependency>
+		  <groupId>io.jsonwebtoken</groupId>
+		  <artifactId>jjwt-api</artifactId>
+		  <version>0.12.6</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>io.jsonwebtoken</groupId>
+		  <artifactId>jjwt-impl</artifactId>
+		  <version>0.12.6</version>
+		  <scope>runtime</scope>
+		</dependency>
+		
+		<dependency>
+		  <groupId>io.jsonwebtoken</groupId>
+		  <artifactId>jjwt-jackson</artifactId>
+		  <version>0.12.6</version>
+		  <scope>runtime</scope>
 		</dependency>
 
         <!-- MapStruct -->
@@ -230,7 +251,7 @@
 			<dependency>
 				<groupId>org.projectlombok</groupId>
 				<artifactId>lombok</artifactId>
-				<version>1.18.34</version>
+				<version>${lombok.version}</version>
 				<scope>provided</scope>
 			</dependency>
 		</dependencies>
@@ -264,22 +285,30 @@
                 </configuration>
             </plugin>
 
+            <!-- Une seule declaration du compiler-plugin : deux blocs pour le
+                 meme plugin dans <plugins> sont fusionnes de maniere imprevisible. -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
                 <configuration>
-                    <source>21</source>
-                    <target>21</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                     <annotationProcessorPaths>
-                        <path>
-                            <groupId>org.mapstruct</groupId>
-                            <artifactId>mapstruct-processor</artifactId>
-                            <version>${mapstruct.version}</version>
-                        </path>
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
                             <version>${lombok.version}</version>
+                        </path>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok-mapstruct-binding</artifactId>
+                            <version>0.2.0</version>
+                        </path>
+                        <path>
+                            <groupId>org.mapstruct</groupId>
+                            <artifactId>mapstruct-processor</artifactId>
+                            <version>${mapstruct.version}</version>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
@@ -328,30 +357,6 @@
                      automatiquement ajoutées au classpath de compilation. -->
             </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.13.0</version>
-                <configuration>
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                            <version>${lombok.version}</version>
-                        </path>
-                        <path>
-                            <groupId>org.mapstruct</groupId>
-                            <artifactId>mapstruct-processor</artifactId>
-                            <version>${mapstruct.version}</version>
-                        </path>
-                        <path>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok-mapstruct-binding</artifactId>
-                            <version>0.2.0</version>
-                        </path>
-                    </annotationProcessorPaths>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>

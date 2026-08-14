@@ -1,61 +1,85 @@
 package com.arwc3.services;
 
-import com.arwc3.config.OracleJdbcProperties;
-import com.arwc3.generated.model.LoginResponseDTO;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.stereotype.Service;
-import lombok.RequiredArgsConstructor;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
+import com.arwc3.config.OracleJdbcProperties;
+import com.arwc3.generated.model.CurrentUserDTO;
+import com.arwc3.generated.model.LoginResponseDTO;
+
+import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.stereotype.Service;
+import lombok.RequiredArgsConstructor;
+
+/**
+ * Authentification déléguée à Oracle : on tente d'ouvrir une connexion JDBC
+ * avec les identifiants saisis. Si Oracle les accepte, on émet un JWT.
+ */
 @Service
 @RequiredArgsConstructor
 public class AuthService {
 
+    private static final String TOKEN_TYPE = "Bearer";
+
+    private final JwtService jwtService;
     private final OracleJdbcProperties oracleJdbcProperties;
 
     /**
-     * L'authentification HTTP Basic est déjà validée par Spring Security avant
-     * d'atteindre ce service : on se contente ici de renvoyer le profil de
-     * l'utilisateur courant.
+     * Vérifie les identifiants auprès d'Oracle et produit un jeton de 15 minutes.
+     *
+     * @throws BadCredentialsException si Oracle refuse la connexion
      */
-    public LoginResponseDTO login() {
-        // Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        // AppUser appUser = appUserRepository.findByUsername(authentication.getName())
-        //         .orElseThrow(() -> new IllegalStateException(
-        //                 "Utilisateur authentifié introuvable : " + authentication.getName()));
+    public LoginResponseDTO authenticate(String username, String password) {
 
-        // LoginResponse response = new LoginResponse();
-        // response.setSuccess(true);
-        // response.setUser(userMapper.toCurrentUser(appUser));
-        // return response;
-        
-        boolean test1 = this.authenticate("arthus", "iFUo9z6MpKRt7YCk_4No");
-        System.out.println(test1);
-        boolean test2 = this.authenticate("REC_ADM", "Arthus!12345678");
-        System.out.println(test2);
-        return null;
+        String url = oracleJdbcProperties.getUrlPrefix() + "//"
+                + oracleJdbcProperties.getHost() + ":"
+                + oracleJdbcProperties.getPort() + "/"
+                + oracleJdbcProperties.getService();
+
+        try (Connection connection = DriverManager.getConnection(url, username, password)) {
+            CurrentUserDTO user = toCurrentUser(username);
+            String token = jwtService.generateToken(user.getUsername(), user.getDisplayName());
+
+            return new LoginResponseDTO(
+                    true,
+                    token,
+                    TOKEN_TYPE,
+                    jwtService.getValiditySeconds(),
+                    user);
+
+        } catch (SQLException e) {
+            throw new BadCredentialsException("Identifiants invalides", e);
+        }
     }
 
-    public boolean authenticate (String username, String password) {
-        String url = oracleJdbcProperties.getUrlPrefix() + "//"
-            + oracleJdbcProperties.getHost() + ":"
-            + oracleJdbcProperties.getPort() + "/"
-            + oracleJdbcProperties.getBase();
+    /**
+     * Construit le profil affiché à partir du login Oracle.
+     *
+     * TODO : remplacer par une lecture de la table utilisateurs ARTHUS
+     * (nom, prénom, service...) quand elle sera branchée.
+     */
+    private CurrentUserDTO toCurrentUser(String username) {
+        String[] parts = username.split("[._-]");
 
-        System.out.println(url);
-        try (Connection conn = DriverManager.getConnection(url, username, password)) {
-            return true;
-        } catch(SQLException e) {
-            return false;
-            // if(e.getErrorCode() == 1017) {
-            //     return false;
-            // }
-            // throw new RuntimeException("Erreur de connexion à la base Oracle", e);
+        String displayName = Arrays.stream(parts)
+                .map(part -> part.replaceAll("\\d+$", ""))
+                .filter(part -> !part.isEmpty())
+                .map(part -> Character.toUpperCase(part.charAt(0)) + part.substring(1).toLowerCase())
+                .collect(Collectors.joining(" "));
+
+        String initials = Arrays.stream(parts)
+                .filter(part -> !part.isEmpty())
+                .limit(2)
+                .map(part -> String.valueOf(Character.toUpperCase(part.charAt(0))))
+                .collect(Collectors.joining());
+
+        if (displayName.isEmpty()) {
+            displayName = username;
         }
 
+        return new CurrentUserDTO(username, displayName).avatarInitials(initials);
     }
 }
