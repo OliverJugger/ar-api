@@ -19,3 +19,14 @@ spring:
       hibernate:
         default_schema: ARTHUS
         synonyms: true
+        
+# PT30S	30 secondes
+# PT5M	5 minutes
+# P1D	1 jour 
+# PT1H30M 1 heure 30
+# P5M	5 mois
+arthus:
+  security:
+    jwt:
+      secret: dev-only-secret-a-remplacer-32-octets-minimum
+      validity: P1D

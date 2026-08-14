@@ -22,7 +22,6 @@ spring:
     user: sys
     password: ENC(VciztaPiWbe5z+IyVX85EeX1ZKZ3lTq29ID4eii9JDP1z7GpabOwC4OyukVgRIPeC4msRP2SUfcA6U0hqH/n4Q==)
  
-
 # PT30S	30 secondes
 # PT5M	5 minutes
 # P1D	1 jour 
