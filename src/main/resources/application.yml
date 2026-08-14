@@ -25,6 +25,16 @@ spring:
     enabled: false
     change-log: classpath:db/changelog/db.changelog-master.xml
 
+# PT30S	30 secondes
+# PT5M	5 minutes
+# P1D	1 jour 
+# PT1H30M 1 heure 30
+# P5M	5 mois
+arthus:
+  security:
+    jwt:
+      validity: P1D
+      
 jasypt:
   encryptor:
     algorithm: PBEWITHHMACSHA512ANDAES_256

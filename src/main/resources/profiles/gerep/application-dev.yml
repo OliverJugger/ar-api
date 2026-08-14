@@ -16,3 +16,8 @@ spring:
       hibernate:
         default_schema: ARTHUS
         synonyms: true
+        
+arthus:
+  security:
+    jwt:
+      secret: ENC(0+NgA96dmvwJ0aXPrGexiCskYtNxqQ+HixVuUjOw09gj47Bs0eO3hYokdLNJGEin0pIObIK/aVtBfdp9I5+tgXssVsnU5vN4GJkiPeSm9vU=)
