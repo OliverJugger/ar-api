@@ -1,5 +1,0 @@
--- Synonyme prive : ARTHUS.LIMOLD
--- Cible      : ARTHUS.LIMITE
--- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
-
-CREATE SYNONYM ARTHUS.LIMOLD FOR ARTHUS.LIMITE;

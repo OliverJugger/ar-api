@@ -1,5 +1,0 @@
--- Synonyme prive : ARTHUS.PRDS
--- Cible      : ARTHUS.PERIODE
--- Source     : export ALL_SYNONYMS (2026-08-12 11:04)
-
-CREATE SYNONYM ARTHUS.PRDS FOR ARTHUS.PERIODE;
