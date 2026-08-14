@@ -10,21 +10,29 @@ spring:
     baseline-version: 1
   cache:
     type: none
-
+    
   jpa:
     database-platform: org.hibernate.dialect.OracleDialect
     hibernate:
       ddl-auto: validate
     open-in-view: false
-
     show-sql: true
     properties:
       hibernate:
         format_sql: true
 
   liquibase:
-    enabled: true
+    enabled: false
     change-log: classpath:db/changelog/db.changelog-master.xml
+
+jasypt:
+  encryptor:
+    algorithm: PBEWITHHMACSHA512ANDAES_256
+    key-obtention-iterations: 1000
+    pool-size: 1
+    salt-generator-classname: org.jasypt.salt.RandomSaltGenerator
+    iv-generator-classname: org.jasypt.iv.RandomIvGenerator
+    string-output-type: base64
 
 springdoc:
   swagger-ui:
@@ -32,8 +40,7 @@ springdoc:
 
 oracle:
   jdbc:
-    url-prefix:
-      jdbc:oracle:thin:@
+    url-prefix: "jdbc:oracle:thin:@"
 
 server:
   port: 8080
@@ -41,3 +48,5 @@ server:
 logging:
   level:
     com.arwc3: DEBUG
+    # provider-name / provider-class-name n'ont pas de valeur par defaut assignable (null)
+    com.ulisesbocchio.jasyptspringboot.configuration.StringEncryptorBuilder: WARN
