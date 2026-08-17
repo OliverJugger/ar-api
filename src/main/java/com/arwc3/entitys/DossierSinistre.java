@@ -1,12 +1,11 @@
 package com.arwc3.entitys;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "DOSSIER_SINISTRE", schema = "ARTHUS")
@@ -25,7 +24,16 @@ public class DossierSinistre {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "NUMINDIV", referencedColumnName = "NUMINDIV")
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
     private Individu individu;
+
+    /* --- AJOUT : lien inverse vers les sinistres prévoyance --- */
+    @OneToMany(mappedBy = "dossierSinistre", fetch = FetchType.LAZY)
+    @Builder.Default
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    private List<SntrPrev> sinistres = new ArrayList<>();
 
     @Column(name = "ANTERIEUR", length = 1)
     private String anterieur;

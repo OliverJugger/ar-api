@@ -3,10 +3,7 @@ package com.arwc3.entitys;
 import java.util.List;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -25,6 +22,8 @@ public class Individu {
 
     @OneToMany(mappedBy = "individu", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     @Builder.Default
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
     private List<DossierSinistre> dossiers = new ArrayList<>();
 
     @Column(name = "TYPE")
