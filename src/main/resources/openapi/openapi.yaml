@@ -28,7 +28,7 @@ tags:
   - name: statistics
     description: Statistiques du tableau de bord
   - name: dossier-sinistre
-    description : Gestion des dossiers sinistre
+    description: Gestion des dossiers sinistre
 
 paths:
   /login:
@@ -59,6 +59,60 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
 
+  /prestations-prevoyance/sinistre/{idSinistre}:
+    get:
+      tags: [sinistre]
+      summary: Détail d'un sinistre
+      operationId: getSinistreDetails
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: idSinistre
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Sinistre détaillé
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SinistreDetails'
+        '401':
+          description: Jeton absent, invalide ou expiré
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /prestations-prevoyance/dossier-sinistre/{idDossier}:
+    get:
+      tags: [dossier-sinistre]
+      summary: Détail d'un dossier sinistre
+      operationId: getDossierSinistreDetails
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: idDossier
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Dossier sinistre détaillé
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DossierSinistreDetails'
+        '401':
+          description: Jeton absent, invalide ou expiré
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
   /prestations-prevoyance/dossier-sinistre/recherche:
     post:
       tags: [dossier-sinistre]
@@ -67,22 +121,8 @@ paths:
       security:
         - bearerAuth: []
       parameters:
-        - name: page
-          in: query
-          required: false
-          schema:
-            type: integer
-            minimum: 0
-            default: 0
-          description: Numéro de la page (commence à 0)
-        - name: size
-          in: query
-          required: false
-          schema:
-            type: integer
-            minimum: 1
-            default: 20
-          description: Nombre d'éléments par page
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/size'
       requestBody:
         required: false
         content:
@@ -125,6 +165,35 @@ paths:
                 $ref: '#/components/schemas/ErrorResponse'
 
 components:
+  parameters:
+    id:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: integer
+        format: int64
+
+    page:
+      name: page
+      in: query
+      required: false
+      schema:
+        type: integer
+        minimum: 0
+        default: 0
+      description: Numéro de la page (commence à 0)
+
+    size:
+      name: size
+      in: query
+      required: false
+      schema:
+        type: integer
+        minimum: 1
+        default: 20
+      description: Nombre d'éléments par page
+
   securitySchemes:
     bearerAuth:
       type: http
@@ -136,9 +205,60 @@ components:
         Durée de validité : 15 minutes.
 
   schemas:
+  
+    SexeEnum:
+      type: string
+      description: Libellés du mnémonique SEXE (2 valeurs)
+      x-legacy-mnemo: 'SEXE'
+      enum: ['M', 'MME']
+
+
+    MotifFinEnum:
+      type: string
+      description: Libellés du mnémonique HISTO_MOTI (31 valeurs)
+      x-legacy-mnemo: 'HISTO_MOTI'
+      enum: ['CREATION', 'REPRISE_TRAVAIL', 'ABSENCE_JUSTIFICATIFS', 'DECES', 'RETRAITE', 'DECISION_ASSUREUR', 'MISE_INVALIDITE', 'CONGE_MATERNITE', 'CONGE_PARENTAL', 'ERREUR_SAISIE', 'DECISION_SOCIETE', 'ARRET_INFERIEUR_A_FRANCHISE', 'FIN_INDEMNISATION_IJSS', 'PAIEMENT_DOSSIER', 'CHANGEMENT_PATHOLOGIE', 'MI_TEMPS_THERAP_NON_INDEMNISE', 'CONTRAT_RESILIE', 'PRESTATION_NULLE', 'RECHUTE', 'DOSSIER_CONTROLE', 'REOUVERTURE_DOSSIER', 'PLUS_COURTIER', 'RUPTURE_CONTRAT_TRAVAIL', 'ASSURE_E_ANI', 'AUTRE', 'DEMANDE_EXPERTISE_MC', 'DEMANDE_EXPERTISE_ASSUREUR', 'RETOUR_EXPERTISE_MC', 'RETOUR_EXPERTISE_ASSUREUR', 'SUIVI_ASSUREUR', 'CREATION_VIA_EXTRANET']
+
+    RisqueEnum:
+      type: string
+      description: Libellés du mnémonique RISQ (9 valeurs)
+      x-legacy-mnemo: 'RISQ'
+      enum: ['FRAIS_SANTE', 'DECES', 'INVALIDITE', 'INCAPACITE_TRAVAIL', 'RENTE_EDUCATION', 'RENTE_CONJOINT', 'DECES_ACCIDENTEL', 'ASSISTANCE', 'INDIVIDUELLE_ACCIDENT']
+    
+    ProfilUtilisateurEnum:
+      type: string
+      description: Libellés de la table LBLEPRFL
+      x-legacy-name: 'LBLEPRFL'
+      enum: ['CONSULTATION_ET_PEC', 'RESPONSABLE_PREVOYANCE', 'ADJOINT', 'GESTIONNAIRE_SUPPORT', 'GESTIONNAIRE_AFFILIATIONS', 'CONSULTATION', 'GESTIONNAIRE_PREVOYANCE', 'ADMINISTRATEUR', 'NON_UTILISABLE', 'GESTIONNAIRE_COTISATIONS', 'COMPTABILITE', 'GESTIONNAIRE_DECOMPTEUR', 'CONTROLE_PRESTATIONS', 'PERSONNEL_SORTI', 'PLATEFORME_TELEPHONIQUE', 'FRONT_OFFICE', 'PARAMETRAGE', 'APPORTEUR']
+    
+    EtatSinistrePrevoyanceEnum:
+      type: string
+      description: Libellés du mnémonique HISTO_SITU (2 valeurs)
+      x-legacy-mnemo: 'HISTO_SITU'
+      x-legacy-column: 'HISTO_SNTR_PREV.ETAT'
+      enum: ['EN_COURS', 'FERME']
+
+    TypeCorrespondantEnum:
+      type: string
+      description: >-
+        Type de la correspondance (= nature côté back)
+        Qualité du correspondant vis-à-vis de l'objet visé (8 valeurs).
+        Portée par CORRESPONDANT.NAT_CORRES et non par CORRESPONDANT.TYPE_CORRES.
+      x-legacy-mnemo: 'NAT_CORRES'
+      x-legacy-column: 'CORRESPONDANT.NAT_CORRES'
+      enum: ['SOUSCRIPTEUR', 'ASSUREUR', 'ASSURE', 'BENEFICIAIRE', 'TUTEUR', 'MEDECIN', 'TIERS', 'TRESOR_PUBLIC']
+    
+    TypeCalculEnum:
+      type: string
+      description: >-
+        Mode de calcul de la prestation (3 valeurs), porté par
+        REPARTITION.TYPE_CALC et GAR_PREV.TYPE_CALC.
+      x-legacy-mnemo: 'TCALC'
+      enum: ['SUR_ARRETS', 'PERIODIQUE', 'UNIQUE']
+
     PaginatedResponse:
       type: object
-      required :
+      required:
         - page
         - pageSize
         - count
@@ -155,17 +275,42 @@ components:
           format: int32
         totalCount:
           type: integer
-          format: int64 
-
+          format: int64
+    
+    Utilisateur:
+      type: object
+      description: Utilisateur de l'application
+      required:
+        - id
+      properties:
+        id:
+          type: integer
+          description: Numéro de l'utilisateur (NUMUTIL)
+        nom:
+          type: string
+          description: Nom de l'utilisateur
+        profil:
+          $ref: '#/components/schemas/ProfilUtilisateurEnum'
+    
     DossierSinistreCriteria:
       type: object
       properties:
+        numeroDossierContains:
+          type: string
+          description: Recherche partielle (contains) sur le numéro de dossier
+        numeroAssureContains:
+          type: string
+          description: Recherche partielle (contains) sur le numéro d'assuré
+        numeroContrat:
+          type: integer
+          format: int64
+          description: Recherche exacte sur le numéro de contrat
         anterieur:
           type: boolean
           description: Filtre sur le caractère antérieur du dossier
         finNull:
           type: boolean
-          description: Filtre sur de période de fin absente (= dossier actif)
+          description: Filtre sur la période de fin absente (= dossier actif)
         prenomIndividuContains:
           type: string
           description: Recherche partielle (contains) sur le prénom de l'individu
@@ -252,11 +397,174 @@ components:
       allOf:
         - $ref: '#/components/schemas/PaginatedResponse'
         - type: object
-        - properties:
+          properties:
             data:
               type: array
               items:
                 $ref: '#/components/schemas/DossierSinistre'
+
+    DossierSinistreDetails:
+      description: >
+        Vue détaillée d'un dossier sinistre : reprend tous les attributs de
+        DossierSinistre et y ajoute les données propres au détail.
+      allOf:
+        - $ref: '#/components/schemas/DossierSinistre'
+        - type: object
+          properties:
+            sinistres:
+              type: array
+              items:
+                $ref: '#/components/schemas/Sinistre'
+            gestionnaire:
+              description: Utilisateur gestionnaire
+              nullable: true
+              allOf:
+                - $ref: '#/components/schemas/Utilisateur'
+    
+    Sinistre:
+      type: object
+      description: Un sinistre
+      required:
+        - idSinistre
+      properties:
+        idSinistre:
+          type: string
+          description: Identifiant unique du sinistre (clé primaire)
+        dateSurvenance:
+          type: string
+          format: date-time
+          nullable: true
+          description: Date de survenance du sinistre
+        dateFin:
+          type: string
+          format: date-time
+          nullable: true
+          description: Date de fin du sinistre
+        risque:
+          $ref: '#/components/schemas/RisqueEnum'
+        motifFin:
+          $ref: '#/components/schemas/MotifFinEnum'
+
+    GarantieContrat:
+      type: object
+      description: Une garantie d'un contrat
+      required:
+        - idGarantie
+      properties:
+        idGarantie:
+          type: string
+          description: Identifiant unique da la garantie (clé primaire)
+        libelle:
+          type: string
+          x-legacy: SELECT LIBELLE FROM GAR_CNTRT_REF
+          description: Libellé de la garantie, pas d'enum, peut-etre un clean de data à faire (Décès-Incapacité-Invalidité, ENFANT A CHARGE, Décès-Incapacité-Invalidité ANI)
+        dateEffet:
+          type: string
+          format: date
+          nullable: true
+          description: Date effet garantie
+        dateFin:
+          type: string
+          format: date
+          nullable: true
+          description: Date fin garantie
+        idContrat:
+          type: string
+          description: numéro du contrat associé
+        numeroReferenceContrat:
+          type: string
+          description: numéro de reference du contrat associé
+        typeCalcul:
+          $ref: '#/components/schemas/TypeCalculEnum'
+        valide:
+          type: boolean
+    
+    Correspondant:
+      type: object
+      description: Un correspondant d'un sinistre (objet generique)
+      properties:
+        type:
+          $ref: '#/components/schemas/TypeCorrespondantEnum'
+        sexeCorrespondant:
+          type: string
+          description: Sexe du correspondant (si personne physique)
+        nomCorrespondant:
+          type: string
+          description: Nom du correspondant (Prenom Nom pour personne physique, Nom pour personne morale)
+        sexeInterlocuteur:
+          type: string
+          description: Sexe de l'interlocuteur (si personne physique)
+        nomInterlocuteur:
+          type: string
+          description: Nom de l'interlocuteur
+
+    SinistreLigneHistorique:
+      type: object
+      description: Une ligne d'historique d'une mise à jour de sinistre
+      properties:
+        dateEffet:
+          type: string
+          format: date-time
+          nullable: true
+          description: Date effet sinistre (historique)
+        etat:
+          $ref: '#/components/schemas/EtatSinistrePrevoyanceEnum'
+        motifFin:
+          $ref: '#/components/schemas/MotifFinEnum'
+        dateSaisie:
+          type: string
+          format: date-time
+          nullable: true
+          description: Date effet sinistre (historique)
+        nomGestionnaire:
+          type: string
+        
+    SinistreDetails:
+      description: >
+        Vue détaillée d'un sinistre : reprend tous les attributs de
+        Sinistre et y ajoute les données propres au détail.
+      allOf:
+        - $ref: '#/components/schemas/Sinistre'
+        - type: object
+          properties:
+            dateDeclaration:
+              type: string
+              format: date-time
+              nullable: true
+              description: Date de déclaration du sinistre
+            datePriseEnCharge:
+              type: string
+              format: date-time
+              nullable: true
+              description: Date de prise en charge du sinistre
+            datePriseEnChargeCalculee:
+              type: string
+              format: date-time
+              nullable: true
+              description: Date de prise en charge calculée du sinistre
+            gestionnaire:
+              description: Utilisateur gestionnaire
+              nullable: true
+              allOf:
+                - $ref: '#/components/schemas/Utilisateur'
+            assure:
+              $ref: '#/components/schemas/Individu'            
+            garanties:
+              type: array
+              items:
+                $ref: '#/components/schemas/GarantieContrat'
+            beneficiaires:
+              type: array
+              items:
+                $ref: '#/components/schemas/Individu'
+            correspondants:
+              type: array
+              items:
+                $ref: '#/components/schemas/Correspondant'
+            historique:
+              type: array
+              items:
+                $ref: '#/components/schemas/SinistreLigneHistorique'
 
     ChartDatum:
       type: object
@@ -309,13 +617,19 @@ components:
           maxLength: 9
           description: Identifiant unique du dossier (clé primaire)
           example: '123456789'
+        numeroContrats:
+          type: array
+          items:
+            type: integer
+            format: int64
+          description: Numéro du ou des contrats associés
         refExt:
           type: string
           maxLength: 30
           nullable: true
           default: 'N'
           description: Référence externe
-        individu:
+        assure:
           $ref: '#/components/schemas/Individu'
         anterieur:
           type: string
@@ -328,10 +642,6 @@ components:
           format: date-time
           nullable: true
           description: Date de début du dossier
-        numUtil:
-          type: integer
-          nullable: true
-          description: Numéro de l'utilisateur
         fin:
           type: string
           format: date-time
@@ -342,24 +652,6 @@ components:
           format: date-time
           nullable: true
           description: Date de clôture du dossier
-        createur:
-          type: integer
-          nullable: true
-          description: Identifiant du créateur
-        creation:
-          type: string
-          format: date-time
-          nullable: true
-          description: Date de création de l'enregistrement
-        modificateur:
-          type: integer
-          nullable: true
-          description: Identifiant du dernier modificateur
-        modification:
-          type: string
-          format: date-time
-          nullable: true
-          description: Date de dernière modification
 
     Individu:
       type: object

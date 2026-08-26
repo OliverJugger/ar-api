@@ -11,10 +11,10 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.ar</groupId>
-    <artifactId>ar-api</artifactId>
+    <groupId>com</groupId>
+    <artifactId>arthus</artifactId>
     <version>0.1.0-SNAPSHOT</version>
-    <name>ar-api</name>
+    <name>arthus</name>
     <description>Backend Spring Boot pour AR-WC3, généré à partir du contrat OpenAPI</description>
     <packaging>jar</packaging>
 
@@ -24,8 +24,8 @@
         <mapstruct.version>1.6.3</mapstruct.version>
         <lombok.version>1.18.38</lombok.version>
         <openapi-spec>${project.basedir}/src/main/resources/openapi/openapi.yaml</openapi-spec>
-        <api-package>com.arwc3.generated.api</api-package>
-        <model-package>com.arwc3.generated.model</model-package>
+        <api-package>com.arthus.generated.api</api-package>
+        <model-package>com.arthus.generated.model</model-package>
         <default-profile>local-docker</default-profile>
     </properties>
 
@@ -347,7 +347,7 @@
                             <apiPackage>${api-package}</apiPackage>
                             <modelNameSuffix>DTO</modelNameSuffix>
                             <modelPackage>${model-package}</modelPackage>
-                            <invokerPackage>com.arwc3.generated.invoker</invokerPackage>
+                            <invokerPackage>com.arthus.generated.invoker</invokerPackage>
                             <generateApis>true</generateApis>
                             <generateApiTests>false</generateApiTests>
                             <generateModelTests>false</generateModelTests>
