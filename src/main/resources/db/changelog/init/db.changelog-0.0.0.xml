@@ -27,5 +27,6 @@
 	<include file="db.16.schema_triggers.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
 	<include file="db.17.table_triggers.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
 	<include file="db.18.recompilation.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
+	<include file="db.19.data.xml" author="OMIGNOT" created="2026-08-11" relativeToChangelogFile="true"/>
 	
 </databaseChangeLog>

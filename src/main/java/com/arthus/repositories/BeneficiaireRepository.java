@@ -21,7 +21,7 @@ import java.util.List;
  */
 public interface BeneficiaireRepository extends JpaRepository<Beneficiaire, Beneficiaire.BeneficiaireId> {
 
-    List<Beneficiaire> findByIdadhesionANDNumfor(Long idadhesion, Long numfor);
+    List<Beneficiaire> findByIdadhesionAndNumfor(Long idadhesion, Long numfor);
 
     @Query("""
            SELECT b
